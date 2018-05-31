@@ -16,11 +16,8 @@ execute if entity @s[tag=sheep_type_fast] run summon minecraft:creeper ~ ~ ~ {Fu
 execute if entity @s[tag=sheep_type_air] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"匆忙的\",\"color\":\"gray\"},{\"text\":\"小红羊\",\"color\":\"red\"}]"}
 # [{"text":"匆忙的","color":"gray"},{"text":"小红羊","color":"red"}]
 execute if entity @s[tag=sheep_type_web] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark"]}
-execute if entity @s[tag=sheep_type_heal] run effect give @a[distance=..2.5] minecraft:regeneration 8 1 false
-execute if entity @s[tag=sheep_type_heal] run particle minecraft:heart ~ ~ ~ 2 1 2 0 100
-
-# add blow effect
-execute if entity @s[tag=sheep_effect_big] at @s run data merge entity @e[distance=..1,limit=1,tag=sheep_blower] {ExplosionRadius:4}
+execute if entity @s[tag=sheep_type_heal] run effect give @a[distance=..2] minecraft:instant_health 1 0 false
+execute if entity @s[tag=sheep_type_heal] run particle minecraft:heart ~ ~ ~ 1 1 1 0 20
 
 # kill sheep
 tag @s remove sheep_temp
