@@ -37,8 +37,8 @@ execute store result score @e[tag=sheep_new,limit=1] s_vz run scoreboard players
 # add player's id
 execute store result score @e[tag=sheep_new,limit=1] s_thrower_id run data get entity @s UUIDMost 0.0000000001
 # add player's team
-execute if entity @s[team=red] run tag @e[tag=sheep_new,limit=1] add shhep_team_red
-execute if entity @s[team=blue] run tag @e[tag=sheep_new,limit=1] add shhep_team_blue
+execute if entity @s[team=red] run tag @e[tag=sheep_new,limit=1] add sheep_team_red
+execute if entity @s[team=blue] run tag @e[tag=sheep_new,limit=1] add sheep_team_blue
 # initialize
 scoreboard players set @e[tag=sheep_new] s_blow_time 0
 

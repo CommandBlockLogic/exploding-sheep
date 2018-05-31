@@ -11,3 +11,4 @@ time set 6000
 function sheep:init
 
 scoreboard objectives add system_time dummy 系统时间
+scoreboard objectives add system_info dummy 系统信息
