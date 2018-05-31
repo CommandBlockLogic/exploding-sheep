@@ -1,7 +1,7 @@
 # sheep:reload/display
 
 # display energy
-xp set @a100 levels
+xp set @a 100 levels
 xp set @a[scores={s_energy=1..10}] 74 points
 xp set @a[scores={s_energy=11..20}] 148 points
 xp set @a[scores={s_energy=21..30}] 222 points
