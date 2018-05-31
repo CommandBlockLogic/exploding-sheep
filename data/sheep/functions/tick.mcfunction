@@ -14,6 +14,7 @@ scoreboard players set @a[scores={s_launch=1..}] s_launch 0
 # sub
 function sheep:blow/tick
 function sheep:fan/tick
+function sheep:reload/tick
 execute as @e[tag=sheep_sheep] run function sheep:fly/tick
 function sheep:change_color
 
