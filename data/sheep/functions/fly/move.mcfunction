@@ -5,37 +5,37 @@
 execute store result score @s s_temp5 run data get entity @s Pos[0] 1000
 scoreboard players operation @s s_temp5 += @s s_temp2
 execute store result entity @s Pos[0] double 0.001 run scoreboard players get @s s_temp5
-execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~0.4 ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_x
 execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~-0.4 ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_x
-execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_x
+execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~ ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_x
 execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~-0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_x
-execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~0.4 ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_x
+execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~ ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_x
+execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~-0.4 ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_x
 execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~ ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_x
-execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_x
+execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~-0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_x
 execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~ ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_x
 # y
 execute store result score @s s_temp5 run data get entity @s Pos[1] 1000
 scoreboard players operation @s s_temp5 += @s s_temp3
 execute store result entity @s Pos[1] double 0.001 run scoreboard players get @s s_temp5
-execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~0.4 ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_y
+execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~-0.4 ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_y
 execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~ ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_y
-execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_y
+execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~-0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_y
 execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~ ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_y
-execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~0.4 ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_y
+execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~-0.4 ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_y
 execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~ ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_y
-execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_y
+execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~-0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_y
 execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~ ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_y
 # z
 execute store result score @s s_temp5 run data get entity @s Pos[2] 1000
 scoreboard players operation @s s_temp5 += @s s_temp4
 execute store result entity @s Pos[2] double 0.001 run scoreboard players get @s s_temp5
-execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~0.4 ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
+execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~-0.4 ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
 execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~ ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
-execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
+execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~-0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
 execute at @s[tag=!sheep_touch_block_temp] positioned ~0.3 ~ ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
-execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~0.4 ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
+execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~-0.4 ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
 execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~ ~0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
-execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
+execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~-0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
 execute at @s[tag=!sheep_touch_block_temp] positioned ~-0.3 ~ ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
 
 # move back
