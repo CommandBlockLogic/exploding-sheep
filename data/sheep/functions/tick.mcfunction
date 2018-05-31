@@ -11,6 +11,8 @@ execute as @a[scores={s_launch=1..,s_energy=40..},nbt={SelectedItemSlot:1}] at @
 scoreboard players set @a[scores={s_launch=1..}] s_launch 0
 
 # change color
+scoreboard players add @a s_launch_type 0
+scoreboard players set @a[scores=s_launch_type=0] s_launch_type 1
 execute as @a[scores={s_launch_type=2..,nbt={Inventory:[{Slot:-106b,tag:{item_num:1}}]}}] run scoreboard players set @s s_launch_type 1
 execute as @a[scores={s_launch_type=1,s_class=2,nbt={Inventory:[{Slot:-106b,tag:{item_num:1}}]}}] run scoreboard players set @s s_launch_type 2
 execute as @a[scores={s_launch_type=1,s_class=3,nbt={Inventory:[{Slot:-106b,tag:{item_num:1}}]}}] run scoreboard players set @s s_launch_type 3
