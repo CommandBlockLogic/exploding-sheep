@@ -19,6 +19,11 @@ execute if entity @s[tag=sheep_type_web] run summon minecraft:area_effect_cloud 
 execute if entity @s[tag=sheep_type_heal] run effect give @a[distance=..2] minecraft:instant_health 1 0 false
 execute if entity @s[tag=sheep_type_heal] run particle minecraft:heart ~ ~ ~ 1 1 1 0 20
 
+execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal] run fill ~-1 ~ ~-1 ~1 ~ ~1 minecraft:air replace #sheep:can_destroy
+execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal] run fill ~ ~-1 ~-1 ~ ~1 ~1 minecraft:air replace #sheep:can_destroy
+execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal] run fill ~-1 ~-1 ~ ~1 ~1 ~ minecraft:air replace #sheep:can_destroy
+
+
 # kill sheep
 tag @s remove sheep_temp
 tp @s 0 -100 0
