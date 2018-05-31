@@ -2,13 +2,31 @@
 
 # shoot or fan
 execute as @a[scores={s_launch=1..,s_energy=30..,s_launch_type=..1},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+execute as @a[scores={s_launch=1..,s_energy=30..,s_launch_type=..1},nbt={SelectedItemSlot:0}] run scoreboard players remove @s s_energy 30
+
 execute as @a[scores={s_launch=1..,s_energy=50..,s_launch_type=2},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+execute as @a[scores={s_launch=1..,s_energy=50..,s_launch_type=2},nbt={SelectedItemSlot:0}] run scoreboard players remove @s s_energy 50
+
 execute as @a[scores={s_launch=1..,s_energy=40..,s_launch_type=3},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+execute as @a[scores={s_launch=1..,s_energy=40..,s_launch_type=3},nbt={SelectedItemSlot:0}] run scoreboard players remove @s s_energy 40
+
 execute as @a[scores={s_launch=1..,s_energy=40..,s_launch_type=4},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+execute as @a[scores={s_launch=1..,s_energy=40..,s_launch_type=4},nbt={SelectedItemSlot:0}] run scoreboard players remove @s s_energy 40
+
 execute as @a[scores={s_launch=1..,s_energy=60..,s_launch_type=5},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+execute as @a[scores={s_launch=1..,s_energy=60..,s_launch_type=5},nbt={SelectedItemSlot:0}] run scoreboard players remove @s s_energy 60
+
 execute as @a[scores={s_launch=1..,s_energy=60..,s_launch_type=6},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+execute as @a[scores={s_launch=1..,s_energy=60..,s_launch_type=6},nbt={SelectedItemSlot:0}] run scoreboard players remove @s s_energy 60
+
 execute as @a[scores={s_launch=1..,s_energy=40..},nbt={SelectedItemSlot:1}] at @s anchored eyes positioned ^ ^ ^ run function sheep:fan/main
+execute as @a[scores={s_launch=1..,s_energy=40..},nbt={SelectedItemSlot:1}] run scoreboard players remove @s s_energy 40
+
 scoreboard players set @a[scores={s_launch=1..}] s_launch 0
+
+
+
+
 
 
 # sub
