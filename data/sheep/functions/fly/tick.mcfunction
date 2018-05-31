@@ -16,10 +16,10 @@ scoreboard players operation @s s_temp3 /= s_temp1
 scoreboard players operation @s s_temp4 /= s_temp1
 # collision
 execute if entity @s[tag=!sheep_touch_block_temp] run function sheep:fly/move
-execute if entity @s[tag=!sheep_touch_block_temp] run function sheep:fly/move
-execute if entity @s[tag=!sheep_touch_block_temp] run function sheep:fly/move
-execute if entity @s[tag=!sheep_touch_block_temp] run function sheep:fly/move
-execute if entity @s[tag=!sheep_touch_block_temp] run function sheep:fly/move
+#execute if entity @s[tag=!sheep_touch_block_temp] run function sheep:fly/move
+#execute if entity @s[tag=!sheep_touch_block_temp] run function sheep:fly/move
+#execute if entity @s[tag=!sheep_touch_block_temp] run function sheep:fly/move
+#execute if entity @s[tag=!sheep_touch_block_temp] run function sheep:fly/move
 
 
 
