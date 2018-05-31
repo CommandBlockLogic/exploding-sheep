@@ -4,18 +4,12 @@
 scoreboard players add @e[tag=sheep_sheep] s_flying_time 1
 kill @e[tag=sheep_sheep,scores={s_flying_time=600..}]
 
-# detect on ground
-scoreboard players add @e[tag=sheep_sheep] s_blow_time 0
+# add blow time
 scoreboard players add @e[scores={s_blow_time=1..}] s_blow_time 1
-execute as @e[tag=sheep_sheep,tag=!sheep_type_fast,scores={s_flying_time=10..,s_blow_time=0}] at @s unless block ~ ~-1 ~ minecraft:air run scoreboard players set @s s_blow_time 1
 # speical sheep air
 scoreboard players set @e[tag=sheep_type_air,scores={s_blow_time=1..19}] s_blow_time 20
 # speical sheep fast
-execute as @e[tag=sheep_type_fast,scores={s_flying_time=20..,s_blow_time=0}] at @s if entity @a[distance=..2] run tag @s add sheep_fast_blow
-execute as @e[tag=sheep_type_fast,scores={s_flying_time=20..,s_blow_time=0}] at @s unless blocks ~-1 ~-1 ~-1 ~1 ~1 ~1 0 250 0 all run tag @s add sheep_fast_blow
-scoreboard players set @e[tag=sheep_fast_blow] s_blow_time 1
-execute as @e[tag=sheep_fast_blow] run data merge entity @s {NoAI:1}
-tag @e[tag=sheep_fast_blow] remove sheep_fast_blow
+execute as @e[tag=sheep_type_fast,scores={s_flying_time=20..,s_blow_time=0}] at @s if entity @a[distance=..2] run scoreboard players set @s s_blow_time 1
 
 # animation
 execute as @e[scores={s_blow_time=2}] at @s run playsound minecraft:entity.creeper.primed hostile @a ~ ~ ~

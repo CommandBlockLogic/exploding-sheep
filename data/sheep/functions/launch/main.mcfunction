@@ -1,4 +1,4 @@
-# sheep:sheep/main
+# sheep:launch/main
 
 # sound
 playsound minecraft:entity.player.small_fall ambient @a ^ ^ ^0.5 1 0.5
@@ -7,12 +7,12 @@ playsound minecraft:entity.player.small_fall ambient @a ^ ^ ^0.5 1 0.5
 summon minecraft:area_effect_cloud ^ ^ ^1 {Tags:["sheep_mark"]}
 
 # summon sheep
-execute if entity @s[scores={s_launch_type=1}] run function sheep:sheep/type/normal
-execute if entity @s[scores={s_launch_type=2}] run function sheep:sheep/type/heavy
-execute if entity @s[scores={s_launch_type=3}] run function sheep:sheep/type/fast
-execute if entity @s[scores={s_launch_type=4}] run function sheep:sheep/type/air
-execute if entity @s[scores={s_launch_type=5}] run function sheep:sheep/type/web
-execute if entity @s[scores={s_launch_type=6}] run function sheep:sheep/type/heal
+execute if entity @s[scores={s_launch_type=1}] run function sheep:launch/type/normal
+execute if entity @s[scores={s_launch_type=2}] run function sheep:launch/type/heavy
+execute if entity @s[scores={s_launch_type=3}] run function sheep:launch/type/fast
+execute if entity @s[scores={s_launch_type=4}] run function sheep:launch/type/air
+execute if entity @s[scores={s_launch_type=5}] run function sheep:launch/type/web
+execute if entity @s[scores={s_launch_type=6}] run function sheep:launch/type/heal
 
 # turn the sheep's face
 execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ facing entity @e[tag=sheep_mark,limit=1]
@@ -39,6 +39,8 @@ execute store result score @e[tag=sheep_new,limit=1] s_thrower_id run data get e
 # add player's team
 execute if entity @s[team=red] run tag @e[tag=sheep_new,limit=1] add shhep_team_red
 execute if entity @s[team=blue] run tag @e[tag=sheep_new,limit=1] add shhep_team_blue
+# initialize
+scoreboard players set @e[tag=sheep_new] s_blow_time 0
 
 # kill marker and remove temp tag
 kill @e[tag=sheep_mark]

@@ -38,7 +38,12 @@ execute at @s[tag=!sheep_touch_z] positioned ~-0.3 ~ ~0.3 unless block ~ ~ ~ min
 execute at @s[tag=!sheep_touch_z] positioned ~-0.3 ~0.4 ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
 execute at @s[tag=!sheep_touch_z] positioned ~-0.3 ~ ~-0.3 unless block ~ ~ ~ minecraft:air run function sheep:fly/touch_z
 
-# clear 
+# set blow
+scoreboard players set @s[tag=sheep_touch_x,scores={s_blow_time=0}] s_blow_time 1
+scoreboard players set @s[tag=sheep_touch_y,scores={s_blow_time=0}] s_blow_time 1
+scoreboard players set @s[tag=sheep_touch_z,scores={s_blow_time=0}] s_blow_time 1
+
+# clear
 tag @s[tag=sheep_touch_x] remove sheep_touch_x
 tag @s[tag=sheep_touch_y] remove sheep_touch_y
 tag @s[tag=sheep_touch_z] remove sheep_touch_z

@@ -1,8 +1,5 @@
 # sheep:fan/main
 
-# consume energy
-scoreboard players remove @s s_energy 40
-
 # sound
 playsound minecraft:entity.player.attack.sweep player @a ^ ^ ^0.5 1 0.5
 

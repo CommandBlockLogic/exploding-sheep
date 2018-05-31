@@ -4,7 +4,7 @@
 scoreboard players set @s s_vy 0
 
 # vx,vz decay
-scoreboard players set @s s_temp5 6
+scoreboard players set @s s_temp5 7
 scoreboard players operation @s s_vx *= @s s_temp5
 scoreboard players operation @s s_vz *= @s s_temp5
 scoreboard players set @s s_temp5 10
