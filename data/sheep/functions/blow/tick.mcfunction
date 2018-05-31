@@ -14,6 +14,6 @@ execute as @e[tag=sheep_type_fast,scores={s_flying_time=20..,s_blow_time=0}] at 
 # animation
 execute as @e[scores={s_blow_time=2}] at @s run playsound minecraft:entity.creeper.primed hostile @a ~ ~ ~
 execute as @e[scores={s_blow_time=2}] at @s run data merge entity @s {CustomName:"[{\"text\":\"?\",\"color\":\"yellow\"}]",CustomNameVisible:true}
-execute as @e[scores={s_blow_time=7}] at @s run data merge entity @s {CustomName:"[{\"text\":\"???\",\"color\":\"gold\"}]"}
-execute as @e[scores={s_blow_time=13}] at @s run data merge entity @s {CustomName:"[{\"text\":\"?????\",\"color\":\"red\"}]"}
-execute as @e[scores={s_blow_time=20..}] at @s run function sheep:blow/main
+execute as @e[scores={s_blow_time=11}] at @s run data merge entity @s {CustomName:"[{\"text\":\"???\",\"color\":\"gold\"}]"}
+execute as @e[scores={s_blow_time=17}] at @s run data merge entity @s {CustomName:"[{\"text\":\"?????\",\"color\":\"red\"}]"}
+execute as @e[scores={s_blow_time=25..}] at @s run function sheep:blow/main
