@@ -14,10 +14,6 @@ execute if entity @s[scores={s_launch_type=4}] run function sheep:sheep/type/air
 execute if entity @s[scores={s_launch_type=5}] run function sheep:sheep/type/web
 execute if entity @s[scores={s_launch_type=6}] run function sheep:sheep/type/heal
 
-# replace offhand
-replaceitem entity @s weapon.offhand minecraft:white_wool
-scoreboard players set @s s_launch_type 1
-
 # turn the sheep's face
 execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ facing entity @e[tag=sheep_mark,limit=1]
 

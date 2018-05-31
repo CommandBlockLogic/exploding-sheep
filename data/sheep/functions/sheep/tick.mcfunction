@@ -1,12 +1,12 @@
 # sheep:sheep/tick
 
 # normal sheep
-execute as @e[tag=sheep_sheep,tag=!sheep_type_fast] run function sheep:sheep/fly/main
+execute as @e[tag=sheep_sheep] run function sheep:sheep/fly/main
 
 # fast sheep
-execute as @e[tag=sheep_type_fast] store result entity @s Motion[0] double 0.001 run scoreboard players get @s s_vx
-execute as @e[tag=sheep_type_fast] store result entity @s Motion[1] double 0.001 run scoreboard players get @s s_vy
-execute as @e[tag=sheep_type_fast] store result entity @s Motion[2] double 0.001 run scoreboard players get @s s_vz
+#execute as @e[tag=sheep_type_fast] store result entity @s Motion[0] double 0.001 run scoreboard players get @s s_vx
+#execute as @e[tag=sheep_type_fast] store result entity @s Motion[1] double 0.001 run scoreboard players get @s s_vy
+#execute as @e[tag=sheep_type_fast] store result entity @s Motion[2] double 0.001 run scoreboard players get @s s_vz
 
 # web
 scoreboard players add @e[tag=sheep_web_mark] s_web_time 1

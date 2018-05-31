@@ -3,6 +3,7 @@
 # set force
 scoreboard players set @s s_ax 0
 scoreboard players set @s s_ay -50
+scoreboard players set @s[tag=sheep_type_fast] s_ay 0
 scoreboard players set @s s_az 0
 
 execute at @s unless block ~1 ~ ~ minecraft:air if score @s s_vx matches 1..99999999 run function sheep:sheep/fly/touch_x
