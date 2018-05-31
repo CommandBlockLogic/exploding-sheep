@@ -5,7 +5,7 @@ tag @s[tag=sheep_own_air] add sheep_temp
 tag @s[tag=!sheep_own_air] add sheep_own_air
 tag @s[tag=sheep_temp] remove sheep_own_air
 tag @s[tag=sheep_temp] remove sheep_temp
-# cal max_bullet
+# cal max energy
 function minecraft:select_type/cal_bullet
 # display
 function minecraft:select_type/display

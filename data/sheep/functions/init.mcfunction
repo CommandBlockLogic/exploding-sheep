@@ -1,5 +1,10 @@
 # sheep:init
 
+scoreboard objectives add s_launch minecraft.used:minecraft.carrot_on_a_stick 玩家使用钓竿
+scoreboard objectives add s_energy dummy 玩家能量
+scoreboard objectives add s_max_energy dummy 玩家最大能量
+scoreboard objectives add s_class dummy 玩家类型
+
 scoreboard objectives add s_flying_time dummy 羊飞行时间
 scoreboard objectives add s_blow_time dummy 羊落地后爆炸时间
 scoreboard objectives add s_wind_time dummy 风飞行时间
