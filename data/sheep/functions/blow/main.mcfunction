@@ -24,14 +24,12 @@ execute if entity @s[tag=sheep_type_heal] run particle minecraft:heart ~ ~ ~ 1 1
 scoreboard players set @s s_temp1 0
 scoreboard players set @s s_temp2 0
 execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_red] store result score @s s_temp1 run fill ~-1 ~ ~-1 ~1 ~ ~1 minecraft:air replace minecraft:blue_concrete_powder
-tellraw @a [{"score":{"name":"@s","objective":"s_temp1"}}]
 scoreboard players operation @s s_temp2 += @s s_temp1
 execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_red] store result score @s s_temp1 run fill ~ ~-1 ~-1 ~ ~1 ~1 minecraft:air replace minecraft:blue_concrete_powder
-tellraw @a [{"score":{"name":"@s","objective":"s_temp1"}}]
 scoreboard players operation @s s_temp2 += @s s_temp1
 execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_red] store result score @s s_temp1 run fill ~-1 ~-1 ~ ~1 ~1 ~ minecraft:air replace minecraft:blue_concrete_powder
-tellraw @a [{"score":{"name":"@s","objective":"s_temp1"}}]
 scoreboard players operation @s s_temp2 += @s s_temp1
+scoreboard players set @s s_temp1 0
 
 execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_blue] store result score @s s_temp1 run fill ~-1 ~ ~-1 ~1 ~ ~1 minecraft:air replace minecraft:red_concrete_powder
 scoreboard players operation @s s_temp2 += @s s_temp1
