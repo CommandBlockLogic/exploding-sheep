@@ -26,7 +26,7 @@ for item in partten:
 	print()
 
 center = (7, 7)
-ratio = 3/7
+ratio = 1
 
 for row in range(len(partten)):
 	for col in range(len(partten[row])):
