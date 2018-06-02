@@ -12,3 +12,6 @@ execute at @e[tag=system_core_mark_red,scores={system_time=400}] run fill ~-2 ~ 
 execute at @e[tag=system_core_mark_blue,scores={system_time=400}] run fill ~-1 ~ ~-2 ~1 ~ ~2 minecraft:blue_concrete_powder keep
 execute at @e[tag=system_core_mark_blue,scores={system_time=400}] run fill ~-2 ~ ~-1 ~2 ~ ~1 minecraft:blue_concrete_powder keep
 scoreboard players set @e[scores={system_time=400}] system_time 0
+
+
+execute as @e[type=falling_block] at @s unless block ~ ~-1.5 ~ #minecraft:under_sand run kill @s
