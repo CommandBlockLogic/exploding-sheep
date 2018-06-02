@@ -40,19 +40,7 @@ execute as @e[tag=sheep_sheep] run function sheep:fly/tick
 function sheep:change_color
 
 
-# web
+# ice
 scoreboard players add @e[tag=sheep_web_mark] s_web_time 1
-execute as @e[scores={s_web_time=1..}] at @s run particle minecraft:block ice ~3 ~ ~ 0 0 0 1 1 normal
-execute as @e[scores={s_web_time=1..}] at @s run particle minecraft:block ice ~-3 ~ ~ 0 0 0 1 1 normal
-execute as @e[scores={s_web_time=1..}] at @s run particle minecraft:block ice ~ ~ ~3 0 0 0 1 1 normal
-execute as @e[scores={s_web_time=1..}] at @s run particle minecraft:block ice ~ ~ ~-3 0 0 0 1 1 normal
-execute as @e[scores={s_web_time=1..}] at @s run particle minecraft:block ice ~1.5 ~ ~2.598 0 0 0 1 1 normal
-execute as @e[scores={s_web_time=1..}] at @s run particle minecraft:block ice ~1.5 ~ ~-2.598 0 0 0 1 1 normal
-execute as @e[scores={s_web_time=1..}] at @s run particle minecraft:block ice ~-1.5 ~ ~2.598 0 0 0 1 1 normal
-execute as @e[scores={s_web_time=1..}] at @s run particle minecraft:block ice ~-1.5 ~ ~-2.598 0 0 0 1 1 normal
-execute as @e[scores={s_web_time=1..}] at @s run particle minecraft:block ice ~2.598 ~ ~1.5 0 0 0 1 1 normal
-execute as @e[scores={s_web_time=1..}] at @s run particle minecraft:block ice ~2.598 ~ ~-1.5 0 0 0 1 1 normal
-execute as @e[scores={s_web_time=1..}] at @s run particle minecraft:block ice ~-2.598 ~ ~1.5 0 0 0 1 1 normal
-execute as @e[scores={s_web_time=1..}] at @s run particle minecraft:block ice ~-2.598 ~ ~-1.5 0 0 0 1 1 normal
-
+execute as @e[scores={s_web_time=1..}] at @s run function sheep:effect/ice
 kill @e[scores={s_web_time=101..}]
