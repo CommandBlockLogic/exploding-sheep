@@ -29,8 +29,8 @@ partten = (
 )
 
 
-#command = 'particle minecraft:block ice ~{:.3f} ~ ~{:.3f} 0 0 0 1 1 normal'
-command = 'particle minecraft:dust 0 1 1 1 ~{:.3f} ~ ~{:.3f} 0 0 0 1 1 normal'
+command = 'particle minecraft:block ice ~{:.3f} ~ ~{:.3f} 0 0 0 1 1 normal'
+#command = 'particle minecraft:dust 0 1 1 1 ~{:.3f} ~ ~{:.3f} 0 0 0 1 1 normal'
 
 for item in partten:
 	for point in item:
@@ -41,7 +41,7 @@ for item in partten:
 	print()
 
 center = (4, 4)
-ratio = 3/4
+ratio = 2/4
 
 for row in range(len(partten)):
 	for col in range(len(partten[row])):
