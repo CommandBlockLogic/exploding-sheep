@@ -15,3 +15,4 @@ scoreboard players set @e[scores={system_time=400}] system_time 0
 
 
 execute as @e[type=falling_block] at @s unless block ~ ~-1.5 ~ #minecraft:under_sand run kill @s
+kill @e[type=item]
