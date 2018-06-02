@@ -12,3 +12,8 @@ xp set @a[scores={s_energy=121..140}] 518 points
 xp set @a[scores={s_energy=141..160}] 592 points
 xp set @a[scores={s_energy=161..180}] 666 points
 xp set @a[scores={s_energy=181..200}] 740 points
+
+# display fan
+xp set @a[scores={s_fan_num=0}] 0 levels
+xp set @a[scores={s_fan_num=1}] 1 levels
+xp set @a[scores={s_fan_num=2}] 2 levels
