@@ -11,7 +11,8 @@ scoreboard objectives add s_flying_time dummy 羊飞行时间
 scoreboard objectives add s_blow_time dummy 羊落地后爆炸时间
 scoreboard objectives add s_wind_time dummy 风飞行时间
 scoreboard objectives add s_push_time dummy 玩家失重时间
-scoreboard objectives add s_web_time dummy 网存在时间
+scoreboard objectives add s_web_time dummy 冰存在时间
+scoreboard objectives add s_heal_time dummy 治愈存在时间
 
 scoreboard objectives add s_thrower_id dummy 投掷玩家id
 scoreboard objectives add s_sheep_type dummy 羊类型

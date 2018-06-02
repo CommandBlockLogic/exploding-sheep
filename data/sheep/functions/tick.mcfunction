@@ -40,6 +40,14 @@ execute as @e[tag=sheep_sheep] run function sheep:fly/tick
 function sheep:change_color
 
 
+
+# heal
+scoreboard players add @e[tag=sheep_heal_mark] s_heal_time 1
+execute as @e[scores={s_heal_time=1..}] at @s run function sheep:effect/heal
+execute as @e[scores={s_heal_time=1..}] at @s run tp @s ~ ~0.25 ~
+kill @e[scores={s_heal_time=10..}]
+
+
 # ice
 scoreboard players add @e[tag=sheep_web_mark] s_web_time 1
 scoreboard players add @e[tag=sheep_web_mark] s_temp1 1
@@ -48,3 +56,4 @@ execute as @e[scores={s_web_time=1..,s_temp1=1}] at @s run function sheep:effect
 execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_red] at @s run effect give @a[distance=..2,team=red] minecraft:slowness 1 2 false
 execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_blue] at @s run effect give @a[distance=..2,team=blue] minecraft:slowness 1 2 false
 kill @e[scores={s_web_time=101..}]
+

@@ -17,9 +17,10 @@ execute if entity @s[tag=sheep_type_air] run summon minecraft:creeper ~ ~ ~ {Fus
 # [{"text":"匆忙的","color":"gray"},{"text":"小红羊","color":"red"}]
 execute if entity @s[tag=sheep_type_web,tag=sheep_team_red] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark","sheep_web_mark_red"]}
 execute if entity @s[tag=sheep_type_web,tag=sheep_team_blue] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark","sheep_web_mark_blue"]}
+
+execute if entity @s[tag=sheep_type_heal] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_heal_mark"]}
 execute if entity @s[tag=sheep_type_heal,tag=sheep_team_red] run effect give @a[distance=..3,team=red] minecraft:instant_health 1 0 false
 execute if entity @s[tag=sheep_type_heal,tag=sheep_team_blue] run effect give @a[distance=..3,team=blue] minecraft:instant_health 1 0 false
-execute if entity @s[tag=sheep_type_heal] at @s run function sheep:effect/heal
 
 
 # explode blocks
