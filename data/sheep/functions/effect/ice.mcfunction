@@ -13,10 +13,6 @@
 #particle minecraft:block ice ~-2.598 ~ ~1.5 0 0 0 1 1 normal
 #particle minecraft:block ice ~-2.598 ~ ~-1.5 0 0 0 1 1 normal
 
-particle minecraft:block ice ~-5.250 ~ ~-3.000 0 0 0 1 1 normal
-particle minecraft:block ice ~-5.250 ~ ~-1.500 0 0 0 1 1 normal
-particle minecraft:block ice ~-4.500 ~ ~-4.500 0 0 0 1 1 normal
-particle minecraft:block ice ~-4.500 ~ ~-2.250 0 0 0 1 1 normal
 particle minecraft:block ice ~-4.500 ~ ~0.000 0 0 0 1 1 normal
 particle minecraft:block ice ~-3.750 ~ ~-3.750 0 0 0 1 1 normal
 particle minecraft:block ice ~-3.750 ~ ~-0.750 0 0 0 1 1 normal

@@ -39,7 +39,7 @@ for item in partten:
 			print('#',end='')
 	print()
 
-center = (7, 7)
+center = (4, 4)
 ratio = 3/4
 
 for row in range(len(partten)):
