@@ -44,5 +44,5 @@ function sheep:change_color
 scoreboard players add @e[tag=sheep_web_mark] s_web_time 1
 scoreboard players add @e[tag=sheep_web_mark] s_temp1 1
 scoreboard players set @e[tag=sheep_web_mark,scores={s_temp1=4}] s_temp1 0
-execute as @e[scores={s_web_time=1..,s_temp1=1}] at @s run function sheep:effect/ice2
+execute as @e[scores={s_web_time=1..,s_temp1=1}] at @s run function sheep:effect/ice
 kill @e[scores={s_web_time=101..}]
