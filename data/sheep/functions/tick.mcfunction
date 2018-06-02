@@ -53,7 +53,7 @@ scoreboard players add @e[tag=sheep_web_mark] s_web_time 1
 scoreboard players add @e[tag=sheep_web_mark] s_temp1 1
 scoreboard players set @e[tag=sheep_web_mark,scores={s_temp1=4}] s_temp1 0
 execute as @e[scores={s_web_time=1..,s_temp1=1}] at @s run function sheep:effect/ice
-execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_red] at @s run effect give @a[distance=..2,team=red] minecraft:slowness 1 2 false
-execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_blue] at @s run effect give @a[distance=..2,team=blue] minecraft:slowness 1 2 false
+execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_red] at @s run effect give @a[distance=..2,team=blue] minecraft:slowness 1 2 false
+execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_blue] at @s run effect give @a[distance=..2,team=red] minecraft:slowness 1 2 false
 kill @e[scores={s_web_time=101..}]
 
