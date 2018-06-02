@@ -27,6 +27,7 @@ scoreboard players set @a[scores={s_launch=1..}] s_launch 0
 
 # fan cd
 scoreboard players add @a[scores={s_fan_cd=..9}] s_fan_cd 1
+scoreboard players add @a s_fan_cd 0
 
 
 
