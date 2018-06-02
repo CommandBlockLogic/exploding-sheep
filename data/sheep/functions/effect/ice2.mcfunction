@@ -1,5 +1,3 @@
-# sheep:effect/ice2
-
 particle minecraft:dust 0 1 1 1 ~-3.000 ~ ~0.000 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~-2.571 ~ ~-1.286 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~-2.571 ~ ~-0.857 0 0 0 1 1 normal
@@ -23,7 +21,6 @@ particle minecraft:dust 0 1 1 1 ~-1.286 ~ ~1.714 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~-1.286 ~ ~2.571 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~-0.857 ~ ~-2.571 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~-0.857 ~ ~-0.857 0 0 0 1 1 normal
-particle minecraft:dust 0 1 1 1 ~-0.857 ~ ~0.000 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~-0.857 ~ ~0.857 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~-0.857 ~ ~2.571 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~-0.429 ~ ~-2.143 0 0 0 1 1 normal
@@ -36,10 +33,8 @@ particle minecraft:dust 0 1 1 1 ~0.000 ~ ~-2.571 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.000 ~ ~-2.143 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.000 ~ ~-1.714 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.000 ~ ~-1.286 0 0 0 1 1 normal
-particle minecraft:dust 0 1 1 1 ~0.000 ~ ~-0.857 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.000 ~ ~-0.429 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.000 ~ ~0.429 0 0 0 1 1 normal
-particle minecraft:dust 0 1 1 1 ~0.000 ~ ~0.857 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.000 ~ ~1.286 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.000 ~ ~1.714 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.000 ~ ~2.143 0 0 0 1 1 normal
@@ -52,7 +47,6 @@ particle minecraft:dust 0 1 1 1 ~0.429 ~ ~1.286 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.429 ~ ~2.143 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.857 ~ ~-2.571 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.857 ~ ~-0.857 0 0 0 1 1 normal
-particle minecraft:dust 0 1 1 1 ~0.857 ~ ~0.000 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.857 ~ ~0.857 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~0.857 ~ ~2.571 0 0 0 1 1 normal
 particle minecraft:dust 0 1 1 1 ~1.286 ~ ~-2.571 0 0 0 1 1 normal
