@@ -29,6 +29,16 @@ execute at @e[tag=system_class_mark_pink] as @a[distance=..0.3] unless score @s 
 # enter game
 execute at @e[tag=system_lobby_mark_enter] run tp @a[distance=..0.3,team=blue] -36 15 -40 -90 0
 execute at @e[tag=system_lobby_mark_enter] run tp @a[distance=..0.3,team=red] 40 14 34 100 0
+# enter team
+execute at @e[tag=system_lobby_mark_join_red] run tag @e[tag=sheep_sheep,scores={s_blow_time=1},distance=..4,limit=1] add system_join_red_temp
+execute at @e[tag=system_lobby_mark_join_blue] run tag @e[tag=sheep_sheep,scores={s_blow_time=1},distance=..4,limit=1] add system_join_blue_temp
+execute as @a if score @s s_id = @e[tag=system_join_red_temp,limit=1] run tellraw @a [">> ",{"selector":"@s"},"加入了§c红队§r"]
+execute as @a if score @s s_id = @e[tag=system_join_red_temp,limit=1] run team join red @s
+execute as @a if score @s s_id = @e[tag=system_join_blue_temp,limit=1] run tellraw @a [">> ",{"selector":"@s"},"加入了§9蓝队§r"]
+execute as @a if score @s s_id = @e[tag=system_join_blue_temp,limit=1] run team join blue @s
+tag @e[tag=system_join_red_temp] remove system_join_red_temp
+tag @e[tag=system_join_blue_temp] remove system_join_blue_temp
+
 
 
 # summon blocks
