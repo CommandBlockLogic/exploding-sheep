@@ -39,6 +39,10 @@ execute as @a if score @s s_id = @e[tag=system_join_blue_temp,limit=1] s_thrower
 tag @e[tag=system_join_red_temp] remove system_join_red_temp
 tag @e[tag=system_join_blue_temp] remove system_join_blue_temp
 
+# resistance
+execute positioned -248 1 -218 run effect give @a[dx=167,dy=250,dz=215] minecraft:resistance 3 5 true
+effect give @a[scores={food=..19}] minecraft:saturation 1 0 true
+
 
 
 # summon blocks
