@@ -2,6 +2,9 @@
 
 kill @e[tag=system_class_mark]
 
+summon minecraft:area_effect_cloud -166 10 -127 {Duration:9999999,Tags:["system_class_mark","system_class_mark_hint"],CustomName:"[\"§f踩上混凝土块切换类型§r\"]"}
+summon minecraft:area_effect_cloud -171 10 -127 {Duration:9999999,Tags:["system_class_mark","system_class_mark_hint"],CustomName:"[\"§f踩上混凝土块切换类型§r\"]"}
+
 summon minecraft:area_effect_cloud -172 9 -126 {Duration:9999999,Tags:["system_class_mark","system_class_mark_pink"],CustomName:"[\"§d治愈§r\"]"}
 summon minecraft:area_effect_cloud -173 9 -126 {Duration:9999999,Tags:["system_class_mark","system_class_mark_cyan"],CustomName:"[\"§b冰冻§r\"]"}
 summon minecraft:area_effect_cloud -174 9 -126 {Duration:9999999,Tags:["system_class_mark","system_class_mark_red"],CustomName:"[\"§c瞬发§r\"]"}
