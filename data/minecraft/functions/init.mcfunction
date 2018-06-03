@@ -21,3 +21,5 @@ team add blue
 
 team option red color red
 team option blue color blue
+
+team option red prefix §k
