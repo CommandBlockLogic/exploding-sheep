@@ -10,6 +10,7 @@ execute unless entity @e[tag=system_class_mark] run function keep_mark/class
 execute as @e[tag=system_class_mark,nbt=!{CustomNameVisible:1b}] at @s if entity @a[distance=..7] run data merge entity @s {CustomNameVisible:1}
 execute as @e[tag=system_class_mark,nbt={CustomNameVisible:1b}] at @s unless entity @a[distance=..7] run data merge entity @s {CustomNameVisible:0}
 # change class
+execute at @e[tag=system_class_mark] as @a[distance=..0.3] run scoreboard players set @s s_launch_type 1
 execute at @e[tag=system_class_mark_white] as @a[distance=..0.3] unless score @s s_class matches 1 run tellraw @s [">> 切换至 §f普通§r 系"]
 execute at @e[tag=system_class_mark_white] as @a[distance=..0.3] unless score @s s_class matches 1 run scoreboard players set @s s_class 1
 execute at @e[tag=system_class_mark_gray] as @a[distance=..0.3] unless score @s s_class matches 2 run tellraw @s [">> 切换至 §7笨重§r 系"]
