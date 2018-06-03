@@ -2,8 +2,8 @@
 
 function sheep:tick
 function keep_items
-execute unless entity @e[tag=system_core_mark_blue] run function keep_mark
-execute unless entity @e[tag=system_core_mark_red] run function keep_mark
+execute unless entity @e[tag=system_core_mark_blue] run function keep_mark/core
+execute unless entity @e[tag=system_core_mark_red] run function keep_mark/core
 
 # summon blocks
 scoreboard players add @e[tag=system_core_mark] system_time 1

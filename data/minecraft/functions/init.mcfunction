@@ -12,6 +12,7 @@ function sheep:init
 
 scoreboard objectives add system_time dummy 系统时间
 scoreboard objectives add system_info dummy 系统信息
+scoreboard objectives add system dummy 系统状态
 
 team add red
 team add blue
