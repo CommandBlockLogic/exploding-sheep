@@ -46,13 +46,13 @@ execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_temp7
 execute as @e[tag=sheep_new,limit=1] run function lobby/launch_sheep/sqrt
 # cal vy
 scoreboard players set @e[tag=sheep_new,limit=1] s_temp1 10
-scoreboard players set @e[tag=sheep_new,limit=1] s_temp2 50
+scoreboard players set @e[tag=sheep_new,limit=1] s_temp2 5
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_temp7 *= @s s_temp1
 execute as @e[tag=sheep_new,limit=1] run function lobby/launch_sheep/sqrt
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_temp7 *= @s s_temp2
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vy = @s s_temp7
 # cal vxz
-scoreboard players set @e[tag=sheep_new,limit=1] s_temp1 1000
+scoreboard players set @e[tag=sheep_new,limit=1] s_temp1 100
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vx *= @s s_temp7
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vz *= @s s_temp7
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vx /= @s s_temp1
