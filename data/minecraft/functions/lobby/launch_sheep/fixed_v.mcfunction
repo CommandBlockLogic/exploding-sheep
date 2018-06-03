@@ -58,8 +58,18 @@ execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vz *=
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vx /= @s s_temp1
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vz /= @s s_temp1
 
-#scoreboard players set @e[tag=sheep_new,limit=1] s_temp1 10
-#execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vy *= @s s_temp1
+# ratio
+scoreboard players set @e[tag=sheep_new,limit=1] s_temp1 9
+scoreboard players set @e[tag=sheep_new,limit=1] s_temp2 10
+execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vx *= @s s_temp1
+execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vy *= @s s_temp1
+execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vz *= @s s_temp1
+execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vx /= @s s_temp2
+execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vy /= @s s_temp2
+execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vz /= @s s_temp2
+
+
+
 
 
 
