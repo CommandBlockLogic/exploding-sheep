@@ -1,5 +1,8 @@
 # lobby/tick
 
+# fan
+function lobby/launch_sheep/tick
+
 # hint show
 execute as @e[tag=system_class_mark,nbt=!{CustomNameVisible:1b}] at @s if entity @a[distance=..5] run data merge entity @s {CustomNameVisible:1}
 execute as @e[tag=system_class_mark,nbt={CustomNameVisible:1b}] at @s unless entity @a[distance=..5] run data merge entity @s {CustomNameVisible:0}
