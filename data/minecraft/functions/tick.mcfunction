@@ -7,8 +7,8 @@ execute unless entity @e[tag=system_core_mark_red] run function keep_mark/core
 execute unless entity @e[tag=system_class_mark] run function keep_mark/class
 
 # hint show
-execute as @e[tag=system_class_mark] at @s if entity @a[distance=..3] run data merge entity @s {CustomNameVisible:1}
-execute as @e[tag=system_class_mark] at @s unless entity @a[distance=..3] run data merge entity @s {CustomNameVisible:0}
+execute as @e[tag=system_class_mark,nbt={CustomNameVisible:0}] at @s if entity @a[distance=..3] run data merge entity @s {CustomNameVisible:1}
+execute as @e[tag=system_class_mark,nbt={CustomNameVisible:1}] at @s unless entity @a[distance=..3] run data merge entity @s {CustomNameVisible:0}
 
 
 # summon blocks
