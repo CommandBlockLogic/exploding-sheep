@@ -1,4 +1,4 @@
-# lobby/launch/sqrt
+# lobby/launch_sheep/sqrt
 
 # s_temp7的根号返回s_temp7
 scoreboard players set @s s_temp1 500

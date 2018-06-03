@@ -1,4 +1,4 @@
-# lobby/launch_sheep/main
+# lobby/launch_sheep/fixed_vh
 
 # tag target player
 execute positioned -193 16 -175 run tag @a[sort=random,distance=..55] add system_lobby_target
@@ -43,9 +43,9 @@ execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_temp2
 scoreboard players set @e[tag=sheep_new,limit=1] s_temp7 0
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_temp7 += @s s_temp1
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_temp7 += @s s_temp2
-execute as @e[tag=sheep_new,limit=1] run function lobby/launch/sqrt
+execute as @e[tag=sheep_new,limit=1] run function lobby/launch_sheep/sqrt
 # cal vy
-scoreboard players set @e[tag=sheep_new,limit=1] s_temp1 4
+scoreboard players set @e[tag=sheep_new,limit=1] s_temp1 3
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_temp7 /= @s s_temp1
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_vy = @s s_temp7
 
