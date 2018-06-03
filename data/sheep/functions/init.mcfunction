@@ -6,6 +6,7 @@ scoreboard objectives add s_fan_num dummy 玩家扇子次数
 scoreboard objectives add s_energy dummy 玩家能量
 scoreboard objectives add s_max_energy dummy 玩家最大能量
 scoreboard objectives add s_class dummy 玩家类型
+scoreboard objectives add s_id dummy 玩家id
 
 scoreboard objectives add s_flying_time dummy 羊飞行时间
 scoreboard objectives add s_blow_time dummy 羊落地后爆炸时间

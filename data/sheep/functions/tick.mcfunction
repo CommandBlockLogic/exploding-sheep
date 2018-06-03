@@ -32,6 +32,12 @@ scoreboard players add @a[scores={s_fan_cd=10..}] s_fan_num 1
 scoreboard players set @a[scores={s_fan_cd=10..}] s_fan_cd 0
 
 
+# player id
+scoreboard players add @a s_id 0
+execute as @a[scores={s_id=0},limit=1] run scoreboard players add s_id_max s_id 1
+execute as @a[scores={s_id=0},limit=1] store result score @s s_id run scoreboard players get s_id_max s_id
+
+
 # sub
 function sheep:blow/tick
 function sheep:fan/tick
