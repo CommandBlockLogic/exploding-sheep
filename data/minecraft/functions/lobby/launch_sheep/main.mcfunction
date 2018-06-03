@@ -10,7 +10,7 @@ execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ facing entity @a[tag=
 execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ ~ 0
 
 # summon marker
-execute as @e[tag=sheep_new,limit=1] at @s run summon minecraft:area_effect_cloud ^ ^ ^1 {Tags:["sheep_mark"]}
+execute as @e[tag=sheep_new,limit=1] at @s run summon minecraft:area_effect_cloud ^ ^ ^0.8 {Tags:["sheep_mark"]}
 
 
 
