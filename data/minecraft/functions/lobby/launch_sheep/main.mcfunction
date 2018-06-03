@@ -1,10 +1,10 @@
 # lobby/launch_sheep/main
 
 # tag target player
-execute positioned -166 10 -127 run tag @a[sort=random,distance=..15] add system_lobby_target
+execute positioned -193 16 -175 run tag @a[sort=random,distance=..55] add system_lobby_target
 
 # summon sheep
-execute positioned -166 10 -127 run function sheep:launch/type/normal
+execute positioned -193 16 -175 run function sheep:launch/type/normal
 # turn the sheep's face
 execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ facing entity @a[tag=system_lobby_target,limit=1]
 execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ ~ 0
