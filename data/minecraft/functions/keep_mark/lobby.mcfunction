@@ -23,5 +23,5 @@ summon minecraft:area_effect_cloud -165 9 -126 {Duration:9999999,Tags:["system_c
 
 
 # 选队伍提示
-summon minecraft:area_effect_cloud -160 10 -120 {Duration:9999999,Tags:["system_lobby_mark","system_lobby_mark_hint","system_lobby_mark_join_red"],CustomName:"[\"将小羊丢到这里加入§c红队§r\"]"}
+summon minecraft:area_effect_cloud -161 10 -120 {Duration:9999999,Tags:["system_lobby_mark","system_lobby_mark_hint","system_lobby_mark_join_red"],CustomName:"[\"将小羊丢到这里加入§c红队§r\"]"}
 summon minecraft:area_effect_cloud -173 10 -117 {Duration:9999999,Tags:["system_lobby_mark","system_lobby_mark_hint","system_lobby_mark_join_blue"],CustomName:"[\"将小羊丢到这里加入§9蓝队§r\"]"}
