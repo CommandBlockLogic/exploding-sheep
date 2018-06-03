@@ -56,5 +56,3 @@ scoreboard players operation @s s_temp1 += @s s_temp3
 scoreboard players operation @s s_temp1 /= @s s_temp2
 # 返回s_temp7
 scoreboard players operation @s s_temp7 = @s s_temp1
-
-tellraw @a [{"score":{"name":"@s","objective":"s_temp7"}}]
