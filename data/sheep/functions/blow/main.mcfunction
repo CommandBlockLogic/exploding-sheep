@@ -47,8 +47,8 @@ scoreboard players operation @s s_temp2 += @s s_temp1
 
 scoreboard players add system_red_score system 0
 scoreboard players add system_blue_score system 0
-execute as @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_red] run scoreboard players operation system_red_score system+= @s s_temp2
-execute as @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_blue] run scoreboard players operation system_blue_score system+= @s s_temp2
+execute as @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_red] run scoreboard players operation system_red_score system += @s s_temp2
+execute as @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_blue] run scoreboard players operation system_blue_score system += @s s_temp2
 
 # kill sheep
 tag @s remove sheep_temp
