@@ -5,8 +5,12 @@ function lobby/change_class
 # enter game
 function lobby/enter_game
 # check end
-execute if score 红队 system_info matches 500.. run function get_score/red_win
-execute if score 蓝队 system_info matches 500.. run function get_score/blue_win
+execute if score system_red_score system matches 500.. run function get_score/red_win
+execute if score system_blue_score system matches 500.. run function get_score/blue_win
+
+# display score
+execute store result score 红队 sidebar_score run scoreboard players get system_red_score system
+execute store result score 蓝队 sidebar_score run scoreboard players get system_blue_score system
 
 # summon blocks
 scoreboard players add @e[tag=system_core_mark] system_time 1
