@@ -11,35 +11,13 @@ effect give @a[scores={food=..19}] minecraft:saturation 1 0 true
 
 function lobby/tick
 
+# game mode
+scoreboard players add game_status system 0
+execute if score game_status system matches 0 run function free/tick
+execute if score game_status system matches 2 run function death_match/tick
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# summon blocks
-scoreboard players add @e[tag=system_core_mark] system_time 1
-execute at @e[tag=system_core_mark_red,scores={system_time=400..}] run fill ~-1 ~ ~-2 ~1 ~ ~2 minecraft:red_concrete_powder keep
-execute at @e[tag=system_core_mark_red,scores={system_time=400..}] run fill ~-2 ~ ~-1 ~2 ~ ~1 minecraft:red_concrete_powder keep
-execute at @e[tag=system_core_mark_blue,scores={system_time=400..}] run fill ~-1 ~ ~-2 ~1 ~ ~2 minecraft:blue_concrete_powder keep
-execute at @e[tag=system_core_mark_blue,scores={system_time=400..}] run fill ~-2 ~ ~-1 ~2 ~ ~1 minecraft:blue_concrete_powder keep
-scoreboard players set @e[scores={system_time=400..}] system_time 0
 
 # kill abnormal falling block
 execute as @e[type=falling_block] at @s unless block ~ ~-1 ~ #minecraft:under_sand run kill @s
