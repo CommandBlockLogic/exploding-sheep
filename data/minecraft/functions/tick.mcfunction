@@ -14,7 +14,8 @@ function lobby/tick
 # game mode
 scoreboard players add game_status system 0
 execute if score game_status system matches 0 run function free/tick
-execute if score game_status system matches 2 run function death_match/tick
+execute if score game_status system matches 1 run function death_match/tick
+execute if score game_status system matches 2 run function get_score/tick
 
 
 

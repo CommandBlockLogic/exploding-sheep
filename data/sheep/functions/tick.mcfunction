@@ -25,12 +25,6 @@ scoreboard players remove @a[scores={s_launch=1..,s_fan_num=1..},nbt={SelectedIt
 scoreboard players set @a[scores={s_launch=1..}] s_launch 0
 
 
-# fan cd
-scoreboard players add @a s_fan_num 0
-scoreboard players add @a[scores={s_fan_num=..1}] s_fan_cd 1
-scoreboard players add @a[scores={s_fan_cd=10..}] s_fan_num 1
-scoreboard players set @a[scores={s_fan_cd=10..}] s_fan_cd 0
-
 
 # player id
 scoreboard players add @a s_id 0
