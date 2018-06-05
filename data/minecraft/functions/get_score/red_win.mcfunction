@@ -1,8 +1,8 @@
 # get_score/red_win
 
 
-title @a times 10 60 10
-title @a title ["红队胜利!"]
+title @a times 10 200 10
+title @a title {"text":"红队胜利!","color":"red"}
 
 
 function ending/main
