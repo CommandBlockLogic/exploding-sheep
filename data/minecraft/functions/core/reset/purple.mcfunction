@@ -1,0 +1,5 @@
+# core/reset/purple
+
+execute as @e[tag=system_core_mark_purple] run fill ~-2 ~-10 ~-2 ~2 ~ ~2 minecraft:air replace minecraft:purple_concrete_powder
+execute at @e[tag=system_core_mark_purple] run fill ~-1 ~ ~-2 ~1 ~10 ~2 minecraft:purple_concrete_powder keep
+execute at @e[tag=system_core_mark_purple] run fill ~-2 ~ ~-1 ~2 ~10 ~1 minecraft:purple_concrete_powder keep
