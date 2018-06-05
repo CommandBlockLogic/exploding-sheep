@@ -9,8 +9,17 @@ execute if score system_red_score system matches 500.. run function get_score/re
 execute if score system_blue_score system matches 500.. run function get_score/blue_win
 
 # display score
-execute store result score 红队 sidebar_score run scoreboard players get system_red_score system
-execute store result score 蓝队 sidebar_score run scoreboard players get system_blue_score system
+scoreboard players add 红队 sidebar_score 0
+scoreboard players add 蓝队 sidebar_score 0
+execute if score system_red_score system matches 1.. run scoreboard players operation 红队 sidebar_score += system_red_score system
+execute if score system_blue_score system matches 1.. run scoreboard players operation 蓝队 sidebar_score += system_blue_score system
+execute if score system_red_score system matches 1.. run title @a[team=blue] actionbar ["水晶正在遭受攻击!"]
+execute if score system_blue_score system matches 1.. run title @a[team=red] actionbar ["水晶正在遭受攻击!"]
+execute if score system_red_score system matches 1.. run scoreboard players set system_red_score system 0
+execute if score system_blue_score system matches 1.. run scoreboard players set system_blue_score system 0
+
+
+
 
 # summon blocks
 scoreboard players add @e[tag=system_core_mark] system_time 1
