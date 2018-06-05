@@ -1,10 +1,8 @@
 # get_score/blue_win
 
-# change flag
-scoreboard players set game_status system 0
 
 title @a times 10 60 10
-title @a title ["红队胜利!"]
-tp @a -166 9 -118
+title @a title ["蓝队胜利!"]
 
-scoreboard objectives setdisplay sidebar
+
+function ending/main
