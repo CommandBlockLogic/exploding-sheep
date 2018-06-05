@@ -6,6 +6,9 @@ function lobby/change_class
 function lobby/change_team
 # enter game
 function lobby/enter_game
+# effect
+function lobby/effect
+
 
 # summon blocks
 scoreboard players add @e[tag=system_core_mark] system_time 1
