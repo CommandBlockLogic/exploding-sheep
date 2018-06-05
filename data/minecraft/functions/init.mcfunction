@@ -15,6 +15,7 @@ scoreboard objectives add system_info dummy 系统信息
 scoreboard objectives add system dummy 系统状态
 
 scoreboard objectives add food food 饱食度
+scoreboard objectives add health health 血量
 scoreboard objectives add death deathCount 玩家死亡次数
 
 team add red
@@ -22,3 +23,6 @@ team add blue
 
 team option red color red
 team option blue color blue
+team option red friendlyfire false
+team option blue friendlyfire false
+scoreboard objectives setdisplay list health
