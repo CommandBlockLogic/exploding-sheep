@@ -36,8 +36,8 @@ execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_red] store
 scoreboard players operation @s s_temp2 += @s s_temp1
 execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_red] store result score @s s_temp1 run fill ~-1 ~-1 ~ ~1 ~1 ~ minecraft:air replace minecraft:blue_concrete_powder
 scoreboard players operation @s s_temp2 += @s s_temp1
-scoreboard players set @s s_temp1 0
 
+scoreboard players set @s s_temp1 0
 execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_blue] store result score @s s_temp1 run fill ~-1 ~ ~-1 ~1 ~ ~1 minecraft:air replace minecraft:red_concrete_powder
 scoreboard players operation @s s_temp2 += @s s_temp1
 execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_blue] store result score @s s_temp1 run fill ~ ~-1 ~-1 ~ ~1 ~1 minecraft:air replace minecraft:red_concrete_powder
@@ -45,10 +45,16 @@ scoreboard players operation @s s_temp2 += @s s_temp1
 execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_blue] store result score @s s_temp1 run fill ~-1 ~-1 ~ ~1 ~1 ~ minecraft:air replace minecraft:red_concrete_powder
 scoreboard players operation @s s_temp2 += @s s_temp1
 
-scoreboard players add system_red_score system 0
-scoreboard players add system_blue_score system 0
-execute as @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_red] run scoreboard players operation system_red_score system += @s s_temp2
-execute as @s[tag=!sheep_type_web,tag=!sheep_type_heal,tag=sheep_team_blue] run scoreboard players operation system_blue_score system += @s s_temp2
+scoreboard players set @s s_temp1 0
+execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal] store result score @s s_temp1 run fill ~-1 ~ ~-1 ~1 ~ ~1 minecraft:air replace minecraft:purple_concrete_powder
+scoreboard players operation @s s_temp2 += @s s_temp1
+execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal] store result score @s s_temp1 run fill ~ ~-1 ~-1 ~ ~1 ~1 minecraft:air replace minecraft:purple_concrete_powder
+scoreboard players operation @s s_temp2 += @s s_temp1
+execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal] store result score @s s_temp1 run fill ~-1 ~-1 ~ ~1 ~1 ~ minecraft:air replace minecraft:purple_concrete_powder
+scoreboard players operation @s s_temp2 += @s s_temp1
+
+scoreboard players add @e[tag=system_core_mark,sort=nearest,limit=1] core_destory 0
+execute as @s[tag=!sheep_type_web,tag=!sheep_type_heal] run scoreboard players operation @e[tag=system_core_mark,sort=nearest,limit=1] core_destory += @s s_temp2
 
 # kill sheep
 tag @s remove sheep_temp
