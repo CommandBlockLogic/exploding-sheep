@@ -9,6 +9,7 @@ tag @s add sheep_fanning
 # tag sheeps which will be fanned and player
 execute positioned ^ ^ ^4.33 run tag @e[tag=sheep_sheep,tag=!sheep_fanned,distance=..4.33] add sheep_fanned
 execute positioned ^ ^ ^4.33 as @a[distance=..4.33,tag=!sheep_fanning] at @s anchored eyes run function sheep:fan/player
+execute positioned ^ ^ ^4.33 as @e[distance=..4.33,type=skeleton,tag=!sheep_fanning] at @s anchored eyes run function sheep:fan/player
 
 # save wind direction
 # summon marker
