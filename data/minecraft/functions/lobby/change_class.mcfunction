@@ -9,7 +9,7 @@ execute at @e[tag=system_class_mark_white] as @a[distance=..0.3] unless score @s
 execute at @e[tag=system_class_mark_white] as @a[distance=..0.3] unless score @s s_class matches 1 run scoreboard players set @s s_class 1
 execute at @e[tag=system_class_mark_gray] as @a[distance=..0.3] unless score @s s_class matches 2 run tellraw @s [">> 切换至 §7笨重§r 系"]
 execute at @e[tag=system_class_mark_gray] as @a[distance=..0.3] unless score @s s_class matches 2 run scoreboard players set @s s_class 2
-execute at @e[tag=system_class_mark_blue] as @a[distance=..0.3] unless score @s s_class matches 3 run tellraw @s [">> 切换至 §9失重§r 系"]
+execute at @e[tag=system_class_mark_blue] as @a[distance=..0.3] unless score @s s_class matches 3 run tellraw @s [">> 切换至 §e失重§r 系"]
 execute at @e[tag=system_class_mark_blue] as @a[distance=..0.3] unless score @s s_class matches 3 run scoreboard players set @s s_class 3
 execute at @e[tag=system_class_mark_red] as @a[distance=..0.3] unless score @s s_class matches 4 run tellraw @s [">> 切换至 §c瞬发§r 系"]
 execute at @e[tag=system_class_mark_red] as @a[distance=..0.3] unless score @s s_class matches 4 run scoreboard players set @s s_class 4
