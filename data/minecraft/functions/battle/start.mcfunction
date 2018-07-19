@@ -1,7 +1,7 @@
 # battle/start
 
 # change flag
-scoreboard players set game_status system 2
+scoreboard players set game_status system 3
 
 # tp
 tp @a[team=blue] -36 15 -40 -90 0
