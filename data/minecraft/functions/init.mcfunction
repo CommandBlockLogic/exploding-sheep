@@ -11,11 +11,14 @@ time set 6000
 function sheep:init
 
 scoreboard objectives add system_time dummy ["系统时间"]
+scoreboard objectives add system_temp1 dummy ["系统临时1"]
+scoreboard objectives add system_temp2 dummy ["系统临时2"]
 scoreboard objectives add system dummy ["系统状态"]
 scoreboard objectives add sidebar_score dummy ["分数"]
 
 scoreboard objectives add core_destory dummy ["暂存被破坏方块数"]
 scoreboard objectives add destory_id dummy ["破坏者id"]
+scoreboard objectives add tower_status dummy ["水晶状态1紫2蓝3红4软5硬"]
 
 scoreboard objectives add food food ["饱食度"]
 scoreboard objectives add health health ["血量"]

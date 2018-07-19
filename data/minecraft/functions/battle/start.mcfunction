@@ -30,4 +30,8 @@ scoreboard players set system_blue_score system 276
 scoreboard objectives modify sidebar_score displayname ["剩余水晶数"]
 scoreboard objectives setdisplay sidebar sidebar_score
 
-scoreboard players set system_time system -30
+scoreboard players set system_home_time system -30
+scoreboard players set system_corner_time system -30
+
+scoreboard players set @e[tag=system_core_mark_small] tower_status 1
+scoreboard players set @e[tag=system_core_mark_big] tower_status 4
