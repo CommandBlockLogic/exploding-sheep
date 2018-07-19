@@ -6,3 +6,5 @@ function lobby/launch_sheep/tick
 function lobby/effect
 
 
+# pve
+function lobby/pve/mini_boss
