@@ -54,7 +54,9 @@ execute at @s[tag=!sheep_type_web,tag=!sheep_type_heal] store result score @s s_
 scoreboard players operation @s s_temp2 += @s s_temp1
 
 scoreboard players add @e[tag=system_core_mark,sort=nearest,limit=1] core_destory 0
-execute as @s[tag=!sheep_type_web,tag=!sheep_type_heal] run scoreboard players operation @e[tag=system_core_mark,sort=nearest,limit=1] core_destory += @s s_temp2
+scoreboard players add @e[tag=system_core_mark,sort=nearest,limit=1] destory_id 0
+execute as @s[tag=!sheep_type_web,tag=!sheep_type_heal,scores={s_temp2=1..}] run scoreboard players operation @e[tag=system_core_mark,sort=nearest,limit=1] core_destory += @s s_temp2
+execute as @s[tag=!sheep_type_web,tag=!sheep_type_heal,scores={s_temp2=1..}] run scoreboard players operation @e[tag=system_core_mark,sort=nearest,limit=1] destory_id = @s s_thrower_id
 
 # kill sheep
 tag @s remove sheep_temp

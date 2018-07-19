@@ -20,19 +20,20 @@
 	* 20 death
 * 2
 	* get score
-	* 500 to win
+	* 5mins, higher score
 * 3
 	* clear all powder
 
 
 # todo list
 
-* 积分模式按时间看分数
+
 * 加大招和充能
 * 洞穴大厅加pve
 
 
 ## done
 
+* 积分模式按时间看分数
 * 自家柱子加速能量回复
 * 自由模式加返回大厅道具
