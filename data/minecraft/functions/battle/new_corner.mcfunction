@@ -35,15 +35,15 @@ execute as @e[tag=system_core_mark_small,scores={tower_status=2}] run scoreboard
 execute as @e[tag=system_core_mark_small,scores={tower_status=3}] run scoreboard players add @e[tag=tower] system_temp2 1
 # 1 重开恢复 2 加速恢复
 # 1 加速恢复失效 2 无法恢复
-execute if entity @a[tag=destroyer,limit=1,team=red] if score @s system_temp2 matches 1 run tellraw @a [">> ",{"text":"红队"，"color":"red"},"主水晶开始缓慢恢复."]
-execute if entity @a[tag=destroyer,limit=1,team=red] if score @s system_temp2 matches 2 run tellraw @a [">> ",{"text":"红队"，"color":"red"},"主水晶开始加速恢复."]
-execute if entity @a[tag=destroyer,limit=1,team=red] if score @s system_temp1 matches 1 run tellraw @a [">> ",{"text":"蓝队"，"color":"blue"},"主水晶降为缓慢恢复."]
-execute if entity @a[tag=destroyer,limit=1,team=red] if score @s system_temp1 matches 0 run tellraw @a [">> ",{"text":"蓝队"，"color":"blue"},"主水晶停止恢复了."]
+execute if entity @a[tag=destroyer,limit=1,team=red] if score @s system_temp2 matches 1 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶开始缓慢恢复."]
+execute if entity @a[tag=destroyer,limit=1,team=red] if score @s system_temp2 matches 2 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶开始加速恢复."]
+execute if entity @a[tag=destroyer,limit=1,team=red] if score @s system_temp1 matches 1 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶降为缓慢恢复."]
+execute if entity @a[tag=destroyer,limit=1,team=red] if score @s system_temp1 matches 0 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶停止恢复了."]
 
-execute if entity @a[tag=destroyer,limit=1,team=blue] if score @s system_temp1 matches 1 run tellraw @a [">> ",{"text":"蓝队"，"color":"blue"},"主水晶开始缓慢恢复."]
-execute if entity @a[tag=destroyer,limit=1,team=blue] if score @s system_temp1 matches 2 run tellraw @a [">> ",{"text":"蓝队"，"color":"blue"},"主水晶开始加速恢复."]
-execute if entity @a[tag=destroyer,limit=1,team=blue] if score @s system_temp2 matches 1 run tellraw @a [">> ",{"text":"红队"，"color":"red"},"主水晶降为缓慢恢复."]
-execute if entity @a[tag=destroyer,limit=1,team=blue] if score @s system_temp2 matches 0 run tellraw @a [">> ",{"text":"红队"，"color":"red"},"主水晶停止恢复了."]
+execute if entity @a[tag=destroyer,limit=1,team=blue] if score @s system_temp1 matches 1 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶开始缓慢恢复."]
+execute if entity @a[tag=destroyer,limit=1,team=blue] if score @s system_temp1 matches 2 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶开始加速恢复."]
+execute if entity @a[tag=destroyer,limit=1,team=blue] if score @s system_temp2 matches 1 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶降为缓慢恢复."]
+execute if entity @a[tag=destroyer,limit=1,team=blue] if score @s system_temp2 matches 0 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶停止恢复了."]
 
 
 
