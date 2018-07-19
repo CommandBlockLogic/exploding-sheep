@@ -20,6 +20,8 @@ scoreboard objectives add food food ["饱食度"]
 scoreboard objectives add health health ["血量"]
 scoreboard objectives add death deathCount ["玩家死亡次数"]
 
+scoreboard objectives add drop_brick minecraft.dropped:minecraft.stone_bricks ["回城指示"]
+
 team add red
 team add blue
 
