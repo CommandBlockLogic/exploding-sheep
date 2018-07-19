@@ -25,6 +25,6 @@ team add blue
 
 team modify red color red
 team modify blue color blue
-team modify red friendlyfire false
-team modify blue friendlyfire false
+team modify red friendlyFire false
+team modify blue friendlyFire false
 scoreboard objectives setdisplay list health
