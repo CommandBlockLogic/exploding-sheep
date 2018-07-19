@@ -16,8 +16,8 @@ function core/recover/blue
 
 
 # check end
-execute if score system_red_score system matches 500.. run function get_score/red_win
-execute if score system_blue_score system matches 500.. run function get_score/blue_win
+execute if score system_red_score system matches 300.. run function get_score/red_win
+execute if score system_blue_score system matches 300.. run function get_score/blue_win
 
 # cal score
 scoreboard players add system_red_score system 0
