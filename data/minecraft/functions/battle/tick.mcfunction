@@ -7,6 +7,13 @@ function lobby/enter_game
 # effect
 function lobby/effect
 
+# summon core
+execute if score system_home_time system matches -60 function core/clear/all
+execute if score system_home_time system matches -60 function core/generate/home
+execute if score system_home_time system matches -60 function core/generate/corner
+
+
+
 
 # check end
 execute if score system_red_score system matches ..0 run function get_score/blue_win
