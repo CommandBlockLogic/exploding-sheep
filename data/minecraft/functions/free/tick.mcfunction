@@ -12,8 +12,8 @@ function lobby/effect
 
 # summon blocks
 scoreboard players add @e[tag=system_core_mark] system_time 1
-execute as @e[tag=system_core_mark_red,scores={system_time=400..}] run function core/slice/blue
-execute as @e[tag=system_core_mark_blue,scores={system_time=400..}] run function core/slice/red
+execute as @e[tag=system_core_mark_red,scores={system_time=400..}] run function core/slice/red
+execute as @e[tag=system_core_mark_blue,scores={system_time=400..}] run function core/slice/blue
 execute as @e[tag=system_core_mark_purple,scores={system_time=400..}] run function core/slice/purple
 scoreboard players set @e[tag=system_core_mark,scores={system_time=400..}] system_time 0
 
