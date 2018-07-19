@@ -16,8 +16,21 @@ function core/recover/blue
 
 
 # check end
-execute if score system_red_score system matches 300.. run function get_score/red_win
-execute if score system_blue_score system matches 300.. run function get_score/blue_win
+execute if score system_game_time system matches ..0 if score system_red_score system > system_blue_score system run function get_score/red_win
+execute if score system_game_time system matches ..0 if score system_red_score system < system_blue_score system run function get_score/blue_win
+execute if score system_game_time system matches ..0 if score system_red_score system = system_blue_score system run function get_score/draw
+
+
+# cal time
+scoreboard players remove system_game_time system 1
+# display time
+execute store result bossbar minecraft:score_time value run scoreboard players get system_game_time system
+scoreboard players operation system_second system = system_game_time system
+scoreboard players operation system_second system /= system_twenty system
+scoreboard players operation system_minute system /= system_sixty system
+scoreboard players operation system_second system %= system_sixty system
+bossbar set minecraft:score_time name ["剩余时间   ",{"score":{"name":"system_minute","objective":"system"}},":",{"score":{"name":"system_second","objective":"system"}}]
+
 
 # cal score
 scoreboard players add system_red_score system 0
