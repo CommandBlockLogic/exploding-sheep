@@ -27,6 +27,7 @@ scoreboard players remove system_game_time system 1
 execute store result bossbar minecraft:score_time value run scoreboard players get system_game_time system
 scoreboard players operation system_second system = system_game_time system
 scoreboard players operation system_second system /= system_twenty system
+scoreboard players operation system_minute system = system_second system
 scoreboard players operation system_minute system /= system_sixty system
 scoreboard players operation system_second system %= system_sixty system
 bossbar set minecraft:score_time name ["剩余时间   ",{"score":{"name":"system_minute","objective":"system"}},":",{"score":{"name":"system_second","objective":"system"}}]
