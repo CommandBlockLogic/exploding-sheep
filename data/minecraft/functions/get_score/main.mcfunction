@@ -1,6 +1,8 @@
 # get_score/main
 
 # add player num
+scoreboard players set player_count_red system 0
+scoreboard players set player_count_blue system 0
 execute as @a[team=red] run scoreboard players add player_count_red system 1
 execute as @a[team=blue] run scoreboard players add player_count_blue system 1
 
