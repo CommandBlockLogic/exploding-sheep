@@ -8,9 +8,9 @@ function lobby/enter_game
 function lobby/effect
 
 # summon core
-execute if score system_home_time system matches -60 function core/clear/all
-execute if score system_home_time system matches -60 function core/generate/home
-execute if score system_home_time system matches -60 function core/generate/corner
+execute if score system_home_time system matches -60 run function core/clear/all
+execute if score system_home_time system matches -60 run function core/generate/home
+execute if score system_home_time system matches -60 run function core/generate/corner
 
 
 
