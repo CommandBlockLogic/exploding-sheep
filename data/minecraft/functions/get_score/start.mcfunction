@@ -17,4 +17,6 @@ function core/generate/home
 
 scoreboard players set 红队 sidebar_score 0
 scoreboard players set 蓝队 sidebar_score 0
+scoreboard players set system_red_score system 0
+scoreboard players set system_blue_score system 0
 scoreboard objectives setdisplay sidebar sidebar_score
