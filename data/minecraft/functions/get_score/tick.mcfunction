@@ -30,7 +30,8 @@ scoreboard players operation system_second system /= system_twenty system
 scoreboard players operation system_minute system = system_second system
 scoreboard players operation system_minute system /= system_sixty system
 scoreboard players operation system_second system %= system_sixty system
-bossbar set minecraft:score_time name ["剩余时间   ",{"score":{"name":"system_minute","objective":"system"}},":",{"score":{"name":"system_second","objective":"system"}}]
+execute if system_second system matches 0..9 run bossbar set minecraft:score_time name ["剩余时间   ",{"score":{"name":"system_minute","objective":"system"}},":0",{"score":{"name":"system_second","objective":"system"}}]
+execute unless system_second system matches 0..9 run bossbar set minecraft:score_time name ["剩余时间   ",{"score":{"name":"system_minute","objective":"system"}},":",{"score":{"name":"system_second","objective":"system"}}]
 
 
 # cal score
