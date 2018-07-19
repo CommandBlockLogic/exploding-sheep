@@ -11,6 +11,10 @@ tp @a[team=red] 40 14 34 100 0
 title @a times 10 50 10
 title @a title ["先得500分者胜利!"]
 
+# core
+function core/clear/all
+function core/generate/home
+
 scoreboard players set 红队 sidebar_score 0
 scoreboard players set 蓝队 sidebar_score 0
 scoreboard objectives setdisplay sidebar sidebar_score
