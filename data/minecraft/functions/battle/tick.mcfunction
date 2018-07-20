@@ -11,8 +11,8 @@ function lobby/effect
 execute if score system_home_time system matches -60 run function core/clear/all
 execute if score system_home_time system matches -60 run function core/generate/home
 execute if score system_home_time system matches -60 run function core/generate/corner
-execute if score system_home_time system matches -60 scoreboard players set @e[tag=system_core_mark_small] tower_status 1
-execute if score system_home_time system matches -60 scoreboard players set @e[tag=system_core_mark_big] tower_status 10
+execute if score system_home_time system matches -60 run scoreboard players set @e[tag=system_core_mark_small] tower_status 1
+execute if score system_home_time system matches -60 run scoreboard players set @e[tag=system_core_mark_big] tower_status 10
 
 
 
