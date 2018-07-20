@@ -22,14 +22,9 @@ scoreboard players set 蓝队 sidebar_score 0
 scoreboard players set system_red_score system 276
 scoreboard players set system_blue_score system 276
 
-scoreboard objectives modify sidebar_score displayname ["剩余水晶数"]
-scoreboard objectives setdisplay sidebar sidebar_score
-
 scoreboard players set system_home_time system -80
 scoreboard players set system_corner_time system -80
 
-scoreboard players set @e[tag=system_core_mark_small] tower_status 1
-scoreboard players set @e[tag=system_core_mark_big] tower_status 10
 
 # bossbar
 bossbar add minecraft:red_score ["红队主水晶状态: ",{"text":"完好","color":"red"}]
