@@ -12,3 +12,48 @@ execute as @e[type=falling_block] run scoreboard players add @e[tag=system_core_
 # generate new tower and hint
 execute as @e[tag=system_core_mark_small,scores={system_temp2=..0}] run function battle/new_corner
 
+# display
+scoreboard players reset * sidebar_red
+scoreboard players reset * sidebar_blue
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=47..}] run scoreboard players set 左:§d紫§r_§9完好§r sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=23..46}] run scoreboard players set 左:§d紫§r_§b缺损§r sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=..22}] run scoreboard players set 左:§d紫§r_§7残破§r sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=47..}] run scoreboard players set 右:§d紫§r_§9完好§r sidebar_blue 2
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=23..46}] run scoreboard players set 右:§d紫§r_§b缺损§r sidebar_blue 2
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=..22}] run scoreboard players set 右:§d紫§r_§7残破§r sidebar_blue 2
+
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=47..}] run scoreboard players set 左:§9蓝§r_§9完好§r sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=23..46}] run scoreboard players set 左:§9蓝§r_§b缺损§r sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=..22}] run scoreboard players set 左:§9蓝§r_§7残破§r sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=47..}] run scoreboard players set 右:§9蓝§r_§9完好§r sidebar_blue 2
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=23..46}] run scoreboard players set 右:§9蓝§r_§b缺损§r sidebar_blue 2
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=..22}] run scoreboard players set 右:§9蓝§r_§7残破§r sidebar_blue 2
+
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=47..}] run scoreboard players set 左:§c红§r_§9完好§r sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=23..46}] run scoreboard players set 左:§c红§r_§b缺损§r sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=..22}] run scoreboard players set 左:§c红§r_§7残破§r sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=47..}] run scoreboard players set 右:§c红§r_§9完好§r sidebar_blue 2
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=23..46}] run scoreboard players set 右:§c红§r_§b缺损§r sidebar_blue 2
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=..22}] run scoreboard players set 右:§c红§r_§7残破§r sidebar_blue 2
+
+
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=47..}] run scoreboard players set 左:§d紫§r_§9完好§r sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=23..46}] run scoreboard players set 左:§d紫§r_§b缺损§r sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=..22}] run scoreboard players set 左:§d紫§r_§7残破§r sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=47..}] run scoreboard players set 右:§d紫§r_§9完好§r sidebar_red 2
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=23..46}] run scoreboard players set 右:§d紫§r_§b缺损§r sidebar_red 2
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=..22}] run scoreboard players set 右:§d紫§r_§7残破§r sidebar_red 2
+
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=47..}] run scoreboard players set 左:§9蓝§r_§9完好§r sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=23..46}] run scoreboard players set 左:§9蓝§r_§b缺损§r sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=..22}] run scoreboard players set 左:§9蓝§r_§7残破§r sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=47..}] run scoreboard players set 右:§9蓝§r_§9完好§r sidebar_red 2
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=23..46}] run scoreboard players set 右:§9蓝§r_§b缺损§r sidebar_red 2
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=..22}] run scoreboard players set 右:§9蓝§r_§7残破§r sidebar_red 2
+
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=47..}] run scoreboard players set 左:§c红§r_§9完好§r sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=23..46}] run scoreboard players set 左:§c红§r_§b缺损§r sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=..22}] run scoreboard players set 左:§c红§r_§7残破§r sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=47..}] run scoreboard players set 右:§c红§r_§9完好§r sidebar_red 2
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=23..46}] run scoreboard players set 右:§c红§r_§b缺损§r sidebar_red 2
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=..22}] run scoreboard players set 右:§c红§r_§7残破§r sidebar_red 2

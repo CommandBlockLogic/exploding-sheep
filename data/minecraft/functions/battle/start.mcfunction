@@ -29,4 +29,24 @@ scoreboard players set system_home_time system -80
 scoreboard players set system_corner_time system -80
 
 scoreboard players set @e[tag=system_core_mark_small] tower_status 1
-scoreboard players set @e[tag=system_core_mark_big] tower_status 4
+
+# bossbar
+bossbar add minecraft:red_score ["红队主水晶状态: ",{"text":"完好","color":"red"}]
+bossbar set minecraft:red_score max 276
+bossbar set minecraft:red_score value 276
+bossbar set minecraft:red_score style notched_12
+bossbar set minecraft:red_score color red
+bossbar set minecraft:red_score players @a
+
+bossbar add minecraft:blue_score ["蓝队主水晶状态: ",{"text":"完好","color":"blue"}]
+bossbar set minecraft:blue_score max 276
+bossbar set minecraft:blue_score value 276
+bossbar set minecraft:blue_score style notched_12
+bossbar set minecraft:blue_score color blue
+bossbar set minecraft:blue_score players @a
+
+# sidebar
+scoreboard players reset * sidebar_red
+scoreboard players reset * sidebar_blue
+scoreboard objectives setdisplay sidebar.team.red sidebar_red
+scoreboard objectives setdisplay sidebar.team.blue sidebar_blue
