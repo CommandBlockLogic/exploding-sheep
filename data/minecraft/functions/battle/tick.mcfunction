@@ -11,8 +11,8 @@ function lobby/effect
 execute if score system_home_time system matches -60 run function core/clear/all
 execute if score system_home_time system matches -60 run function core/generate/home
 execute if score system_home_time system matches -60 run function core/generate/corner
-#execute if score system_home_time system matches -60 run scoreboard players set @e[tag=system_core_mark_small] tower_status 1
-#execute if score system_home_time system matches -60 run scoreboard players set @e[tag=system_core_mark_big] tower_status 10
+execute if score system_home_time system matches -60 run scoreboard players set @e[tag=system_core_mark_small] tower_status 1
+execute if score system_home_time system matches -60 run scoreboard players set @e[tag=system_core_mark_big] tower_status 10
 
 
 
@@ -22,11 +22,11 @@ execute if score system_red_score system matches ..0 run function get_score/blue
 execute if score system_blue_score system matches ..0 run function get_score/red_win
 
 # cal & display home blocks
-execute unless entity @e[type=falling_block] scoreboard players add system_home_time system 1
+execute unless entity @e[type=falling_block] run scoreboard players add system_home_time system 1
 execute if score system_home_time system matches 20.. run function battle/calculate_home_blocks
 execute if score system_home_time system matches 20.. run scoreboard players set system_home_time system 0
 # cal & display corner blocks
-execute unless entity @e[type=falling_block] scoreboard players add system_corner_time system 1
+execute unless entity @e[type=falling_block] run scoreboard players add system_corner_time system 1
 execute if score system_corner_time system matches 20.. run function battle/calculate_corner_blocks
 execute if score system_corner_time system matches 20.. run scoreboard players set system_corner_time system 0
 
