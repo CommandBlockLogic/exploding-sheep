@@ -29,6 +29,7 @@ scoreboard players set system_home_time system -80
 scoreboard players set system_corner_time system -80
 
 scoreboard players set @e[tag=system_core_mark_small] tower_status 1
+scoreboard players set @e[tag=system_core_mark_big] tower_status 10
 
 # bossbar
 bossbar add minecraft:red_score ["红队主水晶状态: ",{"text":"完好","color":"red"}]

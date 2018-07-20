@@ -23,3 +23,18 @@ execute if score system_blue_score system matches 217.. run bossbar set minecraf
 execute if score system_blue_score system matches 148..216 run bossbar set minecraft:blue_score name ["",{"text":"蓝队","color":"blue"},"主水晶状态: ",{"text":"残缺","color":"aqua"}]
 execute if score system_blue_score system matches 79..147 run bossbar set minecraft:blue_score name ["",{"text":"蓝队","color":"blue"},"主水晶状态: ",{"text":"碎裂","color":"gray"}]
 execute if score system_blue_score system matches ..78 run bossbar set minecraft:blue_score name ["",{"text":"蓝队","color":"blue"},"主水晶状态: ",{"text":"渣渣","color":"dark_gray"}]
+
+# hint
+execute if score system_red_score system matches 148..216 if score @e[tag=system_core_mark_red] tower_status matches 10 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶残缺了. 已无法恢复至完好状态."]
+execute if score system_red_score system matches 148..216 if score @e[tag=system_core_mark_red] tower_status matches 10 run scoreboard players set @e[tag=system_core_mark_red] tower_status 11
+execute if score system_red_score system matches 79..147 if score @e[tag=system_core_mark_red] tower_status matches 11 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶碎裂了. 已无法恢复至残缺状态."]
+execute if score system_red_score system matches 79..147 if score @e[tag=system_core_mark_red] tower_status matches 11 run scoreboard players set @e[tag=system_core_mark_red] tower_status 12
+execute if score system_red_score system matches ..78 if score @e[tag=system_core_mark_red] tower_status matches 12 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶渣渣了. 已无法恢复至碎裂状态."]
+execute if score system_red_score system matches ..78 if score @e[tag=system_core_mark_red] tower_status matches 12 run scoreboard players set @e[tag=system_core_mark_red] tower_status 13
+
+execute if score system_blue_score system matches 148..216 if score @e[tag=system_core_mark_blue] tower_status matches 10 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶残缺了. 已无法恢复至完好状态."]
+execute if score system_blue_score system matches 148..216 if score @e[tag=system_core_mark_blue] tower_status matches 10 run scoreboard players set @e[tag=system_core_mark_blue] tower_status 11
+execute if score system_blue_score system matches 79..147 if score @e[tag=system_core_mark_blue] tower_status matches 11 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶碎裂了. 已无法恢复至残缺状态."]
+execute if score system_blue_score system matches 79..147 if score @e[tag=system_core_mark_blue] tower_status matches 11 run scoreboard players set @e[tag=system_core_mark_blue] tower_status 12
+execute if score system_blue_score system matches ..78 if score @e[tag=system_core_mark_blue] tower_status matches 12 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶渣渣了. 已无法恢复至碎裂状态."]
+execute if score system_blue_score system matches ..78 if score @e[tag=system_core_mark_blue] tower_status matches 12 run scoreboard players set @e[tag=system_core_mark_blue] tower_status 13

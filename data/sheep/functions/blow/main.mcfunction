@@ -17,7 +17,6 @@ execute if entity @s[tag=sheep_type_air] run summon minecraft:creeper ~ ~ ~ {Fus
 # [{"text":"匆忙的","color":"gray"},{"text":"小红羊","color":"red"}]
 
 
-execute if entity @s[tag=sheep_type_web] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark","sheep_web_mark_red"]}
 execute if entity @s[tag=sheep_type_web,tag=sheep_team_red] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark","sheep_web_mark_red"]}
 execute if entity @s[tag=sheep_type_web,tag=sheep_team_blue] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark","sheep_web_mark_blue"]}
 

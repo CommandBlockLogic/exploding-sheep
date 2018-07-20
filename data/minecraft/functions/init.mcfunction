@@ -21,7 +21,7 @@ scoreboard objectives add sidebar_blue dummy ["小水晶状态"]
 
 scoreboard objectives add core_destory dummy ["暂存被破坏方块数"]
 scoreboard objectives add destory_id dummy ["破坏者id"]
-scoreboard objectives add tower_status dummy ["水晶状态1紫2蓝3红"]
+scoreboard objectives add tower_status dummy ["水晶状态1紫2蓝3红10完好11破一点12破很多13完全破"]
 
 scoreboard objectives add food food ["饱食度"]
 scoreboard objectives add health health ["血量"]
