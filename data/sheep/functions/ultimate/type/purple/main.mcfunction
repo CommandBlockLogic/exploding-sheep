@@ -1,7 +1,6 @@
 # sheep:ultimate/type/purple/main
 
 scoreboard players set @s s_ulti_dura 1
-scoreboard players set @s s_ulti_time 200
 
 # summon center and follower
 execute at @s run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_ulti_purple","sheep_ulti_purple_mark","sheep_new"]}
