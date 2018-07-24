@@ -1,8 +1,9 @@
 # sheep:ultimate/type/orange/tick
 
-# tag target player
-execute as @s[tag=sheep_team_red] at @s run tag @a[sort=random,distance=..20,limit=1,team=blue] add sheep_target
-execute as @s[tag=sheep_team_blue] at @s run tag @a[sort=random,distance=..20,limit=1,team=red] add sheep_target
+# tag target player or sk
+execute at @s run tag @e[type=skeleton,sort=random,distance=..20,limit=1,team=blue] add sheep_target
+execute unless entity @e[tag=sheep_target] as @s[tag=sheep_team_red] at @s run tag @a[sort=random,distance=..20,limit=1,team=blue] add sheep_target
+execute unless entity @e[tag=sheep_target] as @s[tag=sheep_team_blue] at @s run tag @a[sort=random,distance=..20,limit=1,team=red] add sheep_target
 
 # summon sheep
 execute at @s run function sheep:launch/type/orange_small
