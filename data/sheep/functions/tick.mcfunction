@@ -93,4 +93,3 @@ scoreboard players set @e[tag=sheep_type_orange,scores={s_blow_time=1..,s_ulti_i
 team join red @e[tag=sheep_type_orange,tag=sheep_team_red,team=]
 team join blue @e[tag=sheep_type_orange,tag=sheep_team_blue,team=]
 effect give @e[tag=sheep_type_orange,scores={s_blow_time=1..}] minecraft:glowing 1 0 true
-execute as @e[tag=sheep_type_orange,scores={s_blow_time=1..},nbt=!{Age:0}] run data merge entity @s {Age:0}
