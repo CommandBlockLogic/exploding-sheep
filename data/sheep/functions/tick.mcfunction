@@ -82,7 +82,8 @@ effect give @e[tag=sheep_type_lime,scores={s_blow_time=1..}] minecraft:glowing 1
 
 # orange
 scoreboard players add @e[tag=sheep_type_orange,scores={s_blow_time=1..}] s_ulti_inter 1
-execute as @e[tag=sheep_type_orange,scores={s_blow_time=1..,s_ulti_inter=10}] at @s run function sheep:ultimate/type/orange/tick
+execute as @e[tag=sheep_type_orange,tag=sheep_team_red,scores={s_blow_time=1..,s_ulti_inter=30}] at @s if entity @a[distance=..10,team=blue] run function sheep:ultimate/type/orange/tick
+execute as @e[tag=sheep_type_orange,tag=sheep_team_blue,scores={s_blow_time=1..,s_ulti_inter=30}] at @s if entity @a[distance=..10,team=blue] run function sheep:ultimate/type/orange/tick
 scoreboard players set @e[tag=sheep_type_orange,scores={s_blow_time=1..,s_ulti_inter=10..}] s_ulti_inter 0
 team join red @e[tag=sheep_type_orange,tag=sheep_team_red,team=]
 team join blue @e[tag=sheep_type_orange,tag=sheep_team_blue,team=]

@@ -1,8 +1,8 @@
 # sheep:ultimate/type/orange/tick
 
 # tag target player
-execute as @s[tag=sheep_team_red] at @s run tag @a[sort=random,distance=..0,limit=1,team=blue] add sheep_target
-execute as @s[tag=sheep_team_blue] at @s run tag @a[sort=random,distance=..0,limit=1,team=red] add sheep_target
+execute as @s[tag=sheep_team_red] at @s run tag @a[sort=random,distance=..10,limit=1,team=blue] add sheep_target
+execute as @s[tag=sheep_team_blue] at @s run tag @a[sort=random,distance=..10,limit=1,team=red] add sheep_target
 
 # summon sheep
 execute at @s run function sheep:launch/type/normal
