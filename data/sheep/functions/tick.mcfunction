@@ -47,6 +47,7 @@ function sheep:fan/tick
 function sheep:reload/tick
 execute as @e[tag=sheep_sheep] run function sheep:fly/tick
 function sheep:change_color
+function sheep:ultimate/tick
 
 
 
