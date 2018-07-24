@@ -19,6 +19,8 @@ execute if score game_status system matches 2 run function get_score/tick
 execute if score game_status system matches 3 run function battle/tick
 execute if score game_status system matches 8964 run function ending/tick
 
+execute if score game_status system matches 1.. run gamemode spectator @a[team=]
+
 
 
 
