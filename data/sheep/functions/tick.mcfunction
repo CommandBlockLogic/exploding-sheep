@@ -20,8 +20,8 @@ execute as @a[scores={s_launch=1..,s_energy=120..,s_launch_type=6},nbt={Selected
 scoreboard players remove @a[scores={s_launch=1..,s_energy=120..,s_launch_type=6},nbt={SelectedItemSlot:0}] s_energy 120
 
 # shoot ultimate
-execute as @a[scores={s_launch=1..,s_launch_type=101},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/gray/main
-execute as @a[scores={s_launch=1..,s_launch_type=102},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/purple/main
+execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/gray/main
+execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/purple/main
 execute as @a[scores={s_launch=1..,s_launch_type=103..104},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 
 # fan

@@ -5,6 +5,7 @@ execute as @e[tag=sheep_ulti] run function sheep:ultimate/sheep_ulti
 
 # player
 scoreboard players add @a s_ulti_time 0
+scoreboard players add @a s_ulti_dura 0
 scoreboard players add @a[scores={s_ulti_time=1..}] s_ulti_time 1
 execute as @a[scores={s_ulti_time=60}] run function sheep:ultimate/player_ready
 

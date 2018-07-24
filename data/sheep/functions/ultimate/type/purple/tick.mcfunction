@@ -2,8 +2,6 @@
 
 # scores
 scoreboard players add @s s_ulti_dura 1
-scoreboard players add @s s_ulti_inter 1
-scoreboard players set @s[scores={s_ulti_inter=10..}] s_ulti_inter 0
 scoreboard players set @s s_energy 0
 
 # find center and sheep
@@ -26,4 +24,4 @@ tag @e[tag=sheep_temp] remove sheep_temp
 tag @s remove player_temp
 
 # end
-execute as @s[scores={s_ulti_dura=1000..}] run function sheep:ultimate/end
+execute as @s[scores={s_ulti_dura=200..}] run function sheep:ultimate/end
