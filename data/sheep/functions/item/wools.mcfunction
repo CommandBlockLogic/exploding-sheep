@@ -6,6 +6,10 @@ replaceitem entity @s[scores={s_class=3}] hotbar.8 minecraft:yellow_wool{item_nu
 replaceitem entity @s[scores={s_class=4}] hotbar.8 minecraft:red_wool{item_num:3,wool_type:4,display:{Name:"[{\"text\":\"你拥有了 \",\"color\":\"white\",\"italic\":false},{\"text\":\"小红羊\",\"color\":\"red\"}]"}}
 replaceitem entity @s[scores={s_class=5}] hotbar.8 minecraft:light_blue_wool{item_num:3,wool_type:5,display:{Name:"[{\"text\":\"你拥有了 \",\"color\":\"white\",\"italic\":false},{\"text\":\"小冰羊\",\"color\":\"aqua\"}]"}}
 replaceitem entity @s[scores={s_class=6}] hotbar.8 minecraft:pink_wool{item_num:3,wool_type:6,display:{Name:"[{\"text\":\"你拥有了 \",\"color\":\"white\",\"italic\":false},{\"text\":\"小粉羊\",\"color\":\"light_purple\"}]"}}
+replaceitem entity @s[scores={s_class=101}] hotbar.8 minecraft:pink_wool{item_num:3,wool_type:101,display:{Name:"[{\"text\":\"你拥有了 \",\"color\":\"white\",\"italic\":false},{\"text\":\"超级灰羊\",\"color\":\"light_purple\"}]"}}
+replaceitem entity @s[scores={s_class=102}] hotbar.8 minecraft:pink_wool{item_num:3,wool_type:102,display:{Name:"[{\"text\":\"你拥有了 \",\"color\":\"white\",\"italic\":false},{\"text\":\"超级紫羊\",\"color\":\"light_purple\"}]"}}
+replaceitem entity @s[scores={s_class=103}] hotbar.8 minecraft:pink_wool{item_num:3,wool_type:103,display:{Name:"[{\"text\":\"你拥有了 \",\"color\":\"white\",\"italic\":false},{\"text\":\"超级橙羊\",\"color\":\"light_purple\"}]"}}
+replaceitem entity @s[scores={s_class=104}] hotbar.8 minecraft:pink_wool{item_num:3,wool_type:104,display:{Name:"[{\"text\":\"你拥有了 \",\"color\":\"white\",\"italic\":false},{\"text\":\"超级绿羊\",\"color\":\"light_purple\"}]"}}
 
 replaceitem entity @s[scores={s_launch_type=1}] weapon.offhand minecraft:white_wool{item_num:4,wool_type:1}
 replaceitem entity @s[scores={s_launch_type=2}] weapon.offhand minecraft:gray_wool{item_num:4,wool_type:2}
@@ -13,3 +17,7 @@ replaceitem entity @s[scores={s_launch_type=3}] weapon.offhand minecraft:yellow_
 replaceitem entity @s[scores={s_launch_type=4}] weapon.offhand minecraft:red_wool{item_num:4,wool_type:4}
 replaceitem entity @s[scores={s_launch_type=5}] weapon.offhand minecraft:light_blue_wool{item_num:4,wool_type:5}
 replaceitem entity @s[scores={s_launch_type=6}] weapon.offhand minecraft:pink_wool{item_num:4,wool_type:6}
+replaceitem entity @s[scores={s_launch_type=101}] weapon.offhand minecraft:pink_wool{item_num:4,wool_type:101}
+replaceitem entity @s[scores={s_launch_type=102}] weapon.offhand minecraft:pink_wool{item_num:4,wool_type:102}
+replaceitem entity @s[scores={s_launch_type=103}] weapon.offhand minecraft:pink_wool{item_num:4,wool_type:103}
+replaceitem entity @s[scores={s_launch_type=104}] weapon.offhand minecraft:pink_wool{item_num:4,wool_type:104}

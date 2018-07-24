@@ -13,6 +13,7 @@ execute if entity @s[scores={s_launch_type=3}] run function sheep:launch/type/fa
 execute if entity @s[scores={s_launch_type=4}] run function sheep:launch/type/air
 execute if entity @s[scores={s_launch_type=5}] run function sheep:launch/type/web
 execute if entity @s[scores={s_launch_type=6}] run function sheep:launch/type/heal
+execute if entity @s[scores={s_launch_type=101}] run function sheep:launch/type/gray
 
 # turn the sheep's face
 execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ facing entity @e[tag=sheep_mark,limit=1]
