@@ -32,7 +32,7 @@ scoreboard players remove @a[scores={s_launch=1..,s_fan_num=1..},nbt={SelectedIt
 
 
 # ultimate sheep
-execute as @a[scores={s_ulti_launch=1..,s_ulti_energy=2001..},nbt={SelectedItemSlot:0}] at @s run function sheep:ultimate/main
+execute as @a[scores={s_ulti_launch=1..,s_ulti_energy=4001..},nbt={SelectedItemSlot:0}] at @s run function sheep:ultimate/main
 
 # clear
 scoreboard players set @a[scores={s_launch=1..}] s_launch 0
@@ -45,8 +45,6 @@ scoreboard players add @a s_id 0
 execute as @a[scores={s_id=0},limit=1] run scoreboard players add s_id_max s_id 1
 execute as @a[scores={s_id=0},limit=1] store result score @s s_id run scoreboard players get s_id_max s_id
 
-# ultimate sheep energy
-scoreboard players add @a s_ulti_energy 1
 
 
 # sub
