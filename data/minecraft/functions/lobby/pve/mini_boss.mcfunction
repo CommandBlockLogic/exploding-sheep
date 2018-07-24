@@ -1,1 +1,0 @@
-execute as @a run say 测试
