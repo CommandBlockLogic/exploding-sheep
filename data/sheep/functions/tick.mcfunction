@@ -78,6 +78,7 @@ kill @e[scores={s_web_time=101..}]
 # lime
 execute as @e[tag=sheep_type_lime,tag=sheep_team_red,scores={s_blow_time=1..}] at @s run effect give @a[team=red,distance=..5] minecraft:regeneration 3 1 true
 execute as @e[tag=sheep_type_lime,tag=sheep_team_blue,scores={s_blow_time=1..}] at @s run effect give @a[team=blue,distance=..5] minecraft:regeneration 3 1 true
+execute as @e[tag=sheep_type_lime,tag=!sheep_team_blue,tag=!sheep_team_red,scores={s_blow_time=1..}] at @s run effect give @a[distance=..5] minecraft:regeneration 3 1 true
 execute as @e[tag=sheep_type_lime,scores={s_blow_time=1..}] at @s run particle minecraft:happy_villager ~ ~1 ~ 2 1 2 1 1
 team join red @e[tag=sheep_type_lime,tag=sheep_team_red,team=]
 team join blue @e[tag=sheep_type_lime,tag=sheep_team_blue,team=]
