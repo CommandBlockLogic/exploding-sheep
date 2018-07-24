@@ -13,3 +13,6 @@ scoreboard players set @e[tag=sheep_new,limit=1] s_ulti_sheep 1
 
 # remove mark
 tag @e[tag=sheep_new] remove sheep_new
+
+# hint
+tellraw @s [">> 你的终极羊羊正在准备..."]

@@ -39,8 +39,10 @@ scoreboard players add system_red_score system 0
 scoreboard players add system_blue_score system 0
 execute as @e[tag=system_core_mark_blue,scores={core_destory=1..}] run scoreboard players operation system_red_score system += @s core_destory
 execute as @e[tag=system_core_mark_red,scores={core_destory=1..}] run scoreboard players operation system_blue_score system += @s core_destory
-execute as @e[tag=system_core_mark_blue,scores={core_destory=1..}] run title @a[team=blue] actionbar ["您的水晶正在遭受攻击!"]
-execute as @e[tag=system_core_mark_red,scores={core_destory=1..}] run title @a[team=red] actionbar ["您的水晶正在遭受攻击!"]
+execute as @e[tag=system_core_mark_blue,scores={core_destory=1..}] run title @a[team=blue] subtitle ["您的水晶正在遭受攻击!"]
+execute as @e[tag=system_core_mark_blue,scores={core_destory=1..}] run title @a[team=blue] title [""]
+execute as @e[tag=system_core_mark_red,scores={core_destory=1..}] run title @a[team=red] subtitle ["您的水晶正在遭受攻击!"]
+execute as @e[tag=system_core_mark_red,scores={core_destory=1..}] run title @a[team=red] title [""]
 scoreboard players set @e[tag=system_core_mark,scores={core_destory=1..}] core_destory 0
 # display score
 execute store result score 红队 sidebar_score run scoreboard players get system_red_score system
