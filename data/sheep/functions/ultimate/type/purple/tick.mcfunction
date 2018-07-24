@@ -18,16 +18,17 @@ execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_mark] at @s rotated ~240 ~ ru
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_mark] at @s rotated ~8 ~ run tp @s ~ ~ ~ ~ ~
 
 # kill
-execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=sheep_team_red] at @s run tag @a[distance=..1,team=blue] add player_harmed
-execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=sheep_team_blue] at @s run tag @a[distance=..1,team=red] add player_harmed
-execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s] at @s run tag @e[type=minecraft:skeleton,distance=..1] add sk_harmed
+execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=sheep_team_red] at @s run tag @a[distance=..1,team=!red] add player_harmed
+execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=sheep_team_blue] at @s run tag @a[distance=..1,team=!blue] add player_harmed
+execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=!sheep_team_blue,tag=!sheep_team_red] at @s run tag @a[distance=..1] add player_harmed
+execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s] at @s run tag @e[type=minecraft:skeleton,distance=..1] add ms_harmed
 execute as @a[tag=player_harmed] store result score @s s_thrower_id run scoreboard players get @e[tag=sheep_temp,limit=1] s_thrower_id
 execute as @a[tag=player_harmed] store result score @s s_sheep_type run scoreboard players get @e[tag=sheep_temp,limit=1] s_sheep_type
 scoreboard players set @a[tag=player_harmed] s_kill_time 0
 effect give @a[tag=player_harmed] minecraft:instant_damage 1 0
-effect give @e[tag=sk_harmed] minecraft:instant_health 1 0
+effect give @e[tag=ms_harmed] minecraft:instant_health 1 0
 tag @a[tag=player_harmed] remove player_harmed
-tag @a[tag=sk_harmed] remove sk_harmed
+tag @a[tag=ms_harmed] remove ms_harmed
 
 
 # clear
