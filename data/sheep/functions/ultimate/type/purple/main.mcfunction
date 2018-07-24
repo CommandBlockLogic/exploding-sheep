@@ -12,5 +12,11 @@ execute at @s run summon minecraft:sheep ~ ~ ~ {Tags:["sheep_ulti_purple","sheep
 tag @s add player_temp
 execute as @e[tag=sheep_new] store result score @s s_thrower_id run scoreboard players get @a[tag=player_temp,limit=1] s_id
 tag @s remove player_temp
+scoreboard players set @e[tag=sheep_new] s_sheep_type 102
+
+# add player's team
+execute if entity @s[team=red] run tag @e[tag=sheep_new] add sheep_team_red
+execute if entity @s[team=blue] run tag @e[tag=sheep_new] add sheep_team_blue
+
 
 tag @e[tag=sheep_new] remove sheep_new
