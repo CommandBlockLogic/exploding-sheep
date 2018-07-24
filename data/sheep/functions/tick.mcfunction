@@ -22,7 +22,7 @@ scoreboard players remove @a[scores={s_launch=1..,s_energy=120..,s_launch_type=6
 # shoot ultimate
 execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/gray/main
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/purple/main
-execute as @a[scores={s_launch=1..,s_launch_type=103..104},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+execute as @a[scores={s_launch=1..,s_launch_type=201..},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 
 # fan
 execute as @a[scores={s_launch=1..,s_fan_num=1..},nbt={SelectedItemSlot:1}] at @s anchored eyes positioned ^ ^ ^ run function sheep:fan/main
@@ -68,3 +68,18 @@ execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_red] at @s run effect g
 execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_blue] at @s run effect give @a[distance=..3,team=red] minecraft:slowness 1 2 false
 kill @e[scores={s_web_time=101..}]
 
+
+# lime
+execute as @e[tag=sheep_type_lime,tag=sheep_team_red,scores={s_blow_time=1..}] at @s run effect give @a[team=red,distance=5] minecraft:regeneration 2 2 true
+execute as @e[tag=sheep_type_lime,tag=sheep_team_blue,scores={s_blow_time=1..}] at @s run effect give @a[team=blue,distance=5] minecraft:regeneration 2 2 true
+execute as @e[tag=sheep_type_lime,scores={s_blow_time=1..}] at @s run particle minecraft:heart ~ ~1 ~ 2 1 2 1 1
+team join red @e[tag=sheep_type_lime,tag=sheep_team_red,team=]
+team join blue @e[tag=sheep_type_lime,tag=sheep_team_blue,team=]
+effect give @e[tag=sheep_type_lime,scores={s_blow_time=1..}] minecraft:glowing 1 0 true
+
+
+
+# orange
+team join red @e[tag=sheep_type_orange,tag=sheep_team_red,team=]
+team join blue @e[tag=sheep_type_orange,tag=sheep_team_blue,team=]
+effect give @e[tag=sheep_type_orange,scores={s_blow_time=1..}] minecraft:glowing 1 0 true

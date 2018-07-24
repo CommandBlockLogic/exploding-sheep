@@ -16,8 +16,8 @@ execute as @a[scores={s_class=5},tag=sheep_change_c] run scoreboard players set 
 execute as @a[scores={s_class=6},tag=sheep_change_c] run scoreboard players set @s s_launch_type 6
 execute as @a[scores={s_class=101},tag=sheep_change_c] run scoreboard players set @s s_launch_type 101
 execute as @a[scores={s_class=102},tag=sheep_change_c] run scoreboard players set @s s_launch_type 102
-execute as @a[scores={s_class=103},tag=sheep_change_c] run scoreboard players set @s s_launch_type 103
-execute as @a[scores={s_class=104},tag=sheep_change_c] run scoreboard players set @s s_launch_type 104
+execute as @a[scores={s_class=201},tag=sheep_change_c] run scoreboard players set @s s_launch_type 201
+execute as @a[scores={s_class=202},tag=sheep_change_c] run scoreboard players set @s s_launch_type 202
 
 # clear
 tag @a[tag=sheep_change_n] remove sheep_change_n

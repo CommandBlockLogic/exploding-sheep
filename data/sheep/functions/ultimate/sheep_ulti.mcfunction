@@ -5,8 +5,8 @@
 # change_color
 data merge entity @s[scores={s_ulti_sheep=1}] {Color:8}
 data merge entity @s[scores={s_ulti_sheep=4}] {Color:10}
-data merge entity @s[scores={s_ulti_sheep=7}] {Color:3}
-data merge entity @s[scores={s_ulti_sheep=11}] {Color:4}
+data merge entity @s[scores={s_ulti_sheep=7}] {Color:1}
+data merge entity @s[scores={s_ulti_sheep=11}] {Color:5}
 
 # add score
 scoreboard players add @s s_ulti_sheep 1
