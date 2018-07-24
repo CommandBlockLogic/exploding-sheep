@@ -63,6 +63,12 @@ scoreboard players add @e[tag=system_core_mark,sort=nearest,limit=1] destory_id 
 execute as @s[tag=!sheep_attr_no_damage,scores={s_temp2=1..}] run scoreboard players operation @e[tag=system_core_mark,sort=nearest,limit=1] core_destory += @s s_temp2
 execute as @s[tag=!sheep_attr_no_damage,scores={s_temp2=1..}] run scoreboard players operation @e[tag=system_core_mark,sort=nearest,limit=1] destory_id = @s s_thrower_id
 
+# add ultimate energy
+scoreboard players set @s s_temp1 60
+scoreboard players operation @s s_temp2 *= @s s_temp1
+execute if entity @s[tag=!sheep_attr_no_damage,scores={s_temp2=1..}] as @a if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run scoreboard players operation @s s_ulti_energy += @e[tag=sheep_temp,limit=1] s_temp2
+
+
 # kill sheep
 tag @s remove sheep_temp
 tp @s 0 -100 0
