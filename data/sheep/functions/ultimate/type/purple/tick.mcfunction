@@ -15,7 +15,7 @@ execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s] at @s rotated as @a[tag=pl
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_mark] at @s rotated ~ ~ run tp @e[tag=sheep_temp,tag=sheep_ulti_purple_s1,limit=1] ^ ^ ^2
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_mark] at @s rotated ~120 ~ run tp @e[tag=sheep_temp,tag=sheep_ulti_purple_s2,limit=1] ^ ^ ^2
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_mark] at @s rotated ~240 ~ run tp @e[tag=sheep_temp,tag=sheep_ulti_purple_s3,limit=1] ^ ^ ^2
-execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_mark] at @s rotated ~15 ~ run tp @s ~ ~ ~ ~ ~
+execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_mark] at @s rotated ~12 ~ run tp @s ~ ~ ~ ~ ~
 
 # kill
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=sheep_team_red] at @s run tag @a[distance=..1,team=blue] add player_harmed
