@@ -4,11 +4,12 @@
 execute at @s run tag @e[type=skeleton,sort=random,distance=..20,limit=1,team=blue] add sheep_target
 execute unless entity @e[tag=sheep_target] as @s[tag=sheep_team_red] at @s run tag @a[sort=random,distance=..20,limit=1,team=blue] add sheep_target
 execute unless entity @e[tag=sheep_target] as @s[tag=sheep_team_blue] at @s run tag @a[sort=random,distance=..20,limit=1,team=red] add sheep_target
+execute unless entity @e[tag=sheep_target] as @s[tag=!sheep_team_blue,tag=!sheep_team_red] at @s run tag @a[sort=random,distance=..20,limit=1] add sheep_target
 
 # summon sheep
 execute at @s run function sheep:launch/type/orange_small
 # turn the sheep's face
-execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ facing entity @a[tag=sheep_target,limit=1]
+execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ facing entity @e[tag=sheep_target,limit=1]
 execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ ~ 0
 
 # summon marker
@@ -36,10 +37,10 @@ execute store result score @e[tag=sheep_new,limit=1] s_vz run scoreboard players
 # cal distance
 execute as @e[tag=sheep_new,limit=1] store result score @s s_temp1 run data get entity @s Pos[0] 100
 execute as @e[tag=sheep_new,limit=1] store result score @s s_temp2 run data get entity @s Pos[2] 100
-execute as @a[tag=sheep_target,limit=1] store result score @s s_temp1 run data get entity @s Pos[0] 100
-execute as @a[tag=sheep_target,limit=1] store result score @s s_temp2 run data get entity @s Pos[2] 100
-scoreboard players operation @e[tag=sheep_new,limit=1] s_temp1 -= @a[tag=sheep_target,limit=1] s_temp1
-scoreboard players operation @e[tag=sheep_new,limit=1] s_temp2 -= @a[tag=sheep_target,limit=1] s_temp2
+execute as @e[tag=sheep_target,limit=1] store result score @s s_temp1 run data get entity @s Pos[0] 100
+execute as @e[tag=sheep_target,limit=1] store result score @s s_temp2 run data get entity @s Pos[2] 100
+scoreboard players operation @e[tag=sheep_new,limit=1] s_temp1 -= @e[tag=sheep_target,limit=1] s_temp1
+scoreboard players operation @e[tag=sheep_new,limit=1] s_temp2 -= @e[tag=sheep_target,limit=1] s_temp2
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_temp1 *= @s s_temp1
 execute as @e[tag=sheep_new,limit=1] run scoreboard players operation @s s_temp2 *= @s s_temp2
 scoreboard players set @e[tag=sheep_new,limit=1] s_temp7 0
@@ -86,4 +87,4 @@ scoreboard players set @e[tag=sheep_new] s_blow_time 0
 # kill marker and remove temp tag
 kill @e[tag=sheep_mark]
 tag @e[tag=sheep_new] remove sheep_new
-tag @a[tag=sheep_target] remove sheep_target
+tag @e[tag=sheep_target] remove sheep_target
