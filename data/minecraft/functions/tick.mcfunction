@@ -26,6 +26,8 @@ execute if score game_status system matches 8964 run function ending/tick
 execute as @e[type=falling_block] at @s unless block ~ ~-1 ~ #minecraft:under_sand run kill @s
 execute as @e[type=falling_block] at @s unless block ~ ~-0.7 ~ #minecraft:under_sand run kill @s
 execute as @e[type=falling_block] at @s unless block ~ ~-0.3 ~ #minecraft:under_sand run kill @s
+execute as @e[type=falling_block] at @s unless block ~ ~-0.1 ~ #minecraft:under_sand run kill @s
+execute as @e[type=falling_block] at @s unless block ~ ~ ~ #minecraft:under_sand run kill @s
 kill @e[type=item]
 
 
