@@ -17,7 +17,7 @@ execute store result score @s s_launch_type run scoreboard players get @s s_clas
 # change sheep
 tag @s add player_temp
 execute as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run scoreboard players set @s s_ulti_sheep 1000
-execute if score @s s_class matches 101 as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run data merge entity @s {Color:1}
+execute if score @s s_class matches 101 as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run data merge entity @s {Color:8}
 execute if score @s s_class matches 102 as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run data merge entity @s {Color:2}
 execute if score @s s_class matches 103 as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run data merge entity @s {Color:3}
 execute if score @s s_class matches 104 as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run data merge entity @s {Color:4}

@@ -9,4 +9,7 @@ scoreboard players set @s s_ulti_time 0
 tag @s add player_temp
 execute as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run tp @s ~ -1000 ~
 execute as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run kill @s
+execute as @e[tag=sheep_ulti_purple] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run tp @s ~ -1000 ~
+execute as @e[tag=sheep_ulti_purple] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run kill @s
+
 tag @a[tag=player_temp] remove player_temp
