@@ -5,7 +5,7 @@ execute as @s[tag=sheep_team_red] at @s run tag @a[sort=random,distance=..20,lim
 execute as @s[tag=sheep_team_blue] at @s run tag @a[sort=random,distance=..20,limit=1,team=red] add sheep_target
 
 # summon sheep
-execute at @s run function sheep:launch/type/normal
+execute at @s run function sheep:launch/type/orange_small
 # turn the sheep's face
 execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ facing entity @a[tag=sheep_target,limit=1]
 execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ ~ 0

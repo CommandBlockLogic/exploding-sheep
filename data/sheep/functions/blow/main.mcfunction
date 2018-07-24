@@ -17,6 +17,8 @@ execute if entity @s[tag=sheep_type_air] run summon minecraft:creeper ~ ~ ~ {Fus
 # [{"text":"匆忙的","color":"gray"},{"text":"小红羊","color":"red"}]
 execute if entity @s[tag=sheep_type_gray] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"可爱的\",\"color\":\"gray\"},{\"text\":\"超灰羊\",\"color\":\"gray\"}]"}
 # [{"text":"可爱的","color":"gray"},{"text":"超灰羊","color":"gray"}]
+execute if entity @s[tag=sheep_type_orange_small] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"震惊的\",\"color\":\"gray\"},{\"text\":\"超橙羊\",\"color\":\"gold\"}]"}
+# [{"text":"震惊的","color":"gray"},{"text":"超橙羊","color":"gold"}]
 
 
 
