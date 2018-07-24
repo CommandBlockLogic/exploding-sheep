@@ -18,9 +18,9 @@ execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_mark] at @s rotated ~240 ~ ru
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_mark] at @s rotated ~15 ~ run tp @s ~ ~ ~ ~ ~
 
 # kill
-execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=sheep_team_red] at @s run tag @a[distance=..0.5,team=blue] add player_harmed
-execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=sheep_team_blue] at @s run tag @a[distance=..0.5,team=red] add player_harmed
-execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s] at @s run tag @e[type=skeleton,distance=..0.5] add sk_harmed
+execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=sheep_team_red] at @s run tag @a[distance=..1,team=blue] add player_harmed
+execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=sheep_team_blue] at @s run tag @a[distance=..1,team=red] add player_harmed
+execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s] at @s run tag @e[type=skeleton,distance=..1] add sk_harmed
 execute as @a[tag=player_harmed] store result score @s s_thrower_id run scoreboard players get @e[tag=sheep_temp,limit=1] s_thrower_id
 execute as @a[tag=player_harmed] store result score @s s_sheep_type run scoreboard players get @e[tag=sheep_temp,limit=1] s_sheep_type
 scoreboard players set @a[tag=player_harmed] s_kill_time 0
