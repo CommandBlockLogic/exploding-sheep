@@ -11,7 +11,7 @@ scoreboard players set @e[tag=sheep_type_air,scores={s_blow_time=1..9}] s_blow_t
 # speical sheep fast
 execute as @e[tag=sheep_type_fast,scores={s_flying_time=20..,s_blow_time=0}] at @s if entity @a[distance=..2] run scoreboard players set @s s_blow_time 1
 # no explode
-scoreboard players set @e[tag=sheep_attr_no_explode] s_blow_time 1
+scoreboard players set @e[tag=sheep_attr_no_explode,scores={s_blow_time=1..}] s_blow_time 1
 
 # animation
 execute as @e[scores={s_blow_time=2}] at @s run playsound minecraft:entity.creeper.primed hostile @a ~ ~ ~
