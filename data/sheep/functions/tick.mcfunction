@@ -72,6 +72,7 @@ execute as @e[scores={s_web_time=1..,s_temp1=1}] at @s run function sheep:effect
 execute as @e[scores={s_web_time=1..},tag=sheep_web_mark] at @s run effect give @e[distance=..3,type=!player] minecraft:slowness 1 2 true
 execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_red] at @s run effect give @a[distance=..3,team=blue] minecraft:slowness 1 2 false
 execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_blue] at @s run effect give @a[distance=..3,team=red] minecraft:slowness 1 2 false
+execute as @e[scores={s_web_time=1..},tag=sheep_web_mark,tag=!sheep_web_mark_blue,tag=!sheep_web_mark_red] at @s run effect give @a[distance=..3] minecraft:slowness 1 2 false
 kill @e[scores={s_web_time=101..}]
 
 
