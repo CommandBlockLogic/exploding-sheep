@@ -12,6 +12,7 @@ execute as @e[tag=sheep_ulti_purple] if score @s s_thrower_id = @a[tag=player_te
 
 
 # rotate
+execute at @s run tp @e[tag=sheep_temp,tag=sheep_ulti_purple_mark,limit=1] ~ ~0.5 ~
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s] at @s rotated as @a[tag=player_temp,limit=1] run tp @s ~ ~ ~ ~ ~
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_mark] at @s rotated ~ ~ run tp @e[tag=sheep_temp,tag=sheep_ulti_purple_s1,limit=1] ^ ^ ^2
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_mark] at @s rotated ~120 ~ run tp @e[tag=sheep_temp,tag=sheep_ulti_purple_s2,limit=1] ^ ^ ^2
