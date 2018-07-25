@@ -24,6 +24,11 @@ execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={Selecte
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/purple/main
 execute as @a[scores={s_launch=1..,s_launch_type=201..},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 execute as @a[scores={s_launch=1..,s_launch_type=201..},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/end
+# ultimate hint
+execute as @a[scores={s_launch=1..,s_launch_type=101},nbt={SelectedItemSlot:0}] run tellraw @a [">> ",{"selector":"@s"},"释放了"]
+execute as @a[scores={s_launch=1..,s_launch_type=102},nbt={SelectedItemSlot:0}] run 
+execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0}] run 
+execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0}] run 
 
 # fan
 execute as @a[scores={s_launch=1..,s_fan_num=1..},nbt={SelectedItemSlot:1}] at @s anchored eyes positioned ^ ^ ^ run function sheep:fan/main
