@@ -12,6 +12,7 @@ bossbar set minecraft:boss2 players
 bossbar set minecraft:boss3 players
 bossbar set minecraft:boss4 players
 
+<<<<<<< HEAD
 # 清除AS
 kill @e[tag=boss_1_summon_1]
 execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_2] at @s run fill ~ ~ ~ ~ ~1 ~ air replace cobweb
@@ -28,6 +29,8 @@ kill @e[tag=boss_2_summon_1]
 kill @e[tag=boss_2_skill_2]
 kill @e[tag=boss_2_skill_3]
 
+=======
+>>>>>>> 30127f8064995bf2df5ddc9a2efe9ac2d58ef0be
 
 # Boss复活百分比显示
 bossbar set minecraft:boss_cool players @a

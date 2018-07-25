@@ -10,8 +10,8 @@ execute as @a if score @s s_energy > @s s_max_energy store result score @s s_ene
 # fan cd
 scoreboard players add @a s_fan_num 0
 scoreboard players add @a[scores={s_fan_num=..1}] s_fan_cd 1
-scoreboard players add @a[scores={s_fan_cd=30..}] s_fan_num 1
-scoreboard players set @a[scores={s_fan_cd=30..}] s_fan_cd 0
+scoreboard players add @a[scores={s_fan_cd=15..}] s_fan_num 1
+scoreboard players set @a[scores={s_fan_cd=15..}] s_fan_cd 0
 
 # display
 function sheep:reload/display

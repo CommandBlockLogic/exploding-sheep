@@ -6,6 +6,8 @@ scoreboard players set game_status system 2
 # tp
 tp @a[team=blue] -36 15 -40 -90 0
 tp @a[team=red] 40 14 34 100 0
+tp @a[team=] 1 23 -1
+gamemode spectator @a[team=]
 
 # clear
 clear @a

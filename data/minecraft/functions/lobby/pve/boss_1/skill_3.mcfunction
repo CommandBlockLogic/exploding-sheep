@@ -2,8 +2,13 @@ scoreboard players set 技能冷却 boss_1_cool3 600
 scoreboard players add @e[tag=boss1] boss_1_cool3 1
 execute as @e[tag=boss1] if score @s boss_1_cool3 >= 技能冷却 boss_1_cool3 run tag @s add boss_1_skill_3
 scoreboard players set @e[tag=boss1,tag=boss_1_skill_3] boss_1_cool3 0
+<<<<<<< HEAD
 execute as @e[tag=boss1,tag=boss_1_skill_3] at @s run tag @p[distance=..16] add boss_1_skill_3_target
 execute as @e[tag=boss1,tag=boss_1_skill_3] at @s run tellraw @p[distance=..16] [{"text":">> ","color":"white"},{"text":"你被","color":"white"},{"selector":"@e[tag=boss1]"},{"text":"锁定了，快跑！","color":"white"}]
+=======
+execute as @e[tag=boss1,tag=boss_1_skill_3] at @s run tag @p[distance=..25] add boss_1_skill_3_target
+execute as @e[tag=boss1,tag=boss_1_skill_3] at @s run tellraw @p[distance=..25] [{"text":">> ","color":"white"},{"text":"你被","color":"white"},{"selector":"@e[tag=boss1]"},{"text":"锁定了，快跑！","color":"white"}]
+>>>>>>> 30127f8064995bf2df5ddc9a2efe9ac2d58ef0be
 execute if entity @e[tag=boss1,tag=boss_1_skill_3] unless entity @e[tag=boss_1_summon_3] as @a[tag=boss_1_skill_3_target] at @s run summon minecraft:armor_stand ^ ^ ^-0.5 {CustomName:"{\"text\":\"技能三召唤物\"}",Marker:1b,Invisible:1b,NoGravity:1b,Tags:["boss_1_summon_3"]}
 execute if entity @e[tag=boss1] if entity @e[tag=boss_1_summon_3] as @e[tag=boss1] at @s run tp @s ~ ~ ~ facing entity @e[tag=boss_1_summon_3,limit=1]
 execute if entity @e[tag=boss1] if entity @e[tag=boss_1_summon_3] as @e[tag=boss1] at @s run tp @s ^ ^ ^0.25
@@ -24,5 +29,8 @@ execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_3] if score @s boss_1
 execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_3] if score @s boss_1_cool3 >= 召唤物限时 boss_1_cool3 run tag @e[tag=boss1] remove boss_1_skill_3
 execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_3] if score @s boss_1_cool3 >= 召唤物限时 boss_1_cool3 run kill @s
 
+<<<<<<< HEAD
 execute unless entity @e[tag=boss1] run kill @e[tag=boss_1_summon_3]
 execute unless entity @e[tag=boss1] run tag @a remove boss_1_skill_3_target
+=======
+>>>>>>> 30127f8064995bf2df5ddc9a2efe9ac2d58ef0be
