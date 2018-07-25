@@ -19,7 +19,9 @@ execute as @a run function sheep:ultimate/end
 
 # title
 title @a times 10 50 10
-title @a title ["清除对方水晶以获取胜利!"]
+title @a title ["游戏开始!"]
+title @a subtitle ["清除对方水晶以获取胜利!"]
+tellraw @a [">> 占领地图两侧的",{"text":" 水晶柱 ","color":"light_purple"},"可为己方水晶恢复能量"]
 
 # score
 scoreboard players reset * sidebar_score
