@@ -25,10 +25,10 @@ execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={Selecte
 execute as @a[scores={s_launch=1..,s_launch_type=201..},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 execute as @a[scores={s_launch=1..,s_launch_type=201..},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/end
 # ultimate hint
-execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0}] run tellraw @a [">> ",{"selector":"@s"},"释放了",{"text":" 超级灰羊羊 ","color":"light_gray"}," 大家小心!"]
-execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0}] run tellraw @a [">> ",{"selector":"@s"},"释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 大家小心!"]
-execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0}] run tellraw @a [">> ",{"selector":"@s"},"释放了",{"text":" 超级橙羊羊 ","color":"gold"}," 大家小心!"]
-execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0}] run tellraw @a [">> ",{"selector":"@s"},"释放了",{"text":" 超级绿羊羊 ","color":"green"}," 大家小心!"]
+execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0}] run tellraw @a [">> ",{"selector":"@s"}," 释放了",{"text":" 超级灰羊羊 ","color":"gray"}," 大家小心!"]
+execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0}] run tellraw @a [">> ",{"selector":"@s"}," 释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 大家小心!"]
+execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0}] run tellraw @a [">> ",{"selector":"@s"}," 释放了",{"text":" 超级橙羊羊 ","color":"gold"}," 大家小心!"]
+execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0}] run tellraw @a [">> ",{"selector":"@s"}," 释放了",{"text":" 超级绿羊羊 ","color":"green"}," 大家小心!"]
 
 # fan
 execute as @a[scores={s_launch=1..,s_fan_num=1..},nbt={SelectedItemSlot:1}] at @s anchored eyes positioned ^ ^ ^ run function sheep:fan/main
