@@ -65,5 +65,5 @@ execute if score system_blue_score system matches 79..147 if score @e[tag=system
 execute if score system_blue_score system matches 79..147 if score @e[tag=system_core_mark_blue,limit=1] tower_status matches 11 run title @a subtitle ["已无法恢复至残缺状态"]
 execute if score system_blue_score system matches 79..147 if score @e[tag=system_core_mark_blue,limit=1] tower_status matches 11 run scoreboard players set @e[tag=system_core_mark_blue,limit=1] tower_status 12
 execute if score system_blue_score system matches ..78 if score @e[tag=system_core_mark_blue,limit=1] tower_status matches 12 run title @a title ["",{"text":"蓝队","color":"blue"},"主水晶渣渣了"]
-execute if score system_blue_score system matches ..78 if score @e[tag=system_core_mark_blue,limit=1] tower_status matches 12 run title @a subitle ["已无法恢复至碎裂状态"]
+execute if score system_blue_score system matches ..78 if score @e[tag=system_core_mark_blue,limit=1] tower_status matches 12 run title @a subtitle ["已无法恢复至碎裂状态"]
 execute if score system_blue_score system matches ..78 if score @e[tag=system_core_mark_blue,limit=1] tower_status matches 12 run scoreboard players set @e[tag=system_core_mark_blue,limit=1] tower_status 13

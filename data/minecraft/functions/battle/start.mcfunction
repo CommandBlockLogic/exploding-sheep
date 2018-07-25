@@ -41,6 +41,7 @@ bossbar set minecraft:red_score value 276
 bossbar set minecraft:red_score style notched_12
 bossbar set minecraft:red_score color red
 bossbar set minecraft:red_score players @a
+bossbar set minecraft:red_score visible true
 
 bossbar add minecraft:blue_score ["蓝队主水晶状态: ",{"text":"完好","color":"blue"}]
 bossbar set minecraft:blue_score max 276
@@ -48,6 +49,7 @@ bossbar set minecraft:blue_score value 276
 bossbar set minecraft:blue_score style notched_12
 bossbar set minecraft:blue_score color blue
 bossbar set minecraft:blue_score players @a
+bossbar set minecraft:blue_score visible true
 
 # sidebar
 scoreboard players reset * sidebar_red
