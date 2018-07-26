@@ -18,5 +18,8 @@ bossbar remove minecraft:red_score
 bossbar set minecraft:blue_score visible false
 bossbar remove minecraft:blue_score
 
+# clear team
+team empty blue
+team empty red
 
 function free/main

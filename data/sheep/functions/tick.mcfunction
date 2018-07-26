@@ -132,11 +132,11 @@ team join blue @e[tag=sheep_type_lime,tag=sheep_team_blue,team=]
 
 # orange
 scoreboard players add @e[tag=sheep_type_orange,scores={s_blow_time=1..}] s_ulti_inter 1
-execute as @e[tag=sheep_type_orange,tag=sheep_team_red,scores={s_blow_time=1..,s_ulti_inter=40}] at @s if entity @a[distance=..10,team=blue] run function sheep:ultimate/type/orange/tick
-execute as @e[tag=sheep_type_orange,tag=sheep_team_blue,scores={s_blow_time=1..,s_ulti_inter=40}] at @s if entity @a[distance=..10,team=red] run function sheep:ultimate/type/orange/tick
-execute as @e[tag=sheep_type_orange,tag=!sheep_team_blue,tag=!sheep_team_red,scores={s_blow_time=1..,s_ulti_inter=40}] at @s if entity @a[distance=..10] run function sheep:ultimate/type/orange/tick
-execute as @e[tag=sheep_type_orange,scores={s_blow_time=1..,s_ulti_inter=40}] at @s if entity @e[distance=..10,tag=monster] run function sheep:ultimate/type/orange/tick
-scoreboard players set @e[tag=sheep_type_orange,scores={s_blow_time=1..,s_ulti_inter=40..}] s_ulti_inter 0
+execute as @e[tag=sheep_type_orange,tag=sheep_team_red,scores={s_blow_time=1..,s_ulti_inter=30}] at @s if entity @a[distance=..10,team=blue] run function sheep:ultimate/type/orange/tick
+execute as @e[tag=sheep_type_orange,tag=sheep_team_blue,scores={s_blow_time=1..,s_ulti_inter=30}] at @s if entity @a[distance=..10,team=red] run function sheep:ultimate/type/orange/tick
+execute as @e[tag=sheep_type_orange,tag=!sheep_team_blue,tag=!sheep_team_red,scores={s_blow_time=1..,s_ulti_inter=30}] at @s if entity @a[distance=..10] run function sheep:ultimate/type/orange/tick
+execute as @e[tag=sheep_type_orange,scores={s_blow_time=1..,s_ulti_inter=30}] at @s if entity @e[distance=..10,tag=monster] run function sheep:ultimate/type/orange/tick
+scoreboard players set @e[tag=sheep_type_orange,scores={s_blow_time=1..,s_ulti_inter=30..}] s_ulti_inter 0
 
 team join red @e[tag=sheep_type_orange,tag=sheep_team_red,team=]
 team join blue @e[tag=sheep_type_orange,tag=sheep_team_blue,team=]
