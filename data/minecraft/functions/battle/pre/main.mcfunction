@@ -76,7 +76,7 @@ scoreboard players set 右:§d### sidebar_red 0
 
 
 # count down to start
-scoreboard players set system_start_countdown system 100
+scoreboard players set system_start_countdown system 160
 
 # title
 title @a times 0 160 10
