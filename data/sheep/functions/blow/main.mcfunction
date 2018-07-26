@@ -30,6 +30,9 @@ execute if entity @s[tag=sheep_type_heal,tag=sheep_team_red] run effect give @a[
 execute if entity @s[tag=sheep_type_heal,tag=sheep_team_blue] run effect give @a[distance=..3,team=blue] minecraft:instant_health 1 0 false
 # teleport
 execute if entity @s[tag=sheep_type_teleport] at @s as @a if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run tp @s ~ ~ ~ ~ ~
+execute if entity @s[tag=sheep_type_teleport] run playsound minecraft:entity.enderman.teleport ambient @a ~ ~ ~ 1 0.5
+execute if entity @s[tag=sheep_type_teleport] run particle minecraft:portal ~ ~ ~ 0 0 0 0.8 100
+execute if entity @s[tag=sheep_type_teleport] run particle minecraft:dust 0 0 0 2 ~ ~ ~ 0.5 1 0.5 0 100
 
 
 # explode blocks
