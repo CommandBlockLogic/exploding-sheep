@@ -14,45 +14,57 @@ execute as @e[tag=system_core_mark_small,scores={system_temp2=..0}] run function
 # display
 scoreboard players reset * sidebar_red
 scoreboard players reset * sidebar_blue
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=53..}] run scoreboard players set 左:§d### sidebar_blue 1
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=26..52}] run scoreboard players set 左:§d##- sidebar_blue 1
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=..25}] run scoreboard players set 左:§d#-- sidebar_blue 1
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=53..}] run scoreboard players set 右:§d### sidebar_blue 0
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=26..52}] run scoreboard players set 右:§d##- sidebar_blue 0
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=..25}] run scoreboard players set 右:§d#-- sidebar_blue 0
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=80..}] run scoreboard players set 左:§d### sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=53..79}] run scoreboard players set 左:§d##- sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=26..52}] run scoreboard players set 左:§d#-- sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=..25}] run scoreboard players set 左:§d--- sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=80..}] run scoreboard players set 右:§d### sidebar_blue 0
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=53..79}] run scoreboard players set 右:§d##- sidebar_blue 0
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=26..52}] run scoreboard players set 右:§d#-- sidebar_blue 0
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=..25}] run scoreboard players set 右:§d--- sidebar_blue 0
 
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=53..}] run scoreboard players set 左:§9### sidebar_blue 1
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=26..52}] run scoreboard players set 左:§9##- sidebar_blue 1
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=..25}] run scoreboard players set 左:§9#-- sidebar_blue 1
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=53..}] run scoreboard players set 右:§9### sidebar_blue 0
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=26..52}] run scoreboard players set 右:§9##- sidebar_blue 0
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=..25}] run scoreboard players set 右:§9#-- sidebar_blue 0
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=80}] run scoreboard players set 左:§9### sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=53..79}] run scoreboard players set 左:§9##- sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=26..52}] run scoreboard players set 左:§9#-- sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=..25}] run scoreboard players set 左:§9--- sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=80..}] run scoreboard players set 右:§9### sidebar_blue 0
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=53..79}] run scoreboard players set 右:§9##- sidebar_blue 0
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=26..52}] run scoreboard players set 右:§9#-- sidebar_blue 0
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=..25}] run scoreboard players set 右:§9--- sidebar_blue 0
 
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=53..}] run scoreboard players set 左:§c### sidebar_blue 1
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=26..52}] run scoreboard players set 左:§c##- sidebar_blue 1
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=..25}] run scoreboard players set 左:§c#-- sidebar_blue 1
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=53..}] run scoreboard players set 右:§c### sidebar_blue 0
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=26..52}] run scoreboard players set 右:§c##- sidebar_blue 0
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=..25}] run scoreboard players set 右:§c#-- sidebar_blue 0
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=80..}] run scoreboard players set 左:§c### sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=53..79}] run scoreboard players set 左:§c##- sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=26..52}] run scoreboard players set 左:§c#-- sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=..25}] run scoreboard players set 左:§c--- sidebar_blue 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=80..}] run scoreboard players set 右:§c### sidebar_blue 0
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=53..79}] run scoreboard players set 右:§c##- sidebar_blue 0
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=26..52}] run scoreboard players set 右:§c#-- sidebar_blue 0
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=..25}] run scoreboard players set 右:§c--- sidebar_blue 0
 
 
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=53..}] run scoreboard players set 左:§d### sidebar_red 1
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=26..52}] run scoreboard players set 左:§d##- sidebar_red 1
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=..25}] run scoreboard players set 左:§d#-- sidebar_red 1
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=53..}] run scoreboard players set 右:§d### sidebar_red 0
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=26..52}] run scoreboard players set 右:§d##- sidebar_red 0
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=..25}] run scoreboard players set 右:§d#-- sidebar_red 0
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=80..}] run scoreboard players set 左:§d### sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=53..79}] run scoreboard players set 左:§d##- sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=26..52}] run scoreboard players set 左:§d#-- sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=1,system_temp2=..25}] run scoreboard players set 左:§d--- sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=80..}] run scoreboard players set 右:§d### sidebar_red 0
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=53..79}] run scoreboard players set 右:§d##- sidebar_red 0
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=26..52}] run scoreboard players set 右:§d#-- sidebar_red 0
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=1,system_temp2=..25}] run scoreboard players set 右:§d--- sidebar_red 0
 
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=53..}] run scoreboard players set 左:§9### sidebar_red 1
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=26..52}] run scoreboard players set 左:§9##- sidebar_red 1
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=..25}] run scoreboard players set 左:§9#-- sidebar_red 1
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=53..}] run scoreboard players set 右:§9### sidebar_red 0
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=26..52}] run scoreboard players set 右:§9##- sidebar_red 0
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=..25}] run scoreboard players set 右:§9#-- sidebar_red 0
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=80..}] run scoreboard players set 左:§9### sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=53..79}] run scoreboard players set 左:§9##- sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=26..52}] run scoreboard players set 左:§9#-- sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=2,system_temp2=..25}] run scoreboard players set 左:§9--- sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=80..}] run scoreboard players set 右:§9### sidebar_red 0
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=53..79}] run scoreboard players set 右:§9##- sidebar_red 0
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=26..52}] run scoreboard players set 右:§9#-- sidebar_red 0
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=2,system_temp2=..25}] run scoreboard players set 右:§9--- sidebar_red 0
 
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=53..}] run scoreboard players set 左:§c### sidebar_red 1
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=26..52}] run scoreboard players set 左:§c##- sidebar_red 1
-execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=..25}] run scoreboard players set 左:§c#-- sidebar_red 1
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=53..}] run scoreboard players set 右:§c### sidebar_red 0
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=26..52}] run scoreboard players set 右:§c##- sidebar_red 0
-execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=..25}] run scoreboard players set 右:§c#-- sidebar_red 0
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=80..}] run scoreboard players set 左:§c### sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=53..79}] run scoreboard players set 左:§c##- sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=26..52}] run scoreboard players set 左:§c#-- sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_sw,limit=1,scores={tower_status=3,system_temp2=..25}] run scoreboard players set 左:§c--- sidebar_red 1
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=80..}] run scoreboard players set 右:§c### sidebar_red 0
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=53..79}] run scoreboard players set 右:§c##- sidebar_red 0
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=26..52}] run scoreboard players set 右:§c#-- sidebar_red 0
+execute if entity @e[tag=system_core_mark_small_ne,limit=1,scores={tower_status=3,system_temp2=..25}] run scoreboard players set 右:§c--- sidebar_red 0
