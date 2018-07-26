@@ -9,7 +9,7 @@ execute at @e[tag=system_lobby_mark_enter] if score game_status system matches 0
 
 # first step tag and hint
 execute at @e[tag=system_lobby_mark_enter] as @a[distance=..0.3,tag=!player_enter_game,scores={death_time=1..}] run function lobby/enter_game_fail
-execute as @a[tag=player_enter_game] unless entity @e[tag=system_lobby_mark_enter,distance=..0.3] run tag @s remove player_enter_game
+execute as @a[tag=player_enter_game] at @s unless entity @e[tag=system_lobby_mark_enter,distance=..0.3] run tag @s remove player_enter_game
 
 # enter game
 execute at @e[tag=system_lobby_mark_enter] run tp @a[distance=..0.3,team=blue,scores={death_time=0}] -36 15 -40 -90 0
