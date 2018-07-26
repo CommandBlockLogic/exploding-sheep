@@ -10,6 +10,7 @@ execute unless entity @e[tag=system_fan_mark] run function keep_mark/fan
 effect give @a[scores={food=..19}] minecraft:saturation 1 0 true
 
 function lobby/tick
+function player_death/tick
 
 # game mode
 scoreboard players add game_status system 0
