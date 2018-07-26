@@ -7,6 +7,8 @@ function lobby/enter_game
 # effect
 function lobby/effect
 
+
+
 # summon core
 execute if score system_home_time system matches -60 run function core/clear/all
 execute if score system_home_time system matches -60 run function core/generate/home

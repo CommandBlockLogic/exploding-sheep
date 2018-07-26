@@ -20,7 +20,7 @@ execute if score game_status system matches 2 run function get_score/tick
 execute if score game_status system matches 3 run function battle/tick
 execute if score game_status system matches 8964 run function ending/tick
 
-execute if score game_status system matches 1.. run gamemode spectator @a[team=,gamemode=!spectator]
+execute if score game_status system matches 1.. run gamemode spectator @a[team=,gamemode=adventure]
 execute if score 游戏开始 pve_system matches 0 if score game_status system matches 1.. run scoreboard players set 游戏开始 pve_system 1
 
 

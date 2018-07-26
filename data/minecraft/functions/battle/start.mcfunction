@@ -33,6 +33,22 @@ scoreboard players set system_blue_score system 276
 scoreboard players set system_home_time system -80
 scoreboard players set system_corner_time system -80
 
+# death time
+# death time = total_death_time * team_player_num / total_player_num
+scoreboard players set total_death_time system 200
+scoreboard players set red_player_num system 0
+scoreboard players set blue_player_num system 0
+scoreboard players set total_player_num system 0
+execute as @a[team=red] run scoreboard players add red_player_num system 1
+execute as @a[team=blue] run scoreboard players add blue_player_num system 1
+execute store result score total_player_num system run scoreboard players get red_player_num system
+scoreboard players operation red_player_num system += blue_player_num system
+execute as @a store result score @s death_time_max run scoreboard players get total_death_time system
+execute as @a[team=red] run scoreboard players operation @s death_time_max *= red_player_num system
+execute as @a[team=blue] run scoreboard players operation @s death_time_max *= blue_player_num system
+execute as @a run scoreboard players operation @s death_time_max /= total_player_num system
+
+
 
 # bossbar
 bossbar add minecraft:red_score ["红队主水晶状态: ",{"text":"完好","color":"red"}]
