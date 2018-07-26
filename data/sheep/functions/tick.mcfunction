@@ -1,11 +1,12 @@
 # sheep:tick
 
+# shoot sheep
 # shoot normal
 execute as @a[scores={s_launch=1..,s_energy=50..,s_launch_type=..1},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=50..,s_launch_type=..1},nbt={SelectedItemSlot:0}] s_energy 50
 
-execute as @a[scores={s_launch=1..,s_energy=100..,s_launch_type=2},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
-scoreboard players remove @a[scores={s_launch=1..,s_energy=100..,s_launch_type=2},nbt={SelectedItemSlot:0}] s_energy 100
+execute as @a[scores={s_launch=1..,s_energy=190..,s_launch_type=2},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+scoreboard players remove @a[scores={s_launch=1..,s_energy=190..,s_launch_type=2},nbt={SelectedItemSlot:0}] s_energy 190
 
 execute as @a[scores={s_launch=1..,s_energy=80..,s_launch_type=3},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=80..,s_launch_type=3},nbt={SelectedItemSlot:0}] s_energy 80
@@ -47,14 +48,24 @@ execute as @a[scores={s_launch=1..,s_launch_type=201..},nbt={SelectedItemSlot:0}
 execute as @a[scores={s_launch=1..,s_fan_num=1..},nbt={SelectedItemSlot:1}] at @s anchored eyes positioned ^ ^ ^ run function sheep:fan/main
 scoreboard players remove @a[scores={s_launch=1..,s_fan_num=1..},nbt={SelectedItemSlot:1}] s_fan_num 1
 
-
-
-# ultimate sheep
+# ultimate start
 execute as @a[scores={s_ulti_launch=1..,s_ulti_energy=4001..},nbt={SelectedItemSlot:0}] at @s run function sheep:ultimate/main
 
 # clear
 scoreboard players set @a[scores={s_launch=1..}] s_launch 0
 scoreboard players set @a[scores={s_ulti_launch=1..}] s_ulti_launch 0
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -75,6 +86,17 @@ function sheep:ultimate/tick
 
 
 
+
+
+
+
+
+
+
+
+
+
+# sheep effect
 # heal
 scoreboard players add @e[tag=sheep_heal_mark] s_heal_time 1
 execute as @e[scores={s_heal_time=1..}] at @s run function sheep:effect/heal
