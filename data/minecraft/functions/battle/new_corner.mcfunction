@@ -6,8 +6,8 @@ tag @s add tower
 execute as @a if score @s s_id = @e[tag=tower,limit=1] destory_id run tag @s add destroyer
 
 # cal purple tower
-scoreboard players set @s system_temp3 0
-execute as @e[tag=system_core_mark_small,scores={tower_status=1}] run scoreboard players add @e[tag=tower] system_temp3 1
+scoreboard players set purple_tower_num system 0
+execute as @e[tag=system_core_mark_small,scores={tower_status=1}] run scoreboard players add purple_tower_num system 1
 
 # generate tower
 execute if entity @a[tag=destroyer,limit=1,team=blue] at @s run function core/generate/blue_small
@@ -41,21 +41,21 @@ execute if entity @a[tag=destroyer,limit=1,team=blue] if entity @s[tag=system_co
 
 
 # cal tower num
-scoreboard players set @s system_temp1 0
-scoreboard players set @s system_temp2 0
-execute as @e[tag=system_core_mark_small,scores={tower_status=2}] run scoreboard players add @e[tag=tower] system_temp1 1
-execute as @e[tag=system_core_mark_small,scores={tower_status=3}] run scoreboard players add @e[tag=tower] system_temp2 1
+scoreboard players set red_tower_num system 0
+scoreboard players set blue_tower_num system 0
+execute as @e[tag=system_core_mark_small,scores={tower_status=2}] run scoreboard players add blue_tower_num system 1
+execute as @e[tag=system_core_mark_small,scores={tower_status=3}] run scoreboard players add red_tower_num system 1
 # 1 重开恢复 2 加速恢复
 # 1 加速恢复失效 2 无法恢复
-execute if entity @a[tag=destroyer,limit=1,team=red] if score @s system_temp2 matches 1 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶正在缓慢恢复."]
-execute if entity @a[tag=destroyer,limit=1,team=red] if score @s system_temp2 matches 2 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶正在加速恢复."]
-execute if entity @a[tag=destroyer,limit=1,team=red] if score @s system_temp1 matches 1 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶正在缓慢恢复."]
-execute if entity @a[tag=destroyer,limit=1,team=red] if score @s system_temp1 matches 0 if score @s system_temp3 matches 0 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶停止恢复了. 快进攻!"]
+execute if entity @a[tag=destroyer,limit=1,team=red] if score red_tower_num system matches 1 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶正在缓慢恢复."]
+execute if entity @a[tag=destroyer,limit=1,team=red] if score red_tower_num system matches 2 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶正在加速恢复."]
+execute if entity @a[tag=destroyer,limit=1,team=red] if score blue_tower_num system matches 1 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶正在缓慢恢复."]
+execute if entity @a[tag=destroyer,limit=1,team=red] if score blue_tower_num system matches 0 if score purple_tower_num system matches 0 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶停止恢复了. 快进攻!"]
 
-execute if entity @a[tag=destroyer,limit=1,team=blue] if score @s system_temp1 matches 1 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶正在缓慢恢复."]
-execute if entity @a[tag=destroyer,limit=1,team=blue] if score @s system_temp1 matches 2 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶正在加速恢复."]
-execute if entity @a[tag=destroyer,limit=1,team=blue] if score @s system_temp2 matches 1 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶正在缓慢恢复."]
-execute if entity @a[tag=destroyer,limit=1,team=blue] if score @s system_temp2 matches 0 if score @s system_temp3 matches 0 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶停止恢复了. 快进攻!"]
+execute if entity @a[tag=destroyer,limit=1,team=blue] if score blue_tower_num system matches 1 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶正在缓慢恢复."]
+execute if entity @a[tag=destroyer,limit=1,team=blue] if score blue_tower_num system matches 2 run tellraw @a [">> ",{"text":"蓝队","color":"blue"},"主水晶正在加速恢复."]
+execute if entity @a[tag=destroyer,limit=1,team=blue] if score red_tower_num system matches 1 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶正在缓慢恢复."]
+execute if entity @a[tag=destroyer,limit=1,team=blue] if score red_tower_num system matches 0 if score purple_tower_num system matches 0 run tellraw @a [">> ",{"text":"红队","color":"red"},"主水晶停止恢复了. 快进攻!"]
 
 
 

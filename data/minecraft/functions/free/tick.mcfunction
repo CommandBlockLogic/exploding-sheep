@@ -10,6 +10,13 @@ function lobby/enter_game
 function lobby/effect
 
 
+
+# death time
+scoreboard players add @a death_time_max 0
+scoreboard players set @a[scores={death_time_max=1..}] death_time_max 0
+
+
+
 # summon blocks
 scoreboard players add @e[tag=system_core_mark] system_time 1
 execute as @e[tag=system_core_mark_red,scores={system_time=400..}] run function core/slice/red
