@@ -3,6 +3,10 @@
 # change flag
 scoreboard players set game_status system 103
 
+# tp
+tp @a 0 39 0
+gamemode adventure @a
+
 # clear
 clear @a
 effect clear @a
