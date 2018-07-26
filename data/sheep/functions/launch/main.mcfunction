@@ -8,7 +8,7 @@ summon minecraft:area_effect_cloud ^ ^ ^1 {Tags:["sheep_mark"]}
 
 # summon sheep
 execute if entity @s[scores={s_launch_type=1}] run function sheep:launch/type/normal
-execute if entity @s[scores={s_launch_type=2}] run function sheep:launch/type/heavy
+execute if entity @s[scores={s_launch_type=2}] run function sheep:launch/type/teleport
 execute if entity @s[scores={s_launch_type=3}] run function sheep:launch/type/fast
 execute if entity @s[scores={s_launch_type=4}] run function sheep:launch/type/air
 execute if entity @s[scores={s_launch_type=5}] run function sheep:launch/type/web

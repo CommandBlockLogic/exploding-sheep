@@ -6,9 +6,9 @@ execute store result score @s s_temp6 run scoreboard players get @a[tag=sheep_fa
 execute store result score @s s_temp7 run scoreboard players get @a[tag=sheep_fanning,limit=1] s_temp4
 
 # if it's heavy sheep
-execute if entity @s[tag=sheep_type_heavy] run scoreboard players set @s s_temp5 0
-execute if entity @s[tag=sheep_type_heavy] run scoreboard players set @s s_temp6 0
-execute if entity @s[tag=sheep_type_heavy] run scoreboard players set @s s_temp7 0
+#execute if entity @s[tag=sheep_type_heavy] run scoreboard players set @s s_temp5 0
+#execute if entity @s[tag=sheep_type_heavy] run scoreboard players set @s s_temp6 0
+#execute if entity @s[tag=sheep_type_heavy] run scoreboard players set @s s_temp7 0
 # if it's fast sheep
 scoreboard players set @s[tag=sheep_type_fast] s_temp1 2
 execute if entity @s[tag=sheep_type_fast] run scoreboard players operation @s s_temp5 /= @s s_temp1

@@ -1,7 +1,7 @@
 # sheep:item/wools
 
 replaceitem entity @s[scores={s_class=1}] hotbar.8 minecraft:white_wool{item_num:3,wool_type:1,display:{Name:"[\"§r小白羊§r §7很普通的羊羊!§r\"]"}}
-replaceitem entity @s[scores={s_class=2}] hotbar.8 minecraft:gray_wool{item_num:3,wool_type:2,display:{Name:"[\"§r§7小灰羊§r §7飞的更远且无法被扇子吹开!§r\"]"}}
+replaceitem entity @s[scores={s_class=2}] hotbar.8 minecraft:black_wool{item_num:3,wool_type:2,display:{Name:"[\"§r§1小黑羊§r §7传送它的主人到落地位置!§r\"]"}}
 replaceitem entity @s[scores={s_class=3}] hotbar.8 minecraft:yellow_wool{item_num:3,wool_type:3,display:{Name:"[\"§r§e小黄羊§r §7不受重力影响直直前进!§r\"]"}}
 replaceitem entity @s[scores={s_class=4}] hotbar.8 minecraft:red_wool{item_num:3,wool_type:4,display:{Name:"[\"§r§c小红羊§r §7落地后将会立刻爆炸!§r\"]"}}
 replaceitem entity @s[scores={s_class=5}] hotbar.8 minecraft:light_blue_wool{item_num:3,wool_type:5,display:{Name:"[\"§r§b小冰羊§r §7在地面生成雪花阵!§r\"]"}}
@@ -12,7 +12,7 @@ replaceitem entity @s[scores={s_class=201}] hotbar.8 minecraft:orange_wool{item_
 replaceitem entity @s[scores={s_class=202}] hotbar.8 minecraft:lime_wool{item_num:3,wool_type:202,display:{Name:"[\"§r§a超绿羊§r §7缓慢治愈附近所有队友§r\"]"}}
 
 replaceitem entity @s[scores={s_launch_type=1}] weapon.offhand minecraft:white_wool{item_num:4,wool_type:1}
-replaceitem entity @s[scores={s_launch_type=2}] weapon.offhand minecraft:gray_wool{item_num:4,wool_type:2}
+replaceitem entity @s[scores={s_launch_type=2}] weapon.offhand minecraft:black_wool{item_num:4,wool_type:2}
 replaceitem entity @s[scores={s_launch_type=3}] weapon.offhand minecraft:yellow_wool{item_num:4,wool_type:3}
 replaceitem entity @s[scores={s_launch_type=4}] weapon.offhand minecraft:red_wool{item_num:4,wool_type:4}
 replaceitem entity @s[scores={s_launch_type=5}] weapon.offhand minecraft:light_blue_wool{item_num:4,wool_type:5}

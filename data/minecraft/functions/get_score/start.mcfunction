@@ -21,10 +21,6 @@ execute as @a run function sheep:ultimate/end
 title @a times 10 50 10
 title @a title ["5分钟内得分高者胜利!"]
 
-# core
-function core/clear/all
-function core/generate/home
-
 # score
 scoreboard players reset * sidebar_score
 scoreboard players set 红队 sidebar_score 0

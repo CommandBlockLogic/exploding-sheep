@@ -7,8 +7,8 @@ execute as @e[tag=system_lobby_mark_enter,nbt={CustomNameVisible:1b}] at @s unle
 execute at @e[tag=system_class_mark] as @a[distance=..0.3] unless score @s s_launch_type matches 1 run scoreboard players set @s s_launch_type 1
 execute at @e[tag=system_class_mark_white] as @a[distance=..0.3] unless score @s s_class matches 1 run tellraw @s [">> 切换至 §f普通§r 系\n    虽然能力普通, 但是总能量高!"]
 execute at @e[tag=system_class_mark_white] as @a[distance=..0.3] unless score @s s_class matches 1 run scoreboard players set @s s_class 1
-execute at @e[tag=system_class_mark_gray] as @a[distance=..0.3] unless score @s s_class matches 2 run tellraw @s [">> 切换至 §7笨重§r 系\n    羊羊可以被丢的更远且无法被扇子吹开!"]
-execute at @e[tag=system_class_mark_gray] as @a[distance=..0.3] unless score @s s_class matches 2 run scoreboard players set @s s_class 2
+execute at @e[tag=system_class_mark_black] as @a[distance=..0.3] unless score @s s_class matches 2 run tellraw @s [">> 切换至 §1末影§r 系\n    羊羊会将它的主人传送到它落地的位置!"]
+execute at @e[tag=system_class_mark_black] as @a[distance=..0.3] unless score @s s_class matches 2 run scoreboard players set @s s_class 2
 execute at @e[tag=system_class_mark_blue] as @a[distance=..0.3] unless score @s s_class matches 3 run tellraw @s [">> 切换至 §e失重§r 系\n    羊羊将不受重力影响直直前进!"]
 execute at @e[tag=system_class_mark_blue] as @a[distance=..0.3] unless score @s s_class matches 3 run scoreboard players set @s s_class 3
 execute at @e[tag=system_class_mark_red] as @a[distance=..0.3] unless score @s s_class matches 4 run tellraw @s [">> 切换至 §c瞬发§r 系\n    落地后羊羊将会立刻爆炸!"]

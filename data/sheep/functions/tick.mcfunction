@@ -25,7 +25,7 @@ execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={Selecte
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 随他进攻!"]
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 快跟他拉开距离!"]
 execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级橙羊羊 ","color":"gold"}," 掩护它!"]
-execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级橙羊羊 ","color":"gold"}," 尽快清除障碍!"]
+execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级橙羊羊 ","color":"gold"}," 拉开距离清除它!"]
 execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级绿羊羊 ","color":"green"}," 到它身旁恢复生命!"]
 execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级绿羊羊 ","color":"green"}," 清除它!"]
 
@@ -34,7 +34,7 @@ execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={Selecte
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 随他进攻!"]
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 快跟他拉开距离!"]
 execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级橙羊羊 ","color":"gold"}," 掩护它!"]
-execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级橙羊羊 ","color":"gold"}," 尽快清除障碍!"]
+execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级橙羊羊 ","color":"gold"}," 拉开距离清除它!"]
 execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级绿羊羊 ","color":"green"}," 到它身旁恢复生命!"]
 execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级绿羊羊 ","color":"green"}," 清除它!"]
 # shoot ultimate

@@ -9,8 +9,6 @@ execute if entity @s[tag=!sheep_attr_no_damage] run scoreboard players set @a[di
 # boom
 execute if entity @s[tag=sheep_type_normal] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"可爱的\",\"color\":\"gray\"},{\"text\":\"小白羊\",\"color\":\"white\"}]"}
 # [{"text":"可爱的","color":"gray"},{"text":"小白羊","color":"white"}]
-execute if entity @s[tag=sheep_type_heavy] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"蠢蠢的\",\"color\":\"gray\"},{\"text\":\"小绿羊\",\"color\":\"green\"}]"}
-# [{"text":"蠢蠢的","color":"gray"},{"text":"小灰羊","color":"dark_gray"}]
 execute if entity @s[tag=sheep_type_fast] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"快快的\",\"color\":\"gray\"},{\"text\":\"小蓝羊\",\"color\":\"blue\"}]"}
 # [{"text":"快快的","color":"gray"},{"text":"小蓝羊","color":"blue"}]
 execute if entity @s[tag=sheep_type_air] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"匆忙的\",\"color\":\"gray\"},{\"text\":\"小红羊\",\"color\":\"red\"}]"}
@@ -21,16 +19,17 @@ execute if entity @s[tag=sheep_type_orange_small] run summon minecraft:creeper ~
 # [{"text":"震惊的","color":"gray"},{"text":"超橙羊","color":"gold"}]
 
 
-
+# ice
 execute if entity @s[tag=sheep_type_web,tag=sheep_team_red] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark","sheep_web_mark_red"]}
 execute if entity @s[tag=sheep_type_web,tag=sheep_team_blue] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark","sheep_web_mark_blue"]}
 execute if entity @s[tag=sheep_type_web,tag=!sheep_team_blue,tag=!sheep_team_red] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark"]}
-
+# heal
 execute if entity @s[tag=sheep_type_heal] run playsound minecraft:item.bottle.fill ambient @a ~ ~ ~ 1 0.5
 execute if entity @s[tag=sheep_type_heal] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_heal_mark"]}
 execute if entity @s[tag=sheep_type_heal,tag=sheep_team_red] run effect give @a[distance=..3,team=red] minecraft:instant_health 1 0 false
 execute if entity @s[tag=sheep_type_heal,tag=sheep_team_blue] run effect give @a[distance=..3,team=blue] minecraft:instant_health 1 0 false
-
+# teleport
+execute if entity @s[tag=sheep_type_teleport] at @s as @a if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run tp @s ~ ~ ~ ~ ~
 
 
 # explode blocks
