@@ -14,4 +14,4 @@ execute if score system_flag system matches 0 run tellraw @a [">> 人数不足!"
 # check if balance
 scoreboard players operation player_count_red system -= player_count_blue system
 execute if score system_flag system matches 1 unless score player_count_red system matches -1..1 run tellraw @a [">> 队伍人数不平衡!"]
-execute if score system_flag system matches 1 if score player_count_red system matches -1..1 run function get_score/start
+execute if score system_flag system matches 1 if score player_count_red system matches -1..1 run function get_score/pre/main

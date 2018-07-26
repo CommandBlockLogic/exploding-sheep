@@ -7,10 +7,6 @@ function lobby/enter_game
 # effect
 function lobby/effect
 
-# core
-execute if score system_game_time system matches 5940 run function core/clear/all
-execute if score system_game_time system matches 5940 run function core/generate/home
-
 
 # summon blocks
 scoreboard players add @e[tag=system_core_mark] system_time 1
