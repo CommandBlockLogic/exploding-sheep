@@ -17,13 +17,13 @@ execute store result entity @s Rotation[1] float 0.00001 run scoreboard players 
 # cal x-rot
 execute store result score @s s_temp5 run scoreboard players get @s s_temp1
 scoreboard players operation @s s_temp5 -= @s s_temp2
-execute at @s if score @s s_temp5 matches ..-1 run tp @s ~ ~ ~ ~2 ~
-execute at @s if score @s s_temp5 matches 1.. run tp @s ~ ~ ~ ~-2 ~
+execute at @s if score @s s_temp5 matches ..-1 run tp @s ~ ~ ~ ~-2 ~
+execute at @s if score @s s_temp5 matches 1.. run tp @s ~ ~ ~ ~2 ~
 # cal y-rot
 execute store result score @s s_temp5 run scoreboard players get @s s_temp3
 scoreboard players operation @s s_temp5 -= @s s_temp4
-execute at @s if score @s s_temp5 matches ..-1 run tp @s ~ ~ ~ ~ ~-2
-execute at @s if score @s s_temp5 matches 1.. run tp @s ~ ~ ~ ~ ~2
+execute at @s if score @s s_temp5 matches ..-1 run tp @s ~ ~ ~ ~ ~2
+execute at @s if score @s s_temp5 matches 1.. run tp @s ~ ~ ~ ~ ~-2
 
 # detect and tp
 execute at @s positioned ^ ^ ^0.3 unless block ~ ~ ~ #sheep:chuantou run tag @s add sheep_collision
