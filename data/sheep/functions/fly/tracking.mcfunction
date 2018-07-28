@@ -2,12 +2,13 @@
 
 # find target
 tag @s add sheep_temp
-execute at @s as @a[distance=..50] if score @s s_id = @e[tag=sheep_temp,limit=1] s_target_id run tag @s add player_temp
+execute if score @s s_target_id matches 1.. at @s as @a[distance=..50] if score @s s_id = @e[tag=sheep_temp,limit=1] s_target_id run tag @s add player_temp
+execute if score @s s_target_id matches 0 run tag @e[tag=monster_target,distance=..15] add player_temp
 
 # get rotation
 execute store result score @s s_temp1 run data get entity @s Rotation[0] 100000
 execute store result score @s s_temp2 run data get entity @s Rotation[1] 100000
-execute at @s facing entity @a[tag=player_temp,limit=1] feet run tp @s ~ ~ ~ ~ ~
+execute at @s facing entity @e[tag=player_temp,limit=1] feet run tp @s ~ ~ ~ ~ ~
 execute store result score @s s_temp3 run data get entity @s Rotation[0] 100000
 execute store result score @s s_temp4 run data get entity @s Rotation[1] 100000
 execute store result entity @s Rotation[0] float 0.00001 run scoreboard players get @s s_temp1
@@ -34,4 +35,4 @@ tag @e[tag=sheep_collision] remove sheep_attr_tracking
 scoreboard players set @e[tag=sheep_collision] s_blow_time 1
 tag @e[tag=sheep_collision] remove sheep_collision
 tag @e[tag=sheep_temp] remove sheep_temp
-tag @a[tag=player_temp] remove player_temp
+tag @e[tag=player_temp] remove player_temp
