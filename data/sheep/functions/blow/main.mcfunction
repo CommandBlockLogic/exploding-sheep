@@ -17,6 +17,8 @@ execute if entity @s[tag=sheep_type_gray] run summon minecraft:creeper ~ ~ ~ {Fu
 # [{"text":"可爱的","color":"gray"},{"text":"超灰羊","color":"gray"}]
 execute if entity @s[tag=sheep_type_lime] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"智慧的\",\"color\":\"gray\"},{\"text\":\"超柠羊\",\"color\":\"green\"}]"}
 # [{"text":"智慧的","color":"gray"},{"text":"超柠羊","color":"green"}]
+execute if entity @s[tag=sheep_type_blue_small] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"正义的\",\"color\":\"gray\"},{\"text\":\"超蓝羊\",\"color\":\"blue\"}]"}
+# [{"text":"正义的","color":"gray"},{"text":"超蓝羊","color":"blue"}]
 
 
 # ice

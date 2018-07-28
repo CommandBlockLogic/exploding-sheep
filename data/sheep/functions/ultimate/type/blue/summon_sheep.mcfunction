@@ -1,6 +1,6 @@
 # sheep:ultimate/type/blue/summon_sheep
 
-summon minecraft:sheep ^ ^ ^ {Tags:["sheep_sheep","sheep_type_blue","sheep_new"],Color:11,Silent:1,Age:-999999,Invulnerable:1,NoAI:1}
+summon minecraft:sheep ^ ^ ^ {Tags:["sheep_sheep","sheep_type_blue_small","sheep_new"],Color:11,Silent:1,Age:-999999,Invulnerable:1,NoAI:1}
 scoreboard players set @e[tag=sheep_new] s_sheep_type 201
 
 # add player's id
@@ -11,7 +11,7 @@ execute if entity @s[tag=sheep_team_blue] run tag @e[tag=sheep_new,limit=1] add 
 # initialize
 scoreboard players set @e[tag=sheep_new] s_blow_time 0
 # tp
-spreadplayers ~ ~ 1 5 false @e[tag=sheep_new]
+spreadplayers ~ ~ 5 1 false @e[tag=sheep_new]
 tp @e[tag=sheep_new] ~ ~10 ~
 execute as @e[tag=sheep_new] at @s unless block ~ ~ ~ #sheep:chuantou run kill @s
 
