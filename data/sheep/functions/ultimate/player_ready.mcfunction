@@ -2,15 +2,15 @@
 
 # change class
 execute store result score @s s_class_2 run scoreboard players get @s s_class
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["sheep_temp","sheep_random_1"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["sheep_temp","sheep_random_2"]}
+#summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["sheep_temp","sheep_random_1"]}
+#summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["sheep_temp","sheep_random_2"]}
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["sheep_temp","sheep_random_3"]}
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["sheep_temp","sheep_random_4"]}
+#summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["sheep_temp","sheep_random_4"]}
 tag @e[tag=sheep_temp,sort=random,limit=1] add sheep_thatsit
-#execute if entity @e[tag=sheep_thatsit,tag=sheep_random_1] run scoreboard players set @s s_class 101
-#execute if entity @e[tag=sheep_thatsit,tag=sheep_random_2] run scoreboard players set @s s_class 102
+execute if entity @e[tag=sheep_thatsit,tag=sheep_random_1] run scoreboard players set @s s_class 101
+execute if entity @e[tag=sheep_thatsit,tag=sheep_random_2] run scoreboard players set @s s_class 102
 execute if entity @e[tag=sheep_thatsit,tag=sheep_random_3] run scoreboard players set @s s_class 103
-#execute if entity @e[tag=sheep_thatsit,tag=sheep_random_4] run scoreboard players set @s s_class 202
+execute if entity @e[tag=sheep_thatsit,tag=sheep_random_4] run scoreboard players set @s s_class 202
 kill @e[tag=sheep_temp]
 execute store result score @s s_launch_type run scoreboard players get @s s_class
 

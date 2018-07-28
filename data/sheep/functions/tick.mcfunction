@@ -81,7 +81,8 @@ execute as @a[scores={s_id=0},limit=1] store result score @s s_id run scoreboard
 function sheep:blow/tick
 function sheep:fan/tick
 function sheep:reload/tick
-execute as @e[tag=sheep_sheep,tag=!sheep_attr_no_gravity] run function sheep:fly/tick
+execute as @e[tag=sheep_sheep,tag=!sheep_attr_tracking] run function sheep:fly/tick
+execute as @e[tag=sheep_attr_tracking] run function sheep:fly/tracking	
 function sheep:change_color
 function sheep:ultimate/tick
 
@@ -118,17 +119,16 @@ kill @e[scores={s_web_time=101..}]
 
 
 # lime
-scoreboard players add @e[tag=sheep_type_lime,scores={s_blow_time=1..}] s_ulti_inter 1
-execute as @e[tag=sheep_type_lime,tag=sheep_team_red,scores={s_blow_time=1..,s_ulti_inter=10}] at @s run effect give @a[team=red,distance=..5] minecraft:regeneration 2 1 true
-execute as @e[tag=sheep_type_lime,tag=sheep_team_blue,scores={s_blow_time=1..,s_ulti_inter=10}] at @s run effect give @a[team=blue,distance=..5] minecraft:regeneration 2 1 true
-execute as @e[tag=sheep_type_lime,tag=!sheep_team_blue,tag=!sheep_team_red,scores={s_blow_time=1..,s_ulti_inter=10}] at @s run effect give @a[distance=..5] minecraft:regeneration 2 1 true
-scoreboard players set @e[tag=sheep_type_lime,scores={s_blow_time=1..,s_ulti_inter=20..}] s_ulti_inter 0
+#scoreboard players add @e[tag=sheep_type_lime,scores={s_blow_time=1..}] s_ulti_inter 1
+#execute as @e[tag=sheep_type_lime,tag=sheep_team_red,scores={s_blow_time=1..,s_ulti_inter=10}] at @s run effect give @a[team=red,distance=..5] minecraft:regeneration 2 1 true
+#execute as @e[tag=sheep_type_lime,tag=sheep_team_blue,scores={s_blow_time=1..,s_ulti_inter=10}] at @s run effect give @a[team=blue,distance=..5] minecraft:regeneration 2 1 true
+#execute as @e[tag=sheep_type_lime,tag=!sheep_team_blue,tag=!sheep_team_red,scores={s_blow_time=1..,s_ulti_inter=10}] at @s run effect give @a[distance=..5] minecraft:regeneration 2 1 true
+#scoreboard players set @e[tag=sheep_type_lime,scores={s_blow_time=1..,s_ulti_inter=20..}] s_ulti_inter 0
 
-execute as @e[tag=sheep_type_lime,scores={s_blow_time=1..}] at @s run particle minecraft:happy_villager ~ ~1 ~ 2 1 2 1 1
-team join red @e[tag=sheep_type_lime,tag=sheep_team_red,team=]
-team join blue @e[tag=sheep_type_lime,tag=sheep_team_blue,team=]
-#effect give @e[tag=sheep_type_lime,scores={s_blow_time=1..}] minecraft:glowing 1 0 true
-
+#execute as @e[tag=sheep_type_lime,scores={s_blow_time=1..}] at @s run particle minecraft:happy_villager ~ ~1 ~ 2 1 2 1 1
+#team join red @e[tag=sheep_type_lime,tag=sheep_team_red,team=]
+#team join blue @e[tag=sheep_type_lime,tag=sheep_team_blue,team=]
+##effect give @e[tag=sheep_type_lime,scores={s_blow_time=1..}] minecraft:glowing 1 0 true
 
 
 # orange
