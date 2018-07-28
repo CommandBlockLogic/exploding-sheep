@@ -6,14 +6,14 @@ execute at @s if score @s s_target_id matches 1.. at @s as @a[distance=..50] if 
 execute at @s if score @s s_target_id matches 0 run tag @e[tag=monster_target,distance=..15] add player_temp
 
 # get rotation
-execute store result score @s s_temp1 run data get entity @s Rotation[0] 100000
-execute store result score @s s_temp2 run data get entity @s Rotation[1] 100000
+execute store result score @s s_temp1 run data get entity @s Rotation[0] 10000
+execute store result score @s s_temp2 run data get entity @s Rotation[1] 10000
 execute at @s run tp @s ~ ~ ~ facing entity @e[tag=player_temp,limit=1] feet
 execute at @s facing entity @e[tag=player_temp,limit=1] feet run tp @s ~ ~ ~ ~ ~
-execute store result score @s s_temp3 run data get entity @s Rotation[0] 100000
-execute store result score @s s_temp4 run data get entity @s Rotation[1] 100000
-execute store result entity @s Rotation[0] float 0.00001 run scoreboard players get @s s_temp1
-execute store result entity @s Rotation[1] float 0.00001 run scoreboard players get @s s_temp2
+execute store result score @s s_temp3 run data get entity @s Rotation[0] 10000
+execute store result score @s s_temp4 run data get entity @s Rotation[1] 10000
+execute store result entity @s Rotation[0] float 0.0001 run scoreboard players get @s s_temp1
+execute store result entity @s Rotation[1] float 0.0001 run scoreboard players get @s s_temp2
 
 # cal x-rot
 execute store result score @s s_temp5 run scoreboard players get @s s_temp1

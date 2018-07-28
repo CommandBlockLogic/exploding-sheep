@@ -82,7 +82,7 @@ function sheep:blow/tick
 function sheep:fan/tick
 function sheep:reload/tick
 execute as @e[tag=sheep_sheep,tag=!sheep_attr_tracking] run function sheep:fly/tick
-execute as @e[tag=sheep_attr_tracking] run function sheep:fly/tracking	
+execute as @e[tag=sheep_attr_tracking] run function sheep:fly/tracking2
 function sheep:change_color
 function sheep:ultimate/tick
 
