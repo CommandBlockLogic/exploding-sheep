@@ -12,7 +12,7 @@ execute if entity @s[tag=sheep_team_blue] run tag @e[tag=sheep_new,limit=1] add 
 scoreboard players set @e[tag=sheep_new] s_blow_time 0
 # tp
 spreadplayers ~ ~ 5 1 false @e[tag=sheep_new]
-tp @e[tag=sheep_new] ~ ~10 ~
+execute as @e[tag=sheep_new] at @s run tp @s ~ ~10 ~
 execute as @e[tag=sheep_new] at @s unless block ~ ~ ~ #sheep:chuantou run kill @s
 
 
