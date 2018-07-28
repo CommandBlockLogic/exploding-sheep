@@ -26,6 +26,7 @@ scoreboard objectives add s_ulti_sheep dummy ["大招羊状态"]
 
 
 scoreboard objectives add s_thrower_id dummy ["投掷玩家id"]
+scoreboard objectives add s_target_id dummy ["目标玩家id"]
 scoreboard objectives add s_sheep_type dummy ["羊类型"]
 
 scoreboard objectives add s_vx dummy ["羊vx"]

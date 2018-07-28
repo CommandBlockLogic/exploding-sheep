@@ -12,5 +12,7 @@ gamemode spectator @a[team=]
 
 # title
 title @a times 10 50 10
-title @a title ["10条生命!"]
+title @a title ["10点羊羊能量!"]
 title @a subtitle ["游戏开始"]
+tellraw @a [">> 对方每死亡一次就会损失一点羊羊能量!"]
+tellraw @a [">> 耗尽对方的羊羊能量吧!"]

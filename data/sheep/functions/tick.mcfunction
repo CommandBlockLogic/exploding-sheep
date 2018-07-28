@@ -41,6 +41,7 @@ execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0},t
 # shoot ultimate
 execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/gray/main
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/purple/main
+execute as @a[scores={s_launch=1..,s_launch_type=103,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/lime/main
 execute as @a[scores={s_launch=1..,s_launch_type=201..},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 execute as @a[scores={s_launch=1..,s_launch_type=201..},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/end
 
@@ -80,7 +81,7 @@ execute as @a[scores={s_id=0},limit=1] store result score @s s_id run scoreboard
 function sheep:blow/tick
 function sheep:fan/tick
 function sheep:reload/tick
-execute as @e[tag=sheep_sheep] run function sheep:fly/tick
+execute as @e[tag=sheep_sheep,tag=!sheep_attr_no_gravity] run function sheep:fly/tick
 function sheep:change_color
 function sheep:ultimate/tick
 
