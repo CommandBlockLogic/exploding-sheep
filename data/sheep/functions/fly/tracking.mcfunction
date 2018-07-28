@@ -2,8 +2,8 @@
 
 # find target
 tag @s add sheep_temp
-execute if score @s s_target_id matches 1.. at @s as @a[distance=..50] if score @s s_id = @e[tag=sheep_temp,limit=1] s_target_id run tag @s add player_temp
-execute if score @s s_target_id matches 0 run tag @e[tag=monster_target,distance=..15] add player_temp
+execute at @s if score @s s_target_id matches 1.. at @s as @a[distance=..50] if score @s s_id = @e[tag=sheep_temp,limit=1] s_target_id run tag @s add player_temp
+execute at @s if score @s s_target_id matches 0 run tag @e[tag=monster_target,distance=..15] add player_temp
 
 # get rotation
 execute store result score @s s_temp1 run data get entity @s Rotation[0] 100000
