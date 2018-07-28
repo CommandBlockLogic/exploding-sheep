@@ -27,7 +27,7 @@ execute at @s if score @s s_temp5 matches 1.. run tp @s ~ ~ ~ ~ ~2
 
 # detect and tp
 execute at @s positioned ^ ^ ^0.3 unless block ~ ~ ~ #sheep:chuantou run tag @s add sheep_collision
-execute at @s positioned ^ ^ ^0.3 if entity @a[gamemode=!spectator,distance=..1] run tag @s add sheep_collision
+execute at @s positioned ^ ^ ^0.3 if entity @a[gamemode=!spectator,distance=..1,scores={s_flying_time=20..}] run tag @s add sheep_collision
 execute at @s[tag=!sheep_collision] positioned ^ ^ ^0.3 run tp @s ~ ~ ~
 
 # clear
