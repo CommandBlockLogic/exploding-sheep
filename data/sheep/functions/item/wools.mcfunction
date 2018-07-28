@@ -8,7 +8,7 @@ replaceitem entity @s[scores={s_class=5}] hotbar.8 minecraft:light_blue_wool{ite
 replaceitem entity @s[scores={s_class=6}] hotbar.8 minecraft:pink_wool{item_num:3,wool_type:6,display:{Name:"[\"§r§d小粉羊§r §7在附近生成治愈阵!§r\"]"}}
 replaceitem entity @s[scores={s_class=101}] hotbar.8 minecraft:light_gray_wool{item_num:3,wool_type:101,display:{Name:"[\"§r§8超灰羊§r §7连续发射!§r\"]"}}
 replaceitem entity @s[scores={s_class=102}] hotbar.8 minecraft:purple_wool{item_num:3,wool_type:102,display:{Name:"[\"§r§5超紫羊§r §7围绕玩家身旁 会造成伤害!§r\"]"}}
-replaceitem entity @s[scores={s_class=201}] hotbar.8 minecraft:lime_wool{item_num:3,wool_type:103,display:{Name:"[\"§r§a超柠羊§r §7连续发射 追踪附近敌人!§r\"]"}}
+replaceitem entity @s[scores={s_class=103}] hotbar.8 minecraft:lime_wool{item_num:3,wool_type:103,display:{Name:"[\"§r§a超柠羊§r §7连续发射 追踪附近敌人!§r\"]"}}
 replaceitem entity @s[scores={s_class=202}] hotbar.8 minecraft:lime_wool{item_num:3,wool_type:202,display:{Name:"[\"§r§a超绿羊§r §7缓慢治愈附近所有队友§r\"]"}}
 
 replaceitem entity @s[scores={s_launch_type=1}] weapon.offhand minecraft:white_wool{item_num:4,wool_type:1}
