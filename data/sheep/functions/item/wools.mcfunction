@@ -9,7 +9,7 @@ replaceitem entity @s[scores={s_class=6}] hotbar.8 minecraft:pink_wool{item_num:
 replaceitem entity @s[scores={s_class=101}] hotbar.8 minecraft:light_gray_wool{item_num:3,wool_type:101,display:{Name:"[\"§r§8超灰羊§r §7连续发射!§r\"]"}}
 replaceitem entity @s[scores={s_class=102}] hotbar.8 minecraft:purple_wool{item_num:3,wool_type:102,display:{Name:"[\"§r§5超紫羊§r §7围绕玩家身旁 会造成伤害!§r\"]"}}
 replaceitem entity @s[scores={s_class=103}] hotbar.8 minecraft:lime_wool{item_num:3,wool_type:103,display:{Name:"[\"§r§a超柠羊§r §7连续发射 追踪附近敌人!§r\"]"}}
-replaceitem entity @s[scores={s_class=202}] hotbar.8 minecraft:lime_wool{item_num:3,wool_type:202,display:{Name:"[\"§r§a超绿羊§r §7缓慢治愈附近所有队友§r\"]"}}
+replaceitem entity @s[scores={s_class=201}] hotbar.8 minecraft:blue_wool{item_num:3,wool_type:201,display:{Name:"[\"§r§a超蓝羊§r §7召唤羊羊雨§r\"]"}}
 
 replaceitem entity @s[scores={s_launch_type=1}] weapon.offhand minecraft:white_wool{item_num:4,wool_type:1}
 replaceitem entity @s[scores={s_launch_type=2}] weapon.offhand minecraft:black_wool{item_num:4,wool_type:2}
@@ -20,4 +20,4 @@ replaceitem entity @s[scores={s_launch_type=6}] weapon.offhand minecraft:pink_wo
 replaceitem entity @s[scores={s_launch_type=101}] weapon.offhand minecraft:light_gray_wool{item_num:4,wool_type:101}
 replaceitem entity @s[scores={s_launch_type=102}] weapon.offhand minecraft:purple_wool{item_num:4,wool_type:102}
 replaceitem entity @s[scores={s_launch_type=103}] weapon.offhand minecraft:lime_wool{item_num:4,wool_type:103}
-replaceitem entity @s[scores={s_launch_type=202}] weapon.offhand minecraft:lime_wool{item_num:4,wool_type:202}
+replaceitem entity @s[scores={s_launch_type=201}] weapon.offhand minecraft:blue_wool{item_num:4,wool_type:201}

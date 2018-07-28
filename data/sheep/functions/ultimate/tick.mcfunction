@@ -17,7 +17,6 @@ execute as @a[scores={s_ulti_dura=1..,s_class=102}] run function sheep:ultimate/
 execute as @a[scores={s_ulti_dura=1..,s_class=103}] run function sheep:ultimate/type/lime/tick
 
 
-
 # energy
 scoreboard players add @a s_ulti_energy 0
 scoreboard players set @a[scores={s_ulti_time=1..}] s_ulti_energy 0

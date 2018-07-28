@@ -28,13 +28,13 @@
 	* add 4 hearts absorbtion
 	* 10 seconds
 * 103
-	* turret sheep
-	* shoot players within 15 blocks at a rate of 10 ticks per sheep
-	* 50 health
-* 104
-	* constantly healing sheep
-	* constantly healing allies within 15 blocks
-	* 50 health
+	* shoot a tracking sheep per 20 tick
+	* tracking the target player nearby
+	* 10 seconds
+* 201
+	* sheep rain
+	* summon sheeps from above
+	* 10 seconds radius=5
 
 
 # Game Mode
