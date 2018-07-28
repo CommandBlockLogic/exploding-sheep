@@ -8,6 +8,7 @@ execute at @s if score @s s_target_id matches 0 run tag @e[tag=monster_target,di
 # get rotation
 execute store result score @s s_temp1 run data get entity @s Rotation[0] 100000
 execute store result score @s s_temp2 run data get entity @s Rotation[1] 100000
+execute at @s run tp @s ~ ~ ~ facing entity @e[tag=player_temp,limit=1] feet
 execute at @s facing entity @e[tag=player_temp,limit=1] feet run tp @s ~ ~ ~ ~ ~
 execute store result score @s s_temp3 run data get entity @s Rotation[0] 100000
 execute store result score @s s_temp4 run data get entity @s Rotation[1] 100000
