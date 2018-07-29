@@ -41,7 +41,7 @@ bossbar set minecraft:red_score color red
 bossbar set minecraft:red_score players @a
 bossbar set minecraft:red_score visible true
 
-bossbar add minecraft:red_score ["",{"text":"剩余羊羊能量","color":"blue"},": ",{"score":{"name":"system_blue_death_count","objective":"system"}}]
+bossbar add minecraft:blue_score ["",{"text":"剩余羊羊能量","color":"blue"},": ",{"score":{"name":"system_blue_death_count","objective":"system"}}]
 bossbar set minecraft:blue_score max 10
 bossbar set minecraft:blue_score value 10
 bossbar set minecraft:blue_score style notched_10

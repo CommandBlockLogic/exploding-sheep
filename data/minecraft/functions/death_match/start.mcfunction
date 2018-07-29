@@ -10,6 +10,7 @@ tp @a[team=red] 40 14 34 100 0
 gamemode spectator @a[team=]
 
 scoreboard players reset * sidebar_score
+scoreboard objectives modify sidebar_score displayname ["耗尽对方羊羊能量!"]
 
 # title
 title @a times 10 50 10
