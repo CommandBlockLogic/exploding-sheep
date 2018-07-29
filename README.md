@@ -34,7 +34,8 @@
 * 201
 	* sheep rain
 	* summon sheeps from above
-	* 10 seconds radius=5
+	* altitude limit: 10 to 30
+	* 10 seconds radius: 4
 
 
 # Game Mode
@@ -44,7 +45,7 @@
 	* no score and no end
 * 1
 	* death match
-	* 20 death
+	* 10 death
 * 2
 	* get score
 	* 5mins, higher score
@@ -60,11 +61,11 @@
 * battle模式加快游戏进度 平衡调整
 * 被治愈被冰冻提示
 * 无限火力模式
-* 加大拥有塔的优势
-* 小塔更小
-* 小塔顶端方块
-* 增加中间塔
-* 橙羊绿羊时间消失
+* 推塔模式
+	* 加大拥有塔的优势
+	* 小塔更小
+	* 小塔顶端方块
+	* 增加中间塔
 * 地图修改 少细节多视野
 * 加入可爱提示
 	* 打柱子加终极技能

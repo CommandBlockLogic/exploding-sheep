@@ -2,7 +2,7 @@
 
 # find place
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["sheep_mark_temp"],Duration:9999}
-spreadplayers ~ ~ 5 5 false @e[tag=sheep_mark_temp,limit=1]
+spreadplayers ~ ~ 4 4 false @e[tag=sheep_mark_temp,limit=1]
 execute store result entity @e[tag=sheep_mark_temp,limit=1] Pos[1] double 0.001 run data get entity @s Pos[1] 1000
 scoreboard players set @e[tag=sheep_mark_temp,limit=1] s_temp1 0
 execute as @e[tag=sheep_mark_temp,limit=1] at @s run function sheep:ultimate/type/blue/find_place
