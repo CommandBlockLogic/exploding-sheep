@@ -43,6 +43,9 @@ execute if score system_game_time system matches 3601 run title @a title ["全�
 execute if score system_game_time system matches 3601 run title @a subtitle ["羊羊水晶的力量正在被激活!"]
 execute if score system_game_time system matches 3601.. run effect give @a[team=!] minecraft:glowing 2 0
 # infinite fire
-execute if score system_game_time system matches 10001 run title @a title ["无限火力!"]
+execute if score system_game_time system matches 10001 run title @a title ["无限能量!"]
 execute if score system_game_time system matches 10001 run title @a subtitle ["羊羊水晶的力量最大化了!"]
+execute if score system_game_time system matches 10001 run tellraw @a [">> 无限能量下",{"text":"粉羊羊","color":"light_purple"},"和",{"text":"黑羊羊","dark_blue":"red"},"将被禁用."]
 execute if score system_game_time system matches 10001.. run scoreboard players set @a s_energy 999
+execute if score system_game_time system matches 10001.. run scoreboard players set @a[scores={s_launch_type=2}] s_launch_type 1
+execute if score system_game_time system matches 10001.. run scoreboard players set @a[scores={s_launch_type=6}] s_launch_type 1
