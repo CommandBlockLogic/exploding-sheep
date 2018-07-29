@@ -12,8 +12,8 @@ function lobby/effect
 
 
 # death time
-scoreboard players add @a death_time_max 0
-scoreboard players set @a[scores={death_time_max=1..}] death_time_max 0
+scoreboard players set @a death_time_max 0
+scoreboard players set @a death_time 0
 
 
 
