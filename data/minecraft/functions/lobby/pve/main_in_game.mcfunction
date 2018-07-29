@@ -20,4 +20,3 @@ kill @e[tag=boss_1_skill_2_4]
 kill @e[tag=boss_2_summon_1]
 kill @e[tag=boss_2_skill_2]
 kill @e[tag=boss_2_skill_3]
-execute as @a[tag=HerobrineXia] run function minecraft:lobby/pve/other/player_boss_reset

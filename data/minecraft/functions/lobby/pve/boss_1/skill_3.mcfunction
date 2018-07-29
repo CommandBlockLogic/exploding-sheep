@@ -1,4 +1,4 @@
-scoreboard players set 技能冷却 boss_1_cool3 600
+scoreboard players set 技能冷却 boss_1_cool3 1200
 scoreboard players add @e[tag=boss1] boss_1_cool3 1
 execute as @e[tag=boss1] if score @s boss_1_cool3 >= 技能冷却 boss_1_cool3 run tag @s add boss_1_skill_3
 scoreboard players set @e[tag=boss1,tag=boss_1_skill_3] boss_1_cool3 0

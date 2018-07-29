@@ -28,6 +28,10 @@ kill @e[tag=boss_2_summon_1]
 kill @e[tag=boss_2_skill_2]
 kill @e[tag=boss_2_skill_3]
 
+kill @e[tag=boss_3_summon_1]
+kill @e[tag=boss_3_summon_2]
+kill @e[tag=boss_3_summon_3]
+
 
 # Boss复活百分比显示
 bossbar set minecraft:boss_cool players @a

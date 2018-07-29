@@ -1,15 +1,12 @@
 # 技能冷却
-scoreboard players set 技能冷却 boss_1_cool1 100
-scoreboard players add @e[tag=boss1] boss_1_cool1 1
-execute as @e[tag=boss1] if score @s boss_1_cool1 >= 技能冷却 boss_1_cool1 run tag @s add boss_1_skill_1
-execute as @e[tag=boss1,tag=boss_1_skill_1] at @s run tp @s ~ ~ ~ facing entity @p
-execute as @e[tag=boss1,tag=boss_1_skill_1] at @s run summon minecraft:armor_stand ^ ^ ^2 {CustomName:"{\"text\":\"技能一召唤物\"}",Marker:1b,Invisible:1b,NoGravity:1b,Tags:["boss_1_summon_1"]}
-execute if entity @e[tag=boss1,tag=boss_1_skill_1] as @e[type=minecraft:armor_stand,tag=boss_1_summon_1] at @s run tp @s ~ ~ ~ facing entity @p
-execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_1] at @s run tp @s ^ ^ ^1
-execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_1] at @s run summon minecraft:evoker_fangs ~ ~ ~
-tag @e[tag=boss1] remove boss_1_skill_1
-execute as @e[tag=boss1] if score @s boss_1_cool1 >= 技能冷却 boss_1_cool1 run scoreboard players set @s boss_1_cool1 0
+scoreboard players set 技能冷却 boss_3_cool1 600
+scoreboard players add @e[tag=boss3] boss_3_cool1 1
+execute as @e[tag=boss3] if score @s boss_3_cool1 >= 技能冷却 boss_3_cool1 run tag @s add boss_3_skill_1
+execute as @e[tag=boss3,tag=boss_3_skill_1] at @s run summon minecraft:zombie ^2 ^ ^ {HandItems:[{id:"minecraft:stick",Count:1b,tag:{Enchantments:[{id:"minecraft:knockback",lvl:3}]}},{id:"minecraft:shield",Count:1b,tag:{Enchantments:[{id:"minecraft:knockback",lvl:3}]}}],ArmorItems:[{id:"minecraft:diamond_boots",Count:1,tag:{Enchantments:[{id:"minecraft:protection",lvl:1}]}},{id:"minecraft:diamond_leggings",Count:1,tag:{Enchantments:[{id:"minecraft:protection",lvl:1}]}},{id:"minecraft:diamond_chestplate",Count:1,tag:{Enchantments:[{id:"minecraft:protection",lvl:1}]}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"K_bai",Enchantments:[{id:"minecraft:protection",lvl:1}]}}],CustomName:"{\"text\":\"泰坦\",\"color\":\"gold\"}",CustomNameVisible:1b,Tags:["monster","boss_3_summon_1"],Attributes:[{Base:5.0d,Name:"generic.maxHealth"},{Base:16.0d,Name:"generic.followRange"}],Health:5.0f,PersistenceRequired:1b,FallFlying:1b}
+execute as @e[tag=boss3,tag=boss_3_skill_1] at @s run summon minecraft:zombie ^-2 ^ ^ {HandItems:[{id:"minecraft:stick",Count:1b,tag:{Enchantments:[{id:"minecraft:knockback",lvl:3}]}},{id:"minecraft:shield",Count:1b,tag:{Enchantments:[{id:"minecraft:knockback",lvl:3}]}}],ArmorItems:[{id:"minecraft:diamond_boots",Count:1,tag:{Enchantments:[{id:"minecraft:protection",lvl:1}]}},{id:"minecraft:diamond_leggings",Count:1,tag:{Enchantments:[{id:"minecraft:protection",lvl:1}]}},{id:"minecraft:diamond_chestplate",Count:1,tag:{Enchantments:[{id:"minecraft:protection",lvl:1}]}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"K_bai",Enchantments:[{id:"minecraft:protection",lvl:1}]}}],CustomName:"{\"text\":\"泰坦\",\"color\":\"gold\"}",CustomNameVisible:1b,Tags:["monster","boss_3_summon_1"],Attributes:[{Base:5.0d,Name:"generic.maxHealth"},{Base:16.0d,Name:"generic.followRange"}],Health:5.0f,PersistenceRequired:1b,FallFlying:1b}
+execute as @e[tag=boss3] if score @s boss_3_cool1 >= 技能冷却 boss_3_cool1 run tag @s remove boss_3_skill_1
+execute as @e[tag=boss3] if score @s boss_3_cool1 >= 技能冷却 boss_3_cool1 run scoreboard players set @s boss_3_cool1 0
 
-scoreboard players set 召唤物限时 boss_1_cool1 20
-scoreboard players add @e[tag=boss_1_summon_1,type=minecraft:armor_stand] boss_1_cool1 1
-execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_1] if score @s boss_1_cool1 >= 召唤物限时 boss_1_cool1 run kill @s
+scoreboard players set 召唤物限时 boss_3_cool1 600
+scoreboard players add @e[tag=boss_3_summon_1,type=minecraft:zombie] boss_3_cool1 1
+execute as @e[type=minecraft:zombie,tag=boss_3_summon_1] if score @s boss_3_cool1 >= 召唤物限时 boss_3_cool1 run kill @s

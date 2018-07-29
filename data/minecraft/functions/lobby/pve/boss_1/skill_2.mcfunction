@@ -25,7 +25,7 @@ execute unless entity @e[tag=boss1] run kill @e[tag=boss_1_skill_2_2]
 execute unless entity @e[tag=boss1] run kill @e[tag=boss_1_skill_2_3]
 execute unless entity @e[tag=boss1] run kill @e[tag=boss_1_skill_2_4]
 
-scoreboard players set 技能冷却 boss_1_cool2 100
+scoreboard players set 技能冷却 boss_1_cool2 300
 scoreboard players add @e[tag=boss1] boss_1_cool2 1
 execute as @e[tag=boss1] at @s if entity @a[distance=..16] if score @s boss_1_cool2 >= 技能冷却 boss_1_cool2 run tag @e[tag=boss_1_skill_2_power,limit=1,sort=random] add boss_1_skill_2_use
 execute as @e[tag=boss1] if score @s boss_1_cool2 >= 技能冷却 boss_1_cool2 run scoreboard players set @s boss_1_cool2 0
