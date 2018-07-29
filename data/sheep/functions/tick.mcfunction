@@ -134,8 +134,8 @@ kill @e[scores={s_web_time=101..}]
 # blue
 scoreboard players add @e[tag=sheep_type_blue,scores={s_blow_time=1..}] s_ulti_inter 1
 scoreboard players add @e[tag=sheep_type_blue,scores={s_blow_time=1..}] s_ulti_dura 1
-execute as @e[tag=sheep_type_blue,scores={s_blow_time=1..,s_ulti_inter=7}] at @s run function sheep:ultimate/type/blue/summon_sheep
-scoreboard players set @e[tag=sheep_type_blue,scores={s_blow_time=1..,s_ulti_inter=7..}] s_ulti_inter 0
+execute as @e[tag=sheep_type_blue,scores={s_blow_time=1..,s_ulti_inter=4}] at @s run function sheep:ultimate/type/blue/summon_sheep
+scoreboard players set @e[tag=sheep_type_blue,scores={s_blow_time=1..,s_ulti_inter=4..}] s_ulti_inter 0
 kill @e[tag=sheep_type_blue,scores={s_blow_time=1..,s_ulti_dura=200..}]
 
 team join red @e[tag=sheep_type_blue,tag=sheep_team_red,team=]
