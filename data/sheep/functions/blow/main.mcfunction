@@ -21,6 +21,9 @@ execute if entity @s[tag=sheep_type_blue_small] run summon minecraft:creeper ~ ~
 # [{"text":"正义的","color":"gray"},{"text":"超蓝羊","color":"blue"}]
 
 
+
+
+
 # ice
 execute if entity @s[tag=sheep_type_web,tag=sheep_team_red] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark","sheep_web_mark_red"]}
 execute if entity @s[tag=sheep_type_web,tag=sheep_team_blue] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark","sheep_web_mark_blue"]}
@@ -35,6 +38,9 @@ execute if entity @s[tag=sheep_type_teleport] at @s as @a if score @s s_id = @e[
 execute if entity @s[tag=sheep_type_teleport] run playsound minecraft:entity.enderman.teleport ambient @a ~ ~ ~ 1 0.5
 execute if entity @s[tag=sheep_type_teleport] run particle minecraft:portal ~ ~ ~ 0 0 0 0.8 100
 execute if entity @s[tag=sheep_type_teleport] run particle minecraft:dust 0 0 0 2 ~ ~ ~ 0.5 1 0.5 0 100
+
+
+
 
 
 # explode blocks
@@ -68,10 +74,35 @@ scoreboard players add @e[tag=system_core_mark,sort=nearest,limit=1] destory_id 
 execute as @s[tag=!sheep_attr_no_damage,scores={s_temp2=1..}] run scoreboard players operation @e[tag=system_core_mark,sort=nearest,limit=1] core_destory += @s s_temp2
 execute as @s[tag=!sheep_attr_no_damage,scores={s_temp2=1..}] run scoreboard players operation @e[tag=system_core_mark,sort=nearest,limit=1] destory_id = @s s_thrower_id
 
+
+
+
+
+
 # add ultimate energy
+# blocks
 scoreboard players set @s s_temp1 60
 scoreboard players operation @s s_temp2 *= @s s_temp1
 execute if entity @s[tag=!sheep_attr_no_damage,scores={s_temp2=1..}] as @a if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run scoreboard players operation @s s_ulti_energy += @e[tag=sheep_temp,limit=1] s_temp2
+# damage
+execute if entity @s[tag=!sheep_attr_no_damage] as @a if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run tag @s add player_temp
+
+execute if entity @s[tag=!sheep_attr_no_damage,tag=!sheep_team_red,tag=!sheep_team_blue] at @s as @a[distance=..1] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 30
+execute if entity @s[tag=!sheep_attr_no_damage,tag=!sheep_team_red,tag=!sheep_team_blue] at @s as @a[distance=..2] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 20
+execute if entity @s[tag=!sheep_attr_no_damage,tag=!sheep_team_red,tag=!sheep_team_blue] at @s as @a[distance=..3.5] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 10
+
+execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_red] at @s as @a[distance=..1,team=!red,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 30
+execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_red] at @s as @a[distance=..2,team=!red,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 20
+execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_red] at @s as @a[distance=..3.5,team=!red,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 10
+
+execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_blue] at @s as @a[distance=..1,team=!blue,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 30
+execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_blue] at @s as @a[distance=..2,team=!blue,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 20
+execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_blue] at @s as @a[distance=..3.5,team=!blue,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 10
+
+tag @a[tag=player_temp] remove player_temp
+
+
+
 
 
 # kill sheep
