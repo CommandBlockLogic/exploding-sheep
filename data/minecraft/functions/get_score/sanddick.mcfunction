@@ -1,6 +1,6 @@
 # get_score/sanddick
 
-# generate random num between 0-255
+# generate random num between 0-1023
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["sheep_temp","sheep_random1"],Duration:999}
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["sheep_temp","sheep_random2"],Duration:999}
 scoreboard players set @e[tag=sheep_random1] s_temp1 0
@@ -23,10 +23,14 @@ scoreboard players operation @e[tag=sheep_random2,limit=1] s_temp1 *= @s s_temp2
 scoreboard players operation @s s_temp6 += @e[tag=sheep_temp,sort=random,limit=1] s_temp1
 scoreboard players operation @e[tag=sheep_random2,limit=1] s_temp1 *= @s s_temp2
 scoreboard players operation @s s_temp6 += @e[tag=sheep_temp,sort=random,limit=1] s_temp1
+scoreboard players operation @e[tag=sheep_random2,limit=1] s_temp1 *= @s s_temp2
+scoreboard players operation @s s_temp6 += @e[tag=sheep_temp,sort=random,limit=1] s_temp1
+scoreboard players operation @e[tag=sheep_random2,limit=1] s_temp1 *= @s s_temp2
+scoreboard players operation @s s_temp6 += @e[tag=sheep_temp,sort=random,limit=1] s_temp1
 
 scoreboard players set @s s_temp2 1000000
 scoreboard players operation @s s_temp6 *= @s s_temp2
-scoreboard players set @s s_temp2 255
+scoreboard players set @s s_temp2 1023
 scoreboard players operation @s s_temp6 /= @s s_temp2
 
 scoreboard players set @s s_temp7 1000000
