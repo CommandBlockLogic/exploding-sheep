@@ -8,7 +8,7 @@ execute as @a run function public/tp_game_spawn
 gamemode spectator @a[team=]
 
 scoreboard players reset * sidebar_score
-scoreboard objectives modify sidebar_score displayname [{"text":"红方进攻!","color":"red"}]
+scoreboard objectives modify sidebar_score displayname [{"text":"红方进攻!","color":"white"}]
 team join red 红队水晶砂
 team join blue 蓝队水晶砂
 scoreboard players set 红队水晶砂 sidebar_score 0

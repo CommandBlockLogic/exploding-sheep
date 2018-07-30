@@ -10,6 +10,8 @@ scoreboard players set system_twenty system 20
 scoreboard players set system_sixty system 60
 scoreboard players set system_second system 0
 scoreboard players set system_minute system 0
+scoreboard players set system_red_score system 0
+scoreboard players set system_blue_score system 0
 
 # bossbar
 bossbar set minecraft:score_time max 6000
