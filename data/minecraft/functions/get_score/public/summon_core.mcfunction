@@ -1,5 +1,5 @@
 # get_score/public/summon_core
 
 scoreboard players add system_clock1 system 1
-execute if score system_clock1 system matches 10 run function core/center/generate
-execute if score system_clock1 system matches 10.. run scoreboard players set system_clock1 system 0
+execute if score system_clock1 system matches 15 run function core/center/generate
+execute if score system_clock1 system matches 15.. run scoreboard players set system_clock1 system 0
