@@ -30,6 +30,7 @@ scoreboard objectives add death deathCount ["玩家死亡次数"]
 scoreboard objectives add death2 deathCount ["玩家死亡次数2"]
 scoreboard objectives add death_time dummy ["玩家死亡复活时间"]
 scoreboard objectives add death_time_max dummy ["玩家最大死亡复活时间"]
+scoreboard objectives add death_time_tp dummy ["玩家死亡复活传送时间"]
 
 scoreboard objectives add drop_brick minecraft.dropped:minecraft.stone_bricks ["回城指示"]
 

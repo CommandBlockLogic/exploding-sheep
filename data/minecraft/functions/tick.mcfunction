@@ -19,6 +19,9 @@ execute if score game_status system matches 1 run function death_match/tick
 execute if score game_status system matches 101 run function death_match/pre/tick
 execute if score game_status system matches 2 run function get_score/tick
 execute if score game_status system matches 102 run function get_score/pre/tick
+execute if score game_status system matches 202 run function get_score/red/tick
+execute if score game_status system matches 302 run function get_score/mid/tick
+execute if score game_status system matches 402 run function get_score/blue/tick
 execute if score game_status system matches 3 run function battle/tick
 execute if score game_status system matches 103 run function battle/pre/tick
 execute if score game_status system matches 8964 run function ending/tick
@@ -30,11 +33,11 @@ execute if score 游戏开始 pve_system matches 0 if score game_status system m
 
 
 # kill abnormal falling block
-#execute as @e[type=falling_block] at @s unless block ~ ~-2 ~ #minecraft:under_sand run kill @s
-#execute as @e[type=falling_block] at @s unless block ~ ~-1.8 ~ #minecraft:under_sand run kill @s
-#execute as @e[type=falling_block] at @s unless block ~ ~-1.5 ~ #minecraft:under_sand run kill @s
-#execute as @e[type=falling_block] at @s unless block ~ ~-1.2 ~ #minecraft:under_sand run kill @s
-#execute as @e[type=falling_block] at @s unless block ~ ~-1 ~ #minecraft:under_sand run kill @s
+execute as @e[type=falling_block] at @s unless block ~ ~-2 ~ #minecraft:under_sand run kill @s
+execute as @e[type=falling_block] at @s unless block ~ ~-1.8 ~ #minecraft:under_sand run kill @s
+execute as @e[type=falling_block] at @s unless block ~ ~-1.5 ~ #minecraft:under_sand run kill @s
+execute as @e[type=falling_block] at @s unless block ~ ~-1.2 ~ #minecraft:under_sand run kill @s
+execute as @e[type=falling_block] at @s unless block ~ ~-1 ~ #minecraft:under_sand run kill @s
 kill @e[type=item]
 
 

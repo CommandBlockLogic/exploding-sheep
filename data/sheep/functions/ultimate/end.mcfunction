@@ -8,6 +8,7 @@ scoreboard players set @s s_launch_type 1
 scoreboard players set @s s_ulti_time 0
 scoreboard players set @s s_ulti_dura 0
 scoreboard players set @s s_ulti_energy 0
+scoreboard players set @s s_energy 999
 tag @s add player_temp
 execute as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run tp @s ~ -1000 ~
 execute as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run kill @s

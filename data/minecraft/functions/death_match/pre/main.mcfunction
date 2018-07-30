@@ -4,21 +4,20 @@
 scoreboard players set game_status system 101
 
 # tp
-tp @a 0 39 0
-gamemode adventure @a
+tp @a 0 13 0
+
 
 # clear
-clear @a
-effect clear @a
-kill @e[tag=sheep_type_blue]
-execute as @a store result score @s s_class_2 run scoreboard players get @s s_class
-execute as @a run function sheep:ultimate/end
+function public/game_start_clear
 
 
 # score
 scoreboard players reset * sidebar_score
-scoreboard players set system_red_death_count system 10
-scoreboard players set system_blue_death_count system 10
+scoreboard players set system_game_ratio system 3
+execute store result score system_red_death_count system if entity @a[team=blue]
+execute store result score system_blue_death_count system if entity @a[team=red]
+scoreboard players operation system_red_death_count system *= system_game_ratio system
+scoreboard players operation system_blue_death_count system *= system_game_ratio system
 
 scoreboard players set system_game_time system 0
 scoreboard players set twenty system 20
@@ -31,19 +30,20 @@ scoreboard objectives modify sidebar_score displayname ["准备..."]
 scoreboard objectives setdisplay sidebar sidebar_score
 scoreboard players set 准备... sidebar_score 0
 
+
 # bossbar
 bossbar add minecraft:red_score ["",{"text":"剩余羊羊能量","color":"red"},": ",{"score":{"name":"system_red_death_count","objective":"system"}}]
-bossbar set minecraft:red_score max 10
-bossbar set minecraft:red_score value 10
-bossbar set minecraft:red_score style notched_10
+execute store result bossbar minecraft:red_score max run scoreboard players get system_red_death_count system
+execute store result bossbar minecraft:red_score value run scoreboard players get system_red_death_count system
+bossbar set minecraft:red_score style progress
 bossbar set minecraft:red_score color red
 bossbar set minecraft:red_score players @a
 bossbar set minecraft:red_score visible true
 
 bossbar add minecraft:blue_score ["",{"text":"剩余羊羊能量","color":"blue"},": ",{"score":{"name":"system_blue_death_count","objective":"system"}}]
-bossbar set minecraft:blue_score max 10
-bossbar set minecraft:blue_score value 10
-bossbar set minecraft:blue_score style notched_10
+execute store result bossbar minecraft:blue_score max run scoreboard players get system_blue_death_count system
+execute store result bossbar minecraft:blue_score value run scoreboard players get system_blue_death_count system
+bossbar set minecraft:blue_score style progress
 bossbar set minecraft:blue_score color blue
 bossbar set minecraft:blue_score players @a
 bossbar set minecraft:blue_score visible true
