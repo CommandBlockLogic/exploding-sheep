@@ -39,6 +39,6 @@ scoreboard players operation @s s_temp1 -= @s s_temp7
 scoreboard players set @s s_temp2 10
 scoreboard players operation @s s_temp1 *= @s s_temp2
 
-summon minecraft:falling_block ~ ~10 ~ {Tags:["sheep_block"]}
+summon minecraft:falling_block ~ ~10 ~ {Tags:["sheep_block"],Time:1}
 execute store result entity @e[tag=sheep_block,limit=1] Pos[0] double 0.001 run scoreboard players get @s s_temp1
 kill @e[tag=sheep_temp]
