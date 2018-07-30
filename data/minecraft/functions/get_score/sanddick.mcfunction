@@ -44,5 +44,6 @@ scoreboard players operation @s s_temp1 /= @s s_temp2
 
 summon minecraft:falling_block 0 30 0 {Tags:["sheep_block","sheep_block_temp"],Time:1}
 execute store result entity @e[tag=sheep_block_temp,limit=1] Pos[0] double 1 run scoreboard players get @s s_temp1
+execute as @e[tag=sheep_block_temp] at @s run tp @s ~0.5 ~ ~
 tag @e[tag=sheep_block_temp] remove sheep_block_temp
 kill @e[tag=sheep_temp]
