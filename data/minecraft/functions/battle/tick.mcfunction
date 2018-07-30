@@ -8,8 +8,8 @@ function lobby/enter_game
 function lobby/effect
 
 # check end
-execute if score system_red_score system matches ..0 run function get_score/blue_win
-execute if score system_blue_score system matches ..0 run function get_score/red_win
+execute if score system_red_score system matches ..0 run function death_match/blue_win
+execute if score system_blue_score system matches ..0 run function death_match/red_win
 
 # cal & display home blocks
 execute if score system_home_time system matches ..18 run scoreboard players add system_home_time system 1

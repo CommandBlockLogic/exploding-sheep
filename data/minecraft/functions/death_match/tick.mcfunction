@@ -32,9 +32,11 @@ execute if score system_game_time system matches 10001 run scoreboard players re
 execute if score system_game_time system matches 10001..15000 store result score 剩余时间至游戏结束(秒) sidebar_score run scoreboard players get system_time_second system
 
 # check end
-execute if score system_red_death_count system matches 0 run function get_score/blue_win
-execute if score system_blue_death_count system matches 0 run function get_score/red_win
-execute if score system_game_time system matches 15000.. run function get_score/draw
+execute if score system_red_death_count system matches 0 run function death_match/blue_win
+execute if score system_blue_death_count system matches 0 run function death_match/red_win
+execute if score system_game_time system matches 15000.. if score system_red_death_count system > system_blue_death_count system run function death_match/red_win
+execute if score system_game_time system matches 15000.. if score system_red_death_count system < system_blue_death_count system run function death_match/blue_win
+execute if score system_game_time system matches 15000.. if score system_red_death_count system = system_blue_death_count system run function death_match/draw
 
 
 # effect
@@ -45,7 +47,7 @@ execute if score system_game_time system matches 3601.. run effect give @a[team=
 # infinite fire
 execute if score system_game_time system matches 10001 run title @a title ["无限能量!"]
 execute if score system_game_time system matches 10001 run title @a subtitle ["羊羊水晶的力量最大化了!"]
-execute if score system_game_time system matches 10001 run tellraw @a [">> 无限能量下",{"text":"粉羊羊","color":"light_purple"},"和",{"text":"黑羊羊","dark_blue":"red"},"将被禁用."]
+execute if score system_game_time system matches 10001 run tellraw @a [">> 无限能量下",{"text":"橙羊羊","color":"gold"},"和",{"text":"黑羊羊","color":"dark_blue"},"将被禁用."]
 execute if score system_game_time system matches 10001.. run scoreboard players set @a s_energy 999
 execute if score system_game_time system matches 10001.. run scoreboard players set @a[scores={s_launch_type=2}] s_launch_type 1
 execute if score system_game_time system matches 10001.. run scoreboard players set @a[scores={s_launch_type=6}] s_launch_type 1
