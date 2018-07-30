@@ -12,6 +12,10 @@ scoreboard objectives modify sidebar_score displayname ["准备..."]
 scoreboard objectives setdisplay sidebar sidebar_score
 scoreboard players set 准备... sidebar_score 0
 
+# score
+scoreboard players set system_red_score system 0
+scoreboard players set system_blue_score system 0
+
 # bossbar
 bossbar add minecraft:score_time ["temp"]
 
