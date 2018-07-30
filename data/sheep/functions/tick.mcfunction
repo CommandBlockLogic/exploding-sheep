@@ -117,7 +117,7 @@ execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_red] at @s run tag @a[d
 execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_blue] at @s run tag @a[distance=..3,team=red] add sheep_ice_temp
 execute as @e[scores={s_web_time=1..},tag=sheep_web_mark,tag=!sheep_web_mark_blue,tag=!sheep_web_mark_red] at @s run tag @a[distance=..3] add sheep_ice_temp
 effect give @e[tag=sheep_ice_temp] minecraft:slowness 1 3 false
-effect give @e[tag=sheep_ice_temp] minecraft:blindness 1 0 false
+effect give @e[tag=sheep_ice_temp] minecraft:blindness 2 0 false
 effect give @e[tag=sheep_ice_temp] minecraft:jump_boost 1 128 false
 tag @e[tag=sheep_ice_temp] remove sheep_ice_temp
 kill @e[scores={s_web_time=101..}]
