@@ -30,11 +30,11 @@ execute if score 游戏开始 pve_system matches 0 if score game_status system m
 
 
 # kill abnormal falling block
-execute as @e[type=falling_block] at @s unless block ~ ~-2 ~ #minecraft:under_sand run kill @s
-execute as @e[type=falling_block] at @s unless block ~ ~-1.8 ~ #minecraft:under_sand run kill @s
-execute as @e[type=falling_block] at @s unless block ~ ~-1.5 ~ #minecraft:under_sand run kill @s
-execute as @e[type=falling_block] at @s unless block ~ ~-1.2 ~ #minecraft:under_sand run kill @s
-execute as @e[type=falling_block] at @s unless block ~ ~-1 ~ #minecraft:under_sand run kill @s
+#execute as @e[type=falling_block] at @s unless block ~ ~-2 ~ #minecraft:under_sand run kill @s
+#execute as @e[type=falling_block] at @s unless block ~ ~-1.8 ~ #minecraft:under_sand run kill @s
+#execute as @e[type=falling_block] at @s unless block ~ ~-1.5 ~ #minecraft:under_sand run kill @s
+#execute as @e[type=falling_block] at @s unless block ~ ~-1.2 ~ #minecraft:under_sand run kill @s
+#execute as @e[type=falling_block] at @s unless block ~ ~-1 ~ #minecraft:under_sand run kill @s
 kill @e[type=item]
 
 
