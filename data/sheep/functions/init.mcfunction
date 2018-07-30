@@ -21,6 +21,7 @@ scoreboard objectives add s_blow_time dummy ["羊落地后爆炸时间"]
 scoreboard objectives add s_wind_time dummy ["风飞行时间"]
 scoreboard objectives add s_push_time dummy ["玩家失重时间"]
 scoreboard objectives add s_web_time dummy ["冰存在时间"]
+scoreboard objectives add s_web_id dummy ["冰id"]
 scoreboard objectives add s_heal_time dummy ["治愈存在时间"]
 scoreboard objectives add s_ulti_sheep dummy ["大招羊状态"]
 
