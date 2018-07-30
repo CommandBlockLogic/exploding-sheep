@@ -8,7 +8,7 @@ execute if score system_start_countdown system matches 160 run function core/cle
 execute if score system_start_countdown system matches 161 run function core/center/clear
 scoreboard players set @e[tag=system_core_mark_center] core_destory 0
 # summon core
-execute if score system_start_countdown system matches ..160 run function get_score/public/summon_core
+execute if score system_start_countdown system matches ..160 run function get_score/public/summon_core_fast
 
 
 # title
