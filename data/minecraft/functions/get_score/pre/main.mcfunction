@@ -7,6 +7,7 @@ scoreboard players set game_status system 102
 tp @a 22 25 -19
 
 # display
+scoreboard players reset * sidebar_score
 scoreboard objectives modify sidebar_score displayname ["准备..."]
 scoreboard objectives setdisplay sidebar sidebar_score
 scoreboard players set 准备... sidebar_score 0
