@@ -7,14 +7,14 @@ summon minecraft:area_effect_cloud -166 10 -127 {Duration:9999999,Tags:["system_
 summon minecraft:area_effect_cloud -171 10 -127 {Duration:9999999,Tags:["system_lobby_mark","system_lobby_mark_enter"],CustomName:"[\"§f踩上这里进入游戏§r\"]"}
 
 # 选类型提示
-summon minecraft:area_effect_cloud -172 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_pink"],CustomName:"[\"§d治愈§r\"]"}
+summon minecraft:area_effect_cloud -172 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_orange"],CustomName:"[\"§6吸收§r\"]"}
 summon minecraft:area_effect_cloud -173 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_cyan"],CustomName:"[\"§b冰冻§r\"]"}
 summon minecraft:area_effect_cloud -174 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_red"],CustomName:"[\"§c瞬发§r\"]"}
 summon minecraft:area_effect_cloud -175 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_blue"],CustomName:"[\"§e失重§r\"]"}
 summon minecraft:area_effect_cloud -176 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_black"],CustomName:"[\"§1末影§r\"]"}
 summon minecraft:area_effect_cloud -177 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_white"],CustomName:"[\"§f普通§r\"]"}
 
-summon minecraft:area_effect_cloud -160 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_pink"],CustomName:"[\"§d治愈§r\"]"}
+summon minecraft:area_effect_cloud -160 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_orange"],CustomName:"[\"§6吸收§r\"]"}
 summon minecraft:area_effect_cloud -161 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_cyan"],CustomName:"[\"§b冰冻§r\"]"}
 summon minecraft:area_effect_cloud -162 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_red"],CustomName:"[\"§c瞬发§r\"]"}
 summon minecraft:area_effect_cloud -163 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_blue"],CustomName:"[\"§e失重§r\"]"}
