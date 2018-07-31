@@ -12,19 +12,24 @@ execute as @a if score @s s_id = @a[tag=player_self,limit=1] s_thrower_id run ta
 # message
 # normal
 # killed_by_c(z/s/f)=1被creeper(僵尸/小白/牙)杀死 s_kill_time=..1被特定羊炸死 fall_dis=300..摔死 
-execute if entity @s[scores={s_kill_time=..1}] if entity @a[tag=player_killer] run function player_death/message/kill_by_player
-execute if entity @s[scores={s_kill_time=..1}] unless entity @a[tag=player_killer] run function player_death/message/kill_by_sheep
-execute if entity @s[scores={killed_by_c=0,fall_dis=300..,s_kill_time=2..233}] if entity @a[tag=player_killer] run function player_death/message/push_by_player
-execute if entity @s[scores={killed_by_c=0,fall_dis=300..,s_kill_time=2..233}] unless entity @a[tag=player_killer] run function player_death/message/push_by_sheep
-execute if entity @s[scores={killed_by_c=0,fall_dis=300..,s_kill_time=234..}] run function player_death/message/fall_to_death
-execute if entity @s[scores={killed_by_c=0,fall_dis=..300,s_kill_time=234..}] run function player_death/message/stupid
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,s_kill_time=..1}] if entity @a[tag=player_killer] run function player_death/message/kill_by_player
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,s_kill_time=..1}] unless entity @a[tag=player_killer] run function player_death/message/kill_by_sheep
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=300..,s_kill_time=2..233}] if entity @a[tag=player_killer] run function player_death/message/push_by_player
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=300..,s_kill_time=2..233}] unless entity @a[tag=player_killer] run function player_death/message/push_by_sheep
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=300..,s_kill_time=234..}] run function player_death/message/fall_to_death
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=..300,s_kill_time=234..}] run function player_death/message/stupid
 # monster
-execute if entity @s[scores={killed_by_c=1,s_kill_time=2..}] run say 我被爆炸法术炸死了
-execute if entity @s[scores={killed_by_c=0,s_kill_time=2..},nbt={ActiveEffects:[{Id:20b}]}] run say 我被法师诅咒死了
-
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=1..,s_kill_time=2..}] run say 我被爆炸法术炸死了
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,s_kill_time=2..},nbt={ActiveEffects:[{Id:20b}]}] run say 我被法师诅咒死了
+execute if entity @s[scores={killed_by_f=1..}] run say 我被咬了
+execute if entity @s[scores={killed_by_s=1..}] run say 我被怪物锤了
+execute if entity @s[scores={killed_by_z=1..}] run say 我被怪物锤了
 
 # clear
 scoreboard players set @s death 0
 scoreboard players set @s killed_by_c 0
+scoreboard players set @s killed_by_z 0
+scoreboard players set @s killed_by_s 0
+scoreboard players set @s killed_by_f 0
 tag @s remove player_self
 tag @a[tag=player_killer] remove player_killer
