@@ -15,7 +15,7 @@ execute if entity @s[team=red] run tag @a[team=!red,gamemode=!spectator,distance
 execute if entity @s[team=blue] run tag @a[team=!blue,gamemode=!spectator,distance=1..20] add player_target
 execute if entity @s[team=] run tag @a[gamemode=!spectator,distance=1..20] add player_target
 # summon sheep and add target id. max 5 players
-execute unless entity @a[tag=player_target] unless entity @e[tag=monster_target,distance=..20] run function sheep:launch/main
+#execute unless entity @a[tag=player_target] unless entity @e[tag=monster_target,distance=..20] run function sheep:launch/main
 function sheep:ultimate/type/lime/summon_and_add_target
 function sheep:ultimate/type/lime/summon_and_add_target
 function sheep:ultimate/type/lime/summon_and_add_target
