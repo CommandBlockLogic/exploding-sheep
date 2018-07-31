@@ -16,6 +16,8 @@ scoreboard players reset * sidebar_score
 scoreboard players set system_game_ratio system 3
 execute store result score system_red_death_count system if entity @a[team=blue]
 execute store result score system_blue_death_count system if entity @a[team=red]
+scoreboard players operation system_red_death_count system > system_blue_death_count system
+scoreboard players operation system_blue_death_count system > system_red_death_count system
 scoreboard players operation system_red_death_count system *= system_game_ratio system
 scoreboard players operation system_blue_death_count system *= system_game_ratio system
 

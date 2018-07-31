@@ -6,6 +6,8 @@ execute store result score @s death_time run scoreboard players get @s death_tim
 execute if entity @s[team=red] run scoreboard players remove system_red_death_count system 1
 execute if entity @s[team=blue] run scoreboard players remove system_blue_death_count system 1
 
+say 1
+
 # death message
 tag @s add player_self
 execute as @a if score @s s_id = @a[tag=player_self,limit=1] s_thrower_id run tag @s add player_killer
