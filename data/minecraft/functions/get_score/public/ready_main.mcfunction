@@ -18,6 +18,7 @@ bossbar set minecraft:score_time value 6000
 bossbar set minecraft:score_time style progress
 bossbar set minecraft:score_time color white
 bossbar set minecraft:score_time players @a
+bossbar set minecraft:score_time visible true
 bossbar set minecraft:score_time name ["剩余时间   --:--"]
 
 
