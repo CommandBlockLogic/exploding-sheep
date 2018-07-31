@@ -32,8 +32,7 @@ scoreboard objectives add death_time dummy ["玩家死亡复活时间"]
 scoreboard objectives add death_time_max dummy ["玩家最大死亡复活时间"]
 scoreboard objectives add death_time_tp dummy ["玩家死亡复活传送时间"]
 scoreboard objectives add killed_by_c minecraft.killed_by:minecraft.creeper ["玩家被炸死"]
-scoreboard objectives add fall_dis dummy ["玩家掉落距离"]
-scoreboard objectives add fall_dis2 minecraft.custom:minecraft.fall_one_cm ["玩家掉落距离默认"]
+scoreboard objectives add fall_dis minecraft.custom:minecraft.fall_one_cm ["玩家掉落距离默认"]
 
 scoreboard objectives add drop_brick minecraft.dropped:minecraft.stone_bricks ["回城指示"]
 
