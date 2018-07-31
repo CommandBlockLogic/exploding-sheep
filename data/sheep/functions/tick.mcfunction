@@ -56,6 +56,7 @@ execute as @a[scores={s_ulti_launch=1..,s_ulti_energy=4001..},nbt={SelectedItemS
 scoreboard players set @a[scores={s_launch=1..}] s_launch 0
 scoreboard players set @a[scores={s_fan=1..}] s_fan 0
 scoreboard players set @a[scores={s_ulti_launch=1..}] s_ulti_launch 0
+kill @e[type=snowball]
 
 
 
