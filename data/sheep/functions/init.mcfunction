@@ -1,6 +1,7 @@
 # sheep:init
 
 scoreboard objectives add s_launch minecraft.used:minecraft.carrot_on_a_stick ["玩家使用钓竿"]
+scoreboard objectives add s_fan minecraft.used:minecraft.snowball ["玩家使用雪球"]
 scoreboard objectives add s_ulti_launch minecraft.dropped:minecraft.carrot_on_a_stick ["玩家丢出钓竿"]
 scoreboard objectives add s_fan_cd dummy ["玩家扇子cd"]
 scoreboard objectives add s_fan_num dummy ["玩家扇子次数"]

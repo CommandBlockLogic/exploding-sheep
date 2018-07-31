@@ -46,14 +46,15 @@ execute as @a[scores={s_launch=1..,s_launch_type=201..},nbt={SelectedItemSlot:0}
 execute as @a[scores={s_launch=1..,s_launch_type=201..},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/end
 
 # fan
-execute as @a[scores={s_launch=1..,s_fan_num=1..},nbt={SelectedItemSlot:1}] at @s anchored eyes positioned ^ ^ ^ run function sheep:fan/main
-scoreboard players remove @a[scores={s_launch=1..,s_fan_num=1..},nbt={SelectedItemSlot:1}] s_fan_num 1
+execute as @a[scores={s_fan=1..,s_fan_num=1..},nbt={SelectedItemSlot:1}] at @s anchored eyes positioned ^ ^ ^ run function sheep:fan/main
+scoreboard players remove @a[scores={s_fan=1..,s_fan_num=1..},nbt={SelectedItemSlot:1}] s_fan_num 1
 
 # ultimate start
 execute as @a[scores={s_ulti_launch=1..,s_ulti_energy=4001..},nbt={SelectedItemSlot:0}] at @s run function sheep:ultimate/main
 
 # clear
 scoreboard players set @a[scores={s_launch=1..}] s_launch 0
+scoreboard players set @a[scores={s_fan=1..}] s_fan 0
 scoreboard players set @a[scores={s_ulti_launch=1..}] s_ulti_launch 0
 
 

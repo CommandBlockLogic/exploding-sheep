@@ -3,12 +3,15 @@
 # sound
 playsound minecraft:entity.player.attack.sweep player @a ^ ^ ^0.5 1 0.5
 
+# item
+function sheep:item/fan
+
 # tag the player
 tag @s add sheep_fanning
 
 # tag sheeps which will be fanned and player
-execute positioned ^ ^ ^4.33 run tag @e[tag=sheep_sheep,tag=!sheep_fanned,distance=..4.33] add sheep_fanned
-execute positioned ^ ^ ^4.33 as @a[distance=..4.33,tag=!sheep_fanning] at @s anchored eyes run function sheep:fan/player
+execute positioned ^ ^ ^4 run tag @e[tag=sheep_sheep,tag=!sheep_fanned,distance=..4.5] add sheep_fanned
+execute positioned ^ ^ ^4 as @a[distance=..4.5,tag=!sheep_fanning] at @s anchored eyes run function sheep:fan/player
 
 # save wind direction
 # summon marker
