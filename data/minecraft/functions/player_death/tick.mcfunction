@@ -21,3 +21,5 @@ scoreboard players set @a[scores={s_kill_time=40}] fall_dis 0
 execute as @a[scores={s_kill_time=0..40}] store result score @s system_temp1 run data get entity @s FallDistance 10
 execute as @a[scores={s_kill_time=0..40}] run scoreboard players operation @s fall_dis > @s system_temp1
 scoreboard players add @a s_kill_time 1
+# reset
+scoreboard players set @a[scores={fall_dis2=1..}] fall_dis2 0

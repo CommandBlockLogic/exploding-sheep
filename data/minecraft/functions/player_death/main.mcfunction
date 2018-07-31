@@ -14,7 +14,7 @@ execute if score @s killed_by_c matches 1.. if entity @a[tag=player_killer] run 
 execute if score @s killed_by_c matches 1.. unless entity @a[tag=player_killer] run function player_death/message/kill_by_sheep
 execute if score @s killed_by_c matches 0 if score @s fall_dis matches 30.. if entity @a[tag=player_killer] run function player_death/message/push_by_player
 execute if score @s killed_by_c matches 0 if score @s fall_dis matches 30.. unless entity @a[tag=player_killer] run function player_death/message/push_by_sheep
-execute if score @s killed_by_c matches 0 if score @s fall_dis matches 0
+execute if score @s killed_by_c matches 0 if score @s fall_dis2 matches 1.. run say @s
 # clear
 scoreboard players set @s death 0
 scoreboard players set @s killed_by_c 0
