@@ -4,7 +4,7 @@
 scoreboard players set game_status system 101
 
 # tp
-tp @a 0 13 0
+tp @a 22 25 -19
 
 
 # clear

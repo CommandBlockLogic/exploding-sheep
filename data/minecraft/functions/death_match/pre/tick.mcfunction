@@ -5,6 +5,7 @@ scoreboard players remove system_start_countdown system 1
 
 # clear core
 execute if score system_start_countdown system matches 40 run function core/clear/all
+execute if score system_start_countdown system matches 40 run function core/center/clear
 
 
 # title
@@ -15,6 +16,10 @@ execute if score system_start_countdown system matches 20 run title @a subtitle 
 
 # no shoot
 scoreboard players set @a s_energy 0
+
+# effect
+effect give @a minecraft:resistance 5 5 true
+effect give @a minecraft:instant_health 1 0 true
 
 # start
 execute if score system_start_countdown system matches 0 run function death_match/start

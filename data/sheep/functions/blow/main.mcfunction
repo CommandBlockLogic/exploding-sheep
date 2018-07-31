@@ -2,9 +2,19 @@
 
 # add thrower id and type to players
 tag @s add sheep_temp
-execute if entity @s[tag=!sheep_attr_no_damage] as @a[distance=..3.5] store result score @s s_thrower_id run scoreboard players get @e[tag=sheep_temp,limit=1] s_thrower_id
-execute if entity @s[tag=!sheep_attr_no_damage] as @a[distance=..3.5] store result score @s s_sheep_type run scoreboard players get @e[tag=sheep_temp,limit=1] s_sheep_type
-execute if entity @s[tag=!sheep_attr_no_damage] run scoreboard players set @a[distance=..3.5] s_kill_time 0
+# power 2
+execute if entity @s[tag=!sheep_attr_no_damage] as @a[distance=..4] store result score @s s_thrower_id run scoreboard players get @e[tag=sheep_temp,limit=1] s_thrower_id
+execute if entity @s[tag=!sheep_attr_no_damage] as @a[distance=..4] store result score @s s_sheep_type run scoreboard players get @e[tag=sheep_temp,limit=1] s_sheep_type
+execute if entity @s[tag=!sheep_attr_no_damage] run scoreboard players set @a[distance=..4] s_kill_time 0
+# power 3
+execute if entity @s[tag=sheep_type_fast,scores={s_flying_time=22..40}] as @a[distance=..6] store result score @s s_thrower_id run scoreboard players get @e[tag=sheep_temp,limit=1] s_thrower_id
+execute if entity @s[tag=sheep_type_fast,scores={s_flying_time=22..40}] as @a[distance=..6] store result score @s s_sheep_type run scoreboard players get @e[tag=sheep_temp,limit=1] s_sheep_type
+execute if entity @s[tag=sheep_type_fast,scores={s_flying_time=22..40}] run scoreboard players set @a[distance=..6] s_kill_time 0
+# power 4
+execute if entity @s[tag=!sheep_type_fast,scores={s_flying_time=41..}] as @a[distance=..8] store result score @s s_thrower_id run scoreboard players get @e[tag=sheep_temp,limit=1] s_thrower_id
+execute if entity @s[tag=!sheep_type_fast,scores={s_flying_time=41..}] as @a[distance=..8] store result score @s s_sheep_type run scoreboard players get @e[tag=sheep_temp,limit=1] s_sheep_type
+execute if entity @s[tag=!sheep_type_fast,scores={s_flying_time=41..}] run scoreboard players set @a[distance=..8] s_kill_time 0
+
 
 # boom
 execute if entity @s[tag=sheep_type_normal] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"可爱的\",\"color\":\"gray\"},{\"text\":\"小白羊\",\"color\":\"white\"}]"}
