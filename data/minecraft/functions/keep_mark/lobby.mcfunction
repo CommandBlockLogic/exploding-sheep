@@ -3,7 +3,7 @@
 kill @e[tag=system_lobby_mark]
 
 # 进入游戏 选类型提示
-summon minecraft:area_effect_cloud -166 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark"],CustomName:"[\"§f踩上彩色混凝土块切换类型§r\"]"}
+summon minecraft:area_effect_cloud -164 10 -129 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark"],CustomName:"[\"§f踩上彩色混凝土块切换类型§r\"]"}
 summon minecraft:area_effect_cloud -161 10 -126 {Duration:9999999,Tags:["system_lobby_mark","system_lobby_mark_enter","system_lobby_mark_enter_hint"],CustomName:"[\"§f踩上这里进入游戏§r\"]"}
 summon minecraft:area_effect_cloud -161 10.3 -126 {Duration:9999999,Tags:["system_lobby_mark","system_lobby_mark_enter_hint"],CustomName:"[\"§f传送石§r\"]"}
 
