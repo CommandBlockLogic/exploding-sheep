@@ -1,8 +1,8 @@
 # lobby/change_class
 
 # text
-execute as @e[tag=system_class_mark,nbt=!{CustomNameVisible:1b}] at @s if entity @a[distance=..5] run data merge entity @s {CustomNameVisible:1}
-execute as @e[tag=system_class_mark,nbt={CustomNameVisible:1b}] at @s unless entity @a[distance=..5] run data merge entity @s {CustomNameVisible:0}
+execute as @e[tag=system_class_mark,nbt=!{CustomNameVisible:1b}] at @s if entity @a[distance=..8] run data merge entity @s {CustomNameVisible:1}
+execute as @e[tag=system_class_mark,nbt={CustomNameVisible:1b}] at @s unless entity @a[distance=..8] run data merge entity @s {CustomNameVisible:0}
 
 # change class
 execute at @e[tag=system_class_mark] as @a[distance=..0.3] unless score @s s_launch_type matches 1 if score @s s_class matches ..100 run scoreboard players set @s s_launch_type 1
