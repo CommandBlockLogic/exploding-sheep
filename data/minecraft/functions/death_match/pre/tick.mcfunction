@@ -4,8 +4,8 @@
 scoreboard players remove system_start_countdown system 1
 
 # clear core
-execute if score system_start_countdown system matches 40 run function core/clear/all
-execute if score system_start_countdown system matches 40 run function core/center/clear
+execute if score system_start_countdown system matches 60 run function core/clear/all
+execute if score system_start_countdown system matches 60 run function core/center/clear
 
 
 # title

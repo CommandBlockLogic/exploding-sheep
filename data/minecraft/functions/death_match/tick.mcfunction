@@ -43,7 +43,7 @@ execute if score system_game_time system matches 15000.. if score system_red_dea
 # glowing
 execute if score system_game_time system matches 3601 run title @a title ["全场高亮!"]
 execute if score system_game_time system matches 3601 run title @a subtitle ["羊羊水晶的力量正在被激活!"]
-execute if score system_game_time system matches 3601.. run effect give @a[team=!] minecraft:glowing 2 0
+execute if score system_game_time system matches 3601.. run effect give @a[team=!] minecraft:glowing 5 0
 # infinite fire
 execute if score system_game_time system matches 10001 run title @a title ["无限能量!"]
 execute if score system_game_time system matches 10001 run title @a subtitle ["羊羊水晶的力量最大化了!"]

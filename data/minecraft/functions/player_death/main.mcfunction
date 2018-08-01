@@ -16,7 +16,7 @@ scoreboard players add @s killed_by_f 0
 scoreboard players add @s killed_by_z 0
 scoreboard players add @s killed_by_c 0
 scoreboard players add @s killed_by_s 0
-scoreboard players add @s killed_by_s 0
+scoreboard players add @s fall_dis 0
 # normal
 # killed_by_c(z/s/f)=1被creeper(僵尸/小白/牙)杀死 s_kill_time=..2被特定羊炸死 fall_dis=300..摔死 
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,s_kill_time=..2}] if entity @a[tag=player_killer] if entity @s[tag=!player_killer] run function player_death/message/kill_by_player
