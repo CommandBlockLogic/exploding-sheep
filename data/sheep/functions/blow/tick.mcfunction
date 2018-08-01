@@ -18,4 +18,5 @@ execute as @e[scores={s_blow_time=2}] at @s run playsound minecraft:entity.creep
 execute as @e[scores={s_blow_time=2}] at @s run data merge entity @s {CustomName:"[{\"text\":\"?\",\"color\":\"yellow\"}]",CustomNameVisible:true}
 execute as @e[scores={s_blow_time=6}] at @s run data merge entity @s {CustomName:"[{\"text\":\"???\",\"color\":\"gold\"}]"}
 execute as @e[scores={s_blow_time=10}] at @s run data merge entity @s {CustomName:"[{\"text\":\"?????\",\"color\":\"red\"}]"}
+execute as @e[scores={s_blow_time=12}] at @s run data merge entity @s {Age:0}
 execute as @e[scores={s_blow_time=13..}] at @s run function sheep:blow/main
