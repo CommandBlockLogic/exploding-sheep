@@ -1,8 +1,8 @@
 # lobby/enter_game
 
 # text
-execute as @e[tag=system_class_mark,nbt=!{CustomNameVisible:1b}] at @s if entity @a[distance=..5] run data merge entity @s {CustomNameVisible:1}
-execute as @e[tag=system_class_mark,nbt={CustomNameVisible:1b}] at @s unless entity @a[distance=..5] run data merge entity @s {CustomNameVisible:0}
+execute as @e[tag=system_lobby_mark_enter_hint,nbt=!{CustomNameVisible:1b}] at @s if entity @a[distance=..15] run data merge entity @s {CustomNameVisible:1}
+execute as @e[tag=system_lobby_mark_enter_hint,nbt={CustomNameVisible:1b}] at @s unless entity @a[distance=..15] run data merge entity @s {CustomNameVisible:0}
 
 
 # first step tag and hint
