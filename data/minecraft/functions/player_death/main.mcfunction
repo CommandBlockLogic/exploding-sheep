@@ -25,7 +25,7 @@ execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,s_kill_ti
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=300..,s_kill_time=3..233}] if entity @a[tag=player_killer] if entity @s[tag=!player_killer] run function player_death/message/push_by_player
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=300..,s_kill_time=3..233}] if entity @s[tag=player_killer] run function player_death/message/push_by_himself
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=300..,s_kill_time=3..233}] unless entity @a[tag=player_killer] run function player_death/message/push_by_sheep
-execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=300..,s_kill_time=234..}] run function player_death/message/fall_to_death
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=300..,s_kill_time=999..}] run function player_death/message/fall_to_death
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=..300,s_kill_time=3..}] run function player_death/message/stupid
 # monster
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=1..,s_kill_time=3..}] run say 我被爆炸法术炸死了
