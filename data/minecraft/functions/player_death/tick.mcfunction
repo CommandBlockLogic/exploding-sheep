@@ -17,6 +17,6 @@ scoreboard players set @a[scores={death_time_tp=400..}] death_time_tp 0
 
 # calculate fall distance
 # 玩家被炸飞后 若掉落距离更新且没死 说明不是被炸飞死掉的 因此直接把死因监测时间计分板拖到不检测范围即大于10
-scoreboard players set @a[scores={fall_dis=1..,death=0}] s_kill_time 999
-scoreboard players set @a[scores={fall_dis=1..,death=0}] fall_dis 0
+#scoreboard players set @a[scores={fall_dis=1..,death=0}] s_kill_time 999
+#scoreboard players set @a[scores={fall_dis=1..,death=0}] fall_dis 0
 scoreboard players add @a s_kill_time 1
