@@ -10,10 +10,10 @@ execute store result score @s s_temp7 run scoreboard players get @a[tag=sheep_fa
 #execute if entity @s[tag=sheep_type_heavy] run scoreboard players set @s s_temp6 0
 #execute if entity @s[tag=sheep_type_heavy] run scoreboard players set @s s_temp7 0
 # if it's fast sheep
-scoreboard players set @s[tag=sheep_type_fast] s_temp1 2
-execute if entity @s[tag=sheep_type_fast] run scoreboard players operation @s s_temp5 /= @s s_temp1
-execute if entity @s[tag=sheep_type_fast] run scoreboard players operation @s s_temp6 /= @s s_temp1
-execute if entity @s[tag=sheep_type_fast] run scoreboard players operation @s s_temp7 /= @s s_temp1
+#scoreboard players set @s[tag=sheep_type_fast] s_temp1 2
+#execute if entity @s[tag=sheep_type_fast] run scoreboard players operation @s s_temp5 /= @s s_temp1
+#execute if entity @s[tag=sheep_type_fast] run scoreboard players operation @s s_temp6 /= @s s_temp1
+#execute if entity @s[tag=sheep_type_fast] run scoreboard players operation @s s_temp7 /= @s s_temp1
 
 # add wind motion
 scoreboard players operation @s s_vx += @s s_temp5

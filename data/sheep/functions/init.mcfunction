@@ -19,6 +19,7 @@ scoreboard objectives add s_kill_time dummy ["玩家被攻击后时间"]
 
 scoreboard objectives add s_flying_time dummy ["羊飞行时间"]
 scoreboard objectives add s_blow_time dummy ["羊落地后爆炸时间"]
+scoreboard objectives add s_no_decay_time dummy ["羊被吹后无减速时间"]
 scoreboard objectives add s_wind_time dummy ["风飞行时间"]
 scoreboard objectives add s_push_time dummy ["玩家失重时间"]
 scoreboard objectives add s_web_time dummy ["冰存在时间"]
