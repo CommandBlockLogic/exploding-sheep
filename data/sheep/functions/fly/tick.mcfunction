@@ -3,7 +3,7 @@
 # set force
 scoreboard players set @s s_ay -50
 scoreboard players set @s[tag=sheep_type_fast,scores={s_blow_time=0}] s_ay 0
-scoreboard players set @s[tag=sheep_type_ball] s_ay -17
+scoreboard players set @s[tag=sheep_type_ball] s_ay -12
 scoreboard players operation @s s_vy += @s s_ay
 
 # remove no speed decay time
