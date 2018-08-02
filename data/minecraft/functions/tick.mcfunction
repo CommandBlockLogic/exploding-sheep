@@ -29,14 +29,13 @@ execute if score game_status system matches 8964 run function ending/tick
 execute if score game_status system matches 1.. run gamemode spectator @a[team=,gamemode=adventure]
 execute if score 游戏开始 pve_system matches 0 if score game_status system matches 1.. run scoreboard players set 游戏开始 pve_system 1
 
+# game start
+execute if score system_gc_comfirm system matches 1.. run scoreboard players remove system_gc_comfirm system 1
+execute if score system_dm_comfirm system matches 1.. run scoreboard players remove system_dm_comfirm system 1
 
 
 
 # kill abnormal falling block
-#execute as @e[type=falling_block] at @s unless block ~ ~-2 ~ #minecraft:under_sand run kill @s
-#execute as @e[type=falling_block] at @s unless block ~ ~-1.8 ~ #minecraft:under_sand run kill @s
-#execute as @e[type=falling_block] at @s unless block ~ ~-1.5 ~ #minecraft:under_sand run kill @s
-#execute as @e[type=falling_block] at @s unless block ~ ~-1.2 ~ #minecraft:under_sand run kill @s
 execute as @e[type=falling_block] at @s unless block ~ ~-1 ~ #minecraft:under_sand run kill @s
 execute as @e[type=falling_block] at @s unless block ~ ~-0.7 ~ #minecraft:under_sand run kill @s
 execute as @e[type=falling_block] at @s unless block ~ ~-0.5 ~ #minecraft:under_sand run kill @s
