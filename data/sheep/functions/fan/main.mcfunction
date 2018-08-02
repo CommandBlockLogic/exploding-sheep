@@ -15,7 +15,7 @@ execute positioned ^ ^ ^4 as @a[distance=..4.5,tag=!sheep_fanning] at @s anchore
 
 # save wind direction
 # summon marker
-summon minecraft:area_effect_cloud ^ ^ ^-1 {Tags:["sheep_mark","sheep_wind"],Duration:9}
+summon minecraft:area_effect_cloud ^ ^ ^-1.1 {Tags:["sheep_mark","sheep_wind"],Duration:9}
 summon minecraft:area_effect_cloud ^ ^ ^ {Tags:["sheep_mark2"],Duration:9}
 # save motion
 execute as @e[tag=sheep_mark,limit=1] store result score @s s_temp2 run data get entity @s Pos[0] 1000
