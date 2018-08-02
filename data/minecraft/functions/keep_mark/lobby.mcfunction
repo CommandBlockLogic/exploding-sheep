@@ -16,7 +16,7 @@ summon minecraft:area_effect_cloud -162 9 -129 {Duration:9999999,Tags:["system_l
 summon minecraft:area_effect_cloud -163 9 -129 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_white"],CustomName:"[\"§f普通§r\"]"}
 
 # 选模式提示
-summon minecraft:area_effect_cloud -175 10 -127 {Duration:9999999,Tags:["system_lobby_mark","system_mode_mark"],CustomName:"[\"§f踩上彩色混凝土块切换类型§r\"]"}
+summon minecraft:area_effect_cloud -174.5 10 -126.5 {Duration:9999999,Tags:["system_lobby_mark","system_mode_mark"],CustomName:"[\"选择游戏模式\"]"}
 
 # 选队伍提示
 summon minecraft:area_effect_cloud -161 10 -120 {Duration:9999999,Tags:["system_lobby_mark","system_lobby_mark_join","system_lobby_mark_join_red"],CustomName:"[\"将小羊丢到这里加入§c红队§r\"]"}
