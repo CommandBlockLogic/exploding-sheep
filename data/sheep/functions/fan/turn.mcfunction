@@ -15,7 +15,7 @@ execute store result score @s s_temp7 run scoreboard players get @a[tag=sheep_fa
 #execute if entity @s[tag=sheep_type_fast] run scoreboard players operation @s s_temp6 /= @s s_temp1
 #execute if entity @s[tag=sheep_type_fast] run scoreboard players operation @s s_temp7 /= @s s_temp1
 # if it's ball sheep
-scoreboard players set @s[tag=sheep_type_ball] s_temp1 2
+scoreboard players set @s[tag=sheep_type_ball] s_temp1 3
 execute if entity @s[tag=sheep_type_ball] run scoreboard players operation @s s_temp5 /= @s s_temp1
 execute if entity @s[tag=sheep_type_ball] run scoreboard players operation @s s_temp6 /= @s s_temp1
 execute if entity @s[tag=sheep_type_ball] run scoreboard players operation @s s_temp7 /= @s s_temp1
