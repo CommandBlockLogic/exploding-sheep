@@ -19,6 +19,9 @@ scoreboard players set @s[tag=sheep_type_ball] s_temp1 2
 execute if entity @s[tag=sheep_type_ball] run scoreboard players operation @s s_temp5 /= @s s_temp1
 execute if entity @s[tag=sheep_type_ball] run scoreboard players operation @s s_temp6 /= @s s_temp1
 execute if entity @s[tag=sheep_type_ball] run scoreboard players operation @s s_temp7 /= @s s_temp1
+execute if entity @s[tag=sheep_type_ball] run scoreboard players set @s s_vx 0
+execute if entity @s[tag=sheep_type_ball] run scoreboard players set @s s_vy 0
+execute if entity @s[tag=sheep_type_ball] run scoreboard players set @s s_vz 0
 
 
 # add wind motion
