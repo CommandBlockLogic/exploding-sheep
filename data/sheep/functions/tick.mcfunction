@@ -20,6 +20,11 @@ scoreboard players remove @a[scores={s_launch=1..,s_energy=100..,s_launch_type=5
 execute as @a[scores={s_launch=1..,s_energy=120..,s_launch_type=6},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=120..,s_launch_type=6},nbt={SelectedItemSlot:0}] s_energy 120
 
+execute as @a[scores={s_launch=1..,s_energy=200..,s_launch_type=7},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+scoreboard players remove @a[scores={s_launch=1..,s_energy=200..,s_launch_type=7},nbt={SelectedItemSlot:0}] s_energy 200
+
+
+
 # ultimate hint
 execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级灰羊羊 ","color":"gray"}," 随他进攻!"]
 execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级灰羊羊 ","color":"gray"}," 小心躲避!"]

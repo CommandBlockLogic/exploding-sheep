@@ -32,7 +32,7 @@ execute if entity @s[tag=sheep_type_lime] run summon minecraft:creeper ~ ~ ~ {Fu
 execute if entity @s[tag=sheep_type_blue_small] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"正义的\",\"color\":\"gray\"},{\"text\":\"超蓝羊\",\"color\":\"blue\"}]"}
 # [{"text":"正义的","color":"gray"},{"text":"超蓝羊","color":"blue"}]
 
-
+execute if entity @s[tag=sheep_type_ball] run summon minecraft:firework_rocket ~ ~ ~ {FireworksItem:{id:"minecraft:firework_rocket",Count:1,tag:{Fireworks:{Flight:0,Explosions:[{Type:0,Colors:[I;5636095]}]}}},Life:1}
 
 
 

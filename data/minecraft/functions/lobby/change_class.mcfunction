@@ -6,7 +6,7 @@ execute as @e[tag=system_class_mark,nbt={CustomNameVisible:1b}] at @s unless ent
 
 # change class
 execute at @e[tag=system_class_mark] as @a[distance=..0.3] unless score @s s_launch_type matches 1 if score @s s_class matches ..100 run scoreboard players set @s s_launch_type 1
-execute at @e[tag=system_class_mark_white] as @a[distance=..0.3] unless score @s s_class matches 1 if score @s s_class matches ..100 run tellraw @s [">> 切换至 §f普通§r 系\n    虽然能力普通, 但是总能量高!","\n    手持小羊大炮按F即可切换!"]
+execute at @e[tag=system_class_mark_white] as @a[distance=..0.3] unless score @s s_class matches 1 if score @s s_class matches ..100 run tellraw @s [">> 切换至 §f普通§r 系\n    虽然能力普通, 但是总能量高!"]
 execute at @e[tag=system_class_mark_white] as @a[distance=..0.3] unless score @s s_class matches 1 if score @s s_class matches ..100 run scoreboard players set @s s_class 1
 execute at @e[tag=system_class_mark_black] as @a[distance=..0.3] unless score @s s_class matches 2 if score @s s_class matches ..100 run tellraw @s [">> 切换至 §1末影§r 系\n    羊羊会将它的主人传送到它落地的位置!","\n    手持小羊大炮按F即可切换!"]
 execute at @e[tag=system_class_mark_black] as @a[distance=..0.3] unless score @s s_class matches 2 if score @s s_class matches ..100 run scoreboard players set @s s_class 2
