@@ -13,8 +13,8 @@ advancement grant @s[scores={s_launch_type=6},advancements={sheep:sheep/absorpti
 advancement grant @s[scores={s_launch_type=101},advancements={sheep:ultimate/gray=false}] only sheep:ultimate/gray
 advancement grant @s[scores={s_launch_type=103},advancements={sheep:ultimate/lime=false}] only sheep:ultimate/lime
 advancement grant @s[scores={s_launch_type=201},advancements={sheep:ultimate/blue=false}] only sheep:ultimate/blue
-advancement grant @s[scores={s_launch_type=1001},advancements={sheep:speical_sheep/volleyball=false}] only sheep:speical_sheep/volleyball
-advancement grant @s[scores={s_launch_type=1002},advancements={sheep:speical_sheep/football=false}] only sheep:speical_sheep/football
+advancement grant @s[scores={s_launch_type=1001},advancements={sheep:speical_sheep/volleyball=false}] until sheep:speical_sheep/volleyball
+advancement grant @s[scores={s_launch_type=1002},advancements={sheep:speical_sheep/football=false}] until sheep:speical_sheep/football
 
 # summon marker
 summon minecraft:area_effect_cloud ^ ^ ^1 {Tags:["sheep_mark"]}

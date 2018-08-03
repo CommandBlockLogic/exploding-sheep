@@ -17,5 +17,5 @@ tag @e[tag=sheep_new] remove sheep_new
 # hint
 tellraw @s [">> 你的终极羊羊正在准备..."]
 
-# advencement
+# advancement
 advancement grant @s[advancements={sheep:ultimate/root=false}] only sheep:ultimate/root
