@@ -1,0 +1,29 @@
+{
+	"parent": "sheep:sheep/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:gray_wool"
+		},
+		"title": [
+			{
+				"text": "足球羊",
+				"color": "dark_gray"
+			}
+		],
+		"description": [
+			{
+				"text": "踢出了一只足球!",
+				"color": "white"
+			}
+		],
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}
