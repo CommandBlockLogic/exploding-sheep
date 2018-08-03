@@ -2,9 +2,9 @@
 	"parent":"sheep:sheep/root",
 	"display": {
 		"icon": {
-			"item":"minecraft:yellow_wool"
+			"item":"minecraft:blue_wool"
 		},
-		"title":["小黑羊"],
+		"title":[{"text":"小黑羊","color":"dark_purple"}],
 		"description":["发射了一只低调的黑色羊羊"],
 		"frame": "task",
 		"show_toast": true,

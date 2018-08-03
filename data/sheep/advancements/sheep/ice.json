@@ -1,18 +1,25 @@
 {
-	"parent":"sheep:sheep/root",
+	"parent": "sheep:sheep/root",
 	"display": {
 		"icon": {
-			"item":"minecraft:yellow_wool"
+			"item": "minecraft:light_blue_wool"
 		},
-		"title":["小冰羊"],
-		"description":["发射了一只冷冷的浅蓝羊羊"],
+		"title": [
+			{
+				"text": "小冰羊",
+				"color": "aqua"
+			}
+		],
+		"description": [
+			"发射了一只冷冷的浅蓝羊羊"
+		],
 		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": false,
-		"hidden": false 
+		"hidden": false
 	},
 	"criteria": {
-		"impossible":{
+		"impossible": {
 			"trigger": "minecraft:impossible"
 		}
 	}

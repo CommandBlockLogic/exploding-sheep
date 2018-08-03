@@ -1,14 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:carrot_on_a_stick",
-			"nbt": "{Damage:15}"
+			"item": "minecraft:sheep_spawn_egg"
 		},
 		"title": [
 			"羊羊"
 		],
 		"frame": "task",
-		"background": "minecraft:textures/block/white_wool.png",
+		"background": "minecraft:textures/block/gray.png",
 		"description": [
 			"探索不同种类的羊羊们吧!"
 		],
