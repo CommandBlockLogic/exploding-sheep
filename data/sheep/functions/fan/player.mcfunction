@@ -35,4 +35,4 @@ kill @e[tag=sheep_mark_push]
 tp @e[tag=sheep_pusher] ~ -100 ~
 
 # advancement
-advancement grant @a[tag=sheep_fanningadvancements={sheep:fan/player=false}] only sheep:fan/player
+advancement grant @a[tag=sheep_fanning,advancements={sheep:fan/player=false}] only sheep:fan/player
