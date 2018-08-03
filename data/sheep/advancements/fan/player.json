@@ -1,20 +1,22 @@
 {
+	"parent": "sheep:fan/root",
 	"display": {
 		"icon": {
-			"item": "minecraft:sheep_spawn_egg"
+			"item": "minecraft:player_head"
 		},
 		"title": [
-			"羊羊!"
+			{
+				"text": "扇扇小人!"
+			}
 		],
-		"frame": "task",
-		"background": "minecraft:textures/block/gray_wool.png",
 		"description": [
 			{
-				"text": "探索不同种类的羊羊们吧!",
+				"text": "用芭蕉扇扇了扇玩家!",
 				"color": "white"
 			}
 		],
-		"show_toast": false,
+		"frame": "task",
+		"show_toast": true,
 		"announce_to_chat": false,
 		"hidden": false
 	},

@@ -6,8 +6,7 @@
 		},
 		"title": [
 			{
-				"text": "终极羊羊!",
-				"color": "white"
+				"text": "终极羊羊!"
 			}
 		],
 		"background": "minecraft:textures/block/gray_wool.png",

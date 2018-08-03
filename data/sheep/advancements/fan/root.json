@@ -1,19 +1,21 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:sheep_spawn_egg"
+			"item": "minecraft:carrot_on_a_stick"
 		},
 		"title": [
-			"羊羊!"
+			{
+				"text": "芭蕉扇!"
+			}
 		],
-		"frame": "task",
-		"background": "minecraft:textures/block/gray_wool.png",
+		"background": "minecraft:textures/block/oak_leaves.png",
 		"description": [
 			{
-				"text": "探索不同种类的羊羊们吧!",
+				"text": "快扇扇手中的芭蕉扇!",
 				"color": "white"
 			}
 		],
+		"frame": "task",
 		"show_toast": false,
 		"announce_to_chat": false,
 		"hidden": false
