@@ -28,6 +28,8 @@
 		}
 	},
 	"requirements": [
-		"have_cannon"
+		[
+			"have_cannon"
+		]
 	]
 }
