@@ -20,8 +20,8 @@ scoreboard players remove @a[scores={s_launch=1..,s_energy=100..,s_launch_type=5
 execute as @a[scores={s_launch=1..,s_energy=120..,s_launch_type=6},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=120..,s_launch_type=6},nbt={SelectedItemSlot:0}] s_energy 120
 
-execute as @a[scores={s_launch=1..,s_energy=100..,s_launch_type=7},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
-scoreboard players remove @a[scores={s_launch=1..,s_energy=100..,s_launch_type=7},nbt={SelectedItemSlot:0}] s_energy 100
+execute as @a[scores={s_launch=1..,s_energy=100..,s_launch_type=1001},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+scoreboard players remove @a[scores={s_launch=1..,s_energy=100..,s_launch_type=1001},nbt={SelectedItemSlot:0}] s_energy 100
 
 
 
