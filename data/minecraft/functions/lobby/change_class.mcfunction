@@ -19,9 +19,9 @@ execute at @e[tag=system_class_mark_cyan] as @a[distance=..0.3] unless score @s 
 execute at @e[tag=system_class_mark_orange] as @a[distance=..0.3] unless score @s s_class matches 6 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §6吸收§r 系\n    羊羊在附近生成吸收阵, 其中的队友会获得两颗心的伤害吸收","\n    手持小羊大炮按F即可切换!"]
 execute at @e[tag=system_class_mark_orange] as @a[distance=..0.3] unless score @s s_class matches 6 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 6
 
-execute at @e[tag=system_class_mark_volleyball] as @a[distance=..0.3] unless score @s s_class matches 1001 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §b排球§r 系\n    羊羊飞的慢慢的, 可以用扇子丢来丢去","\n    手持小羊大炮按F即可切换!"]
+execute at @e[tag=system_class_mark_volleyball] as @a[distance=..0.3] unless score @s s_class matches 1001 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §b排球§r 系\n    羊羊飞的慢慢的, 可以用扇子丢来丢去"]
+execute at @e[tag=system_class_mark_volleyball] as @a[distance=..0.3] unless score @s s_class matches 1001 unless score @s s_class matches 100..999 run advancement grant @s[advancements={sheep:speical_sheep/root=false}] only sheep:speical_sheep/root
 execute at @e[tag=system_class_mark_volleyball] as @a[distance=..0.3] unless score @s s_class matches 1001 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 1001
+execute at @e[tag=system_class_mark_football] as @a[distance=..0.3] unless score @s s_class matches 1002 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §8足球§r 系\n    羊羊落地无事发生, 可以用扇子丢来丢去"]
 execute at @e[tag=system_class_mark_volleyball] as @a[distance=..0.3] unless score @s s_class matches 1001 unless score @s s_class matches 100..999 run advancement grant @s[advancements={sheep:speical_sheep/root=false}] only sheep:speical_sheep/root
-execute at @e[tag=system_class_mark_football] as @a[distance=..0.3] unless score @s s_class matches 1002 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §8足球§r 系\n    羊羊落地无事发生, 可以用扇子丢来丢去","\n    手持小羊大炮按F即可切换!"]
 execute at @e[tag=system_class_mark_football] as @a[distance=..0.3] unless score @s s_class matches 1002 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 1002
-execute at @e[tag=system_class_mark_volleyball] as @a[distance=..0.3] unless score @s s_class matches 1001 unless score @s s_class matches 100..999 run advancement grant @s[advancements={sheep:speical_sheep/root=false}] only sheep:speical_sheep/root
