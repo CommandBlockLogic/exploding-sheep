@@ -1,25 +1,26 @@
 {
-	"parent": "sheep:sheep/ultimate",
 	"display": {
 		"icon": {
-			"item": "minecraft:purple_wool"
+			"item": "minecraft:sheep_spawn_egg",
+			"nbt": "{Enchantments:[{id:\"\",lvl:1}]}"
 		},
 		"title": [
 			{
-				"text": "超紫羊",
-				"color": "purple"
+				"text": "终极羊羊!",
+				"color": "white"
 			}
 		],
+		"background": "minecraft:textures/block/gray_wool.png",
 		"description": [
 			{
-				"text": "召唤了乖巧的超紫羊羊!",
+				"text": "发动了一次终极羊羊!",
 				"color": "white"
 			}
 		],
 		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": true,
-		"hidden": false
+		"hidden": true
 	},
 	"criteria": {
 		"impossible": {

@@ -2,12 +2,12 @@
 	"parent": "sheep:sheep/root",
 	"display": {
 		"icon": {
-			"item": "minecraft:blue_wool"
+			"item": "minecraft:black_wool"
 		},
 		"title": [
 			{
 				"text": "小黑羊",
-				"color": "dark_purple"
+				"color": "black"
 			}
 		],
 		"description": [

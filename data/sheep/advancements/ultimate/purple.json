@@ -1,24 +1,25 @@
 {
+	"parent": "sheep:sheep/ultimate",
 	"display": {
 		"icon": {
-			"item": "minecraft:nether_star"
+			"item": "minecraft:purple_wool"
 		},
 		"title": [
 			{
-				"text": "终极羊羊!",
-				"color": "white"
+				"text": "超紫羊",
+				"color": "dark_purple"
 			}
 		],
 		"description": [
 			{
-				"text": "发动了一次终极羊羊!",
+				"text": "召唤了乖巧的超紫羊羊!",
 				"color": "white"
 			}
 		],
 		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": true,
-		"hidden": true
+		"hidden": false
 	},
 	"criteria": {
 		"impossible": {
