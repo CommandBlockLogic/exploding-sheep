@@ -15,13 +15,13 @@ execute store result score @s s_temp7 run scoreboard players get @a[tag=sheep_fa
 #execute if entity @s[tag=sheep_type_fast] run scoreboard players operation @s s_temp6 /= @s s_temp1
 #execute if entity @s[tag=sheep_type_fast] run scoreboard players operation @s s_temp7 /= @s s_temp1
 # if it's ball sheep
-scoreboard players set @s[tag=sheep_type_ball] s_temp1 4
-execute if entity @s[tag=sheep_type_ball] run scoreboard players operation @s s_temp5 /= @s s_temp1
-execute if entity @s[tag=sheep_type_ball] run scoreboard players operation @s s_temp6 /= @s s_temp1
-execute if entity @s[tag=sheep_type_ball] run scoreboard players operation @s s_temp7 /= @s s_temp1
-execute if entity @s[tag=sheep_type_ball] run scoreboard players set @s s_vx 0
-execute if entity @s[tag=sheep_type_ball] run scoreboard players set @s s_vy 0
-execute if entity @s[tag=sheep_type_ball] run scoreboard players set @s s_vz 0
+scoreboard players set @s[tag=sheep_attr_slow_falling] s_temp1 4
+execute if entity @s[tag=sheep_attr_slow_falling] run scoreboard players operation @s s_temp5 /= @s s_temp1
+execute if entity @s[tag=sheep_attr_slow_falling] run scoreboard players operation @s s_temp6 /= @s s_temp1
+execute if entity @s[tag=sheep_attr_slow_falling] run scoreboard players operation @s s_temp7 /= @s s_temp1
+execute if entity @s[tag=sheep_attr_slow_falling] run scoreboard players set @s s_vx 0
+execute if entity @s[tag=sheep_attr_slow_falling] run scoreboard players set @s s_vy 0
+execute if entity @s[tag=sheep_attr_slow_falling] run scoreboard players set @s s_vz 0
 
 
 # add wind motion

@@ -1,0 +1,33 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:carrot_on_a_stick"
+		},
+		"title": [
+			"羊羊"
+		],
+		"frame": "task",
+		"background": "minecraft:textures/block/white_wool.png",
+		"description": [
+			"探索不同种类的羊羊们吧!"
+		],
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"have_cannon": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:carrot_on_a_stick"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		"have_cannon"
+	]
+}
