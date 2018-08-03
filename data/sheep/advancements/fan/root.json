@@ -8,7 +8,7 @@
 				"text": "芭蕉扇!"
 			}
 		],
-		"background": "minecraft:textures/block/oak_leaves.png",
+		"background": "minecraft:textures/block/oak_log.png",
 		"description": [
 			{
 				"text": "快扇扇手中的芭蕉扇!",
