@@ -1,0 +1,19 @@
+{
+	"parent":"sheep:sheep/root",
+	"display": {
+		"icon": {
+			"item":"minecraft:white_wool"
+		},
+		"title":["普通羊羊"],
+		"description":["发射一只普通羊羊"],
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false 
+	},
+	"criteria": {
+		"impossible":{
+			"trigger": "minecraft:impossible"
+		}
+	}
+}
