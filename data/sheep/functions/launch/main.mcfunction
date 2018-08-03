@@ -28,6 +28,7 @@ execute if entity @s[scores={s_launch_type=101}] run function sheep:launch/type/
 execute if entity @s[scores={s_launch_type=103}] run function sheep:launch/type/lime
 execute if entity @s[scores={s_launch_type=201}] run function sheep:launch/type/blue
 execute if entity @s[scores={s_launch_type=1001}] run function sheep:launch/type/volleyball
+execute if entity @s[scores={s_launch_type=1002}] run function sheep:launch/type/football
 
 
 # turn the sheep's face
