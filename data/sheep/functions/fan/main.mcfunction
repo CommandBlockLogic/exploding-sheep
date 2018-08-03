@@ -42,7 +42,7 @@ kill @e[tag=sheep_mark2]
 execute as @e[tag=sheep_fanned] at @s run function sheep:fan/turn
 
 # set sheep no speed decay time
-scoreboard players set @e[tag=sheep_fanned] s_no_decay_time 3
+scoreboard players set @e[tag=sheep_fanned] s_no_decay_time 4
 
 # clear tag
 tag @e[tag=sheep_fanned] remove sheep_fanned

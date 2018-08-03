@@ -47,8 +47,8 @@ execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},t
 execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/gray/main
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/purple/main
 execute as @a[scores={s_launch=1..,s_launch_type=103,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/lime/main
-execute as @a[scores={s_launch=1..,s_launch_type=201..},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
-execute as @a[scores={s_launch=1..,s_launch_type=201..},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/end
+execute as @a[scores={s_launch=1..,s_launch_type=201..999},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+execute as @a[scores={s_launch=1..,s_launch_type=201..999},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/end
 
 # fan
 execute as @a[scores={s_launch=1..,s_fan_num=1..},nbt={SelectedItemSlot:1}] at @s anchored eyes positioned ^ ^ ^ run function sheep:fan/main
