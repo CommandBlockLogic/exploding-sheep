@@ -1,25 +1,24 @@
 {
-	"parent": "sheep:sheep/root",
 	"display": {
 		"icon": {
-			"item": "minecraft:blue_wool"
+			"item": "minecraft:nether_star"
 		},
 		"title": [
 			{
-				"text": "小黑羊",
-				"color": "dark_purple"
+				"text": "终极羊羊!",
+				"color": "white"
 			}
 		],
 		"description": [
 			{
-				"text": "发射了一只低调的黑色羊羊!",
+				"text": "发动了一次终极羊羊!",
 				"color": "white"
 			}
 		],
 		"frame": "task",
 		"show_toast": true,
-		"announce_to_chat": false,
-		"hidden": false
+		"announce_to_chat": true,
+		"hidden": true
 	},
 	"criteria": {
 		"impossible": {

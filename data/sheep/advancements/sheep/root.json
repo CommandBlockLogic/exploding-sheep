@@ -9,7 +9,10 @@
 		"frame": "task",
 		"background": "minecraft:textures/block/gray_wool.png",
 		"description": [
-			"探索不同种类的羊羊们吧!"
+			{
+				"text": "探索不同种类的羊羊们吧!",
+				"color": "white"
+			}
 		],
 		"show_toast": false,
 		"announce_to_chat": false,

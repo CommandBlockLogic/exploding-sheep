@@ -11,7 +11,10 @@
 			}
 		],
 		"description": [
-			"发射了一只冷冷的浅蓝羊羊"
+			{
+				"text": "发射了一只冷冷的浅蓝羊羊!",
+				"color": "white"
+			}
 		],
 		"frame": "task",
 		"show_toast": true,

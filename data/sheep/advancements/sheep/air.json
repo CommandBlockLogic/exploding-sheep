@@ -6,12 +6,15 @@
 		},
 		"title": [
 			{
-				"text": "小橙羊",
+				"text": "小红羊",
 				"color": "red"
 			}
 		],
 		"description": [
-			"发射了一只匆忙的红色羊羊"
+			{
+				"text": "发射了一只匆忙的红色羊羊!",
+				"color": "white"
+			}
 		],
 		"frame": "task",
 		"show_toast": true,

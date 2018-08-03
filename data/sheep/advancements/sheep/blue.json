@@ -1,24 +1,24 @@
 {
-	"parent": "sheep:sheep/root",
+	"parent": "sheep:sheep/ultimate",
 	"display": {
 		"icon": {
 			"item": "minecraft:blue_wool"
 		},
 		"title": [
 			{
-				"text": "小黑羊",
-				"color": "dark_purple"
+				"text": "超蓝羊",
+				"color": "blue"
 			}
 		],
 		"description": [
 			{
-				"text": "发射了一只低调的黑色羊羊!",
+				"text": "发射了正义的超蓝羊羊!",
 				"color": "white"
 			}
 		],
 		"frame": "task",
 		"show_toast": true,
-		"announce_to_chat": false,
+		"announce_to_chat": true,
 		"hidden": false
 	},
 	"criteria": {
