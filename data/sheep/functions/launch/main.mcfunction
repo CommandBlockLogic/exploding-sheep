@@ -3,6 +3,17 @@
 # sound
 playsound minecraft:entity.player.small_fall ambient @a ^ ^ ^0.5 1 0.5
 
+# advancement
+advancement grant @s[scores={s_launch_type=1},advancements={sheep:sheep/normal=false}] only sheep:sheep/normal
+advancement grant @s[scores={s_launch_type=2},advancements={sheep:sheep/teleport=false}] only sheep:sheep/teleport
+advancement grant @s[scores={s_launch_type=3},advancements={sheep:sheep/fast=false}] only sheep:sheep/fast
+advancement grant @s[scores={s_launch_type=4},advancements={sheep:sheep/air=false}] only sheep:sheep/air
+advancement grant @s[scores={s_launch_type=5},advancements={sheep:sheep/ice=false}] only sheep:sheep/ice
+advancement grant @s[scores={s_launch_type=6},advancements={sheep:sheep/absorption=false}] only sheep:sheep/absorption
+advancement grant @s[scores={s_launch_type=101},advancements={sheep:ultimate/gray=false}] only sheep:ultimate/gray
+advancement grant @s[scores={s_launch_type=103},advancements={sheep:ultimate/lime=false}] only sheep:ultimate/lime
+advancement grant @s[scores={s_launch_type=201},advancements={sheep:ultimate/blue=false}] only sheep:ultimate/blue
+
 # summon marker
 summon minecraft:area_effect_cloud ^ ^ ^1 {Tags:["sheep_mark"]}
 

@@ -95,6 +95,12 @@ function sheep:ultimate/tick
 
 
 
+# advancement
+advancement grant @a[advancements={sheep:sheep/root=false}] only sheep:sheep/root
+advancement grant @a[advancements={sheep:fan/root=false}] only sheep:fan/root
+
+
+
 
 
 

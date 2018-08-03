@@ -13,6 +13,10 @@ tag @s add sheep_fanning
 execute positioned ^ ^ ^4 run tag @e[tag=sheep_sheep,tag=!sheep_fanned,distance=..4.5] add sheep_fanned
 execute positioned ^ ^ ^4 as @a[distance=..4.5,tag=!sheep_fanning] at @s anchored eyes run function sheep:fan/player
 
+# advancement
+execute if entity @e[tag=sheep_fanned] run advancement grant @s[advancements={sheep:fan/sheep=false}] only sheep:fan/sheep
+
+
 # save wind direction
 # summon marker
 summon minecraft:area_effect_cloud ^ ^ ^-1.1 {Tags:["sheep_mark","sheep_wind"],Duration:9}

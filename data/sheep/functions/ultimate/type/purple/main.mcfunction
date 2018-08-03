@@ -20,3 +20,6 @@ execute if entity @s[team=blue] run tag @e[tag=sheep_new] add sheep_team_blue
 
 
 tag @e[tag=sheep_new] remove sheep_new
+
+# advencement
+advancement grant @s[advancements={sheep:ultimate/purple=false}] only sheep:ultimate/purple
