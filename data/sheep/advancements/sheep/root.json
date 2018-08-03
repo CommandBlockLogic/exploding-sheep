@@ -7,7 +7,7 @@
 			"羊羊"
 		],
 		"frame": "task",
-		"background": "minecraft:textures/block/gray.png",
+		"background": "minecraft:textures/block/gray_wool.png",
 		"description": [
 			"探索不同种类的羊羊们吧!"
 		],
