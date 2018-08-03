@@ -2,10 +2,10 @@
 	"parent":"sheep:sheep/root",
 	"display": {
 		"icon": {
-			"item":"minecraft:white_wool"
+			"item":"minecraft:yellow_wool"
 		},
-		"title":["小白羊"],
-		"description":["发射了一只普通白色羊羊"],
+		"title":["小黄羊"],
+		"description":["发射了一只快快的黄色羊羊"],
 		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": false,

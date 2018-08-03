@@ -1,7 +1,8 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:carrot_on_a_stick"
+			"item": "minecraft:carrot_on_a_stick",
+			"nbt": "{Damage:15}"
 		},
 		"title": [
 			"羊羊"
