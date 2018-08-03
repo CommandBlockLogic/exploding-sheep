@@ -10,8 +10,8 @@ function sheep:item/fan
 tag @s add sheep_fanning
 
 # tag sheeps which will be fanned and player
-execute positioned ^ ^ ^3.5 run tag @e[tag=sheep_sheep,tag=!sheep_fanned,distance=..4.5] add sheep_fanned
-execute positioned ^ ^ ^3.5 as @a[distance=..4.5,tag=!sheep_fanning] at @s anchored eyes run function sheep:fan/player
+execute positioned ^ ^ ^3.2 run tag @e[tag=sheep_sheep,tag=!sheep_fanned,distance=..4.5] add sheep_fanned
+execute positioned ^ ^ ^3.2 as @a[distance=..4.5,tag=!sheep_fanning] at @s anchored eyes run function sheep:fan/player
 
 # advancement
 execute if entity @e[tag=sheep_fanned] run advancement grant @s[advancements={sheep:fan/sheep=false}] only sheep:fan/sheep
