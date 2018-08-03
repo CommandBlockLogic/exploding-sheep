@@ -1,18 +1,18 @@
 {
-	"parent": "sheep:sheep/root",
+	"parent": "sheep:speical_sheep/root",
 	"display": {
 		"icon": {
-			"item": "minecraft:cyan_wool"
+			"item": "minecraft:gray_wool"
 		},
 		"title": [
 			{
-				"text": "排球羊",
-				"color": "aqua"
+				"text": "足球羊",
+				"color": "dark_gray"
 			}
 		],
 		"description": [
 			{
-				"text": "发出了一只排球!",
+				"text": "踢出了一只足球!",
 				"color": "white"
 			}
 		],

@@ -1,22 +1,19 @@
 {
-	"parent": "sheep:sheep/root",
 	"display": {
 		"icon": {
-			"item": "minecraft:gray_wool"
+			"item": "minecraft:turtle_egg"
 		},
 		"title": [
-			{
-				"text": "足球羊",
-				"color": "dark_gray"
-			}
+			"奇怪羊羊!"
 		],
+		"frame": "task",
+		"background": "minecraft:textures/block/light_gray_wool.png",
 		"description": [
 			{
-				"text": "踢出了一只足球!",
+				"text": "寻找隐藏的羊羊们吧!",
 				"color": "white"
 			}
 		],
-		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": true,
 		"hidden": true

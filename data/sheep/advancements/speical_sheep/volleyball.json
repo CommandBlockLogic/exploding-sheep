@@ -1,0 +1,29 @@
+{
+	"parent": "sheep:speical_sheep/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:cyan_wool"
+		},
+		"title": [
+			{
+				"text": "排球羊",
+				"color": "aqua"
+			}
+		],
+		"description": [
+			{
+				"text": "发出了一只排球!",
+				"color": "white"
+			}
+		],
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

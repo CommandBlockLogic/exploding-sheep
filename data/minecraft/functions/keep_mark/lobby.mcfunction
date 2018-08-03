@@ -14,6 +14,8 @@ summon minecraft:area_effect_cloud -164 9 -128 {Duration:9999999,Tags:["system_l
 summon minecraft:area_effect_cloud -164 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_blue"],CustomName:"[\"§e失重§r\"]"}
 summon minecraft:area_effect_cloud -162 9 -129 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_black"],CustomName:"[\"§1末影§r\"]"}
 summon minecraft:area_effect_cloud -163 9 -129 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_white"],CustomName:"[\"§f普通§r\"]"}
+summon minecraft:area_effect_cloud -172 22 -133 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_volleyball"],CustomName:"[\"§b排球§r\"]"}
+summon minecraft:area_effect_cloud -161 6 -73 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_football"],CustomName:"[\"§8足球§r\"]"}
 
 # 选模式提示
 summon minecraft:area_effect_cloud -174.0 10 -126.0 {Duration:9999999,Tags:["system_lobby_mark","system_mode_mark"],CustomName:"[\"选择游戏模式\"]"}
