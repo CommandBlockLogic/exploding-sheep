@@ -1,5 +1,5 @@
 {
-	"parent": "sheep:sheep/ultimate",
+	"parent": "sheep:ultimate/root",
 	"display": {
 		"icon": {
 			"item": "minecraft:light_gray_wool"
