@@ -7,7 +7,7 @@ execute as @e[tag=boss_2_skill_3] at @s run tp @s ~ ~ ~ ~1 ~
 
 execute unless entity @e[tag=boss2,tag=real_boss2] run kill @e[tag=fake_boss2]
 
-scoreboard players set 技能冷却 boss_2_cool3 1200
+scoreboard players set 技能冷却 boss_2_cool3 900
 scoreboard players add @e[tag=boss2,tag=real_boss2] boss_2_cool3 1
 execute as @e[tag=boss2] at @s if entity @a[distance=..16] if score @s boss_2_cool3 >= 技能冷却 boss_2_cool3 run tag @e[tag=boss_2_skill_3] add boss_2_skill_3_use
 execute as @e[tag=boss2] if score @s boss_2_cool3 >= 技能冷却 boss_2_cool3 run scoreboard players set @s boss_2_cool3 0
