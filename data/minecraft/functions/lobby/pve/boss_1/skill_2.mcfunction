@@ -37,7 +37,7 @@ execute as @e[tag=boss_1_skill_2_use] at @s run tp @s ^ ^ ^0.25
 execute as @e[tag=boss_1_skill_2_use] if score @s boss_1_cool2 >= 召唤物限时 boss_1_cool2 run kill @s
 
 
-execute as @e[tag=boss_1_skill_2_1,tag=boss_1_skill_2_use] at @s if entity @e[tag=boss1,type=skeleton,tag=monster,distance=..1] run effect give @e[tag=boss1,type=skeleton,tag=monster,distance=..1] instant_damage 1 1
+execute as @e[tag=boss_1_skill_2_1,tag=boss_1_skill_2_use] at @s if entity @e[tag=boss1,type=skeleton,tag=monster,distance=..1] run effect give @e[tag=boss1,type=skeleton,tag=monster,distance=..1] instant_damage 1 2
 execute as @e[tag=boss_1_skill_2_1,tag=boss_1_skill_2_use] at @s if entity @e[tag=boss1,type=skeleton,tag=monster,distance=..1] run kill @s
 
 

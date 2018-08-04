@@ -15,9 +15,6 @@ execute as @e[tag=boss2] if score @s boss_2_cool1 >= 技能冷却 boss_2_cool1 r
 execute unless entity @e[tag=boss2] run kill @e[tag=boss_2_summon_1]
 
 
-scoreboard players set 召唤物限时 boss_2_cool1 30
+scoreboard players set 召唤物限时 boss_2_cool1 60
 scoreboard players add @e[tag=boss_2_summon_1,type=minecraft:armor_stand] boss_2_cool1 1
 execute as @e[type=minecraft:armor_stand,tag=boss_2_summon_1] if score @s boss_2_cool1 >= 召唤物限时 boss_2_cool1 run kill @s
-scoreboard players add @e[tag=boss_2_summon_2,type=minecraft:armor_stand] boss_2_cool1 1
-execute as @e[type=minecraft:armor_stand,tag=boss_2_summon_2] at @s if score @s boss_2_cool1 >= 召唤物限时 boss_2_cool1 run fill ~ ~ ~ ~ ~1 ~ air replace cobweb
-execute as @e[type=minecraft:armor_stand,tag=boss_2_summon_2] if score @s boss_2_cool1 >= 召唤物限时 boss_2_cool1 run kill @s

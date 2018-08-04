@@ -27,10 +27,14 @@ kill @e[tag=boss_1_skill_2_4]
 kill @e[tag=boss_2_summon_1]
 kill @e[tag=boss_2_skill_2]
 kill @e[tag=boss_2_skill_3]
+kill @e[tag=fake_boss2]
+
 
 kill @e[tag=boss_3_summon_1]
-kill @e[tag=boss_3_summon_2]
-kill @e[tag=boss_3_summon_3]
+kill @e[tag=boss_3_skill_1_1]
+kill @e[tag=boss_3_skill_2]
+kill @e[tag=boss_3_skill_3]
+
 
 
 # Boss复活百分比显示
