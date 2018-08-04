@@ -10,6 +10,10 @@ scoreboard objectives add pve_system dummy
 bossbar remove boss_cool
 bossbar add boss_cool [{"text":"boss_cool"}]
 
+# 怪物
+scoreboard objectives remove monster_cool 
+scoreboard objectives add monster_cool dummy
+
 ### Boss1: Mage
 # 删除
 scoreboard objectives remove boss_1_health

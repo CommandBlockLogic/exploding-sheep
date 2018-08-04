@@ -15,5 +15,8 @@ execute if score Boss复活冷却 pve_system >= Boss复活时间 pve_system run 
 # Boss存在---主函数
 execute if entity @e[tag=boss_exist] run function minecraft:lobby/pve/other/exist_boss
 
+# 小怪
+function minecraft:lobby/pve/other/monster
+
 # 结界
 function minecraft:lobby/pve/other/barrier
