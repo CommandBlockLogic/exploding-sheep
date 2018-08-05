@@ -39,12 +39,13 @@ tag @e[tag=sheep_mark] remove sheep_mark
 kill @e[tag=sheep_mark2]
 
 # change sheeps' motion
-scoreboard players add @e[tag=sheep_fanned] s_no_decay_time 0
+scoreboard players add @e[tag=sheep_fanned] s_no_fan_time 0
 execute as @e[tag=sheep_fanned,tag=!sheep_type_football] at @s run function sheep:fan/turn
-execute as @e[tag=sheep_fanned,tag=sheep_type_football,scores={s_no_decay_time=0}] at @s run function sheep:fan/turn
+execute as @e[tag=sheep_fanned,tag=sheep_type_football,scores={s_no_fan_time=0}] at @s run function sheep:fan/turn
 
 # set sheep no speed decay time
 scoreboard players set @e[tag=sheep_fanned] s_no_decay_time 4
+scoreboard players set @e[tag=sheep_fanned,tag=sheep_type_football] s_no_fan_time 10
 
 # clear tag
 tag @e[tag=sheep_fanned] remove sheep_fanned
