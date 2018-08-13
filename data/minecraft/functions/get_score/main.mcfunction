@@ -29,4 +29,4 @@ execute if score game_status system matches 0 if score system_flag system matche
 execute if score game_status system matches 0 if score system_flag system matches 0 run function public/reset_confirm_timer
 execute if score game_status system matches 0 unless score player_diff system matches -1..1 run function public/reset_confirm_timer
 execute if score game_status system matches 0 if score system_flag system matches 1 if score player_diff system matches -1..1 if score system_gc_comfirm system matches 0 run function public/reset_confirm_timer
-execute if score game_status system matches 0 if score system_flag system matches 1 if score player_diff system matches -1..1 if score system_gc_comfirm system matches 0 run scoreboard players set system_dm_comfirm system 300
+execute if score game_status system matches 0 if score system_flag system matches 1 if score player_diff system matches -1..1 if score system_gc_comfirm system matches 0 run scoreboard players set system_gc_comfirm system 300
