@@ -35,5 +35,7 @@ execute if entity @s[team=blue] run tag @e[tag=sheep_new] add sheep_team_blue
 scoreboard players set @e[tag=sheep_new] s_blow_time 0
 scoreboard players set @e[tag=sheep_new] s_sheep_type 103
 
+# hint
+execute unless entity @e[tag=sheep_new] run tellraw @s [">> 附近没有追踪目标 羊羊不知所措"]
 # remove temp tag
 tag @e[tag=sheep_new] remove sheep_new
