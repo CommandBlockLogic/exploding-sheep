@@ -9,6 +9,7 @@ gamerule spawnRadius 1
 time set 6000
 
 function sheep:init
+function lobby/pve/init
 
 scoreboard objectives add system_time dummy ["系统时间"]
 scoreboard objectives add system_temp1 dummy ["系统临时1"]

@@ -3,9 +3,9 @@
 # find target
 tag @s add sheep_temp
 execute at @s if score @s s_target_id matches 1.. at @s as @a[distance=..50] if score @s s_id = @e[tag=sheep_temp,limit=1] s_target_id run tag @s add player_temp
-execute at @s if score @s s_target_id matches 0 run tag @e[tag=monster_target,distance=..15] add player_temp
+execute at @s if score @s s_target_id matches 0 run tag @e[tag=monster_target,distance=..20] add player_temp
 
-execute at @s facing entity @e[tag=player_temp,limit=1] eyes run tp @s ~ ~ ~ ~ ~
+execute at @s facing entity @e[tag=player_temp,limit=1,sort=nearest] eyes run tp @s ~ ~ ~ ~ ~
 
 # detect and tp
 execute at @s positioned ^ ^ ^0.35 unless block ~ ~ ~ #sheep:chuantou run tag @s add sheep_collision
