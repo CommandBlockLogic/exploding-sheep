@@ -12,6 +12,7 @@ tag @s add sheep_fanning
 # tag sheeps which will be fanned and player
 execute at @s positioned ~ ~1 ~ positioned ^ ^ ^3.5 run tag @e[tag=sheep_sheep,tag=!sheep_fanned,distance=..4.5] add sheep_fanned
 execute at @s positioned ~ ~1 ~ positioned ^ ^ ^3.5 as @a[distance=..4.5,tag=!sheep_fanning] at @s anchored eyes run function sheep:fan/player
+execute at @s positioned ~ ~1 ~ positioned ^ ^ ^3.5 run tag @e[tag=monster,distance=..4.5] add sheep_fanned_monster
 
 # advancement
 execute if entity @e[tag=sheep_fanned] run advancement grant @s[advancements={sheep:fan/sheep=false}] only sheep:fan/sheep
@@ -42,6 +43,7 @@ kill @e[tag=sheep_mark2]
 scoreboard players add @e[tag=sheep_fanned] s_no_fan_time 0
 execute as @e[tag=sheep_fanned,tag=!sheep_type_football] at @s run function sheep:fan/turn
 execute as @e[tag=sheep_fanned,tag=sheep_type_football,scores={s_no_fan_time=0}] at @s run function sheep:fan/turn
+execute as @e[tag=sheep_fanned_monster] at @s run function sheep:fan/monster
 
 # set sheep no speed decay time
 scoreboard players set @e[tag=sheep_fanned] s_no_decay_time 4
@@ -49,4 +51,5 @@ scoreboard players set @e[tag=sheep_fanned,tag=sheep_type_football] s_no_fan_tim
 
 # clear tag
 tag @e[tag=sheep_fanned] remove sheep_fanned
+tag @e[tag=sheep_fanned_monster] remove sheep_fanned_monster
 tag @s remove sheep_fanning
