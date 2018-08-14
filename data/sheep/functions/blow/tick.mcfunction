@@ -2,6 +2,7 @@
 
 # add flying time
 scoreboard players add @e[tag=sheep_sheep] s_flying_time 1
+scoreboard players add @e[tag=sheep_ulti_purple] s_flying_time 1
 kill @e[tag=sheep_sheep,scores={s_flying_time=1200..}]
 
 # add blow time

@@ -26,4 +26,7 @@ team empty red
 scoreboard players reset * s_class
 scoreboard players reset * s_launch_type
 
+# clear entity
+kill @e[type=!player]
+
 function free/main

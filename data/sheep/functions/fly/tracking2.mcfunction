@@ -9,8 +9,8 @@ execute at @s facing entity @e[tag=player_temp,limit=1] eyes run tp @s ~ ~ ~ ~ ~
 
 # detect and tp
 execute at @s positioned ^ ^ ^0.35 unless block ~ ~ ~ #sheep:chuantou run tag @s add sheep_collision
-execute at @s[scores={s_flying_time=20..}] positioned ^ ^ ^0.35 positioned ~ ~-1 ~ if entity @a[gamemode=!spectator,distance=..1] run tag @s add sheep_collision
-execute at @s[scores={s_flying_time=20..}] positioned ^ ^ ^0.35 positioned ~ ~-1 ~ if entity @e[tag=monster,distance=..1] run tag @s add sheep_collision
+execute at @s[scores={s_flying_time=70..}] positioned ^ ^ ^0.35 positioned ~ ~-1 ~ if entity @a[gamemode=!spectator,distance=..1] run tag @s add sheep_collision
+execute at @s[scores={s_flying_time=70..}] positioned ^ ^ ^0.35 positioned ~ ~-1 ~ if entity @e[tag=monster,distance=..1] run tag @s add sheep_collision
 execute at @s unless entity @e[tag=player_temp,distance=..20] run tag @s add sheep_collision
 execute at @s[tag=!sheep_collision] positioned ^ ^ ^0.35 run tp @s ~ ~ ~
 
