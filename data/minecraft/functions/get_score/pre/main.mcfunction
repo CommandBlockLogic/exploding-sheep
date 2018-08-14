@@ -20,7 +20,7 @@ scoreboard players set system_blue_score system 0
 bossbar add minecraft:score_time ["temp"]
 
 # death time
-scoreboard players set @a death_time_max 100
+scoreboard players set @a death_time_max 150
 
 
 # main
