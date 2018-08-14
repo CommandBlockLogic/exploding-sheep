@@ -2,18 +2,15 @@
 
 # add thrower id and type to players
 tag @s add sheep_temp
-# power 2
-execute if entity @s[tag=!sheep_attr_no_damage] as @a[distance=..4] store result score @s s_thrower_id run scoreboard players get @e[tag=sheep_temp,limit=1] s_thrower_id
-execute if entity @s[tag=!sheep_attr_no_damage] as @a[distance=..4] store result score @s s_sheep_type run scoreboard players get @e[tag=sheep_temp,limit=1] s_sheep_type
-execute if entity @s[tag=!sheep_attr_no_damage] run scoreboard players set @a[distance=..4] s_kill_time 0
-# power 3
-execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_type_fast,scores={s_flying_time=22..40}] as @a[distance=..6] store result score @s s_thrower_id run scoreboard players get @e[tag=sheep_temp,limit=1] s_thrower_id
-execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_type_fast,scores={s_flying_time=22..40}] as @a[distance=..6] store result score @s s_sheep_type run scoreboard players get @e[tag=sheep_temp,limit=1] s_sheep_type
-execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_type_fast,scores={s_flying_time=22..40}] run scoreboard players set @a[distance=..6] s_kill_time 0
-# power 4
-execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_type_fast,scores={s_flying_time=41..}] as @a[distance=..8] store result score @s s_thrower_id run scoreboard players get @e[tag=sheep_temp,limit=1] s_thrower_id
-execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_type_fast,scores={s_flying_time=41..}] as @a[distance=..8] store result score @s s_sheep_type run scoreboard players get @e[tag=sheep_temp,limit=1] s_sheep_type
-execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_type_fast,scores={s_flying_time=41..}] run scoreboard players set @a[distance=..8] s_kill_time 0
+scoreboard players set @s s_blow_power 0
+scoreboard players set @s[tag=!sheep_attr_no_damage] s_blow_power 2
+scoreboard players set @s[tag=sheep_type_blue_small] s_blow_power 3
+scoreboard players set @s[tag=sheep_type_fast,scores={s_flying_time=22..40}] s_blow_power 3
+scoreboard players set @s[tag=sheep_type_fast,scores={s_flying_time=41..}] s_blow_power 4
+# power
+execute if score @s s_blow_power matches 2 at @s as @a[distance=..4] run function sheep:blow/add_hit_mark
+execute if score @s s_blow_power matches 3 at @s as @a[distance=..6] run function sheep:blow/add_hit_mark
+execute if score @s s_blow_power matches 4 at @s as @a[distance=..8] run function sheep:blow/add_hit_mark
 
 
 # boom
@@ -29,7 +26,7 @@ execute if entity @s[tag=sheep_type_gray] run summon minecraft:creeper ~ ~ ~ {Fu
 # [{"text":"可爱的","color":"gray"},{"text":"超灰羊","color":"gray"}]
 execute if entity @s[tag=sheep_type_lime] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"智慧的\",\"color\":\"gray\"},{\"text\":\"超柠羊\",\"color\":\"green\"}]"}
 # [{"text":"智慧的","color":"gray"},{"text":"超柠羊","color":"green"}]
-execute if entity @s[tag=sheep_type_blue_small] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"正义的\",\"color\":\"gray\"},{\"text\":\"超蓝羊\",\"color\":\"blue\"}]"}
+execute if entity @s[tag=sheep_type_blue_small] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:3,CustomName:"[{\"text\":\"正义的\",\"color\":\"gray\"},{\"text\":\"超蓝羊\",\"color\":\"blue\"}]"}
 # [{"text":"正义的","color":"gray"},{"text":"超蓝羊","color":"blue"}]
 
 execute if entity @s[tag=sheep_type_volleyball] run summon minecraft:firework_rocket ~ ~ ~ {FireworksItem:{id:"minecraft:firework_rocket",Count:1,tag:{Fireworks:{Flight:0,Explosions:[{Type:0,Colors:[I;5636095]}]}}},Life:1}
