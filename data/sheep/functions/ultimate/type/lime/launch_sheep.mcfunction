@@ -6,8 +6,7 @@ playsound minecraft:entity.player.small_fall ambient @a ^ ^ ^0.5 1 0.5
 # monster
 tag @e[tag=monster_target] remove monster_target
 tag @e[tag=monster,distance=1..20] add monster_target
-execute if entity @e[tag=monster_target] run summon minecraft:sheep ^ ^ ^ {Tags:["sheep_sheep","sheep_type_lime","sheep_attr_tracking","sheep_new"],Color:5,Silent:1,Age:-999999,Invulnerable:1,NoAI:1}
-execute positioned ^ ^ ^1 run tp @e[tag=sheep_new,limit=1] ~ ~ ~ ~ ~
+execute if entity @e[tag=monster_target] run summon minecraft:sheep ~ ~2 ~ {Tags:["sheep_sheep","sheep_type_lime","sheep_attr_tracking","sheep_new"],Color:5,Silent:1,Age:-999999,Invulnerable:1,NoAI:1}
 scoreboard players set @e[tag=sheep_new] s_target_id 0
 
 # add target
