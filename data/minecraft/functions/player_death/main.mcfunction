@@ -28,7 +28,8 @@ execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=300..,s_kill_time=999..}] run function player_death/message/fall_to_death
 execute at @s if block ~ ~ ~ minecraft:lava if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=..300,s_kill_time=3..}] run function player_death/message/lava
 execute at @s if block ~ ~1 ~ minecraft:water if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=..300,s_kill_time=3..}] run function player_death/message/water
-execute at @s unless block ~ ~ ~ minecraft:lava unless block ~ ~1 ~ minecraft:water if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=..300,s_kill_time=3..}] run function player_death/message/stupid
+execute at @s if block ~ ~ ~ minecraft:water unless block ~ ~1 ~ minecraft:water if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=..300,s_kill_time=3..}] run function player_death/message/water
+execute at @s unless block ~ ~ ~ minecraft:lava unless block ~ ~1 ~ minecraft:water unless block ~ ~ ~ minecraft:water if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=..300,s_kill_time=3..}] run function player_death/message/stupid
 
 # monster
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=1..,s_kill_time=3..}] run say 我被爆炸法术炸死了
