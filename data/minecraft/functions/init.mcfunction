@@ -25,7 +25,7 @@ scoreboard objectives add destory_id dummy ["破坏者id"]
 scoreboard objectives add tower_status dummy ["水晶状态1紫2蓝3红10完好11破一点12破很多13完全破"]
 
 scoreboard objectives add food food ["饱食度"]
-scoreboard objectives add health health ["血量"]
+scoreboard objectives add health health {"text":"\u2764","color":"red"}
 scoreboard objectives add death deathCount ["玩家死亡次数"]
 scoreboard objectives add death2 deathCount ["玩家死亡次数2"]
 scoreboard objectives add death_time dummy ["玩家死亡复活时间"]
@@ -47,3 +47,4 @@ team modify blue color blue
 team modify red friendlyFire false
 team modify blue friendlyFire false
 scoreboard objectives setdisplay list health
+scoreboard objectives setdisplay belowName health
