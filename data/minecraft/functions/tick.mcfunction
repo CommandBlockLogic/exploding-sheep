@@ -2,8 +2,7 @@
 
 function sheep:tick
 #function keep_items
-execute unless entity @e[tag=system_core_mark_blue] run function keep_mark/core
-execute unless entity @e[tag=system_core_mark_red] run function keep_mark/core
+execute unless entity @e[tag=system_core_mark] run function keep_mark/core
 execute unless entity @e[tag=system_lobby_mark] run function keep_mark/lobby
 execute unless entity @e[tag=system_lobby_mark_enter_block] run function keep_mark/lobby
 execute unless entity @e[tag=system_fan_mark] run function keep_mark/fan
