@@ -31,4 +31,4 @@ execute if score game_mode_status system matches 1 as @e[tag=system_lobby_mark_j
 
 
 # 僵尸
-summon minecraft:giant -176.5 5 -60.8 {Invulnerable:1,NoAI:1,NoGravity:1,Rotation:[-180f,0f]}
+execute positioned -176.5 5 -60.8 unless entity @e[type=giant,distance=..1] run summon minecraft:giant ~ ~ ~ {Invulnerable:1,NoAI:1,NoGravity:1,Rotation:[-180f,0f],HandItems:[{Count:1b,id:"minecraft:carrot_on_a_stick",tag:{Damage:15s,Unbreakable:1b}},{Count:1b,id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1b}}]}
