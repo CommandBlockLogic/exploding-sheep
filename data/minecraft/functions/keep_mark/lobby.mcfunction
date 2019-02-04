@@ -25,6 +25,9 @@ summon minecraft:area_effect_cloud -174.0 10 -126.0 {Duration:9999999,Tags:["sys
 summon minecraft:area_effect_cloud -161 10 -120 {Duration:9999999,Tags:["system_lobby_mark","system_lobby_mark_join","system_lobby_mark_join_red"],CustomName:"[\"将小羊丢到这里加入§c红队§r\"]"}
 summon minecraft:area_effect_cloud -173 10 -117 {Duration:9999999,Tags:["system_lobby_mark","system_lobby_mark_join","system_lobby_mark_join_blue"],CustomName:"[\"将小羊丢到这里加入§9蓝队§r\"]"}
 summon minecraft:area_effect_cloud -158.5 10 -112.0 {Duration:9999999,Tags:["system_lobby_mark","system_lobby_mark_join","system_lobby_mark_join_gray"],CustomName:"[\"将小羊丢到这里进入§7旁观§r\"]"}
+execute if score game_mode_status system matches 0 as @e[tag=system_lobby_mark_join_red] run data merge entity @s {CustomName:"[\"将小羊丢到这里加入§e游戏§r\"]"}
+execute if score game_mode_status system matches 0 as @e[tag=system_lobby_mark_join_blue] run data merge entity @s {CustomName:"[\"将小羊丢到这里加入§e游戏§r\"]"}
+
 
 
 # 僵尸

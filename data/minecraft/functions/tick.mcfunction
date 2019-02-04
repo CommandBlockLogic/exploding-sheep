@@ -28,15 +28,19 @@ execute if score game_status system matches 102 run function game_mode/group/get
 execute if score game_status system matches 202 run function game_mode/group/get_score/red/tick
 execute if score game_status system matches 302 run function game_mode/group/get_score/mid/tick
 execute if score game_status system matches 402 run function game_mode/group/get_score/blue/tick
+
+execute if score game_status system matches 103 run function game_mode/single/death_match/pre/tick
+
 execute if score game_status system matches 8964 run function game_mode/ending/tick
 
 # 游戏进程标记
 execute if score game_status system matches 1.. run gamemode spectator @a[team=,gamemode=adventure]
 execute if score 游戏开始 pve_system matches 0 if score game_status system matches 1.. run scoreboard players set 游戏开始 pve_system 1
 
-# game start
+# 游戏选择模式倒计时
 execute if score system_gc_comfirm system matches 1.. run scoreboard players remove system_gc_comfirm system 1
 execute if score system_dm_comfirm system matches 1.. run scoreboard players remove system_dm_comfirm system 1
+execute if score system_sdm_comfirm system matches 1.. run scoreboard players remove system_sdm_comfirm system 1
 
 
 
