@@ -27,3 +27,5 @@ execute if score game_mode_status system matches 0 run team empty yellow
 execute if score game_mode_status system matches 1 run tellraw @a [">> 游戏已变为单人模式."]
 execute if score game_mode_status system matches 1 run team join yellow @a[team=blue]
 execute if score game_mode_status system matches 1 run team join yellow @a[team=red]
+execute if score game_mode_status system matches 1 run team empty red
+execute if score game_mode_status system matches 1 run team empty blue

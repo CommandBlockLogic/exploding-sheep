@@ -58,6 +58,7 @@ execute store result score @e[tag=sheep_new,limit=1] s_thrower_id run scoreboard
 # add player's team
 execute if entity @s[team=red] run tag @e[tag=sheep_new,limit=1] add sheep_team_red
 execute if entity @s[team=blue] run tag @e[tag=sheep_new,limit=1] add sheep_team_blue
+execute if entity @s[team=yellow] run tag @e[tag=sheep_new,limit=1] add sheep_team_yellow
 # initialize
 scoreboard players set @e[tag=sheep_new] s_blow_time 0
 
