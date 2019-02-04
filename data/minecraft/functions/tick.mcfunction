@@ -41,10 +41,3 @@ execute as @e[type=falling_block] at @s unless block ~ ~-1 ~ #minecraft:under_sa
 execute as @e[type=falling_block] at @s unless block ~ ~-0.7 ~ #minecraft:under_sand run kill @s
 execute as @e[type=falling_block] at @s unless block ~ ~-0.5 ~ #minecraft:under_sand run kill @s
 kill @e[type=item]
-
-
-# accelerate energy recover
-scoreboard players add system_energy system 1
-execute if score system_energy system matches 2 at @e[tag=system_core_mark_blue] positioned ~-10 ~-20 ~-10 run scoreboard players add @a[dx=20,dy=30,dz=20,team=blue] s_energy 1
-execute if score system_energy system matches 2 at @e[tag=system_core_mark_red] positioned ~-10 ~-20 ~-10 run scoreboard players add @a[dx=20,dy=30,dz=20,team=red] s_energy 1
-execute if score system_energy system matches 2 run scoreboard players set system_energy system 0
