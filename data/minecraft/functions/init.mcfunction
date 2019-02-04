@@ -42,10 +42,13 @@ scoreboard objectives add drop_brick minecraft.dropped:minecraft.stone_bricks ["
 
 team add red
 team add blue
+team add yellow
 
 team modify red color red
 team modify blue color blue
+team modify yellow color yellow
 team modify red friendlyFire false
 team modify blue friendlyFire false
+team modify yellow friendlyFire false
 scoreboard objectives setdisplay list health
 scoreboard objectives setdisplay belowName health
