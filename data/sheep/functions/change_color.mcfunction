@@ -7,7 +7,7 @@ scoreboard players add @a s_class 0
 scoreboard players set @a[scores={s_class=0}] s_class 1
 
 # trigger
-tag @a[scores={s_launch_type=2..999},nbt={Inventory:[{Slot:-106b,tag:{item_num:1}}]}] add sheep_change_n
+tag @a[scores={s_launch_type=2..9999},nbt={Inventory:[{Slot:-106b,tag:{item_num:1}}]}] add sheep_change_n
 tag @a[scores={s_launch_type=1},nbt={Inventory:[{Slot:-106b,tag:{item_num:1}}]}] add sheep_change_c
 
 execute as @a[tag=sheep_change_n] run scoreboard players set @s s_launch_type 1
