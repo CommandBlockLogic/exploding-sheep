@@ -11,7 +11,7 @@ scoreboard players remove @a[scores={death_time=1..}] death_time 1
 scoreboard players add @a[scores={death_time_tp=1..}] death_time_tp 1
 execute if score game_status system matches 0 run scoreboard players set @a[scores={death_time_tp=1..}] death_time_tp 0
 tellraw @a[scores={death_time_tp=300}] [">> 5秒后将自动传送至战场."]
-execute as @a[scores={death_time_tp=400..}] run function public/tp_game_spawn
+execute as @a[scores={death_time_tp=400..}] run function game_mode/public/tp_game_spawn
 scoreboard players set @a[scores={death_time_tp=400..}] death_time_tp 0
 
 

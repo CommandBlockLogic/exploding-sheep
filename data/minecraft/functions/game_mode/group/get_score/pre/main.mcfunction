@@ -24,7 +24,7 @@ scoreboard players set @a death_time_max 150
 
 
 # main
-function get_score/public/ready_main
+function game_mode/group/get_score/public/ready_main
 
 # title
 title @a times 0 200 10

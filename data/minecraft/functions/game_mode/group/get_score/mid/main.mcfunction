@@ -4,7 +4,7 @@
 scoreboard players set game_status system 302
 
 # main
-function get_score/public/ready_main
+function game_mode/group/get_score/public/ready_main
 
 # display
 scoreboard objectives modify sidebar_score displayname ["准备..."]

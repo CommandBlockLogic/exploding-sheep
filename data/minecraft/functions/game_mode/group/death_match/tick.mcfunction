@@ -32,11 +32,11 @@ execute if score system_game_time system matches 10001 run scoreboard players re
 execute if score system_game_time system matches 10001..15000 store result score 剩余时间至游戏结束(秒) sidebar_score run scoreboard players get system_time_second system
 
 # check end
-execute if score system_red_death_count system matches 0 run function death_match/blue_win
-execute if score system_blue_death_count system matches 0 run function death_match/red_win
-execute if score system_game_time system matches 15000.. if score system_red_death_count system > system_blue_death_count system run function death_match/red_win
-execute if score system_game_time system matches 15000.. if score system_red_death_count system < system_blue_death_count system run function death_match/blue_win
-execute if score system_game_time system matches 15000.. if score system_red_death_count system = system_blue_death_count system run function death_match/draw
+execute if score system_red_death_count system matches 0 run function game_mode/ending/blue_win
+execute if score system_blue_death_count system matches 0 run function game_mode/ending/red_win
+execute if score system_game_time system matches 15000.. if score system_red_death_count system > system_blue_death_count system run function game_mode/ending/red_win
+execute if score system_game_time system matches 15000.. if score system_red_death_count system < system_blue_death_count system run function game_mode/ending/blue_win
+execute if score system_game_time system matches 15000.. if score system_red_death_count system = system_blue_death_count system run function game_mode/ending/draw
 
 
 # effect

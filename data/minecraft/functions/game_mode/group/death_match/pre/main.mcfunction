@@ -1,6 +1,6 @@
-# death_match/pre/main
+# game_mode/group/death_match/pre/main
 
-# change flag
+# 修改当前状态为组队死斗前
 scoreboard players set game_status system 101
 
 # tp
@@ -8,7 +8,7 @@ tp @a 22 25 -19
 
 
 # clear
-function public/game_start_clear
+function game_mode/public/game_start_clear
 
 
 # score

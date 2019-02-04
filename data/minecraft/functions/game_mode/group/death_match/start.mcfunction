@@ -5,7 +5,7 @@
 scoreboard players set game_status system 1
 
 # tp
-execute as @a run function public/tp_game_spawn
+execute as @a run function game_mode/public/tp_game_spawn
 gamemode spectator @a[team=]
 
 scoreboard players reset * sidebar_score

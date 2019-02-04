@@ -79,8 +79,24 @@
 * 更多死亡提示
 * 修复空物品栏F得羊毛bug
 
+# 流程
 
-
+* 组队死斗
+	* pre/main
+		* 激活pre/tick
+	* pre/tick时间到后激活start
+		* 激活tick
+			* 判断输赢
+			* red_win blue_win draw
+				* 激活../../end/main
+					* 激活/free/main
+* 组队抢分
+	* pre/main
+		* 激活pre/tick
+		* 时间到激活red/main
+			* 时间到激活mid/main
+				* 时间到激活blue/main
+					* 时间到激活death_match的结束
 
 
 

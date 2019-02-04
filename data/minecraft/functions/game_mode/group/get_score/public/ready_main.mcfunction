@@ -1,7 +1,7 @@
 # get_score/public/ready_main
 
 # clear
-function public/game_start_clear
+function game_mode/public/game_start_clear
 
 
 # score

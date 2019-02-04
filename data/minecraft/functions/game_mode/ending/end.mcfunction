@@ -26,4 +26,4 @@ scoreboard players reset * s_launch_type
 # clear entity
 kill @e[type=!player]
 
-function free/main
+function game_mode/free/main

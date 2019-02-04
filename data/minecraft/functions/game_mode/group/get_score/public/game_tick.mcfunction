@@ -26,4 +26,4 @@ execute store result score 红队水晶砂 sidebar_score run scoreboard players 
 execute store result score 蓝队水晶砂 sidebar_score run scoreboard players get system_blue_score system
 
 # summon core
-function get_score/public/summon_core
+function game_mode/group/get_score/public/summon_core

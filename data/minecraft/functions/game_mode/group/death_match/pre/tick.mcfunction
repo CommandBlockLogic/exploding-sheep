@@ -21,4 +21,4 @@ effect give @a minecraft:resistance 5 5 true
 effect give @a minecraft:instant_health 1 0 true
 
 # start
-execute if score system_start_countdown system matches 0 run function death_match/start
+execute if score system_start_countdown system matches 0 run function game_mode/group/death_match/start
