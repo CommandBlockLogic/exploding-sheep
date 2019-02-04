@@ -3,7 +3,7 @@
 # class
 function lobby/change_class
 # team
-function lobby/change_team
+function lobby/change_team/main
 # enter game
 function lobby/enter_game
 # effect
