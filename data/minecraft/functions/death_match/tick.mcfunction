@@ -23,8 +23,8 @@ scoreboard players operation system_time_second system /= twenty system
 # display score
 execute store result bossbar minecraft:red_score value run scoreboard players get system_red_death_count system
 execute store result bossbar minecraft:blue_score value run scoreboard players get system_blue_death_count system
-bossbar set minecraft:red_score name ["",{"text":"剩余羊羊能量","color":"red"},": ",{"score":{"name":"system_red_death_count","objective":"system"}}]
-bossbar set minecraft:blue_score name ["",{"text":"剩余羊羊能量","color":"blue"},": ",{"score":{"name":"system_blue_death_count","objective":"system"}}]
+bossbar set minecraft:red_score name ["",{"text":"剩余生命值","color":"red"},": ",{"score":{"name":"system_red_death_count","objective":"system"}}]
+bossbar set minecraft:blue_score name ["",{"text":"剩余生命值","color":"blue"},": ",{"score":{"name":"system_blue_death_count","objective":"system"}}]
 execute if score system_game_time system matches ..3600 store result score 剩余时间至全场高亮(秒) sidebar_score run scoreboard players get system_time_second system
 execute if score system_game_time system matches 3601 run scoreboard players reset * sidebar_score
 execute if score system_game_time system matches 3601..10000 store result score 剩余时间至无限能量(秒) sidebar_score run scoreboard players get system_time_second system

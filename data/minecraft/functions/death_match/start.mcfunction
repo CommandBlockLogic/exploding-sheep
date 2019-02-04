@@ -9,11 +9,11 @@ execute as @a run function public/tp_game_spawn
 gamemode spectator @a[team=]
 
 scoreboard players reset * sidebar_score
-scoreboard objectives modify sidebar_score displayname ["耗尽对方羊羊能量!"]
+scoreboard objectives modify sidebar_score displayname ["耗尽对方剩余生命值!"]
 
 # title
 title @a times 10 50 10
-title @a title ["10点羊羊能量!"]
+title @a[team=red] title ["我方拥有",{"score":{"name":"system_red_death_count","objective":"system"}},"点生命!"]
+title @a[team=blue] title ["我方拥有",{"score":{"name":"system_blue_death_count","objective":"system"}},"点生命!"]
 title @a subtitle ["游戏开始"]
-tellraw @a [">> 对方每死亡一次就会损失一点羊羊能量!"]
-tellraw @a [">> 耗尽对方的羊羊能量吧!"]
+tellraw @a [">> 耗尽对方的生命值吧!"]

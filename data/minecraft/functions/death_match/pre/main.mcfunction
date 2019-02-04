@@ -34,7 +34,7 @@ scoreboard players set 准备... sidebar_score 0
 
 
 # bossbar
-bossbar add minecraft:red_score ["",{"text":"剩余羊羊能量","color":"red"},": ",{"score":{"name":"system_red_death_count","objective":"system"}}]
+bossbar add minecraft:red_score ["",{"text":"剩余生命","color":"red"},": ",{"score":{"name":"system_red_death_count","objective":"system"}}]
 execute store result bossbar minecraft:red_score max run scoreboard players get system_red_death_count system
 execute store result bossbar minecraft:red_score value run scoreboard players get system_red_death_count system
 bossbar set minecraft:red_score style progress
@@ -42,7 +42,7 @@ bossbar set minecraft:red_score color red
 bossbar set minecraft:red_score players @a
 bossbar set minecraft:red_score visible true
 
-bossbar add minecraft:blue_score ["",{"text":"剩余羊羊能量","color":"blue"},": ",{"score":{"name":"system_blue_death_count","objective":"system"}}]
+bossbar add minecraft:blue_score ["",{"text":"剩余生命","color":"blue"},": ",{"score":{"name":"system_blue_death_count","objective":"system"}}]
 execute store result bossbar minecraft:blue_score max run scoreboard players get system_blue_death_count system
 execute store result bossbar minecraft:blue_score value run scoreboard players get system_blue_death_count system
 bossbar set minecraft:blue_score style progress
