@@ -13,6 +13,6 @@ scoreboard players set number_ratio system 2
 scoreboard players set number_ten system 10
 scoreboard players set @s system_temp1 0
 scoreboard players operation @s system_temp1 = @s core_number
-scoreboard players operation @s system_temp1 *= number_ten system
-scoreboard players operation @s system_temp1 /= number_ratio system
+scoreboard players operation @s system_temp1 *= number_ratio system
+scoreboard players operation @s system_temp1 /= number_ten system
 scoreboard players operation @a[tag=player_killer,limit=1] core_number += @s system_temp1

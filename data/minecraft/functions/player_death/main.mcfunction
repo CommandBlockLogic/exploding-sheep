@@ -42,10 +42,10 @@ execute if entity @s[scores={killed_by_z=1..}] run tellraw @a ["-- ",{"selector"
 
 
 # remove core number
-scoreboard players set number_ratio system 3
+scoreboard players set number_ratio system 7
 scoreboard players set number_ten system 10
-scoreboard players operation @s core_number *= number_ten system
-scoreboard players operation @s core_number /= number_ratio system
+scoreboard players operation @s core_number *= number_ratio system
+scoreboard players operation @s core_number /= number_ten system
 
 
 # clear
