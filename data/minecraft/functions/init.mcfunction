@@ -52,6 +52,6 @@ team modify blue color blue
 team modify yellow color yellow
 team modify red friendlyFire false
 team modify blue friendlyFire false
-team modify yellow friendlyFire false
+team modify yellow friendlyFire true
 scoreboard objectives setdisplay list health
 scoreboard objectives setdisplay belowName health
