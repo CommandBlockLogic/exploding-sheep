@@ -5,11 +5,7 @@ execute store result score @s death_time run scoreboard players get @s death_tim
 # reduce death count
 execute if entity @s[team=red] run scoreboard players remove system_red_death_count system 1
 execute if entity @s[team=blue] run scoreboard players remove system_blue_death_count system 1
-# remove core number
-scoreboard players set number_ratio system 2
-scoreboard players set number_ten system 10
-scoreboard players operation @s core_number *= number_ten system
-scoreboard players operation @s core_number /= number_ratio system
+
 
 # death message
 tag @s add player_self
@@ -42,6 +38,15 @@ execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by
 execute if entity @s[scores={killed_by_f=1..}] run tellraw @a ["-- ",{"selector":"@s"}," 被迫口交致死."," --"]
 execute if entity @s[scores={killed_by_s=1..}] run tellraw @a ["-- ",{"selector":"@s"}," 被小喽啰锤倒."," --"]
 execute if entity @s[scores={killed_by_z=1..}] run tellraw @a ["-- ",{"selector":"@s"}," 被小喽啰锤倒."," --"]
+
+
+
+# remove core number
+scoreboard players set number_ratio system 3
+scoreboard players set number_ten system 10
+scoreboard players operation @s core_number *= number_ten system
+scoreboard players operation @s core_number /= number_ratio system
+
 
 # clear
 scoreboard players set @s death 0
