@@ -14,8 +14,8 @@ scoreboard players set @a[team=yellow] core_number 0
 scoreboard players reset * sidebar_score
 
 scoreboard players set system_game_time system 6000
-scoreboard players set twenty system 20
-scoreboard players set sixty system 60
+scoreboard players set system_twenty system 20
+scoreboard players set system_sixty system 60
 scoreboard players set system_time_second system 0
 scoreboard players set system_time_minute system 0
 
