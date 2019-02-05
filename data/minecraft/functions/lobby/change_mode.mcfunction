@@ -22,11 +22,11 @@ execute if score game_mode_status system matches 11 run scoreboard players set g
 
 # tips
 execute if score game_mode_status system matches 0 run tellraw @a [">> 游戏已变为组队模式, 请重新选择队伍并加入."]
-execute if score game_mode_status system matches 0 run setblock -174 9 -126 minecraft:wall_sign[facing=south]{Text1:"{\"text\":\"\\u00a72###############\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function minecraft:lobby/change_mode\"}}",Text2:"{\"text\":\"\\u00a77\\u00a7l单人\\u00a7r\"}",Text3:"{\"text\":\"\\u00a72\\u00a7l> \\u00a76\\u00a7l组队 \\u00a72\\u00a7l<\\u00a7r\"}",Text4:"{\"text\":\"\\u00a72###############\"}"} destroy
+execute if score game_mode_status system matches 0 run setblock -174 9 -126 minecraft:wall_sign[facing=south]{Text1:"{\"text\":\"\\u00a77###############\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function minecraft:lobby/change_mode\"}}",Text2:"{\"text\":\"\\u00a77\\u00a7l单人\\u00a7r\"}",Text3:"{\"text\":\"\\u00a7a\\u00a7l> \\u00a76\\u00a7l组队 \\u00a7a\\u00a7l<\\u00a7r\"}",Text4:"{\"text\":\"\\u00a77###############\"}"} destroy
 execute if score game_mode_status system matches 0 run team empty yellow
 
 execute if score game_mode_status system matches 1 run tellraw @a [">> 游戏已变为单人模式."]
-execute if score game_mode_status system matches 1 run setblock -174 9 -126 minecraft:wall_sign[facing=south]{Text1:"{\"text\":\"\\u00a72###############\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function minecraft:lobby/change_mode\"}}",Text2:"{\"text\":\"\\u00a72\\u00a7l> \\u00a76\\u00a7l单人 \\u00a72\\u00a7l<\\u00a7r\"}",Text3:"{\"text\":\"\\u00a77\\u00a7l组队\\u00a7r\"}",Text4:"{\"text\":\"\\u00a72###############\"}"} destroy
+execute if score game_mode_status system matches 1 run setblock -174 9 -126 minecraft:wall_sign[facing=south]{Text1:"{\"text\":\"\\u00a77###############\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function minecraft:lobby/change_mode\"}}",Text2:"{\"text\":\"\\u00a7a\\u00a7l> \\u00a76\\u00a7l单人 \\u00a7a\\u00a7l<\\u00a7r\"}",Text3:"{\"text\":\"\\u00a77\\u00a7l组队\\u00a7r\"}",Text4:"{\"text\":\"\\u00a77###############\"}"} destroy
 execute if score game_mode_status system matches 1 run team join yellow @a[team=blue]
 execute if score game_mode_status system matches 1 run team join yellow @a[team=red]
 execute if score game_mode_status system matches 1 run team empty red
