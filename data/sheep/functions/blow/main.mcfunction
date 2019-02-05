@@ -82,7 +82,7 @@ scoreboard players operation @s s_temp2 += @s s_temp1
 
 scoreboard players add @e[tag=system_core_mark,sort=nearest,limit=1] core_destory 0
 scoreboard players add @e[tag=system_core_mark,sort=nearest,limit=1] destory_id 0
-execute as @s[tag=!sheep_attr_no_damage,scores={s_temp2=1..}] store success score @a[tag=player_temp,limit=1] core_destory run scoreboard players get @s s_temp2
+execute as @s[tag=!sheep_attr_no_damage,scores={s_temp2=1..}] store result score @a[tag=player_temp,limit=1] core_destory run scoreboard players get @s s_temp2
 execute as @s[tag=!sheep_attr_no_damage,scores={s_temp2=1..}] run scoreboard players operation @e[tag=system_core_mark,sort=nearest,limit=1] core_destory += @s s_temp2
 execute as @s[tag=!sheep_attr_no_damage,scores={s_temp2=1..}] run scoreboard players operation @e[tag=system_core_mark,sort=nearest,limit=1] destory_id = @s s_thrower_id
 
