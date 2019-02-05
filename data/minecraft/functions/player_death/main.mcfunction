@@ -6,8 +6,10 @@ execute store result score @s death_time run scoreboard players get @s death_tim
 execute if entity @s[team=red] run scoreboard players remove system_red_death_count system 1
 execute if entity @s[team=blue] run scoreboard players remove system_blue_death_count system 1
 # remove core number
-scoreboard players set number_two system 2
-scoreboard players operation @s core_number /= number_two system
+scoreboard players set number_ratio system 2
+scoreboard players set number_ten system 10
+scoreboard players operation @s core_number *= number_ten system
+scoreboard players operation @s core_number /= number_ratio system
 
 # death message
 tag @s add player_self
