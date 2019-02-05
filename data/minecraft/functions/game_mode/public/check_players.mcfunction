@@ -10,7 +10,7 @@ scoreboard players operation player_diff system -= player_count_blue system
 
 # init flag
 scoreboard players set system_flag system 0
-function gamemode/public/init_confirm_timer
+function game_mode/public/init_confirm_timer
 # check if greater than 1
 execute if score player_count_red system matches 1.. if score player_count_blue system matches 1.. run scoreboard players add system_flag system 1
 execute if score game_status system matches 0 if score player_count_red system matches 0 if score player_count_blue system matches 1.. run tellraw @a [">> 红队人数不足 无法开始游戏!"]
@@ -23,5 +23,5 @@ execute if score game_status system matches 0 if score system_flag system matche
 
 
 # set score
-execute if score game_status system matches 0 if score system_flag system matches 0 run function gamemode/public/reset_confirm_timer
-execute if score game_status system matches 0 unless score player_diff system matches -1..1 run function gamemode/public/reset_confirm_timer
+execute if score game_status system matches 0 if score system_flag system matches 0 run function game_mode/public/reset_confirm_timer
+execute if score game_status system matches 0 unless score player_diff system matches -1..1 run function game_mode/public/reset_confirm_timer
