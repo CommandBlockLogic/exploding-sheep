@@ -1,4 +1,4 @@
-# death_match/pre/tick
+# game_mode/single/get_score/pre/tick
 
 # countdown
 scoreboard players remove system_start_countdown system 1
@@ -18,4 +18,4 @@ effect give @a minecraft:resistance 5 5 true
 effect give @a minecraft:instant_health 1 0 true
 
 # start
-execute if score system_start_countdown system matches 0 run function game_mode/single/death_match/start
+execute if score system_start_countdown system matches 0 run function game_mode/single/get_score/start

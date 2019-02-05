@@ -40,6 +40,9 @@ scoreboard objectives add fall_dis minecraft.custom:minecraft.fall_one_cm ["玩�
 
 scoreboard objectives add drop_brick minecraft.dropped:minecraft.stone_bricks ["回城指示"]
 
+scoreboard objectives add kill_player dummy ["杀人数量"]
+scoreboard objectives add core_number dummy ["水晶砂数量"]
+
 team add red
 team add blue
 team add yellow

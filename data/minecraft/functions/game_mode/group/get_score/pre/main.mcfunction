@@ -4,7 +4,7 @@
 scoreboard players set game_status system 102
 
 # tp
-tp @a 22 25 -19
+function game_mode/public/tp_game_wait
 
 # display
 scoreboard players reset * sidebar_score

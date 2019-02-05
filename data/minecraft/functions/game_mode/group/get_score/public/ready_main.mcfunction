@@ -13,8 +13,8 @@ scoreboard players set system_minute system 0
 
 
 # bossbar
-bossbar set minecraft:score_time max 6000
-bossbar set minecraft:score_time value 6000
+bossbar set minecraft:score_time max 3000
+bossbar set minecraft:score_time value 3000
 bossbar set minecraft:score_time style progress
 bossbar set minecraft:score_time color white
 bossbar set minecraft:score_time players @a

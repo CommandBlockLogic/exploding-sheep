@@ -1,18 +1,16 @@
-# game_mode/group/death_match/pre/main
+# game_mode/single/get_score/pre/main
 
-# 修改当前状态为单人杀人前
-scoreboard players set game_status system 103
+# 修改当前状态为单人抢分前
+scoreboard players set game_status system 104
 
 # tp
 function game_mode/public/tp_game_wait
 
-
 # clear
 function game_mode/public/game_start_clear
 
-
 # score
-scoreboard players set @a[team=yellow] kill_player 0
+scoreboard players set @a[team=yellow] core_number 0
 scoreboard players reset * sidebar_score
 
 scoreboard players set system_game_time system 6000
@@ -37,16 +35,8 @@ scoreboard objectives modify sidebar_score displayname ["准备..."]
 scoreboard objectives setdisplay sidebar sidebar_score
 scoreboard players set 准备... sidebar_score 0
 
-
-
-
 # death time
 scoreboard players set @a death_time_max 5
-
-
-
-
-
 
 # count down to start
 scoreboard players set system_start_countdown system 100

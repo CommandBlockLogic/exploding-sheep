@@ -1,4 +1,4 @@
-# death_match/tick
+# game_mode/single/get_score/tick
 
 # class
 function lobby/change_class
@@ -6,7 +6,6 @@ function lobby/change_class
 function lobby/enter_game
 # effect
 function lobby/effect
-
 
 
 # cal time
@@ -21,9 +20,18 @@ scoreboard players operation system_second system %= system_sixty system
 execute if score system_second system matches 0..9 run bossbar set minecraft:score_time name ["剩余时间   ",{"score":{"name":"system_minute","objective":"system"}},":0",{"score":{"name":"system_second","objective":"system"}}]
 execute unless score system_second system matches 0..9 run bossbar set minecraft:score_time name ["剩余时间   ",{"score":{"name":"system_minute","objective":"system"}},":",{"score":{"name":"system_second","objective":"system"}}]
 
+# core score
+execute as @a[scores={core_destory=1..}] run scoreboard players operation @s core_number += @s core_destory
+scoreboard players set @a[scores={core_destory=1..}] core_destory 0
+
 # display score
-execute as @a[team=yellow] store result score @s sidebar_score run scoreboard players get @s kill_player
+execute as @a[team=yellow] store result score @s sidebar_score run scoreboard players get @s core_number
 
 # check end
 execute if score system_game_time system matches ..0 run function game_mode/single/death_match/end
+
+# glowing
+scoreboard players set max_num system 0
+execute as @a[team=yellow] run scoreboard players operation max_num system > @s core_number
+execute if score max_num system matches 1.. as @a[team=yellow] if score @s core_number = max_num system run effect give @s minecraft:glowing 1 1 true
 

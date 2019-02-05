@@ -4,7 +4,8 @@
 scoreboard players set game_status system 101
 
 # tp
-tp @a 22 25 -19
+function game_mode/public/tp_game_wait
+
 
 
 # clear

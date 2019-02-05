@@ -28,8 +28,11 @@ execute if score game_status system matches 102 run function game_mode/group/get
 execute if score game_status system matches 202 run function game_mode/group/get_score/red/tick
 execute if score game_status system matches 302 run function game_mode/group/get_score/mid/tick
 execute if score game_status system matches 402 run function game_mode/group/get_score/blue/tick
-
+execute if score game_status system matches 3 run function game_mode/single/death_match/tick
 execute if score game_status system matches 103 run function game_mode/single/death_match/pre/tick
+execute if score game_status system matches 4 run function game_mode/single/get_score/tick
+execute if score game_status system matches 104 run function game_mode/single/get_score/pre/tick
+
 
 execute if score game_status system matches 8964 run function game_mode/ending/tick
 

@@ -7,3 +7,5 @@ execute if score @s s_sheep_type matches 101 run tellraw @a ["-- ",{"selector":"
 execute if score @s s_sheep_type matches 102 run tellraw @a ["-- ",{"selector":"@s"}," 被 自己 用[",{"text":"乖巧的","color":"white"},{"text":"超紫羊","color":"dark_purple"},"]侵犯了."," --"]
 execute if score @s s_sheep_type matches 103 run tellraw @a ["-- ",{"selector":"@s"}," 被 自己 用[",{"text":"智慧的","color":"white"},{"text":"超柠羊","color":"green"},"]压制了."," --"]
 execute if score @s s_sheep_type matches 201 run tellraw @a ["-- ",{"selector":"@s"}," 被 自己 用[",{"text":"正义的","color":"white"},{"text":"超蓝羊","color":"blue"},"]审判了."," --"]
+
+scoreboard players remove @s kill_player 1
