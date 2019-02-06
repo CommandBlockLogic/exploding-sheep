@@ -45,6 +45,7 @@ execute if score 游戏开始 pve_system matches 0 if score game_status system m
 execute if score system_gc_comfirm system matches 1.. run scoreboard players remove system_gc_comfirm system 1
 execute if score system_dm_comfirm system matches 1.. run scoreboard players remove system_dm_comfirm system 1
 execute if score system_sdm_comfirm system matches 1.. run scoreboard players remove system_sdm_comfirm system 1
+execute if score system_sgc_comfirm system matches 1.. run scoreboard players remove system_sgc_comfirm system 1
 
 
 
