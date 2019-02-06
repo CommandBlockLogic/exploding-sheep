@@ -1,4 +1,4 @@
-# sheep:effect/ice
+# sheep:sheep_effect/ice/particle
 
 #particle minecraft:block ice ~3 ~ ~ 0 0 0 1 1 normal
 #particle minecraft:block ice ~-3 ~ ~ 0 0 0 1 1 normal

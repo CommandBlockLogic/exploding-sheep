@@ -1,4 +1,4 @@
-# sheep:effect/lime
+# sheep:sheep_effect/lime/particle
 
 particle minecraft:entity_effect ~0.000 ~ ~7.000 1 1 0 1 0 normal
 particle minecraft:entity_effect ~2.679 ~ ~6.467 1 1 0 1 0 normal

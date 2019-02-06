@@ -93,7 +93,11 @@ execute as @e[tag=sheep_sheep,tag=!sheep_attr_tracking] run function sheep:fly/t
 execute as @e[tag=sheep_attr_tracking] run function sheep:fly/tracking2
 function sheep:ultimate/tick
 
-
+# sheep effect
+function sheep:sheep_effect/blue/tick
+function sheep:sheep_effect/heal/tick
+function sheep:sheep_effect/ice/tick
+function sheep:sheep_effect/lime/tick
 
 
 
@@ -108,67 +112,3 @@ advancement grant @a[advancements={sheep:fan/root=false}] only sheep:fan/root
 
 
 
-
-
-
-# sheep effect
-# heal
-scoreboard players add @e[tag=sheep_heal_mark] s_heal_time 1
-execute as @e[scores={s_heal_time=1..}] at @s run function sheep:effect/heal
-execute as @e[scores={s_heal_time=1..}] at @s run tp @s ~ ~0.25 ~
-kill @e[scores={s_heal_time=10..}]
-
-
-# ice
-# effect
-scoreboard players add @e[tag=sheep_web_mark] s_web_time 1
-scoreboard players add @e[tag=sheep_web_mark] s_temp1 1
-scoreboard players set @e[tag=sheep_web_mark,scores={s_temp1=3}] s_temp1 0
-execute as @e[scores={s_web_time=1..,s_temp1=1}] at @s run function sheep:effect/ice2
-execute as @e[scores={s_web_time=1..},tag=sheep_web_mark] at @s run tag @e[distance=..3,type=!player,tag=monster] add sheep_ice_temp
-execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_red] at @s run tag @a[distance=..3,team=blue] add sheep_ice_temp
-execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_blue] at @s run tag @a[distance=..3,team=red] add sheep_ice_temp
-execute as @e[scores={s_web_time=1..},tag=sheep_web_mark,tag=!sheep_web_mark_blue,tag=!sheep_web_mark_red] at @s run tag @a[distance=..3] add sheep_ice_temp
-effect give @e[tag=sheep_ice_temp] minecraft:slowness 3 10 false
-#effect give @e[tag=sheep_ice_temp] minecraft:blindness 2 0 false
-effect give @e[tag=sheep_ice_temp] minecraft:jump_boost 3 128 false
-execute as @e[tag=sheep_ice_temp] at @s run particle minecraft:block ice ~ ~1 ~ 0.3 0.5 0.3 1 2
-scoreboard players set @a[tag=sheep_ice_temp] s_fan_num 0
-tag @e[tag=sheep_ice_temp] remove sheep_ice_temp
-kill @e[scores={s_web_time=101..}]
-# 5 most
-scoreboard players add @e[tag=sheep_web_mark] s_web_id 0
-execute as @e[tag=sheep_web_mark,scores={s_web_id=0},limit=1] run scoreboard players add s_web_id_max s_web_id 1
-execute as @e[tag=sheep_web_mark,scores={s_web_id=0},limit=1] store result score @s s_web_id run scoreboard players get s_web_id_max s_web_id
-execute store result score s_web_num s_web_id if entity @e[tag=sheep_web_mark]
-execute if score s_web_num s_web_id matches 6.. store result score s_web_temp s_web_id run scoreboard players get @e[tag=sheep_web_mark,scores={s_web_id=1..},limit=1] s_web_id
-execute if score s_web_num s_web_id matches 6.. as @e[tag=sheep_web_mark,scores={s_web_id=1..}] run scoreboard players operation s_web_temp s_web_id < @s s_web_id
-execute if score s_web_num s_web_id matches 6.. as @e[tag=sheep_web_mark,scores={s_web_id=1..}] if score @s s_web_id = s_web_temp s_web_id run kill @s
-
-
-# blue
-scoreboard players add @e[tag=sheep_type_blue,scores={s_blow_time=1..}] s_ulti_inter 1
-scoreboard players add @e[tag=sheep_type_blue,scores={s_blow_time=1..}] s_ulti_dura 1
-execute as @e[tag=sheep_type_blue,scores={s_blow_time=1..,s_ulti_inter=4}] at @s run function sheep:ultimate/type/blue/summon_sheep
-scoreboard players set @e[tag=sheep_type_blue,scores={s_blow_time=1..,s_ulti_inter=4..}] s_ulti_inter 0
-kill @e[tag=sheep_type_blue,scores={s_blow_time=1..,s_ulti_dura=200..}]
-
-team join red @e[tag=sheep_type_blue,tag=sheep_team_red,team=]
-team join blue @e[tag=sheep_type_blue,tag=sheep_team_blue,team=]
-
-
-# lime
-scoreboard players add @e[tag=sheep_type_lime,scores={s_blow_time=1..}] s_ulti_inter 1
-scoreboard players add @e[tag=sheep_type_lime,scores={s_blow_time=1..}] s_ulti_dura 1
-execute as @e[tag=sheep_type_lime,scores={s_blow_time=1..,s_ulti_inter=15}] at @s run function sheep:ultimate/type/lime/effect
-scoreboard players set @e[tag=sheep_type_lime,scores={s_blow_time=1..,s_ulti_inter=15..}] s_ulti_inter 0
-kill @e[tag=sheep_type_lime,scores={s_blow_time=1..,s_ulti_dura=200..}]
-
-team join red @e[tag=sheep_type_lime,tag=sheep_team_red,team=]
-team join blue @e[tag=sheep_type_lime,tag=sheep_team_blue,team=]
-effect give @e[tag=sheep_type_lime,team=!] glowing 1 1 true
-
-scoreboard players add @e[tag=sheep_lime_mark] s_lime_time 1
-execute as @e[scores={s_lime_time=1..}] at @s run function sheep:effect/lime
-execute as @e[scores={s_lime_time=1..}] at @s run tp @s ~ ~0.25 ~
-kill @e[scores={s_lime_time=10..}]

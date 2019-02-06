@@ -5,7 +5,7 @@ scoreboard players add @s s_ulti_dura 1
 scoreboard players set @s s_energy 0
 
 # effects
-effect give @s minecraft:speed 1 0 true
+effect give @s minecraft:speed 1 1 true
 
 # find center and sheep
 tag @s add player_temp
@@ -40,6 +40,9 @@ tag @a[tag=ms_healed] remove ms_healed
 # clear
 tag @e[tag=sheep_temp] remove sheep_temp
 tag @s remove player_temp
+
+# no ultimate energy
+scoreboard players set @s s_ulti_energy 0
 
 # end
 execute as @s[scores={s_ulti_dura=300..}] run function sheep:ultimate/end
