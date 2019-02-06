@@ -19,8 +19,8 @@ tag @s add player_temp
 execute as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run scoreboard players set @s s_ulti_sheep 1000
 execute if score @s s_class matches 101 as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run data merge entity @s {Color:8}
 execute if score @s s_class matches 102 as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run data merge entity @s {Color:10}
-execute if score @s s_class matches 201 as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run data merge entity @s {Color:5}
-execute if score @s s_class matches 202 as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run data merge entity @s {Color:11}
+execute if score @s s_class matches 201 as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run data merge entity @s {Color:11}
+execute if score @s s_class matches 202 as @e[tag=sheep_ulti] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run data merge entity @s {Color:5}
 tag @a[tag=player_temp] remove player_temp
 
 # hint
