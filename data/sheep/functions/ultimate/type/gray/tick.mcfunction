@@ -7,7 +7,7 @@ scoreboard players set @s[scores={s_ulti_inter=10..}] s_ulti_inter 0
 scoreboard players set @s s_energy 0
 
 # launch
-execute as @s[scores={s_ulti_inter=5}] at @s anchored eyes run function sheep:launch/main\
+execute as @s[scores={s_ulti_inter=5}] at @s anchored eyes run function sheep:launch/main
 
 # no ultimate energy
 scoreboard players set @s s_ulti_energy 0
