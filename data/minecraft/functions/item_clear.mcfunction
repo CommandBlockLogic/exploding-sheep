@@ -1,0 +1,42 @@
+replaceitem entity @s hotbar.2 minecraft:air
+replaceitem entity @s hotbar.3 minecraft:air
+replaceitem entity @s hotbar.4 minecraft:air
+replaceitem entity @s hotbar.5 minecraft:air
+replaceitem entity @s hotbar.6 minecraft:air
+execute as @s unless score game_status system matches 0 run replaceitem entity @s hotbar.7 minecraft:air
+
+replaceitem entity @s inventory.0 minecraft:air
+replaceitem entity @s inventory.1 minecraft:air
+replaceitem entity @s inventory.2 minecraft:air
+replaceitem entity @s inventory.3 minecraft:air
+replaceitem entity @s inventory.4 minecraft:air
+replaceitem entity @s inventory.5 minecraft:air
+replaceitem entity @s inventory.6 minecraft:air
+replaceitem entity @s inventory.7 minecraft:air
+replaceitem entity @s inventory.8 minecraft:air
+replaceitem entity @s inventory.9 minecraft:air
+replaceitem entity @s inventory.10 minecraft:air
+replaceitem entity @s inventory.11 minecraft:air
+replaceitem entity @s inventory.12 minecraft:air
+replaceitem entity @s inventory.13 minecraft:air
+replaceitem entity @s inventory.14 minecraft:air
+replaceitem entity @s inventory.15 minecraft:air
+replaceitem entity @s inventory.16 minecraft:air
+replaceitem entity @s inventory.17 minecraft:air
+replaceitem entity @s inventory.18 minecraft:air
+replaceitem entity @s inventory.19 minecraft:air
+replaceitem entity @s inventory.20 minecraft:air
+replaceitem entity @s inventory.21 minecraft:air
+replaceitem entity @s inventory.22 minecraft:air
+replaceitem entity @s inventory.23 minecraft:air
+replaceitem entity @s inventory.24 minecraft:air
+replaceitem entity @s inventory.25 minecraft:air
+replaceitem entity @s inventory.26 minecraft:air
+replaceitem entity @s inventory.27 minecraft:air
+replaceitem entity @s inventory.28 minecraft:air
+replaceitem entity @s inventory.29 minecraft:air
+
+replaceitem entity @s armor.head minecraft:air
+replaceitem entity @s armor.chest minecraft:air
+replaceitem entity @s armor.legs minecraft:air
+replaceitem entity @s armor.feet minecraft:air

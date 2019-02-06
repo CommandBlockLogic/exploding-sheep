@@ -3,6 +3,9 @@
 # 羊羊
 function sheep:tick
 #function keep_items
+# 清除物品 (itemcheck)
+execute as @a[tag=itemcheck] run minecraft:item_clear
+
 # 保护标记实体
 execute unless entity @e[tag=system_core_mark] run function keep_mark/core
 execute unless entity @e[tag=system_lobby_mark] run function keep_mark/lobby
