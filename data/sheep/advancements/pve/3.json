@@ -1,0 +1,29 @@
+{
+	"parent": "sheep:pve/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:zombie_head"
+		},
+		"title": [
+			{
+				"text": "泰坦",
+				"color": "white"
+			}
+		],
+		"description": [
+			{
+				"text": "邪恶的泰坦！",
+				"color": "white"
+			}
+		],
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

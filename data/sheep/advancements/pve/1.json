@@ -1,0 +1,30 @@
+{
+	"parent": "sheep:pve/root",
+	"display": {
+		"icon": {
+			"item": "minecraft:player_head",
+			"nbt": "{SkullOwner:{Id:\"1ac8f7a8-935b-4293-a06b-cc7cbd6b4e77\",Properties:{textures:[{Signature:\"k0eyPBhACZfKan+2PQ5Y/h+wwIMrMDiEkivR758pOPJDDFRu25wBnOoZFdpTsGH4GZjpibcnKEC5VjsFKG8knYKlPVyn+lCmiV2nRyLKrdm7WQU5SNbGU9GclM8nxrVgvuLCzRW1CmyKTMDBeqWP9Ew3yM5Xk7fluFjJqUx4KSptXfjj5uK/Ob+NXh+lTdbeAcI9TMHLuNkE8VW/EHinWodOLj5z4nU/IyaEnULo/8DIJ/O/FDl6buZJz/lrwk2dP1MwdPQIUGX3R1DHvi7HgUb2bBJkx9A81dXhAA3J+aJVxd8wCdZ2MwU2j9DTAygD/uArff+PrCpLHLVHtNFvTXLGARFvDyM/Xswf5JURGaT3H4nmgMY4Zm57FCFW5GgJIL4qYAMPBwNq7Nx4ZJsv9vhps8ArtehFjbwrmhWyOP/vuZ+5FUH0/fBZQhGd5EqfEhJkl+pr/gCTKz5s/fZUTpI/wc0yrhM2xegTj2fUbGnv80lmbl1sOwny8Uih/ugqeR7yMbY43pC19Zk3qBKkTd1+NxGt5ZOcgd5NaiM5BBXbfFXVCFd+t0WAFkIdCiJ7S7YtXpUCitAKPqW+VlsZE9V/sl8ZXeA1S+FFtN81ae9g8r9yLOCUxgo41n/2Kaa61Udku5bqdopTUSNhwnLLi4dk3ejyEF629Tyxuhe+7x4=\",Value:\"eyJ0aW1lc3RhbXAiOjE1NDk0NjU5MzUwNDUsInByb2ZpbGVJZCI6IjFhYzhmN2E4OTM1YjQyOTNhMDZiY2M3Y2JkNmI0ZTc3IiwicHJvZmlsZU5hbWUiOiJIZXJvYnJpbmVYaWEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk0MzkyMmQwOWZmYWYyZjgyOGFjMDIzZWE5NmIyM2U5OWY2NmQwZjQ4OTgyMDFkNDI4NTZhYmIwOGJiMDc2MiJ9fX0=\"}]},Name:\"HerobrineXia\"}}"
+		},
+		"title": [
+			{
+				"text": "法师",
+				"color": "white"
+			}
+		],
+		"description": [
+			{
+				"text": "邪恶的法师！",
+				"color": "white"
+			}
+		],
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

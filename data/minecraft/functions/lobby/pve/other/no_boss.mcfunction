@@ -44,6 +44,18 @@ bossbar set minecraft:boss_cool color purple
 execute store result bossbar minecraft:boss_cool value run scoreboard players get Boss冷却百分比 pve_system
 bossbar set minecraft:boss_cool name [{"text":"Boss复活中...","color":"white"},{"text":" (","color":"white"},{"score":{"objective":"pve_system","name":"Boss冷却百分比"}},{"text":"%)","color":"white"}]
 
-# 给予参与击杀的玩家进度
-execute if entity @a[tag=spg_hit_boss_player] run say @a[tag=spg_hit_boss_player] 参与击杀了 boss
+# 击杀奖励
+execute store result score 击杀人数 pve_system run execute if entity @a[tag=spg_hit_boss_player]
+## 击杀提示
+execute if score 击杀人数 pve_system matches 1 if score Boss编号 pve_system matches 1 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"仅凭一己之力就击杀了邪恶的","\u00a7c法师"]
+execute if score 击杀人数 pve_system matches 1 if score Boss编号 pve_system matches 2 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"仅凭一己之力就击杀了邪恶的","\u00a7c召唤师"]
+execute if score 击杀人数 pve_system matches 1 if score Boss编号 pve_system matches 2 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"仅凭一己之力就击杀了邪恶的","\u00a7c泰坦"]
+execute if score 击杀人数 pve_system matches 2.. if score Boss编号 pve_system matches 1 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"共同击杀了邪恶的","\u00a7c法师"]
+execute if score 击杀人数 pve_system matches 2.. if score Boss编号 pve_system matches 2 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"共同击杀了邪恶的","\u00a7c召唤师"]
+execute if score 击杀人数 pve_system matches 2.. if score Boss编号 pve_system matches 2 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"共同击杀了邪恶的","\u00a7c泰坦"]
+## 进度奖励
+execute if score Boss编号 pve_system matches 1 run advancement grant @a[tag=spg_hit_boss_player] until sheep:pve/1
+execute if score Boss编号 pve_system matches 2 run advancement grant @a[tag=spg_hit_boss_player] until sheep:pve/2
+execute if score Boss编号 pve_system matches 3 run advancement grant @a[tag=spg_hit_boss_player] until sheep:pve/3
+
 tag @a[tag=spg_hit_boss_player] remove spg_hit_boss_player
