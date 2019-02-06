@@ -43,7 +43,9 @@ execute if entity @s[tag=sheep_type_heal] run playsound minecraft:item.bottle.fi
 execute if entity @s[tag=sheep_type_heal] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_heal_mark"]}
 execute if entity @s[tag=sheep_type_heal,tag=sheep_team_red] run effect give @a[distance=..4,team=red] minecraft:absorption 30 0 true
 execute if entity @s[tag=sheep_type_heal,tag=sheep_team_blue] run effect give @a[distance=..4,team=blue] minecraft:absorption 30 0 true
-execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] run effect give @a[distance=..4] minecraft:absorption 30 0 true
+execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] as @a if score @s s_id = @s s_thrower_id run tag @s add heal_me
+execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] run effect give @a[distance=..4,tag=heal_me] minecraft:absorption 30 0 true
+execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] run tag @a remove heal_me
 # teleport
 execute if entity @s[tag=sheep_type_teleport] at @s as @a if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run tp @s ~ ~ ~ ~ ~
 execute if entity @s[tag=sheep_type_teleport] run playsound minecraft:entity.enderman.teleport ambient @a ~ ~ ~ 1 0.5
