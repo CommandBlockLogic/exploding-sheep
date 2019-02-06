@@ -26,10 +26,10 @@ execute at @s[tag=!sheep_touch_y] positioned ~-0.3 ~ ~0.3 unless block ~ ~ ~ #sh
 execute at @s[tag=!sheep_touch_y] positioned ~-0.3 ~0.4 ~-0.3 unless block ~ ~ ~ #sheep:chuantou_with_slabs run function sheep:fly/touch_y
 execute at @s[tag=!sheep_touch_y] positioned ~-0.3 ~ ~-0.3 unless block ~ ~ ~ #sheep:chuantou_with_slabs run function sheep:fly/touch_y
 
-execute at @s[tag=!sheep_touch_y] positioned ~0.3 ~ ~0.3 if block ~ ~0.5 ~ #minecraft:slabs[type=bottom] run function sheep:fly/touch_y
-execute at @s[tag=!sheep_touch_y] positioned ~0.3 ~ ~-0.3 if block ~ ~0.5 ~ #minecraft:slabs[type=bottom] run function sheep:fly/touch_y
-execute at @s[tag=!sheep_touch_y] positioned ~-0.3 ~ ~0.3 if block ~ ~0.5 ~ #minecraft:slabs[type=bottom] run function sheep:fly/touch_y
-execute at @s[tag=!sheep_touch_y] positioned ~-0.3 ~ ~-0.3 if block ~ ~0.5 ~ #minecraft:slabs[type=bottom] run function sheep:fly/touch_y
+execute at @s[tag=!sheep_touch_y] positioned ~0.3 ~ ~0.3 if block ~ ~0.45 ~ #minecraft:slabs[type=bottom] run function sheep:fly/touch_y
+execute at @s[tag=!sheep_touch_y] positioned ~0.3 ~ ~-0.3 if block ~ ~0.45 ~ #minecraft:slabs[type=bottom] run function sheep:fly/touch_y
+execute at @s[tag=!sheep_touch_y] positioned ~-0.3 ~ ~0.3 if block ~ ~0.45 ~ #minecraft:slabs[type=bottom] run function sheep:fly/touch_y
+execute at @s[tag=!sheep_touch_y] positioned ~-0.3 ~ ~-0.3 if block ~ ~0.45 ~ #minecraft:slabs[type=bottom] run function sheep:fly/touch_y
 
 # z
 execute store result score @s s_temp5 run data get entity @s Pos[2] 1000
