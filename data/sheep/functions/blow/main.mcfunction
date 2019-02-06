@@ -12,6 +12,10 @@ scoreboard players set @s[tag=sheep_type_fast,scores={s_flying_time=41..}] s_blo
 execute if score @s s_blow_power matches 2 at @s as @a[distance=..4] run function sheep:blow/add_hit_mark
 execute if score @s s_blow_power matches 3 at @s as @a[distance=..6] run function sheep:blow/add_hit_mark
 execute if score @s s_blow_power matches 4 at @s as @a[distance=..8] run function sheep:blow/add_hit_mark
+## mark hit boss
+execute if score @s s_blow_power matches 2 at @s if entity @e[distance=..4,tag=boss_exist] as @a if score @s = @e[limit=1,tag=sheep_temp] run tag @s add spg_hit_boss_player
+execute if score @s s_blow_power matches 3 at @s if entity @e[distance=..6,tag=boss_exist] as @a if score @s = @e[limit=1,tag=sheep_temp] run tag @s add spg_hit_boss_player
+execute if score @s s_blow_power matches 4 at @s if entity @e[distance=..8,tag=boss_exist] as @a if score @s = @e[limit=1,tag=sheep_temp] run tag @s add spg_hit_boss_player
 
 
 # boom

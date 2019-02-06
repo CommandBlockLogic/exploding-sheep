@@ -43,3 +43,7 @@ bossbar set minecraft:boss_cool max 100
 bossbar set minecraft:boss_cool color purple
 execute store result bossbar minecraft:boss_cool value run scoreboard players get Boss冷却百分比 pve_system
 bossbar set minecraft:boss_cool name [{"text":"Boss复活中...","color":"white"},{"text":" (","color":"white"},{"score":{"objective":"pve_system","name":"Boss冷却百分比"}},{"text":"%)","color":"white"}]
+
+# 给予参与击杀的玩家进度
+execute if entity @a[tag=spg_hit_boss_player] run say @a[tag=spg_hit_boss_player] 参与击杀了 boss
+tag @a[tag=spg_hit_boss_player] remove spg_hit_boss_player
