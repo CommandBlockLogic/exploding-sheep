@@ -49,10 +49,10 @@ execute store result score 击杀人数 pve_system run execute if entity @a[tag=
 ## 击杀提示
 execute if score 击杀人数 pve_system matches 1 if score Boss编号 pve_system matches 1 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"仅凭一己之力就击杀了邪恶的","\u00a7c法师"]
 execute if score 击杀人数 pve_system matches 1 if score Boss编号 pve_system matches 2 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"仅凭一己之力就击杀了邪恶的","\u00a7c召唤师"]
-execute if score 击杀人数 pve_system matches 1 if score Boss编号 pve_system matches 2 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"仅凭一己之力就击杀了邪恶的","\u00a7c泰坦"]
+execute if score 击杀人数 pve_system matches 1 if score Boss编号 pve_system matches 3 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"仅凭一己之力就击杀了邪恶的","\u00a7c泰坦"]
 execute if score 击杀人数 pve_system matches 2.. if score Boss编号 pve_system matches 1 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"共同击杀了邪恶的","\u00a7c法师"]
 execute if score 击杀人数 pve_system matches 2.. if score Boss编号 pve_system matches 2 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"共同击杀了邪恶的","\u00a7c召唤师"]
-execute if score 击杀人数 pve_system matches 2.. if score Boss编号 pve_system matches 2 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"共同击杀了邪恶的","\u00a7c泰坦"]
+execute if score 击杀人数 pve_system matches 2.. if score Boss编号 pve_system matches 3 run tellraw @a ["",{"selector":"@a[tag=spg_hit_boss_player]"},"共同击杀了邪恶的","\u00a7c泰坦"]
 ## 进度奖励
 execute if score Boss编号 pve_system matches 1 run advancement grant @a[tag=spg_hit_boss_player] until sheep:pve/1
 execute if score Boss编号 pve_system matches 2 run advancement grant @a[tag=spg_hit_boss_player] until sheep:pve/2
