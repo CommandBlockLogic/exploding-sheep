@@ -133,6 +133,7 @@
         "minecraft:black_wall_banner",
         "minecraft:beetroots",
         "minecraft:structure_void",
-        "minecraft:vine"
+		"minecraft:vine",
+		"minecraft:water"
     ]
 }
