@@ -32,9 +32,6 @@ replaceitem entity @s inventory.23 minecraft:air
 replaceitem entity @s inventory.24 minecraft:air
 replaceitem entity @s inventory.25 minecraft:air
 replaceitem entity @s inventory.26 minecraft:air
-replaceitem entity @s inventory.27 minecraft:air
-replaceitem entity @s inventory.28 minecraft:air
-replaceitem entity @s inventory.29 minecraft:air
 
 replaceitem entity @s armor.head minecraft:air
 replaceitem entity @s armor.chest minecraft:air
