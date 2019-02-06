@@ -45,7 +45,7 @@ execute if entity @s[tag=sheep_type_heal,tag=sheep_team_red] run effect give @a[
 execute if entity @s[tag=sheep_type_heal,tag=sheep_team_blue] run effect give @a[distance=..4,team=blue] minecraft:absorption 30 0 true
 execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] run tag @s add current_sheep
 execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] as @a if score @s s_id = @e[tag=current_sheep,limit=1] s_thrower_id run tag @s add heal_me
-execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] run effect give @a[distance=..4,tag=heal_me] minecraft:absorption 30 0 true
+execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] run effect give @a[distance=..4,tag=heal_me] minecraft:absorption 30 1 true
 execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] run tag @a[tag=heal_me] remove heal_me
 execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] run tag @e[tag=current_sheep] remove current_sheep
 # teleport
