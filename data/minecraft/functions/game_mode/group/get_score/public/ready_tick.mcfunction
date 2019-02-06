@@ -4,7 +4,7 @@
 scoreboard players remove system_start_countdown system 1
 
 # clear core
-execute if score system_start_countdown system matches 161 run function core/center/clear
+execute if score system_start_countdown system matches 161 run function game_mode/core/center/clear
 scoreboard players set @e[tag=system_core_mark_center] core_destory 0
 # summon core
 execute if score system_start_countdown system matches ..150 run function game_mode/group/get_score/public/summon_core_fast
