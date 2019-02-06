@@ -32,23 +32,24 @@ execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={Selecte
 execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级灰羊羊 ","color":"gray"}," 小心躲避!"]
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 随他进攻!"]
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 快跟他拉开距离!"]
-execute as @a[scores={s_launch=1..,s_launch_type=103,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 随他进攻!"]
-execute as @a[scores={s_launch=1..,s_launch_type=103,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 快跟他拉开距离!"]
 execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级蓝羊羊 ","color":"blue"}," 小心躲避!"]
 execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级蓝羊羊 ","color":"blue"}," 小心躲避!"]
+execute as @a[scores={s_launch=1..,s_launch_type=202,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 随他进攻!"]
+execute as @a[scores={s_launch=1..,s_launch_type=202,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 快跟他拉开距离!"]
 
 execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级灰羊羊 ","color":"gray"}," 随他进攻!"]
 execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级灰羊羊 ","color":"gray"}," 小心躲避!"]
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 随他进攻!"]
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 快跟他拉开距离!"]
-execute as @a[scores={s_launch=1..,s_launch_type=103,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 随他进攻!"]
-execute as @a[scores={s_launch=1..,s_launch_type=103,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 快跟他拉开距离!"]
 execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级蓝羊羊 ","color":"blue"}," 小心躲避!"]
 execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级蓝羊羊 ","color":"blue"}," 小心躲避!"]
+execute as @a[scores={s_launch=1..,s_launch_type=202,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 随他进攻!"]
+execute as @a[scores={s_launch=1..,s_launch_type=202,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 快跟他拉开距离!"]
+
+
 # shoot ultimate
 execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/gray/main
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/purple/main
-execute as @a[scores={s_launch=1..,s_launch_type=103,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/lime/main
 execute as @a[scores={s_launch=1..,s_launch_type=201..999},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 execute as @a[scores={s_launch=1..,s_launch_type=201..999},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/end
 
@@ -144,18 +145,6 @@ execute if score s_web_num s_web_id matches 6.. store result score s_web_temp s_
 execute if score s_web_num s_web_id matches 6.. as @e[tag=sheep_web_mark,scores={s_web_id=1..}] run scoreboard players operation s_web_temp s_web_id < @s s_web_id
 execute if score s_web_num s_web_id matches 6.. as @e[tag=sheep_web_mark,scores={s_web_id=1..}] if score @s s_web_id = s_web_temp s_web_id run kill @s
 
-# lime
-#scoreboard players add @e[tag=sheep_type_lime,scores={s_blow_time=1..}] s_ulti_inter 1
-#execute as @e[tag=sheep_type_lime,tag=sheep_team_red,scores={s_blow_time=1..,s_ulti_inter=10}] at @s run effect give @a[team=red,distance=..5] minecraft:regeneration 2 1 true
-#execute as @e[tag=sheep_type_lime,tag=sheep_team_blue,scores={s_blow_time=1..,s_ulti_inter=10}] at @s run effect give @a[team=blue,distance=..5] minecraft:regeneration 2 1 true
-#execute as @e[tag=sheep_type_lime,tag=!sheep_team_blue,tag=!sheep_team_red,scores={s_blow_time=1..,s_ulti_inter=10}] at @s run effect give @a[distance=..5] minecraft:regeneration 2 1 true
-#scoreboard players set @e[tag=sheep_type_lime,scores={s_blow_time=1..,s_ulti_inter=20..}] s_ulti_inter 0
-
-#execute as @e[tag=sheep_type_lime,scores={s_blow_time=1..}] at @s run particle minecraft:happy_villager ~ ~1 ~ 2 1 2 1 1
-#team join red @e[tag=sheep_type_lime,tag=sheep_team_red,team=]
-#team join blue @e[tag=sheep_type_lime,tag=sheep_team_blue,team=]
-##effect give @e[tag=sheep_type_lime,scores={s_blow_time=1..}] minecraft:glowing 1 0 true
-
 
 # blue
 scoreboard players add @e[tag=sheep_type_blue,scores={s_blow_time=1..}] s_ulti_inter 1
@@ -166,3 +155,16 @@ kill @e[tag=sheep_type_blue,scores={s_blow_time=1..,s_ulti_dura=200..}]
 
 team join red @e[tag=sheep_type_blue,tag=sheep_team_red,team=]
 team join blue @e[tag=sheep_type_blue,tag=sheep_team_blue,team=]
+
+
+# lime
+scoreboard players add @e[tag=sheep_type_lime,scores={s_blow_time=1..}] s_ulti_inter 1
+scoreboard players add @e[tag=sheep_type_lime,scores={s_blow_time=1..}] s_ulti_dura 1
+execute as @e[tag=sheep_type_lime,scores={s_blow_time=1..,s_ulti_inter=5}] at @s run function sheep:ultimate/type/lime/effect
+scoreboard players set @e[tag=sheep_type_lime,scores={s_blow_time=1..,s_ulti_inter=5..}] s_ulti_inter 0
+kill @e[tag=sheep_type_lime,scores={s_blow_time=1..,s_ulti_dura=200..}]
+
+scoreboard players add @e[tag=sheep_lime_mark] s_lime_time 1
+execute as @e[scores={s_lime_time=1..}] at @s run function sheep:effect/lime
+execute as @e[scores={s_lime_time=1..}] at @s run tp @s ~ ~0.25 ~
+kill @e[scores={s_lime_time=10..}]

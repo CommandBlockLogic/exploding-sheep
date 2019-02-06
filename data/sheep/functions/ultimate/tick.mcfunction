@@ -14,7 +14,6 @@ execute as @a[scores={s_ulti_time=60}] run function sheep:ultimate/player_ready
 # types
 execute as @a[scores={s_ulti_dura=1..,s_class=101}] run function sheep:ultimate/type/gray/tick
 execute as @a[scores={s_ulti_dura=1..,s_class=102}] run function sheep:ultimate/type/purple/tick
-execute as @a[scores={s_ulti_dura=1..,s_class=103}] run function sheep:ultimate/type/lime/tick
 
 
 # energy

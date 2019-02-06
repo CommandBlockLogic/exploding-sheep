@@ -19,25 +19,24 @@
 	* ice
 	* slow the enemies in the area
 * 6
-	* heal
-	* heal the allies in the area
+	* absorb
+	* give allies the absorption effect in the area
 * 101
 	* shoot a normal sheep per 10 tick
 	* 10 seconds
 * 102
 	* add three rotating sheeps around the player
 	* harm enemies that touched those sheep
-	* add 4 hearts absorbtion
-	* 10 seconds
-* 103
-	* shoot a tracking sheep per 20 tick
-	* tracking the target player nearby
-	* 10 seconds
+	* add speed effect
+	* 15 seconds
 * 201
 	* sheep rain
 	* summon sheeps from above
 	* altitude limit: 10 to 30
 	* 10 seconds radius: 4
+* 202
+	* shoot a sheep that can accelerate energy generation
+	* 15 seconds
 
 
 # Game Mode
@@ -63,9 +62,7 @@
 * 餀 餁 餂
 	* \u9900 \u9901 \u9902
 * 分辨被魔法杀死
-* 更多死亡提示
-* 修复空物品栏F得羊毛bug
-* 增加单人死斗和抢分模式
+
 
 # 流程
 
@@ -92,6 +89,11 @@
 
 ## done
 
+* 增加单人死斗和抢分模式
+* 更多死亡提示
+* 修复空物品栏F得羊毛bug
+* 特殊怪伤害
+* 得分模式死亡时间修改
 * 积分模式按时间看分数
 * 自家柱子加速能量回复
 * 自由模式加返回大厅道具
@@ -149,5 +151,3 @@
 * 下线的超级羊删除
 * 柠羊追怪
 * 洞穴大厅加pve
-* 特殊怪伤害
-* 得分模式死亡时间修改
