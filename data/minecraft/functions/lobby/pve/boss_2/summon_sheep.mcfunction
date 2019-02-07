@@ -1,10 +1,19 @@
-# lobby/launch_sheep/fixed_v
-
 # tag target player
 execute positioned ~ ~ ~ run tag @a[sort=random,distance=..20,limit=1] add system_lobby_target
 
 # summon sheep
-execute positioned ~ ~ ~ run function sheep:launch/type/normal
+execute if score 羊种类 boss_2_pass matches 1 positioned ~ ~ ~ run function sheep:launch/type/normal
+execute if score 羊种类 boss_2_pass matches 2 positioned ~ ~ ~ run function sheep:launch/type/web
+
+# change sheep
+scoreboard players add 羊种类 boss_2_pass 1
+execute if score 羊种类 boss_2_pass matches 3 run scoreboard players set 羊种类 boss_2_pass 1
+
+# set score
+scoreboard players set @e[tag=sheep_new,limit=1] s_thrower_id -1
+
+# set tag
+tag @e[tag=sheep_new,limit=1] add sheep_team_boss
 
 # turn the sheep's face
 execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ facing entity @a[tag=system_lobby_target,limit=1]

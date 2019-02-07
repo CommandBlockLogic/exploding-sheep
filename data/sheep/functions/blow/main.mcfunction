@@ -41,7 +41,8 @@ execute if entity @s[tag=sheep_type_volleyball] run summon minecraft:firework_ro
 # ice
 execute if entity @s[tag=sheep_type_web,tag=sheep_team_red] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark","sheep_web_mark_red"]}
 execute if entity @s[tag=sheep_type_web,tag=sheep_team_blue] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark","sheep_web_mark_blue"]}
-execute if entity @s[tag=sheep_type_web,tag=!sheep_team_blue,tag=!sheep_team_red] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark"]}
+execute if entity @s[tag=sheep_type_web,tag=!sheep_team_blue,tag=!sheep_team_red,tag=sheep_team_boss] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark","sheep_web_mark_boss"]}
+execute if entity @s[tag=sheep_type_web,tag=!sheep_team_blue,tag=!sheep_team_red,tag=!sheep_team_boss] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_web_mark"]}
 # heal
 execute if entity @s[tag=sheep_type_heal] run playsound minecraft:item.bottle.fill ambient @a ~ ~ ~ 1 0.5
 execute if entity @s[tag=sheep_type_heal] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_heal_mark"]}

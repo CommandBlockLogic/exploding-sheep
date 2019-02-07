@@ -40,6 +40,7 @@ execute if entity @e[tag=boss2,tag=real_boss2,tag=monster,limit=1] store result 
 execute if entity @e[tag=boss2,tag=real_boss2,tag=monster,limit=1] store result bossbar minecraft:boss2 value run data get entity @e[tag=boss2,tag=real_boss2,tag=monster,limit=1] Health 100
 execute if entity @e[tag=boss2,tag=real_boss2,tag=monster] run bossbar set minecraft:boss2 name [{"selector":"@e[tag=boss2,tag=real_boss2,tag=monster,limit=1]","color":"white"},{"text":" (","color":"white"},{"score":{"name":"@e[tag=boss2,tag=real_boss2,tag=monster,limit=1]","objective":"boss_2_int"},"color":"white"},{"text":".","color":"white"},{"score":{"name":"@e[tag=boss2,tag=real_boss2,tag=monster,limit=1]","objective":"boss_2_float"},"color":"white"},{"text":"/","color":"white"},{"score":{"name":"@e[tag=boss2,tag=real_boss2,tag=monster,limit=1]","objective":"boss_2_max"},"color":"white"},{"text":")","color":"white"}]
 
+function minecraft:lobby/pve/boss_2/passive
 function minecraft:lobby/pve/boss_2/skill_1
 function minecraft:lobby/pve/boss_2/skill_2
 function minecraft:lobby/pve/boss_2/skill_3

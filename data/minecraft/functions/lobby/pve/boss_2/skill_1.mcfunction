@@ -8,7 +8,7 @@ execute if entity @e[tag=boss2,tag=boss_2_skill_1] run tag @e[tag=boss2,tag=boss
 execute as @e[type=minecraft:armor_stand,tag=boss_2_summon_1] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=adventure]
 execute as @e[type=minecraft:armor_stand,tag=boss_2_summon_1] at @s run tp @s ^ ^ ^0.5
 execute as @e[type=minecraft:armor_stand,tag=boss_2_summon_1] at @s run particle minecraft:dust 1 0 0 1 ~ ~ ~ .01 .01 .01 0.0001 10 force
-execute as @e[tag=boss_2_summon_1] at @s run summon minecraft:evoker_fangs ~ ~ ~ {Warmup:20}
+execute as @e[tag=boss_2_summon_1] at @s run summon minecraft:evoker_fangs ~ ~ ~ {Warmup:10}
 execute as @e[type=minecraft:armor_stand,tag=boss_2_summon_1] at @s if entity @a[gamemode=adventure,distance=..0.5] run kill @s
 execute as @e[tag=boss2] if score @s boss_2_cool1 >= 技能冷却 boss_2_cool1 run scoreboard players set @s boss_2_cool1 0
 

@@ -44,6 +44,7 @@ scoreboard objectives remove boss_2_max
 scoreboard objectives remove boss_2_cool1
 scoreboard objectives remove boss_2_cool2
 scoreboard objectives remove boss_2_cool3
+scoreboard objectives remove boss_2_pass
 bossbar remove boss2
 # 添加
 scoreboard objectives add boss_2_health dummy
@@ -53,6 +54,7 @@ scoreboard objectives add boss_2_max dummy
 scoreboard objectives add boss_2_cool1 dummy
 scoreboard objectives add boss_2_cool2 dummy
 scoreboard objectives add boss_2_cool3 dummy
+scoreboard objectives add boss_2_pass dummy
 bossbar add boss2 [{"text":"boss2"}]
 
 
@@ -85,6 +87,7 @@ scoreboard objectives remove boss_4_max
 scoreboard objectives remove boss_4_cool1
 scoreboard objectives remove boss_4_cool2
 scoreboard objectives remove boss_4_cool3
+
 bossbar remove boss4
 # 添加
 scoreboard objectives add boss_4_health dummy
