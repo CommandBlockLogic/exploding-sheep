@@ -52,6 +52,8 @@
 	* 5mins, higher score
 * 3
 	* clear all powder
+* 5
+	* boss
 
 
 # todo list

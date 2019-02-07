@@ -33,6 +33,8 @@ execute if score game_status system matches 3 run function game_mode/single/deat
 execute if score game_status system matches 103 run function game_mode/single/death_match/pre/tick
 execute if score game_status system matches 4 run function game_mode/single/get_score/tick
 execute if score game_status system matches 104 run function game_mode/single/get_score/pre/tick
+execute if score game_status system matches 5 run function game_mode/single/boss/tick
+execute if score game_status system matches 105 run function game_mode/single/boss/pre/tick
 
 
 execute if score game_status system matches 8964 run function game_mode/ending/tick
