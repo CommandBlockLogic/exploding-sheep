@@ -1,22 +1,22 @@
 {
-	"parent": "sheep:pve/root",
 	"display": {
 		"icon": {
-			"item": "minecraft:zombie_head"
+			"item": "minecraft:player_head",
+			"nbt":"{SkillOwner:\"Herobrine\"}"
 		},
 		"title": [
 			{
-				"text": "泰坦",
+				"text": "Herobrine",
 				"color": "gold"
 			}
 		],
 		"description": [
 			{
-				"text": "参与击杀邪恶的泰坦！",
+				"text": "参与击杀邪恶的Herobrine!",
 				"color": "white"
 			}
 		],
-		"frame": "task",
+		"frame": "challenge",
 		"show_toast": true,
 		"announce_to_chat": false,
 		"hidden": false
