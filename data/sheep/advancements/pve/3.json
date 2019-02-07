@@ -25,5 +25,8 @@
 		"impossible": {
 			"trigger": "minecraft:impossible"
 		}
-	}
+	},
+	"rewards": {
+        "function": "minecraft:lobby/pve/main/defeat_boss_3"
+    }
 }
