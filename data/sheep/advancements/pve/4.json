@@ -1,8 +1,9 @@
 {
+	"parent": "sheep:pve/root",
 	"display": {
 		"icon": {
 			"item": "minecraft:player_head",
-			"nbt":"{SkillOwner:\"Herobrine\"}"
+			"nbt":"{SkullOwner:\"Herobrine\"}"
 		},
 		"title": [
 			{
@@ -12,7 +13,7 @@
 		],
 		"description": [
 			{
-				"text": "参与击杀邪恶的Herobrine!",
+				"text": "参与击杀邪恶的\nHerobrine!",
 				"color": "white"
 			}
 		],
