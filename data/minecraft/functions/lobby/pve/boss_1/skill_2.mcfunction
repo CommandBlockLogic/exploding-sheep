@@ -27,11 +27,11 @@ execute unless entity @e[tag=boss1] run kill @e[tag=boss_1_skill_2_4]
 
 scoreboard players set 技能冷却 boss_1_cool2 300
 scoreboard players add @e[tag=boss1] boss_1_cool2 1
-execute as @e[tag=boss1] at @s if entity @a[distance=..16] if score @s boss_1_cool2 >= 技能冷却 boss_1_cool2 run tag @e[tag=boss_1_skill_2_power,limit=1,sort=random] add boss_1_skill_2_use
+execute as @e[tag=boss1] at @s if entity @a[gamemode=adventure,distance=..16] if score @s boss_1_cool2 >= 技能冷却 boss_1_cool2 run tag @e[tag=boss_1_skill_2_power,limit=1,sort=random] add boss_1_skill_2_use
 execute as @e[tag=boss1] if score @s boss_1_cool2 >= 技能冷却 boss_1_cool2 run scoreboard players set @s boss_1_cool2 0
 scoreboard players add @e[tag=boss_1_skill_2_use] boss_1_cool2 1
 scoreboard players set 召唤物限时 boss_1_cool2 100
-execute as @e[tag=boss_1_skill_2_use,tag=!boss_1_skill_2_1] at @s run tp @s ~ ~ ~ facing entity @p feet
+execute as @e[tag=boss_1_skill_2_use,tag=!boss_1_skill_2_1] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=adventure] feet
 execute as @e[tag=boss_1_skill_2_use,tag=boss_1_skill_2_1] at @s run tp @s ~ ~ ~ facing entity @e[tag=boss1,type=skeleton,tag=monster,limit=1] feet
 execute as @e[tag=boss_1_skill_2_use] at @s run tp @s ^ ^ ^0.25
 execute as @e[tag=boss_1_skill_2_use] if score @s boss_1_cool2 >= 召唤物限时 boss_1_cool2 run kill @s
@@ -41,17 +41,17 @@ execute as @e[tag=boss_1_skill_2_1,tag=boss_1_skill_2_use] at @s if entity @e[ta
 execute as @e[tag=boss_1_skill_2_1,tag=boss_1_skill_2_use] at @s if entity @e[tag=boss1,type=skeleton,tag=monster,distance=..1] run kill @s
 
 
-execute as @e[tag=boss_1_skill_2_2,tag=boss_1_skill_2_use] at @s if entity @a[distance=..1] run summon minecraft:creeper ~ ~ ~ {Fuse:0,ExplosionRadius:1b,CustomName:"{\"text\":\"爆炸法术\",\"color\":\"red\"}"}
-execute as @e[tag=boss_1_skill_2_2,tag=boss_1_skill_2_use] at @s if entity @a[distance=..1] run kill @s
+execute as @e[tag=boss_1_skill_2_2,tag=boss_1_skill_2_use] at @s if entity @a[gamemode=adventure,distance=..1] run summon minecraft:creeper ~ ~ ~ {Fuse:0,ExplosionRadius:1b,CustomName:"{\"text\":\"爆炸法术\",\"color\":\"red\"}"}
+execute as @e[tag=boss_1_skill_2_2,tag=boss_1_skill_2_use] at @s if entity @a[gamemode=adventure,distance=..1] run kill @s
 
 
-execute as @e[tag=boss_1_skill_2_3,tag=boss_1_skill_2_use] at @s if entity @a[distance=..1] run effect give @a[distance=..1] levitation 1 4
-execute as @e[tag=boss_1_skill_2_3,tag=boss_1_skill_2_use] at @s if entity @a[distance=..1] run kill @s
+execute as @e[tag=boss_1_skill_2_3,tag=boss_1_skill_2_use] at @s if entity @a[gamemode=adventure,distance=..1] run effect give @a[gamemode=adventure,distance=..1] levitation 1 4
+execute as @e[tag=boss_1_skill_2_3,tag=boss_1_skill_2_use] at @s if entity @a[gamemode=adventure,distance=..1] run kill @s
 
 
-execute as @e[tag=boss_1_skill_2_4,tag=boss_1_skill_2_use] at @s if entity @a[distance=..1] run effect give @a[distance=..1] blindness 3 2
-execute as @e[tag=boss_1_skill_2_4,tag=boss_1_skill_2_use] at @s if entity @a[distance=..1] run effect give @a[distance=..1] weakness 3 2
-execute as @e[tag=boss_1_skill_2_4,tag=boss_1_skill_2_use] at @s if entity @a[distance=..1] run kill @s
+execute as @e[tag=boss_1_skill_2_4,tag=boss_1_skill_2_use] at @s if entity @a[gamemode=adventure,distance=..1] run effect give @a[gamemode=adventure,distance=..1] blindness 3 2
+execute as @e[tag=boss_1_skill_2_4,tag=boss_1_skill_2_use] at @s if entity @a[gamemode=adventure,distance=..1] run effect give @a[gamemode=adventure,distance=..1] weakness 3 2
+execute as @e[tag=boss_1_skill_2_4,tag=boss_1_skill_2_use] at @s if entity @a[gamemode=adventure,distance=..1] run kill @s
 
 
 

@@ -7,7 +7,7 @@
 		"title": [
 			{
 				"text": "法师",
-				"color": "white"
+				"color": "gold"
 			}
 		],
 		"description": [
@@ -25,5 +25,8 @@
 		"impossible": {
 			"trigger": "minecraft:impossible"
 		}
-	}
+	},
+	"rewards": {
+        "function": "minecraft:lobby/pve/main/defeat_boss_1"
+    }
 }

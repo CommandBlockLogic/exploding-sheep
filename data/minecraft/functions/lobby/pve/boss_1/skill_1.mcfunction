@@ -1,15 +1,15 @@
 scoreboard players set 技能冷却 boss_1_cool1 200
 scoreboard players add @e[tag=boss1] boss_1_cool1 1
-execute as @e[tag=boss1] at @s if entity @a[distance=..16] if score @s boss_1_cool1 >= 技能冷却 boss_1_cool1 run tag @s add boss_1_skill_1
-execute as @e[tag=boss1,tag=boss_1_skill_1] at @s run tp @s ~ ~ ~ facing entity @p
+execute as @e[tag=boss1] at @s if entity @a[gamemode=adventure,distance=..16] if score @s boss_1_cool1 >= 技能冷却 boss_1_cool1 run tag @s add boss_1_skill_1
+execute as @e[tag=boss1,tag=boss_1_skill_1] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=adventure]
 execute as @e[tag=boss1,tag=boss_1_skill_1] at @s positioned ~ ~1.25 ~ run summon minecraft:armor_stand ^ ^ ^2 {CustomName:"{\"text\":\"技能一召唤物\"}",Marker:1b,Invisible:1b,NoGravity:1b,Tags:["boss_1_summon_1"]}
-execute if entity @e[tag=boss1,tag=boss_1_skill_1] as @e[type=minecraft:armor_stand,tag=boss_1_summon_1] at @s run tp @s ~ ~ ~ facing entity @p feet
+execute if entity @e[tag=boss1,tag=boss_1_skill_1] as @e[type=minecraft:armor_stand,tag=boss_1_summon_1] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=adventure] feet
 execute if entity @e[tag=boss1,tag=boss_1_skill_1] run tag @e[tag=boss1,tag=boss_1_skill_1] remove boss_1_skill_1
 execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_1] at @s run tp @s ^ ^ ^1
 execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_1] at @s run particle minecraft:dust 1 1 1 2 ~ ~ ~ .01 .01 .01 0.0001 10 force
-execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_1] at @s if entity @a[distance=..0.5] as @a[distance=..0.5] at @s run summon minecraft:armor_stand ~ ~ ~ {CustomName:"{\"text\":\"技能一召唤物2\"}",Marker:1b,Invisible:1b,NoGravity:1b,Tags:["boss_1_summon_2"]}
+execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_1] at @s if entity @a[gamemode=adventure,distance=..0.5] as @a[gamemode=adventure,distance=..0.5] at @s run summon minecraft:armor_stand ~ ~ ~ {CustomName:"{\"text\":\"技能一召唤物2\"}",Marker:1b,Invisible:1b,NoGravity:1b,Tags:["boss_1_summon_2"]}
 execute as @e[tag=boss_1_summon_2] at @s run fill ~ ~ ~ ~ ~1 ~ cobweb replace air
-execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_1] at @s if entity @a[distance=..0.5] run kill @s
+execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_1] at @s if entity @a[gamemode=adventure,distance=..0.5] run kill @s
 execute as @e[tag=boss1] if score @s boss_1_cool1 >= 技能冷却 boss_1_cool1 run scoreboard players set @s boss_1_cool1 0
 
 kill @e[type=arrow,nbt={inGround:1b}]

@@ -11,7 +11,7 @@ execute if entity @e[tag=boss2,tag=fake_boss2] run kill @e[tag=boss_2_skill_2]
 
 scoreboard players set 技能冷却 boss_2_cool2 20
 scoreboard players add @e[tag=boss2,tag=real_boss2] boss_2_cool2 1
-execute as @e[tag=boss2,tag=real_boss2] at @s if entity @a[distance=..16] if score @s boss_2_cool2 >= 技能冷却 boss_2_cool2 run tag @e[tag=boss_2_skill_2] add boss_2_skill_2_use
+execute as @e[tag=boss2,tag=real_boss2] at @s if entity @a[gamemode=adventure,distance=..16] if score @s boss_2_cool2 >= 技能冷却 boss_2_cool2 run tag @e[tag=boss_2_skill_2] add boss_2_skill_2_use
 execute as @e[tag=boss2,tag=real_boss2] if score @s boss_2_cool2 >= 技能冷却 boss_2_cool2 run scoreboard players set @s boss_2_cool2 0
 
 execute as @e[tag=boss_2_skill_2,tag=boss_2_skill_2_use] at @s positioned ~ ~1.25 ~ run particle minecraft:dust 0 1 0 1 ^ ^ ^2 .01 1 .01 0.0001 10 force

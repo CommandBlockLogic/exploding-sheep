@@ -76,7 +76,7 @@ scoreboard objectives add boss_3_cool2 dummy
 scoreboard objectives add boss_3_cool3 dummy
 bossbar add boss3 [{"text":"boss3"}]
 
-# Boss4: Player
+# Boss4: Herobrine
 # 删除
 scoreboard objectives remove boss_4_health
 scoreboard objectives remove boss_4_int

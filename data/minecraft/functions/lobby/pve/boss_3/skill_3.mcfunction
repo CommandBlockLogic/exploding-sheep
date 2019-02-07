@@ -9,7 +9,7 @@ scoreboard players set 技能冷却 boss_3_cool3 600
 scoreboard players add @e[tag=boss3] boss_3_cool3 1
 execute as @e[tag=boss3] if score @s boss_3_cool3 >= 技能冷却 boss_3_cool3 run tag @s add boss_3_skill_3
 execute as @e[tag=boss3] at @s positioned ~ ~1.25 ~ run effect give @e[tag=monster,distance=..1.5] resistance 3 1 true
-execute as @e[tag=boss3] at @s positioned ~ ~1.25 ~ run effect give @a[distance=..1.5] wither 3 1 true
+execute as @e[tag=boss3] at @s positioned ~ ~1.25 ~ run effect give @a[gamemode=adventure,distance=..1.5] wither 3 1 true
 
 execute as @e[tag=boss_3_skill_3] at @s positioned ^ ^0.25 ^1.5 run particle minecraft:dust 1 0 0 1 ~ ~ ~ .01 .01 .01 0.0001 1 force
 execute as @e[tag=boss_3_skill_3] at @s positioned ^-0.75 ^0.25 ^1.3 run particle minecraft:dust 1 0 0 1 ~ ~ ~ .01 .01 .01 0.0001 1 force

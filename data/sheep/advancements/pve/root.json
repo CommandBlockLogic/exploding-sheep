@@ -7,7 +7,7 @@
 			"邪恶的 BOSS"
 		],
 		"frame": "task",
-		"background": "minecraft:textures/block/netherrack.png",
+		"background": "minecraft:textures/block/obsidian.png",
 		"description": [
 			{
 				"text": "快来挑战竞技场中邪恶的 BOSS!",
