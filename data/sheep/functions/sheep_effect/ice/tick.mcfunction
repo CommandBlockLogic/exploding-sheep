@@ -6,10 +6,10 @@ scoreboard players add @e[tag=sheep_web_mark] s_web_time 1
 scoreboard players add @e[tag=sheep_web_mark] s_temp1 1
 scoreboard players set @e[tag=sheep_web_mark,scores={s_temp1=3}] s_temp1 0
 execute as @e[scores={s_web_time=1..,s_temp1=1}] at @s run function sheep:sheep_effect/ice/particle2
-execute as @e[scores={s_web_time=1..},tag=sheep_web_mark] at @s run tag @e[distance=..4,type=!player,tag=monster] add sheep_ice_temp
-execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_red] at @s run tag @a[distance=..4,team=blue] add sheep_ice_temp
-execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_blue] at @s run tag @a[distance=..4,team=red] add sheep_ice_temp
-execute as @e[scores={s_web_time=1..},tag=sheep_web_mark,tag=!sheep_web_mark_blue,tag=!sheep_web_mark_red] at @s run tag @a[distance=..4] add sheep_ice_temp
+execute as @e[scores={s_web_time=1..},tag=sheep_web_mark] at @s run tag @e[distance=..3.5,type=!player,tag=monster] add sheep_ice_temp
+execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_red] at @s run tag @a[distance=..3.5,team=blue] add sheep_ice_temp
+execute as @e[scores={s_web_time=1..},tag=sheep_web_mark_blue] at @s run tag @a[distance=..3.5,team=red] add sheep_ice_temp
+execute as @e[scores={s_web_time=1..},tag=sheep_web_mark,tag=!sheep_web_mark_blue,tag=!sheep_web_mark_red] at @s run tag @a[distance=..3.5] add sheep_ice_temp
 effect give @e[tag=sheep_ice_temp] minecraft:slowness 3 10 false
 #effect give @e[tag=sheep_ice_temp] minecraft:blindness 2 0 false
 effect give @e[tag=sheep_ice_temp] minecraft:jump_boost 3 128 false

@@ -24,7 +24,7 @@ execute if score @s s_class matches 202 as @e[tag=sheep_ulti] if score @s s_thro
 tag @a[tag=player_temp] remove player_temp
 
 # hint
-tellraw @s[scores={s_class=101}] [">> 啊！是超级",{"text":"灰羊羊","color":"gray"},"! 赋予你10秒内连续发射羊羊的能力!"]
-tellraw @s[scores={s_class=102}] [">> 啊！是超级",{"text":"紫羊羊","color":"dark_purple"},"! 触发后10秒内身边将环绕三个紫羊羊! 对手碰到损失生命值!"]
-tellraw @s[scores={s_class=201}] [">> 啊！是超级",{"text":"蓝羊羊","color":"blue"},"! 落地后将召唤羊羊雨! 高度太低就召唤不到啦!"]
-tellraw @s[scores={s_class=202}] [">> 啊！是超级",{"text":"柠羊羊","color":"green"},"! 在羊羊身边会大大加速能量恢复!"]
+tellraw @s[scores={s_class=101}] [{"text":"## ","color":"gray","italic":true},"啊！是超级",{"text":"灰羊羊","color":"gray"},"! 赋予你10秒内连续发射羊羊的能力!"]
+tellraw @s[scores={s_class=102}] [{"text":"## ","color":"gray","italic":true},"啊！是超级",{"text":"紫羊羊","color":"dark_purple"},"! 触发后10秒内身边将环绕三个紫羊羊! 对手碰到损失生命值!"]
+tellraw @s[scores={s_class=201}] [{"text":"## ","color":"gray","italic":true},"啊！是超级",{"text":"蓝羊羊","color":"blue"},"! 落地后将召唤羊羊雨! 高度太低就召唤不到啦!"]
+tellraw @s[scores={s_class=202}] [{"text":"## ","color":"gray","italic":true},"啊！是超级",{"text":"柠羊羊","color":"green"},"! 在羊羊身边会大大加速能量恢复!"]

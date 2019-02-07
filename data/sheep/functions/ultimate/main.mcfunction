@@ -15,7 +15,7 @@ scoreboard players set @e[tag=sheep_new,limit=1] s_ulti_sheep 1
 tag @e[tag=sheep_new] remove sheep_new
 
 # hint
-tellraw @s [">> 你的终极羊羊正在准备..."]
+tellraw @s [{"text":"## ","color":"gray","italic":true},"你的终极羊羊正在准备..."]
 
 # advancement
 advancement grant @s[advancements={sheep:ultimate/root=false}] only sheep:ultimate/root

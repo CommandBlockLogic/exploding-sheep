@@ -4,7 +4,7 @@
 function game_mode/public/check_players_single
 
 # check confirm
-execute if score game_status system matches 0 if score system_flag system matches 1 if score system_sdm_comfirm system matches 0 run tellraw @a [">> 即将开始单人死亡竞赛模式, 15秒内再次按下按钮开始游戏!"]
+execute if score game_status system matches 0 if score system_flag system matches 1 if score system_sdm_comfirm system matches 0 run tellraw @a [">> 即将开始单人死亡竞赛模式, 15秒内再次按下按钮开始游戏!\n - 5分钟内炸人数多者胜利!"]
 # start game
 execute if score game_status system matches 0 if score system_flag system matches 1 if score system_sdm_comfirm system matches 1.. run function game_mode/single/death_match/pre/main
 
