@@ -2,10 +2,6 @@
 
 execute if entity @s[tag=sheep_web_mark_blue] run particle minecraft:entity_effect ~ ~ ~ 0 0 1 1 0 normal
 execute if entity @s[tag=sheep_web_mark_blue] run particle minecraft:entity_effect ~ ~ ~ 0 0 1 1 0 normal
-execute if entity @s[tag=sheep_web_mark_blue] run particle minecraft:entity_effect ~ ~ ~ 0 0 1 1 0 normal
-execute if entity @s[tag=sheep_web_mark_blue] run particle minecraft:entity_effect ~ ~ ~ 0 0 1 1 0 normal
-execute if entity @s[tag=sheep_web_mark_red] run particle minecraft:entity_effect ~ ~ ~ 1 0 0 1 0 normal
-execute if entity @s[tag=sheep_web_mark_red] run particle minecraft:entity_effect ~ ~ ~ 1 0 0 1 0 normal
 execute if entity @s[tag=sheep_web_mark_red] run particle minecraft:entity_effect ~ ~ ~ 1 0 0 1 0 normal
 execute if entity @s[tag=sheep_web_mark_red] run particle minecraft:entity_effect ~ ~ ~ 1 0 0 1 0 normal
 
