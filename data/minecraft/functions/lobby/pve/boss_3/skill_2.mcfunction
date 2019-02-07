@@ -6,7 +6,7 @@ execute store result entity @e[tag=boss_3_skill_2,limit=1] Pos[2] double 0.001 r
 execute as @e[tag=boss_3_skill_2] at @s run tp @s ~ ~ ~ ~2 ~
 
 execute as @e[tag=boss3] at @s positioned ~ ~1.25 ~ run effect give @e[tag=monster,distance=..3] speed 3 1 true
-execute as @e[tag=boss3] at @s positioned ~ ~1.25 ~ run effect give @a[distance=..3] slowness 3 1 true
+execute as @e[tag=boss3] at @s positioned ~ ~1.25 ~ run effect give @a[gamemode=adventure,distance=..3] slowness 3 1 true
 
 execute as @e[tag=boss_3_skill_2] at @s positioned ^ ^0.25 ^3 run particle minecraft:dust 1 1 0 1 ~ ~ ~ .01 .01 .01 0.0001 1 force
 execute as @e[tag=boss_3_skill_2] at @s positioned ^-1.5 ^0.25 ^2.6 run particle minecraft:dust 1 1 0 1 ~ ~ ~ .01 .01 .01 0.0001 1 force
