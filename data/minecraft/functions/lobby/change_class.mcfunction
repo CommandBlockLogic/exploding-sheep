@@ -16,7 +16,7 @@ execute at @e[tag=system_class_mark_red] as @a[distance=..0.3] unless score @s s
 execute at @e[tag=system_class_mark_red] as @a[distance=..0.3] unless score @s s_class matches 4 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 4
 execute at @e[tag=system_class_mark_cyan] as @a[distance=..0.3] unless score @s s_class matches 5 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §b冰冻§r 系\n - 羊羊会在地面生成雪花阵, 降低敌人的移动速度","\n - 手持小羊大炮按F即可切换!"]
 execute at @e[tag=system_class_mark_cyan] as @a[distance=..0.3] unless score @s s_class matches 5 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 5
-execute at @e[tag=system_class_mark_orange] as @a[distance=..0.3] unless score @s s_class matches 6 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §6吸收§r 系\n - 羊羊在附近生成吸收阵, 其中的队友会获得两颗心的伤害吸收","\n - 手持小羊大炮按F即可切换!"]
+execute at @e[tag=system_class_mark_orange] as @a[distance=..0.3] unless score @s s_class matches 6 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §6吸收§r 系\n - 羊羊在附近生成吸收阵, 其中的队友会获得4颗心的伤害吸收","\n - 手持小羊大炮按F即可切换!"]
 execute at @e[tag=system_class_mark_orange] as @a[distance=..0.3] unless score @s s_class matches 6 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 6
 
 execute at @e[tag=system_class_mark_volleyball] as @a[distance=..0.3] unless score @s s_class matches 1001 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §b排球§r 系\n - 羊羊飞的慢慢的, 可以用扇子丢来丢去"]
