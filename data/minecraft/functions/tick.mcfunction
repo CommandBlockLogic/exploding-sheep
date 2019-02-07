@@ -42,11 +42,7 @@ execute if score game_status system matches 1.. run gamemode spectator @a[team=,
 execute if score 游戏开始 pve_system matches 0 if score game_status system matches 1.. run scoreboard players set 游戏开始 pve_system 1
 
 # 游戏选择模式倒计时
-execute if score system_gc_comfirm system matches 1.. run scoreboard players remove system_gc_comfirm system 1
-execute if score system_dm_comfirm system matches 1.. run scoreboard players remove system_dm_comfirm system 1
-execute if score system_sdm_comfirm system matches 1.. run scoreboard players remove system_sdm_comfirm system 1
-execute if score system_sgc_comfirm system matches 1.. run scoreboard players remove system_sgc_comfirm system 1
-
+function game_mode/select_mode/timer
 
 
 # 删除多余方块
