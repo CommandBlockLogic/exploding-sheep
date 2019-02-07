@@ -4,10 +4,11 @@ execute positioned ~ ~ ~ run tag @a[sort=random,distance=..20,limit=1] add syste
 # summon sheep
 execute if score 羊种类 boss_2_pass matches 1 positioned ~ ~ ~ run function sheep:launch/type/normal
 execute if score 羊种类 boss_2_pass matches 2 positioned ~ ~ ~ run function sheep:launch/type/web
+execute if score 羊种类 boss_2_pass matches 3 positioned ~ ~ ~ run function sheep:launch/type/air
 
 # change sheep
 scoreboard players add 羊种类 boss_2_pass 1
-execute if score 羊种类 boss_2_pass matches 3 run scoreboard players set 羊种类 boss_2_pass 1
+execute if score 羊种类 boss_2_pass matches 4 run scoreboard players set 羊种类 boss_2_pass 1
 
 # set score
 scoreboard players set @e[tag=sheep_new,limit=1] s_thrower_id -1
