@@ -25,4 +25,4 @@ execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_3] if score @s boss_1
 execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_3] if score @s boss_1_cool3 >= 召唤物限时 boss_1_cool3 run kill @s
 
 execute unless entity @e[tag=boss1] run kill @e[tag=boss_1_summon_3]
-execute unless entity @e[tag=boss1] run tag @a[gamemode=adventure,remove boss_1_skill_3_target]
+execute unless entity @e[tag=boss1] run tag @a[gamemode=adventure] remove boss_1_skill_3_target
