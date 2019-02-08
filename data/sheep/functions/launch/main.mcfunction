@@ -11,8 +11,8 @@ advancement grant @s[scores={s_launch_type=4},advancements={sheep:sheep/air=fals
 advancement grant @s[scores={s_launch_type=5},advancements={sheep:sheep/ice=false}] only sheep:sheep/ice
 advancement grant @s[scores={s_launch_type=6},advancements={sheep:sheep/absorption=false}] only sheep:sheep/absorption
 advancement grant @s[scores={s_launch_type=101},advancements={sheep:ultimate/gray=false}] only sheep:ultimate/gray
-advancement grant @s[scores={s_launch_type=103},advancements={sheep:ultimate/lime=false}] only sheep:ultimate/lime
 advancement grant @s[scores={s_launch_type=201},advancements={sheep:ultimate/blue=false}] only sheep:ultimate/blue
+advancement grant @s[scores={s_launch_type=202},advancements={sheep:ultimate/lime=false}] only sheep:ultimate/lime
 advancement grant @s[scores={s_launch_type=1001},advancements={sheep:speical_sheep/volleyball=false}] until sheep:speical_sheep/volleyball
 advancement grant @s[scores={s_launch_type=1002},advancements={sheep:speical_sheep/football=false}] until sheep:speical_sheep/football
 

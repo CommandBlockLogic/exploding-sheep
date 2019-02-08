@@ -1,5 +1,22 @@
 # 添加一个羊的流程
 
+* 首先定义羊的实体，位于`sheep:launch/type/foo`
+	* 必要标签是`sheep_sheep`、`sheep_new`和`sheep_type_foo`
+	* `sheep_attr_no_damage`有这个标签的不造成伤害，不叠加大招，不破坏方块
+	* 同函数内给羊赋予特定id `s_sheep_type`
+* 在`sheep:launch/main`中添加羊的发射行为和其他属性
+	* 其他属性包括：
+		* 发射者id计分板 `s_thrower_id`
+		* 发射者队伍tag `sheep_team_red`
+* 在`sheep:tick`中添加羊的发射条件
+	* 见其他羊
+* 在`sheep:change_color`中添加新的颜色转换条目（照抄）
+* 在`sheep:item/wools`中添加新条目（照抄）
+* 在`sheep:blow/main`中定义爆炸行为
+	* 普通爆炸就是生成creeper
+	* 特殊效果可以自己定义
+* 在`minecraft:player_death/message/kill_by_XXX`和`minecraft:player_death/message/push_by_XXX`中添加致死信息
+
 ## sheep:blow/main.mcfunction
 
   羊的引爆事件
@@ -63,8 +80,9 @@ ID|type|名称
 ID|type|名称
 :--:|:--:|:--:
 `101`|ultimate/gray |连射
-`103`|ultimate/lime |减缩
-`201`|ultimate/blue |近战
+`102`|ultimate/purple |近战
+`201`|ultimate/blue |羊羊雨
+`202`|ultimate/lime |增加能量
 - 隐藏类
 
 ID|type|名称
