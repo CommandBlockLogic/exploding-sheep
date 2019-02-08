@@ -3,6 +3,7 @@
 * 首先定义羊的实体，位于`sheep:launch/type/foo`
 	* 必要标签是`sheep_sheep`、`sheep_new`和`sheep_type_foo`
 	* `sheep_attr_no_damage`有这个标签的不造成伤害，不叠加大招，不破坏方块
+	* `sheep_attr_no_explode`有这个标签的落地不触发爆炸事件，可用`s_blow_time=1..`来判定落地
 	* 同函数内给羊赋予特定id `s_sheep_type`
 * 在`sheep:launch/main`中添加羊的发射行为和其他属性
 	* 其他属性包括：
