@@ -49,22 +49,25 @@
 ----
 ## 附 - 目前羊的ID列表
 - 普通类
-    ID|type|名称
-    :--:|:--:|:--:
-    `1`|normal        |普通
-    `2`|teleport      |传送
-    `3`|fast          |急爆
-    `4`|air           |失重
-    `5`|ice           |冰冻
-    `6`|absorption    |吸收
+
+ID|type|名称
+:--:|:--:|:--:
+`1`|normal        |普通
+`2`|teleport      |传送
+`3`|fast          |急爆
+`4`|air           |失重
+`5`|ice           |冰冻
+`6`|absorption    |吸收
 - 技能类
-    ID|type|名称
-    :--:|:--:|:--:
-    `101`|ultimate/gray |连射
-    `103`|ultimate/lime |减缩
-    `201`|ultimate/blue |近战
+
+ID|type|名称
+:--:|:--:|:--:
+`101`|ultimate/gray |连射
+`103`|ultimate/lime |减缩
+`201`|ultimate/blue |近战
 - 隐藏类
-    ID|type|名称
-    :--:|:--:|:--:
-    `1001`|speical_sheep/volleyball |排球
-    `1002`|speical_sheep/football   |足球
+
+ID|type|名称
+:--:|:--:|:--:
+`1001`|speical_sheep/volleyball |排球
+`1002`|speical_sheep/football   |足球
