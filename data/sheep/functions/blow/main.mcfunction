@@ -122,7 +122,7 @@ execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster,distance
 tag @a[tag=player_temp] remove player_temp
 # kill sheep
 tag @s remove sheep_temp
-tp @s[tag=!sheep_attr_no_kill] 0 -100 0
 kill @s[tag=!sheep_attr_no_kill]
+tp @s[tag=!sheep_attr_no_kill] 0 -100 0
 tag @s[tag=sheep_attr_no_kill] add sheep_attr_no_explode
 tag @s[tag=sheep_attr_no_kill] remove sheep_attr_no_kill

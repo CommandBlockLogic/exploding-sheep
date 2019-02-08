@@ -5,6 +5,7 @@ gamerule doWeatherCycle false
 gamerule commandBlockOutput false
 gamerule doMobSpawning false
 gamerule mobGriefing false
+gamerule logAdminCommands false
 gamerule spawnRadius 1
 time set 6000
 
