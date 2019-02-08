@@ -49,7 +49,8 @@ execute if entity @s[tag=sheep_type_teleport] at @s as @a if score @s s_id = @e[
 execute if entity @s[tag=sheep_type_teleport] run playsound minecraft:entity.enderman.teleport ambient @a ~ ~ ~ 1 0.5
 execute if entity @s[tag=sheep_type_teleport] run particle minecraft:portal ~ ~ ~ 0 0 0 0.8 100
 execute if entity @s[tag=sheep_type_teleport] run particle minecraft:dust 0 0 0 2 ~ ~ ~ 0.5 1 0.5 0 100
-
+# ice
+data merge entity @s {CustomName:"[\"冰冰冰!\"]",CustomNameVisible:1}
 
 
 
@@ -121,5 +122,7 @@ execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster,distance
 tag @a[tag=player_temp] remove player_temp
 # kill sheep
 tag @s remove sheep_temp
-tp @s 0 -100 0
-kill @s
+tp @s[tag=!sheep_attr_no_kill] 0 -100 0
+kill @s[tag=!sheep_attr_no_kill]
+tag @s[tag=sheep_attr_no_kill] add sheep_attr_no_explode
+tag @s[tag=sheep_attr_no_kill] remove sheep_attr_no_kill

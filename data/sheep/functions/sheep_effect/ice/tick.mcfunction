@@ -2,11 +2,11 @@
 
 # ice
 # 计时
-scoreboard players add @e[tag=sheep_type_web,scores={s_blow_time=1..}] s_web_time 1
+scoreboard players add @e[tag=sheep_type_web,tag=sheep_attr_no_explode] s_web_time 1
 # 粒子效果
-scoreboard players add @e[tag=sheep_type_web,scores={s_blow_time=1..}] s_web_clock 1
-scoreboard players set @e[tag=sheep_type_web,scores={s_web_clock=3}] s_web_clock 0
-execute as @e[scores={s_web_time=1..,s_web_clock=1}] at @s run function sheep:sheep_effect/ice/particle2
+scoreboard players add @e[scores={s_web_time=1..}] s_web_clock 1
+scoreboard players set @e[scores={s_web_clock=3}] s_web_clock 0
+execute as @e[scores={s_web_clock=1}] at @s run function sheep:sheep_effect/ice/particle2
 
 # 冰冻效果选择对象
 execute as @e[scores={s_web_time=1..},tag=!sheep_team_boss] at @s run tag @e[distance=..3.5,type=!player,tag=monster] add sheep_ice_temp
@@ -29,16 +29,16 @@ kill @e[scores={s_web_time=101..}]
 
 # 最多5个冰冻羊存在
 # 赋予新羊id 新羊最大
-scoreboard players add @e[tag=sheep_type_web,scores={s_web_time=1..}] s_web_id 0
-execute as @e[tag=sheep_type_web,scores={s_web_id=0},limit=1] run scoreboard players add s_web_id_max s_web_id 1
-execute as @e[tag=sheep_type_web,scores={s_web_id=0},limit=1] store result score @s s_web_id run scoreboard players get s_web_id_max s_web_id
+scoreboard players add @e[scores={s_web_time=1..}] s_web_id 0
+execute as @e[scores={s_web_id=0},limit=1] run scoreboard players add s_web_id_max s_web_id 1
+execute as @e[scores={s_web_id=0},limit=1] store result score @s s_web_id run scoreboard players get s_web_id_max s_web_id
 # 当前数量
-execute store result score s_web_num s_web_id if entity @e[tag=sheep_type_web,scores={s_web_time=1..}]
+execute store result score s_web_num s_web_id if entity @e[scores={s_web_time=1..}]
 # 查找最小的并删除
-execute if score s_web_num s_web_id matches 6.. store result score s_web_temp s_web_id run scoreboard players get @e[tag=sheep_type_web,scores={s_web_id=1..},limit=1] s_web_id
-execute if score s_web_num s_web_id matches 6.. as @e[tag=sheep_type_web,scores={s_web_id=1..}] run scoreboard players operation s_web_temp s_web_id < @s s_web_id
-execute if score s_web_num s_web_id matches 6.. as @e[tag=sheep_type_web,scores={s_web_id=1..}] if score @s s_web_id = s_web_temp s_web_id run kill @s
+execute if score s_web_num s_web_id matches 6.. store result score s_web_temp s_web_id run scoreboard players get @e[scores={s_web_id=1..},limit=1] s_web_id
+execute if score s_web_num s_web_id matches 6.. as @e[scores={s_web_id=1..}] run scoreboard players operation s_web_temp s_web_id < @s s_web_id
+execute if score s_web_num s_web_id matches 6.. as @e[scores={s_web_id=1..}] if score @s s_web_id = s_web_temp s_web_id run kill @s
 
 # 加入队伍
-team join red @e[tag=sheep_type_lime,tag=sheep_team_red,team=]
-team join blue @e[tag=sheep_type_lime,tag=sheep_team_blue,team=]
+team join red @e[tag=sheep_type_web,tag=sheep_team_red,team=]
+team join blue @e[tag=sheep_type_web,tag=sheep_team_blue,team=]
