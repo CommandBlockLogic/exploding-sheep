@@ -50,7 +50,7 @@ execute if entity @s[tag=sheep_type_teleport] run playsound minecraft:entity.end
 execute if entity @s[tag=sheep_type_teleport] run particle minecraft:portal ~ ~ ~ 0 0 0 0.8 100
 execute if entity @s[tag=sheep_type_teleport] run particle minecraft:dust 0 0 0 2 ~ ~ ~ 0.5 1 0.5 0 100
 # ice
-data merge entity @s {CustomName:"[\"冰冰冰!\"]",CustomNameVisible:1}
+data merge entity @s[tag=sheep_type_web] {CustomName:"[\"冰冰冰!\"]",CustomNameVisible:1}
 
 
 
