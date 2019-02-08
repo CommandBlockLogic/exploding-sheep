@@ -15,7 +15,6 @@ execute as @e[scores={s_web_time=1..},tag=sheep_team_blue] at @s run tag @a[dist
 execute as @e[scores={s_web_time=1..},tag=!sheep_team_red,tag=!sheep_team_blue] at @s run tag @a[distance=..3.5] add sheep_ice_temp
 # 减速禁止跳跃
 effect give @e[tag=sheep_ice_temp] minecraft:slowness 3 10 false
-#effect give @e[tag=sheep_ice_temp] minecraft:blindness 2 0 false
 effect give @e[tag=sheep_ice_temp] minecraft:jump_boost 3 128 false
 # 玩家身上粒子
 execute as @e[tag=sheep_ice_temp] at @s run particle minecraft:block ice ~ ~1 ~ 0.3 0.5 0.3 1 2
@@ -40,5 +39,5 @@ execute if score s_web_num s_web_id matches 6.. as @e[scores={s_web_id=1..}] run
 execute if score s_web_num s_web_id matches 6.. as @e[scores={s_web_id=1..}] if score @s s_web_id = s_web_temp s_web_id run kill @s
 
 # 加入队伍
-team join red @e[tag=sheep_type_web,tag=sheep_team_red,team=]
-team join blue @e[tag=sheep_type_web,tag=sheep_team_blue,team=]
+team join red @e[scores={s_web_time=1..},tag=sheep_team_red,team=]
+team join blue @e[scores={s_web_time=1..},tag=sheep_team_blue,team=]
