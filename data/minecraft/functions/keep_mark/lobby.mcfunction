@@ -19,7 +19,10 @@ summon minecraft:area_effect_cloud -172 22 -133 {Duration:9999999,Tags:["system_
 summon minecraft:area_effect_cloud -161 6 -73 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_football"],CustomName:"[\"§8足球§r\"]"}
 
 # 选模式提示
-summon minecraft:area_effect_cloud -174.0 10 -126.0 {Duration:9999999,Tags:["system_lobby_mark","system_mode_mark"],CustomName:"[\"选择游戏模式\"]"}
+summon minecraft:area_effect_cloud -175.0 9.0 -124.5 {Duration:9999999,Tags:["system_lobby_mark","system_main_mode_mark"],CustomName:"[\"选择游戏模式\"]"}
+summon minecraft:area_effect_cloud -174.5 9.5 -126.5 {Duration:9999999,Tags:["system_lobby_mark","system_mode_mark"],CustomName:"[\"死亡竞赛\"]"}
+summon minecraft:area_effect_cloud -174.5 9.5 -122.5 {Duration:9999999,Tags:["system_lobby_mark","system_mode_mark"],CustomName:"[\"争夺水晶砂\"]"}
+summon minecraft:area_effect_cloud -176.5 9.5 -124.5 {Duration:9999999,Tags:["system_lobby_mark","system_mode_mark","system_mode_change_mark","system_mode_change_mark_single"],CustomName:"[\"切换 \",{\"text\":\"个人\",\"color\":\"yellow\"},\"/\",{\"text\":\"队伍\",\"color\":\"white\"}]"}
 
 # 选队伍提示
 summon minecraft:area_effect_cloud -161 10 -120 {Duration:9999999,Tags:["system_lobby_mark","system_lobby_mark_join","system_lobby_mark_join_red","system_lobby_mark_join_yellow"],CustomName:"[\"将小羊丢到这里加入§c红队§r\"]"}
