@@ -13,9 +13,19 @@ execute as @e[scores={s_web_time=1..},tag=!sheep_team_boss] at @s run tag @e[dis
 execute as @e[scores={s_web_time=1..},tag=sheep_team_red] at @s run tag @a[distance=..3.5,team=blue] add sheep_ice_temp
 execute as @e[scores={s_web_time=1..},tag=sheep_team_blue] at @s run tag @a[distance=..3.5,team=red] add sheep_ice_temp
 execute as @e[scores={s_web_time=1..},tag=!sheep_team_red,tag=!sheep_team_blue] at @s run tag @a[distance=..3.5] add sheep_ice_temp
+execute as @e[scores={s_web_time=1..},tag=!sheep_team_red,tag=!sheep_team_blue] run function sheep:sheep_effect/ice/exclude_owner
 # 减速禁止跳跃
-effect give @e[tag=sheep_ice_temp] minecraft:slowness 3 10 false
-effect give @e[tag=sheep_ice_temp] minecraft:jump_boost 3 128 false
+scoreboard players add @e[tag=sheep_ice_temp] s_froze_time 2
+scoreboard players remove @e[scores={s_froze_time=1..}] s_froze_time 1
+
+
+
+effect give @e[scores={s_froze_time=1..10}] minecraft:slowness 1 1 true
+effect give @e[scores={s_froze_time=1..10}] minecraft:jump_boost 1 254 true
+effect give @e[scores={s_froze_time=11..20}] minecraft:slowness 1 3 true
+effect give @e[scores={s_froze_time=11..20}] minecraft:jump_boost 1 253 true
+effect give @e[scores={s_froze_time=21..}] minecraft:slowness 1 5 true
+effect give @e[scores={s_froze_time=21..}] minecraft:jump_boost 1 248 true
 # 玩家身上粒子
 execute as @e[tag=sheep_ice_temp] at @s run particle minecraft:block ice ~ ~1 ~ 0.3 0.5 0.3 1 2
 # 不允许用扇子

@@ -15,6 +15,7 @@ scoreboard objectives add s_ulti_time dummy ["大招释放状态"]
 scoreboard objectives add s_ulti_dura dummy ["大招持续时间"]
 scoreboard objectives add s_ulti_inter dummy ["大招间隔时间"]
 scoreboard objectives add s_kill_time dummy ["玩家被攻击后时间"]
+scoreboard objectives add s_froze_time dummy ["玩家被冰冻时间"]
 
 
 scoreboard objectives add s_flying_time dummy ["羊飞行时间"]
