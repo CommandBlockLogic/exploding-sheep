@@ -1,5 +1,4 @@
 {
-	"parent": "sheep:ultimate/root",
 	"display": {
 		"icon": {
 			"item": "minecraft:lime_wool"
@@ -12,7 +11,7 @@
 		],
 		"description": [
 			{
-				"text": "发射了一群智慧的的超柠羊羊!",
+				"text": "发射了一只智慧的的超柠羊羊!",
 				"color": "white"
 			}
 		],
