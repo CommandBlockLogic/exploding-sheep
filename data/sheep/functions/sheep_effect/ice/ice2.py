@@ -4,7 +4,7 @@ def qiumian_to_zhijiao(r, phi, omega):
 	z = radius*math.sin(omega)
 	x = radius*math.sin(omega)*math.cos(phi)
 	y = radius*math.sin(omega)*math.sin(phi)
-	return (x, y, z)
+	return (x, y, -z)
 
 command = 'particle minecraft:dust 0 1 1 1 ~{:.3f} ~{:.3f} ~{:.3f} 0 0 0 1 1 normal'
 parts = 20
