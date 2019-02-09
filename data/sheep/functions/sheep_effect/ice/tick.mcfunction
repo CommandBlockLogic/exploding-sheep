@@ -25,7 +25,7 @@ effect give @e[scores={s_froze_time=1..10}] minecraft:slowness 1 1 true
 effect give @e[scores={s_froze_time=1..10}] minecraft:jump_boost 1 254 true
 effect give @e[scores={s_froze_time=11..20}] minecraft:slowness 1 3 true
 effect give @e[scores={s_froze_time=11..20}] minecraft:jump_boost 1 253 true
-effect give @e[scores={s_froze_time=21..}] minecraft:slowness 1 5 true
+effect give @e[scores={s_froze_time=21..}] minecraft:slowness 1 6 true
 effect give @e[scores={s_froze_time=21..}] minecraft:jump_boost 1 248 true
 # 玩家身上粒子
 execute as @e[scores={s_froze_time=1..}] at @s run particle minecraft:block ice ~ ~1 ~ 0.3 0.5 0.3 1 2
