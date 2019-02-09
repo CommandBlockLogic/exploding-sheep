@@ -12,5 +12,5 @@ for i in range(100):
 		r2 = u**2+v**2
 	x = radius*2*u*math.sqrt(1-r2)
 	y = radius*2*v*math.sqrt(1-r2)
-	z = radius*1-2*r2
+	z = radius*(1-2*r2)
 	print(command.format(x, y, z))
