@@ -2,9 +2,9 @@ import math
 import random
 
 command = 'particle minecraft:dust 0 1 1 1 ~{:.3f} ~{:.3f} ~{:.3f} 0 0 0 1 1 normal'
-radius = 4
+radius = 3.5
 
-for i in range(100):
+for i in range(150):
 	r2 = 1
 	while r2 >= 1 :
 		u = random.random()*2-1
