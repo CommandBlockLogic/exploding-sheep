@@ -1,7 +1,7 @@
 import math
 
 def qiumian_to_zhijiao(r, phi, theta):
-	z = r*math.cos(theta)
+	z = r*math.sin(theta)
 	x = r*math.cos(theta)*math.cos(phi)
 	y = r*math.cos(theta)*math.sin(phi)
 	return (x, y, z)
