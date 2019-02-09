@@ -6,7 +6,7 @@ scoreboard players add @e[tag=sheep_type_web,tag=sheep_attr_no_explode] s_web_ti
 # 粒子效果
 scoreboard players add @e[scores={s_web_time=1..}] s_web_clock 1
 scoreboard players set @e[scores={s_web_clock=3}] s_web_clock 0
-execute as @e[scores={s_web_clock=1}] at @s run function sheep:sheep_effect/ice/particle2
+execute as @e[scores={s_web_clock=1}] at @s run function sheep:sheep_effect/ice/particle3
 
 # 冰冻效果选择对象
 execute as @e[scores={s_web_time=1..},tag=!sheep_team_boss] at @s run tag @e[distance=..3.5,type=!player,tag=monster] add sheep_ice_temp
