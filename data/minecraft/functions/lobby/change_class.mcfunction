@@ -14,7 +14,7 @@ execute at @e[tag=system_class_mark_blue] as @a[distance=..0.3] unless score @s 
 execute at @e[tag=system_class_mark_blue] as @a[distance=..0.3] unless score @s s_class matches 3 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 3
 execute at @e[tag=system_class_mark_red] as @a[distance=..0.3] unless score @s s_class matches 4 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §c瞬发§r 系\n - 落地后羊羊将会立刻爆炸!","\n - 手持小羊大炮按F即可切换!"]
 execute at @e[tag=system_class_mark_red] as @a[distance=..0.3] unless score @s s_class matches 4 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 4
-execute at @e[tag=system_class_mark_cyan] as @a[distance=..0.3] unless score @s s_class matches 5 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §b冰冻§r 系\n - 羊羊会在地面生成雪花阵, 逐渐降低敌人的移动速度","\n - 直到将敌人完全冻住！被冻住时更无法挥动扇子","\n - 手持小羊大炮按F即可切换!"]
+execute at @e[tag=system_class_mark_cyan] as @a[distance=..0.3] unless score @s s_class matches 5 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §b冰冻§r 系\n - 落地后羊羊会生成雪花阵, 逐渐降低阵内敌人的移动速度","\n - 直到将敌人完全冻住. 被冻住时更无法挥动扇子","\n - 手持小羊大炮按F即可切换!"]
 execute at @e[tag=system_class_mark_cyan] as @a[distance=..0.3] unless score @s s_class matches 5 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 5
 execute at @e[tag=system_class_mark_orange] as @a[distance=..0.3] unless score @s s_class matches 6 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §6吸收§r 系\n - 羊羊在附近生成吸收阵, 其中的队友会获得伤害吸收","\n - 手持小羊大炮按F即可切换!"]
 execute at @e[tag=system_class_mark_orange] as @a[distance=..0.3] unless score @s s_class matches 6 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 6
