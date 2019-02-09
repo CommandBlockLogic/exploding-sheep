@@ -6,6 +6,8 @@ function lobby/change_class
 function lobby/change_team/main
 # enter game
 function lobby/enter_game
+# change mode
+function lobby/start_game/tick
 # effect
 function lobby/effect
 
