@@ -1,4 +1,5 @@
 {
+	"parent": "sheep:ultimate/root",
 	"display": {
 		"icon": {
 			"item": "minecraft:blue_wool"
