@@ -73,8 +73,8 @@ ID|type|名称
 :--:|:--:|:--:
 `1`|normal        |普通
 `2`|teleport      |传送
-`3`|fast          |急爆
-`4`|air           |失重
+`3`|fast          |失重
+`4`|air           |急爆
 `5`|ice           |冰冻
 `6`|absorption    |吸收
 - 技能类

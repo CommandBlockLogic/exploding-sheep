@@ -34,7 +34,6 @@ execute if entity @s[tag=sheep_type_lime] run summon minecraft:creeper ~ ~ ~ {Fu
 execute if entity @s[tag=sheep_type_blue_small] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:3,CustomName:"[{\"text\":\"正义的\",\"color\":\"gray\"},{\"text\":\"超蓝羊\",\"color\":\"blue\"}]"}
 # [{"text":"正义的","color":"gray"},{"text":"超蓝羊","color":"blue"}]
 
-execute if entity @s[tag=sheep_type_volleyball] run summon minecraft:firework_rocket ~ ~ ~ {FireworksItem:{id:"minecraft:firework_rocket",Count:1,tag:{Fireworks:{Flight:0,Explosions:[{Type:0,Colors:[I;5636095]}]}}},Life:1}
 
 
 
@@ -51,6 +50,9 @@ execute if entity @s[tag=sheep_type_teleport] run particle minecraft:portal ~ ~ 
 execute if entity @s[tag=sheep_type_teleport] run particle minecraft:dust 0 0 0 2 ~ ~ ~ 0.5 1 0.5 0 100
 # ice
 data merge entity @s[tag=sheep_type_web] {CustomName:"[\"冰冰冰!\"]",CustomNameVisible:1}
+# volleyball
+execute if entity @s[tag=sheep_type_volleyball] run particle minecraft:firework ~ ~ ~ 0 0 0 0.1 100
+execute if entity @s[tag=sheep_type_volleyball] run playsound minecraft:entity.firework_rocket.blast ambient @a ~ ~ ~
 
 
 
@@ -123,6 +125,7 @@ tag @a[tag=player_temp] remove player_temp
 # kill sheep
 tag @s remove sheep_temp
 scoreboard players reset @s[tag=!sheep_attr_no_kill]
+execute if entity @s[tag=!sheep_attr_no_kill] run particle minecraft:cloud ~ ~0.5 ~ 0 0.5 0 0.09 50
 kill @s[tag=!sheep_attr_no_kill]
 tp @s[tag=!sheep_attr_no_kill] 0 -100 0
 tag @s[tag=sheep_attr_no_kill] add sheep_attr_no_explode

@@ -32,6 +32,7 @@ scoreboard players set @a[scores={s_froze_time=15..}] s_fan_num 0
 tag @e[tag=sheep_ice_temp] remove sheep_ice_temp
 
 # 删除超时羊
+execute at @e[scores={s_web_time=101..}] run particle minecraft:cloud ~ ~0.5 ~ 0 0.5 0 0.09 50
 kill @e[scores={s_web_time=101..}]
 
 # 最多5个冰冻羊存在
