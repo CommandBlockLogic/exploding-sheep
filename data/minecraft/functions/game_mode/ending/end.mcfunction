@@ -23,6 +23,7 @@ team empty yellow
 # clear score
 scoreboard players reset * s_class
 scoreboard players reset * s_launch_type
+execute as @a run function sheep:ultimate/end
 
 # clear entity
 kill @e[type=!player]
