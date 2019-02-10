@@ -9,6 +9,8 @@ execute if score game_mode_status system matches 1 run function lobby/start_game
 # 传送玩家
 tp @a 0 20 0
 
+clear @a
+
 # 提示
 tellraw @a ["给老子加队伍选羊，30秒倒计时"]
 
