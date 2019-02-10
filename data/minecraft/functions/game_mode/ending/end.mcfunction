@@ -18,6 +18,7 @@ bossbar remove minecraft:blue_score
 # clear team
 team empty blue
 team empty red
+team empty yellow
 
 # clear score
 scoreboard players reset * s_class
