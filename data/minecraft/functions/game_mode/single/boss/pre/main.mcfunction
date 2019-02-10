@@ -1,7 +1,7 @@
 # game_mode/single/boss/pre/main
 
 # 修改当前状态为单人boss前
-scoreboard players set game_status system 105
+scoreboard players set game_status system 205
 
 # tp
 function game_mode/public/tp_game_wait
@@ -12,7 +12,8 @@ function game_mode/public/game_start_clear
 
 
 # 分数等的初始化
-
+scoreboard objectives setdisplay sidebar
+scoreboard players set @a[team=red] death_boss 0
 
 # 死亡重生时间
 scoreboard players set @a death_time_max 5

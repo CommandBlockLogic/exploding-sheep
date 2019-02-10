@@ -1,8 +1,10 @@
 # game_mode/single/boss/tick
 
-# 大厅可切换职业
-function lobby/change_class
-# 大厅可进入游戏
-function lobby/enter_game
-# 大厅药水效果
-function lobby/effect
+
+# 死亡gm3
+gamemode spectator @a[scores={death_boss=1..},gamemode=!spectator]
+
+# 玩家全死
+execute unless entity @a[scores={death_boss=0}] run function game_mode/single/boss/fail
+# boss死了
+# 调用 function game_mode/single/boss/win

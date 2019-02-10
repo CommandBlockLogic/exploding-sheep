@@ -30,6 +30,7 @@ scoreboard objectives add food food ["饱食度"]
 scoreboard objectives add health health {"text":"\u2764","color":"red"}
 scoreboard objectives add death deathCount ["玩家死亡次数"]
 scoreboard objectives add death2 deathCount ["玩家死亡次数2"]
+scoreboard objectives add death_boss deathCount ["玩家死亡次数boss战用"]
 scoreboard objectives add death_time dummy ["玩家死亡复活时间"]
 scoreboard objectives add death_time_max dummy ["玩家最大死亡复活时间"]
 scoreboard objectives add death_time_tp dummy ["玩家死亡复活传送时间"]

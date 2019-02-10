@@ -10,3 +10,5 @@ gamemode spectator @a[team=]
 
 
 # title
+title @a times 0 100 10
+title @a title ["游戏开始"]
