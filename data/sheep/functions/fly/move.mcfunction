@@ -58,6 +58,9 @@ execute at @s[tag=!sheep_touch_z] positioned ~-0.3 ~ ~-0.3 if block ~ ~0.45 ~ #m
 
 
 # set blow
+execute at @s[tag=sheep_touch_x,scores={s_blow_time=0}] run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1}
+execute at @s[tag=sheep_touch_y,scores={s_blow_time=0}] run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1}
+execute at @s[tag=sheep_touch_z,scores={s_blow_time=0}] run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1}
 scoreboard players set @s[tag=sheep_touch_x,scores={s_blow_time=0}] s_blow_time 1
 scoreboard players set @s[tag=sheep_touch_y,scores={s_blow_time=0}] s_blow_time 1
 scoreboard players set @s[tag=sheep_touch_z,scores={s_blow_time=0}] s_blow_time 1
