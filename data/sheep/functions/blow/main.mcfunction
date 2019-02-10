@@ -20,18 +20,21 @@ execute if score @s s_blow_power matches 4 at @s if entity @e[distance=..8,tag=b
 
 # boom
 execute if entity @s[tag=sheep_type_normal] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"可爱的\",\"color\":\"gray\"},{\"text\":\"小白羊\",\"color\":\"white\"}]"}
+execute if entity @s[tag=sheep_type_normal] run particle minecraft:dust 1 1 1 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 20
 # [{"text":"可爱的","color":"gray"},{"text":"小白羊","color":"white"}]
 execute if entity @s[tag=sheep_type_fast,scores={s_flying_time=..21}] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"快快的\",\"color\":\"gray\"},{\"text\":\"小黄羊\",\"color\":\"yellow\"}]"}
 execute if entity @s[tag=sheep_type_fast,scores={s_flying_time=22..40}] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:3,CustomName:"[{\"text\":\"快快的\",\"color\":\"gray\"},{\"text\":\"小黄羊\",\"color\":\"yellow\"}]"}
 execute if entity @s[tag=sheep_type_fast,scores={s_flying_time=41..}] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:4,CustomName:"[{\"text\":\"快快的\",\"color\":\"gray\"},{\"text\":\"小黄羊\",\"color\":\"yellow\"}]"}
+execute if entity @s[tag=sheep_type_fast] run particle minecraft:dust 1 1 0.333 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 20
 # [{"text":"快快的","color":"gray"},{"text":"小黄羊","color":"yellow"}]
 execute if entity @s[tag=sheep_type_air] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"匆忙的\",\"color\":\"gray\"},{\"text\":\"小红羊\",\"color\":\"red\"}]"}
+execute if entity @s[tag=sheep_type_air] run particle minecraft:dust 0.9 0 0 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 20
 # [{"text":"匆忙的","color":"gray"},{"text":"小红羊","color":"red"}]
 execute if entity @s[tag=sheep_type_gray] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"可爱的\",\"color\":\"gray\"},{\"text\":\"超灰羊\",\"color\":\"gray\"}]"}
+execute if entity @s[tag=sheep_type_gray] run particle minecraft:dust 0.6 0.6 0.6 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 10
 # [{"text":"可爱的","color":"gray"},{"text":"超灰羊","color":"gray"}]
-execute if entity @s[tag=sheep_type_lime] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"智慧的\",\"color\":\"gray\"},{\"text\":\"超柠羊\",\"color\":\"green\"}]"}
-# [{"text":"智慧的","color":"gray"},{"text":"超柠羊","color":"green"}]
 execute if entity @s[tag=sheep_type_blue_small] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:3,CustomName:"[{\"text\":\"正义的\",\"color\":\"gray\"},{\"text\":\"超蓝羊\",\"color\":\"blue\"}]"}
+execute if entity @s[tag=sheep_type_blue_small] run particle minecraft:dust 0.333 0.333 1 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 10
 # [{"text":"正义的","color":"gray"},{"text":"超蓝羊","color":"blue"}]
 
 
@@ -40,6 +43,7 @@ execute if entity @s[tag=sheep_type_blue_small] run summon minecraft:creeper ~ ~
 # heal
 execute if entity @s[tag=sheep_type_heal] run playsound minecraft:item.bottle.fill ambient @a ~ ~ ~ 1 0.5
 execute if entity @s[tag=sheep_type_heal] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_heal_mark"]}
+execute if entity @s[tag=sheep_type_heal] run particle minecraft:dust 1 0.667 0 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 20
 execute if entity @s[tag=sheep_type_heal,tag=sheep_team_red] run effect give @a[distance=..4,team=red] minecraft:absorption 30 0 true
 execute if entity @s[tag=sheep_type_heal,tag=sheep_team_blue] run effect give @a[distance=..4,team=blue] minecraft:absorption 30 0 true
 execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] as @a[distance=..4] if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run effect give @s minecraft:absorption 30 1 true
@@ -125,7 +129,6 @@ tag @a[tag=player_temp] remove player_temp
 # kill sheep
 tag @s remove sheep_temp
 scoreboard players reset @s[tag=!sheep_attr_no_kill]
-execute if entity @s[tag=!sheep_attr_no_kill] run particle minecraft:cloud ~ ~0.5 ~ 0 0.5 0 0.09 50
 kill @s[tag=!sheep_attr_no_kill]
 tp @s[tag=!sheep_attr_no_kill] 0 -100 0
 tag @s[tag=sheep_attr_no_kill] add sheep_attr_no_explode

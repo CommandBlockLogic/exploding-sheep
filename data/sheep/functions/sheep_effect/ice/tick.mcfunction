@@ -32,7 +32,7 @@ scoreboard players set @a[scores={s_froze_time=15..}] s_fan_num 0
 tag @e[tag=sheep_ice_temp] remove sheep_ice_temp
 
 # 删除超时羊
-execute at @e[scores={s_web_time=101..}] run particle minecraft:cloud ~ ~0.5 ~ 0 0.5 0 0.09 50
+execute at @e[scores={s_web_time=101..}] run particle minecraft:dust 0.333 1 1 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 20
 kill @e[scores={s_web_time=101..}]
 
 # 最多5个冰冻羊存在
@@ -45,6 +45,7 @@ execute store result score s_web_num s_web_id if entity @e[scores={s_web_time=1.
 # 查找最小的并删除
 execute if score s_web_num s_web_id matches 6.. store result score s_web_temp s_web_id run scoreboard players get @e[scores={s_web_id=1..},limit=1] s_web_id
 execute if score s_web_num s_web_id matches 6.. as @e[scores={s_web_id=1..}] run scoreboard players operation s_web_temp s_web_id < @s s_web_id
+execute if score s_web_num s_web_id matches 6.. as @e[scores={s_web_id=1..}] if score @s s_web_id = s_web_temp s_web_id run particle minecraft:dust 0.333 1 1 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 20
 execute if score s_web_num s_web_id matches 6.. as @e[scores={s_web_id=1..}] if score @s s_web_id = s_web_temp s_web_id run kill @s
 
 # 加入队伍
