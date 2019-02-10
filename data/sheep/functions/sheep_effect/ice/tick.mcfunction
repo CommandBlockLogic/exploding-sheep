@@ -20,16 +20,24 @@ scoreboard players remove @e[scores={s_froze_time=1..}] s_froze_time 1
 scoreboard players remove @e[scores={s_froze_time=51..}] s_froze_time 1
 effect clear @e[scores={s_froze_time=1..}] minecraft:slowness
 effect clear @e[scores={s_froze_time=1..}] minecraft:jump_boost
-effect give @e[scores={s_froze_time=1..7}] minecraft:slowness 1 1 true
-effect give @e[scores={s_froze_time=1..7}] minecraft:jump_boost 1 254 true
-effect give @e[scores={s_froze_time=8..14}] minecraft:slowness 1 3 true
-effect give @e[scores={s_froze_time=8..14}] minecraft:jump_boost 1 253 true
-effect give @e[scores={s_froze_time=15..}] minecraft:slowness 1 6 true
-effect give @e[scores={s_froze_time=15..}] minecraft:jump_boost 1 248 true
+effect give @e[scores={s_froze_time=1..2}] minecraft:slowness 1 0 true
+effect give @e[scores={s_froze_time=1..2}] minecraft:jump_boost 1 254 true
+effect give @e[scores={s_froze_time=3..4}] minecraft:slowness 1 1 true
+effect give @e[scores={s_froze_time=3..4}] minecraft:jump_boost 1 253 true
+effect give @e[scores={s_froze_time=5..6}] minecraft:slowness 1 2 true
+effect give @e[scores={s_froze_time=5..6}] minecraft:jump_boost 1 252 true
+effect give @e[scores={s_froze_time=7..8}] minecraft:slowness 1 3 true
+effect give @e[scores={s_froze_time=7..8}] minecraft:jump_boost 1 251 true
+effect give @e[scores={s_froze_time=9..10}] minecraft:slowness 1 4 true
+effect give @e[scores={s_froze_time=9..10}] minecraft:jump_boost 1 250 true
+effect give @e[scores={s_froze_time=11..12}] minecraft:slowness 1 5 true
+effect give @e[scores={s_froze_time=11..12}] minecraft:jump_boost 1 249 true
+effect give @e[scores={s_froze_time=13..}] minecraft:slowness 1 6 true
+effect give @e[scores={s_froze_time=13..}] minecraft:jump_boost 1 248 true
 # 玩家身上粒子
 execute as @e[scores={s_froze_time=1..}] at @s run particle minecraft:block ice ~ ~1 ~ 0.3 0.5 0.3 1 2
 # 不允许用扇子
-scoreboard players set @a[scores={s_froze_time=15..}] s_fan_num 0
+scoreboard players set @a[scores={s_froze_time=13..}] s_fan_num 0
 # 清零对象
 tag @e[tag=sheep_ice_temp] remove sheep_ice_temp
 
