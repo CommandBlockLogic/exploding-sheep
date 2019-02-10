@@ -104,20 +104,20 @@ scoreboard players set @s s_temp1 60
 scoreboard players operation @s s_temp2 *= @s s_temp1
 execute if entity @s[tag=!sheep_attr_no_damage,scores={s_temp2=1..}] as @a if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run scoreboard players operation @s s_ulti_energy += @e[tag=sheep_temp,limit=1] s_temp2
 # damage
-execute if entity @s[tag=!sheep_attr_no_damage,tag=!sheep_team_red,tag=!sheep_team_blue] at @s as @a[distance=..1] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 200
-execute if entity @s[tag=!sheep_attr_no_damage,tag=!sheep_team_red,tag=!sheep_team_blue] at @s as @a[distance=..2] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 100
+execute if entity @s[tag=!sheep_attr_no_damage,tag=!sheep_team_red,tag=!sheep_team_blue] at @s as @a[distance=..1] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 400
+execute if entity @s[tag=!sheep_attr_no_damage,tag=!sheep_team_red,tag=!sheep_team_blue] at @s as @a[distance=..2] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 250
 execute if entity @s[tag=!sheep_attr_no_damage,tag=!sheep_team_red,tag=!sheep_team_blue] at @s as @a[distance=..4] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 100
 
-execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_red] at @s as @a[distance=..1,team=!red,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 200
-execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_red] at @s as @a[distance=..2,team=!red,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 100
+execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_red] at @s as @a[distance=..1,team=!red,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 400
+execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_red] at @s as @a[distance=..2,team=!red,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 250
 execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_red] at @s as @a[distance=..4,team=!red,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 100
 
-execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_blue] at @s as @a[distance=..1,team=!blue,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 200
-execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_blue] at @s as @a[distance=..2,team=!blue,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 100
+execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_blue] at @s as @a[distance=..1,team=!blue,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 400
+execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_blue] at @s as @a[distance=..2,team=!blue,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 250
 execute if entity @s[tag=!sheep_attr_no_damage,tag=sheep_team_blue] at @s as @a[distance=..4,team=!blue,gamemode=!spectator] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 100
 
-execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster,distance=..1] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 200
-execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster,distance=..2] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 100
+execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster,distance=..1] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 400
+execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster,distance=..2] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 250
 execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster,distance=..4] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 100
 
 
