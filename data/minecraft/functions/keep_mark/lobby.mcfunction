@@ -9,7 +9,7 @@ summon minecraft:area_effect_cloud -161 10.3 -126 {Duration:9999999,Tags:["syste
 summon minecraft:falling_block -161 9 -126 {Time:1,DropItem:0,NoGravity:1,Glowing:1,BlockState:{Name:cobblestone},Tags:["system_lobby_mark","system_lobby_mark_enter_block"]}
 
 # 选类型提示
-summon minecraft:area_effect_cloud -161 9 -129 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_orange"],CustomName:"[\"§6吸收§r\"]",Passengers:[{id:"item",Age:-32768,PickupDelay:32767,Invulnerable:1,Tags:["system_protect_item"],Item:{id:"minecraft:golden_chestplate",Count:1}}]}
+summon minecraft:area_effect_cloud -161 9 -129 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_orange"],CustomName:"[\"§6吸收§r\"]",Passengers:[{id:"item",Age:-32768,PickupDelay:32767,Invulnerable:1,Tags:["system_lobby_mark","system_protect_item"],Item:{id:"minecraft:golden_chestplate",Count:1}}]}
 summon minecraft:area_effect_cloud -164 9 -127 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_cyan"],CustomName:"[\"§b冰冻§r\"]"}
 summon minecraft:area_effect_cloud -164 9 -128 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_red"],CustomName:"[\"§c瞬发§r\"]"}
 summon minecraft:area_effect_cloud -164 9 -126 {Duration:9999999,Tags:["system_lobby_mark","system_class_mark","system_class_mark_blue"],CustomName:"[\"§e失重§r\"]"}
