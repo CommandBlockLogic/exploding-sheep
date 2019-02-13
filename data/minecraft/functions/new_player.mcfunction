@@ -15,3 +15,6 @@ tellraw @s ["          拥有驾驭风的力量，右键挥动可吹动玩家和
 tellraw @s [""]
 tellraw @s ["§7§o        在大厅一角可切换羊羊类型，获得更多样化的能力。"]
 tellraw @s ["§7§o           加入部落，选择模式，开始游戏吧！"]
+
+
+tag @s add old_player
