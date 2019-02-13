@@ -22,7 +22,7 @@ summon minecraft:area_effect_cloud -161 6 -73 {Duration:9999999,Tags:["system_lo
 summon minecraft:area_effect_cloud -175.0 9.0 -124.5 {Duration:9999999,Tags:["system_lobby_mark","system_main_mode_mark"],CustomName:"[\"选择游戏模式\"]"}
 summon minecraft:area_effect_cloud -174.5 10.0 -126.5 {Duration:9999999,Tags:["system_lobby_mark","system_mode_mark"],CustomName:"[\"争夺水晶砂\"]"}
 summon minecraft:area_effect_cloud -174.5 10.0 -122.5 {Duration:9999999,Tags:["system_lobby_mark","system_mode_mark"],CustomName:"[\"死亡竞赛\"]"}
-summon minecraft:area_effect_cloud -176.5 10.0 -124.5 {Duration:9999999,Tags:["system_lobby_mark","system_mode_mark","system_mode_change_mark","system_mode_change_mark_single"],CustomName:"[\"切换 \",{\"text\":\"个人\",\"color\":\"white\",\"bold\":\"false\"},\"/\",{\"text\":\"部落\",\"color\":\"gold\",\"bold\":\"true\"}]"}
+summon minecraft:area_effect_cloud -176.5 10.0 -124.5 {Duration:9999999,Tags:["system_lobby_mark","system_mode_mark","system_mode_change_mark","system_mode_change_mark_group"],CustomName:"[\"切换 \",{\"text\":\"个人\",\"color\":\"white\",\"bold\":\"false\"},\"/\",{\"text\":\"部落\",\"color\":\"gold\",\"bold\":\"true\"}]"}
 
 # 选队伍提示
 summon minecraft:area_effect_cloud -161 10 -120 {Duration:9999999,Tags:["system_lobby_mark","system_lobby_mark_join","system_lobby_mark_join_red","system_lobby_mark_join_yellow"],CustomName:"[\"将小羊丢到这里加入§c红石部落§r\"]"}
