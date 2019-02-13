@@ -18,4 +18,5 @@ tag @e[tag=sheep_new] remove sheep_new
 tellraw @s [{"text":"## ","color":"gray","italic":true},"你的终极羊羊正在准备..."]
 
 # advancement
+tellraw @s[advancements={sheep:ultimate/root=false}] ["§7§o##   你第一次发动了超级羊羊!\n§7§o##   或许你已经发现, 用羊羊造成伤害就能够给超级羊羊充能."]
 advancement grant @s[advancements={sheep:ultimate/root=false}] only sheep:ultimate/root
