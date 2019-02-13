@@ -5,7 +5,7 @@
 #title @s subtitle [{"text":"欢迎您的加入","color":"aqua"}]
 
 
-tellraw @s ["§7§o                   大地下陷，天降圣坛。"]
+tellraw @s ["§7§o                   (BB测试)大地下陷，天降圣坛。"]
 tellraw @s ["§7§o    原本分河而居的两个部落，因向往圣坛的力量而开始了战争。"]
 tellraw @s [""]
 tellraw @s ["    你手中第一格的物品: ",{"text":"羊羊大炮","bold":true}]
