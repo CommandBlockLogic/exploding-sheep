@@ -18,6 +18,8 @@ scoreboard players reset * sidebar_score
 scoreboard players set system_game_time system 6000
 scoreboard players set system_twenty system 20
 scoreboard players set system_sixty system 60
+scoreboard players set system_ten system 10
+scoreboard players set system_five system 5
 scoreboard players set system_time_second system 0
 scoreboard players set system_time_minute system 0
 

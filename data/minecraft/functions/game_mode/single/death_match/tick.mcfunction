@@ -22,7 +22,10 @@ execute if score system_second system matches 0..9 run bossbar set minecraft:sco
 execute unless score system_second system matches 0..9 run bossbar set minecraft:score_time name ["剩余时间   ",{"score":{"name":"system_minute","objective":"system"}},":",{"score":{"name":"system_second","objective":"system"}}]
 
 # display score
-execute as @a[team=yellow] store result score @s sidebar_score run scoreboard players get @s kill_player
+execute as @a[team=yellow] if score @s kill_player matches 1.. run scoreboard players operation @s kill_player *= system_ten system
+execute as @a[team=yellow] if score @s kill_player matches ..-1 run scoreboard players operation @s kill_player *= system_five system
+execute as @a[team=yellow] run scoreboard players operation @s sidebar_score += @s kill_player
+scoreboard players set @a[team=yellow] kill_player 0
 
 # check end
 execute if score system_game_time system matches ..0 run function game_mode/single/death_match/end

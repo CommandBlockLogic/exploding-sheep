@@ -7,7 +7,7 @@ scoreboard players set game_status system 402
 execute as @a run function game_mode/public/tp_game_spawn
 gamemode spectator @a[team=]
 
-scoreboard objectives modify sidebar_score displayname [{"text":"蓝方进攻!","color":"white"}]
+scoreboard objectives modify sidebar_score displayname [{"text":"青金石部落进攻!","color":"white"}]
 
 # title
 title @a times 10 50 10

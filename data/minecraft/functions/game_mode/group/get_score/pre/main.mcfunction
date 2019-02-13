@@ -28,6 +28,6 @@ function game_mode/group/get_score/public/ready_main
 
 # title
 title @a times 0 200 10
-title @a title [{"text":"红方即将进攻...","color":"red"}]
+title @a title [{"text":"红石部落即将进攻...","color":"red"}]
 title @a subtitle ["10"]
 tellraw @a [">> 两方轮流进攻地图中央的水晶砂堆 夺取更多水晶砂的一方胜利!"]
