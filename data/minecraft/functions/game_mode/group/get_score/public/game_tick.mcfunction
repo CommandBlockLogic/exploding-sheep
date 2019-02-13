@@ -22,8 +22,8 @@ execute unless score system_second system matches 0..9 run bossbar set minecraft
 
 
 # display score
-execute store result score 红队水晶砂 sidebar_score run scoreboard players get system_red_score system
-execute store result score 蓝队水晶砂 sidebar_score run scoreboard players get system_blue_score system
+execute store result score 红石部落水晶砂 sidebar_score run scoreboard players get system_red_score system
+execute store result score 青金石部落水晶砂 sidebar_score run scoreboard players get system_blue_score system
 
 # harden/soften core
 scoreboard players add @a death2 0

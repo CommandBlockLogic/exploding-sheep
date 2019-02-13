@@ -11,8 +11,8 @@ execute as @a if score @s s_id = @e[tag=system_join_gray_temp,limit=1] s_thrower
 team join red @a[tag=player_join_red]
 team join blue @a[tag=player_join_blue]
 team leave @a[tag=player_join_gray]
-execute if entity @a[tag=player_join_red] run tellraw @a [">> ",{"selector":"@a[tag=player_join_red]"},"加入了§c红队§r"]
-execute if entity @a[tag=player_join_blue] run tellraw @a [">> ",{"selector":"@a[tag=player_join_blue]"},"加入了§9蓝队§r"]
+execute if entity @a[tag=player_join_red] run tellraw @a [">> ",{"selector":"@a[tag=player_join_red]"},"加入了§c红石部落§r"]
+execute if entity @a[tag=player_join_blue] run tellraw @a [">> ",{"selector":"@a[tag=player_join_blue]"},"加入了§9青金石部落§r"]
 execute if entity @a[tag=player_join_gray] run tellraw @a [">> ",{"selector":"@a[tag=player_join_gray]"},"选择了§7旁观§r"]
 # clear sheep tag
 execute if entity @a[tag=player_join_red] as @e[tag=sheep_sheep,tag=sheep_team_blue] if score @s s_thrower_id = @a[tag=player_join_red,limit=1] s_id run tag @s remove sheep_team_blue

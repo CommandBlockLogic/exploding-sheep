@@ -10,8 +10,8 @@ execute if score game_mode_status system matches 0 as @e[tag=system_lobby_mark_j
 
 execute if score game_mode_status system matches 1 run fill -162 9 -123 -157 9 -117 minecraft:red_carpet replace minecraft:yellow_carpet
 execute if score game_mode_status system matches 1 run fill -171 9 -120 -176 9 -114 minecraft:blue_carpet replace minecraft:yellow_carpet
-execute if score game_mode_status system matches 1 as @e[tag=system_lobby_mark_join_red] run data merge entity @s {CustomName:"[\"将小羊丢到这里加入§c红队§r\"]"}
-execute if score game_mode_status system matches 1 as @e[tag=system_lobby_mark_join_blue] run data merge entity @s {CustomName:"[\"将小羊丢到这里加入§9蓝队§r\"]"}
+execute if score game_mode_status system matches 1 as @e[tag=system_lobby_mark_join_red] run data merge entity @s {CustomName:"[\"将小羊丢到这里加入§c红石部落§r\"]"}
+execute if score game_mode_status system matches 1 as @e[tag=system_lobby_mark_join_blue] run data merge entity @s {CustomName:"[\"将小羊丢到这里加入§9青金石部落§r\"]"}
 
 
 # change game mark
