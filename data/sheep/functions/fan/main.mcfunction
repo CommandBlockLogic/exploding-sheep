@@ -15,6 +15,7 @@ execute at @s positioned ~ ~1 ~ positioned ^ ^ ^3.5 as @a[distance=..4.5,tag=!sh
 execute at @s positioned ~ ~1 ~ positioned ^ ^ ^3.5 run tag @e[tag=monster,distance=..4.5] add sheep_fanned_monster
 
 # advancement
+tellraw @s[advancements={sheep:fan/sheep=false}] ["§7§o##   你成功挥动了芭蕉扇！\n##   物品栏上方的数字是你能够挥动的次数, 它会慢慢补充至2. "]
 execute if entity @e[tag=sheep_fanned] run advancement grant @s[advancements={sheep:fan/sheep=false}] only sheep:fan/sheep
 
 

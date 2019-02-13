@@ -4,6 +4,7 @@
 playsound minecraft:entity.player.small_fall ambient @a ^ ^ ^0.5 1 0.5
 
 # advancement
+tellraw @s[scores={s_launch_type=1},advancements={sheep:sheep/normal=false}] ["§7§o##   你成功发射了一只小白羊！\n##   物品栏上方是你的能量条, 每发射一只羊羊都要消耗一定能量."]
 advancement grant @s[scores={s_launch_type=1},advancements={sheep:sheep/normal=false}] only sheep:sheep/normal
 advancement grant @s[scores={s_launch_type=2},advancements={sheep:sheep/teleport=false}] only sheep:sheep/teleport
 advancement grant @s[scores={s_launch_type=3},advancements={sheep:sheep/fast=false}] only sheep:sheep/fast
