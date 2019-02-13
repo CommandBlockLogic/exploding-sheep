@@ -2,7 +2,7 @@
 
 kill @e[tag=system_lobby_item]
 
-summon minecraft:area_effect_cloud -161 8.7 -129 {Duration:9999999,Tags:["system_lobby_item"],Passengers:[{id:"item",Age:-32768,PickupDelay:32767,Invulnerable:1,Tags:["system_lobby_item","system_protect_item","system_lobby_item_orange"],Item:{id:"minecraft:golden_chestplate",Count:1}}]}
+summon minecraft:area_effect_cloud -161 8.7 -129 {Duration:9999999,Tags:["system_lobby_item"],Passengers:[{id:"item",Age:-32768,PickupDelay:32767,Invulnerable:1,Tags:["system_lobby_item","system_protect_item","system_lobby_item_orange"],Item:{id:"minecraft:golden_apple",Count:1}}]}
 summon minecraft:area_effect_cloud -164 8.7 -127 {Duration:9999999,Tags:["system_lobby_item"],Passengers:[{id:"item",Age:-32768,PickupDelay:32767,Invulnerable:1,Tags:["system_lobby_item","system_protect_item","system_lobby_item_ice"],Item:{id:"minecraft:ice",Count:1}}]}
 summon minecraft:area_effect_cloud -164 8.7 -128 {Duration:9999999,Tags:["system_lobby_item"],Passengers:[{id:"item",Age:-32768,PickupDelay:32767,Invulnerable:1,Tags:["system_lobby_item","system_protect_item","system_lobby_item_red"],Item:{id:"minecraft:tnt",Count:1}}]}
 summon minecraft:area_effect_cloud -164 8.7 -126 {Duration:9999999,Tags:["system_lobby_item"],Passengers:[{id:"item",Age:-32768,PickupDelay:32767,Invulnerable:1,Tags:["system_lobby_item","system_protect_item","system_lobby_item_yellow"],Item:{id:"minecraft:feather",Count:1}}]}
