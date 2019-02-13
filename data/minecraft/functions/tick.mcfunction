@@ -36,8 +36,6 @@ execute if score game_status system matches 104 run function game_mode/single/ge
 execute if score game_status system matches 5 run function game_mode/single/boss/tick
 execute if score game_status system matches 105 run function game_mode/single/boss/prepre/tick
 execute if score game_status system matches 205 run function game_mode/single/boss/pre/tick
-
-
 execute if score game_status system matches 8964 run function game_mode/ending/tick
 
 # 游戏进程标记
@@ -52,4 +50,4 @@ function game_mode/select_mode/timer
 execute as @e[type=falling_block] at @s unless block ~ ~-1 ~ #minecraft:under_sand run kill @s
 execute as @e[type=falling_block] at @s unless block ~ ~-0.7 ~ #minecraft:under_sand run kill @s
 execute as @e[type=falling_block] at @s unless block ~ ~-0.5 ~ #minecraft:under_sand run kill @s
-kill @e[type=item]
+kill @e[type=item,tag=!system_protect_item]
