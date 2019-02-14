@@ -10,6 +10,8 @@ scoreboard players operation boss血量 boss_4_system *= 游戏人数 boss_4_sys
 scoreboard players operation boss血量 boss_4_system += boss额外血量 boss_4_system
 scoreboard players operation boss血量 boss_4_system *= boss额外血量 boss_4_system
 
+scoreboard players operation boss生命 boss_4_health = boss血量 boss_4_system
+
 execute run scoreboard players set 百分比 boss_4_health 100
 execute run scoreboard players set 绿血 boss_4_health 100
 execute run scoreboard players set 黄血 boss_4_health 67
@@ -23,3 +25,5 @@ execute run scoreboard players operation 34-67 boss_4_health /= 百分比 boss_4
 execute run scoreboard players operation 0-34 boss_4_health = boss生命 boss_4_health
 execute run scoreboard players operation 0-34 boss_4_health *= 红血 boss_4_health
 execute run scoreboard players operation 0-34 boss_4_health /= 百分比 boss_4_health
+
+# 
