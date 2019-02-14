@@ -1,50 +1,330 @@
-particle minecraft:flame ~5.000 13 ~0.000 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~3.214 13 ~3.830 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-0.868 13 ~4.924 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-4.330 13 ~2.500 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-4.698 13 ~-1.710 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-1.710 13 ~-4.698 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~2.500 13 ~-4.330 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~4.924 13 ~-0.868 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~3.830 13 ~3.214 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~0.000 13 ~5.000 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-3.830 13 ~3.214 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-4.924 13 ~-0.868 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-2.500 13 ~-4.330 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~1.710 13 ~-4.698 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~4.698 13 ~-1.710 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~4.330 13 ~2.500 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~0.868 13 ~4.924 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-3.214 13 ~3.830 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-5.000 13 ~0.000 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-3.214 13 ~-3.830 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~0.868 13 ~-4.924 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~4.330 13 ~-2.500 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~4.698 13 ~1.710 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~1.710 13 ~4.698 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-2.500 13 ~4.330 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-4.924 13 ~0.868 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-3.830 13 ~-3.214 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~0.000 13 ~-5.000 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~3.830 13 ~-3.214 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~4.924 13 ~0.868 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~2.500 13 ~4.330 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-1.710 13 ~4.698 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-4.698 13 ~1.710 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-4.330 13 ~-2.500 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-0.868 13 ~-4.924 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~3.214 13 ~-3.830 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~5.000 13 ~-0.000 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~3.214 13 ~3.830 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-0.868 13 ~4.924 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-4.330 13 ~2.500 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-4.698 13 ~-1.710 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-1.710 13 ~-4.698 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~2.500 13 ~-4.330 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~4.924 13 ~-0.868 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~3.830 13 ~3.214 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-0.000 13 ~5.000 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-3.830 13 ~3.214 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-4.924 13 ~-0.868 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~-2.500 13 ~-4.330 0.0001 0.0001 0.0001 0.001 1 force @a
-particle minecraft:flame ~1.710 13 ~-4.698 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 2.. run particle minecraft:flame ~5.000 ~ ~0.000 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 4.. run particle minecraft:flame ~4.997 ~ ~0.174 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 6.. run particle minecraft:flame ~4.988 ~ ~0.349 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 8.. run particle minecraft:flame ~4.973 ~ ~0.523 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 10.. run particle minecraft:flame ~4.951 ~ ~0.696 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 12.. run particle minecraft:flame ~4.924 ~ ~0.868 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 14.. run particle minecraft:flame ~4.891 ~ ~1.040 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 16.. run particle minecraft:flame ~4.851 ~ ~1.210 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 18.. run particle minecraft:flame ~4.806 ~ ~1.378 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 20.. run particle minecraft:flame ~4.755 ~ ~1.545 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 22.. run particle minecraft:flame ~4.698 ~ ~1.710 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 24.. run particle minecraft:flame ~4.636 ~ ~1.873 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 26.. run particle minecraft:flame ~4.568 ~ ~2.034 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 28.. run particle minecraft:flame ~4.494 ~ ~2.192 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 30.. run particle minecraft:flame ~4.415 ~ ~2.347 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 32.. run particle minecraft:flame ~4.330 ~ ~2.500 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 34.. run particle minecraft:flame ~4.240 ~ ~2.650 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 36.. run particle minecraft:flame ~4.145 ~ ~2.796 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 38.. run particle minecraft:flame ~4.045 ~ ~2.939 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 40.. run particle minecraft:flame ~3.940 ~ ~3.078 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 42.. run particle minecraft:flame ~3.830 ~ ~3.214 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 44.. run particle minecraft:flame ~3.716 ~ ~3.346 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 46.. run particle minecraft:flame ~3.597 ~ ~3.473 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 48.. run particle minecraft:flame ~3.473 ~ ~3.597 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 50.. run particle minecraft:flame ~3.346 ~ ~3.716 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 52.. run particle minecraft:flame ~3.214 ~ ~3.830 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 54.. run particle minecraft:flame ~3.078 ~ ~3.940 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 56.. run particle minecraft:flame ~2.939 ~ ~4.045 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 58.. run particle minecraft:flame ~2.796 ~ ~4.145 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 60.. run particle minecraft:flame ~2.650 ~ ~4.240 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 62.. run particle minecraft:flame ~2.500 ~ ~4.330 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 64.. run particle minecraft:flame ~2.347 ~ ~4.415 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 66.. run particle minecraft:flame ~2.192 ~ ~4.494 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 68.. run particle minecraft:flame ~2.034 ~ ~4.568 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 70.. run particle minecraft:flame ~1.873 ~ ~4.636 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 72.. run particle minecraft:flame ~1.710 ~ ~4.698 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 74.. run particle minecraft:flame ~1.545 ~ ~4.755 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 76.. run particle minecraft:flame ~1.378 ~ ~4.806 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 78.. run particle minecraft:flame ~1.210 ~ ~4.851 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 80.. run particle minecraft:flame ~1.040 ~ ~4.891 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 82.. run particle minecraft:flame ~0.868 ~ ~4.924 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 84.. run particle minecraft:flame ~0.696 ~ ~4.951 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 86.. run particle minecraft:flame ~0.523 ~ ~4.973 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 88.. run particle minecraft:flame ~0.349 ~ ~4.988 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 90.. run particle minecraft:flame ~0.174 ~ ~4.997 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 92.. run particle minecraft:flame ~0.000 ~ ~5.000 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 94.. run particle minecraft:flame ~-0.174 ~ ~4.997 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 96.. run particle minecraft:flame ~-0.349 ~ ~4.988 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 98.. run particle minecraft:flame ~-0.523 ~ ~4.973 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 100.. run particle minecraft:flame ~-0.696 ~ ~4.951 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 102.. run particle minecraft:flame ~-0.868 ~ ~4.924 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 104.. run particle minecraft:flame ~-1.040 ~ ~4.891 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 106.. run particle minecraft:flame ~-1.210 ~ ~4.851 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 108.. run particle minecraft:flame ~-1.378 ~ ~4.806 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 110.. run particle minecraft:flame ~-1.545 ~ ~4.755 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 112.. run particle minecraft:flame ~-1.710 ~ ~4.698 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 114.. run particle minecraft:flame ~-1.873 ~ ~4.636 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 116.. run particle minecraft:flame ~-2.034 ~ ~4.568 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 118.. run particle minecraft:flame ~-2.192 ~ ~4.494 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 120.. run particle minecraft:flame ~-2.347 ~ ~4.415 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 122.. run particle minecraft:flame ~-2.500 ~ ~4.330 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 124.. run particle minecraft:flame ~-2.650 ~ ~4.240 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 126.. run particle minecraft:flame ~-2.796 ~ ~4.145 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 128.. run particle minecraft:flame ~-2.939 ~ ~4.045 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 130.. run particle minecraft:flame ~-3.078 ~ ~3.940 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 132.. run particle minecraft:flame ~-3.214 ~ ~3.830 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 134.. run particle minecraft:flame ~-3.346 ~ ~3.716 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 136.. run particle minecraft:flame ~-3.473 ~ ~3.597 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 138.. run particle minecraft:flame ~-3.597 ~ ~3.473 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 140.. run particle minecraft:flame ~-3.716 ~ ~3.346 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 142.. run particle minecraft:flame ~-3.830 ~ ~3.214 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 144.. run particle minecraft:flame ~-3.940 ~ ~3.078 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 146.. run particle minecraft:flame ~-4.045 ~ ~2.939 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 148.. run particle minecraft:flame ~-4.145 ~ ~2.796 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 150.. run particle minecraft:flame ~-4.240 ~ ~2.650 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 152.. run particle minecraft:flame ~-4.330 ~ ~2.500 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 154.. run particle minecraft:flame ~-4.415 ~ ~2.347 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 156.. run particle minecraft:flame ~-4.494 ~ ~2.192 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 158.. run particle minecraft:flame ~-4.568 ~ ~2.034 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 160.. run particle minecraft:flame ~-4.636 ~ ~1.873 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 162.. run particle minecraft:flame ~-4.698 ~ ~1.710 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 164.. run particle minecraft:flame ~-4.755 ~ ~1.545 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 166.. run particle minecraft:flame ~-4.806 ~ ~1.378 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 168.. run particle minecraft:flame ~-4.851 ~ ~1.210 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 170.. run particle minecraft:flame ~-4.891 ~ ~1.040 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 172.. run particle minecraft:flame ~-4.924 ~ ~0.868 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 174.. run particle minecraft:flame ~-4.951 ~ ~0.696 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 176.. run particle minecraft:flame ~-4.973 ~ ~0.523 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 178.. run particle minecraft:flame ~-4.988 ~ ~0.349 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 180.. run particle minecraft:flame ~-4.997 ~ ~0.174 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 182.. run particle minecraft:flame ~-5.000 ~ ~0.000 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 184.. run particle minecraft:flame ~-4.997 ~ ~-0.174 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 186.. run particle minecraft:flame ~-4.988 ~ ~-0.349 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 188.. run particle minecraft:flame ~-4.973 ~ ~-0.523 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 190.. run particle minecraft:flame ~-4.951 ~ ~-0.696 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 192.. run particle minecraft:flame ~-4.924 ~ ~-0.868 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 194.. run particle minecraft:flame ~-4.891 ~ ~-1.040 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 196.. run particle minecraft:flame ~-4.851 ~ ~-1.210 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 198.. run particle minecraft:flame ~-4.806 ~ ~-1.378 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 200.. run particle minecraft:flame ~-4.755 ~ ~-1.545 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 202.. run particle minecraft:flame ~-4.698 ~ ~-1.710 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 204.. run particle minecraft:flame ~-4.636 ~ ~-1.873 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 206.. run particle minecraft:flame ~-4.568 ~ ~-2.034 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 208.. run particle minecraft:flame ~-4.494 ~ ~-2.192 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 210.. run particle minecraft:flame ~-4.415 ~ ~-2.347 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 212.. run particle minecraft:flame ~-4.330 ~ ~-2.500 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 214.. run particle minecraft:flame ~-4.240 ~ ~-2.650 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 216.. run particle minecraft:flame ~-4.145 ~ ~-2.796 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 218.. run particle minecraft:flame ~-4.045 ~ ~-2.939 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 220.. run particle minecraft:flame ~-3.940 ~ ~-3.078 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 222.. run particle minecraft:flame ~-3.830 ~ ~-3.214 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 224.. run particle minecraft:flame ~-3.716 ~ ~-3.346 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 226.. run particle minecraft:flame ~-3.597 ~ ~-3.473 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 228.. run particle minecraft:flame ~-3.473 ~ ~-3.597 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 230.. run particle minecraft:flame ~-3.346 ~ ~-3.716 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 232.. run particle minecraft:flame ~-3.214 ~ ~-3.830 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 234.. run particle minecraft:flame ~-3.078 ~ ~-3.940 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 236.. run particle minecraft:flame ~-2.939 ~ ~-4.045 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 238.. run particle minecraft:flame ~-2.796 ~ ~-4.145 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 240.. run particle minecraft:flame ~-2.650 ~ ~-4.240 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 242.. run particle minecraft:flame ~-2.500 ~ ~-4.330 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 244.. run particle minecraft:flame ~-2.347 ~ ~-4.415 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 246.. run particle minecraft:flame ~-2.192 ~ ~-4.494 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 248.. run particle minecraft:flame ~-2.034 ~ ~-4.568 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 250.. run particle minecraft:flame ~-1.873 ~ ~-4.636 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 252.. run particle minecraft:flame ~-1.710 ~ ~-4.698 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 254.. run particle minecraft:flame ~-1.545 ~ ~-4.755 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 256.. run particle minecraft:flame ~-1.378 ~ ~-4.806 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 258.. run particle minecraft:flame ~-1.210 ~ ~-4.851 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 260.. run particle minecraft:flame ~-1.040 ~ ~-4.891 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 262.. run particle minecraft:flame ~-0.868 ~ ~-4.924 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 264.. run particle minecraft:flame ~-0.696 ~ ~-4.951 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 266.. run particle minecraft:flame ~-0.523 ~ ~-4.973 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 268.. run particle minecraft:flame ~-0.349 ~ ~-4.988 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 270.. run particle minecraft:flame ~-0.174 ~ ~-4.997 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 272.. run particle minecraft:flame ~-0.000 ~ ~-5.000 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 274.. run particle minecraft:flame ~0.174 ~ ~-4.997 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 276.. run particle minecraft:flame ~0.349 ~ ~-4.988 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 278.. run particle minecraft:flame ~0.523 ~ ~-4.973 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 280.. run particle minecraft:flame ~0.696 ~ ~-4.951 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 282.. run particle minecraft:flame ~0.868 ~ ~-4.924 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 284.. run particle minecraft:flame ~1.040 ~ ~-4.891 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 286.. run particle minecraft:flame ~1.210 ~ ~-4.851 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 288.. run particle minecraft:flame ~1.378 ~ ~-4.806 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 290.. run particle minecraft:flame ~1.545 ~ ~-4.755 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 292.. run particle minecraft:flame ~1.710 ~ ~-4.698 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 294.. run particle minecraft:flame ~1.873 ~ ~-4.636 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 296.. run particle minecraft:flame ~2.034 ~ ~-4.568 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 298.. run particle minecraft:flame ~2.192 ~ ~-4.494 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 300.. run particle minecraft:flame ~2.347 ~ ~-4.415 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 302.. run particle minecraft:flame ~2.500 ~ ~-4.330 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 304.. run particle minecraft:flame ~2.650 ~ ~-4.240 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 306.. run particle minecraft:flame ~2.796 ~ ~-4.145 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 308.. run particle minecraft:flame ~2.939 ~ ~-4.045 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 310.. run particle minecraft:flame ~3.078 ~ ~-3.940 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 312.. run particle minecraft:flame ~3.214 ~ ~-3.830 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 314.. run particle minecraft:flame ~3.346 ~ ~-3.716 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 316.. run particle minecraft:flame ~3.473 ~ ~-3.597 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 318.. run particle minecraft:flame ~3.597 ~ ~-3.473 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 320.. run particle minecraft:flame ~3.716 ~ ~-3.346 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 322.. run particle minecraft:flame ~3.830 ~ ~-3.214 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 324.. run particle minecraft:flame ~3.940 ~ ~-3.078 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 326.. run particle minecraft:flame ~4.045 ~ ~-2.939 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 328.. run particle minecraft:flame ~4.145 ~ ~-2.796 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 330.. run particle minecraft:flame ~4.240 ~ ~-2.650 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 332.. run particle minecraft:flame ~4.330 ~ ~-2.500 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 334.. run particle minecraft:flame ~4.415 ~ ~-2.347 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 336.. run particle minecraft:flame ~4.494 ~ ~-2.192 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 338.. run particle minecraft:flame ~4.568 ~ ~-2.034 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 340.. run particle minecraft:flame ~4.636 ~ ~-1.873 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 342.. run particle minecraft:flame ~4.698 ~ ~-1.710 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 344.. run particle minecraft:flame ~4.755 ~ ~-1.545 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 346.. run particle minecraft:flame ~4.806 ~ ~-1.378 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 348.. run particle minecraft:flame ~4.851 ~ ~-1.210 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 350.. run particle minecraft:flame ~4.891 ~ ~-1.040 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 352.. run particle minecraft:flame ~4.924 ~ ~-0.868 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 354.. run particle minecraft:flame ~4.951 ~ ~-0.696 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 356.. run particle minecraft:flame ~4.973 ~ ~-0.523 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 358.. run particle minecraft:flame ~4.988 ~ ~-0.349 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 360.. run particle minecraft:flame ~4.997 ~ ~-0.174 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 362.. run particle minecraft:flame ~5.000 ~ ~0.000 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 364.. run particle minecraft:flame ~4.698 ~ ~0.098 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 366.. run particle minecraft:flame ~4.397 ~ ~0.196 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 368.. run particle minecraft:flame ~4.095 ~ ~0.294 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 370.. run particle minecraft:flame ~3.794 ~ ~0.392 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 372.. run particle minecraft:flame ~3.492 ~ ~0.490 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 374.. run particle minecraft:flame ~3.191 ~ ~0.588 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 376.. run particle minecraft:flame ~2.889 ~ ~0.686 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 378.. run particle minecraft:flame ~2.588 ~ ~0.784 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 380.. run particle minecraft:flame ~2.286 ~ ~0.882 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 382.. run particle minecraft:flame ~1.985 ~ ~0.980 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 384.. run particle minecraft:flame ~1.683 ~ ~1.078 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 386.. run particle minecraft:flame ~1.382 ~ ~1.176 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 388.. run particle minecraft:flame ~1.080 ~ ~1.274 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 390.. run particle minecraft:flame ~0.779 ~ ~1.371 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 392.. run particle minecraft:flame ~0.477 ~ ~1.469 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 394.. run particle minecraft:flame ~0.176 ~ ~1.567 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 396.. run particle minecraft:flame ~-0.126 ~ ~1.665 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 398.. run particle minecraft:flame ~-0.427 ~ ~1.763 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 400.. run particle minecraft:flame ~-0.729 ~ ~1.861 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 402.. run particle minecraft:flame ~-1.030 ~ ~1.959 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 404.. run particle minecraft:flame ~-1.332 ~ ~2.057 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 406.. run particle minecraft:flame ~-1.633 ~ ~2.155 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 408.. run particle minecraft:flame ~-1.935 ~ ~2.253 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 410.. run particle minecraft:flame ~-2.236 ~ ~2.351 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 412.. run particle minecraft:flame ~-2.538 ~ ~2.449 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 414.. run particle minecraft:flame ~-2.839 ~ ~2.547 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 416.. run particle minecraft:flame ~-3.141 ~ ~2.645 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 418.. run particle minecraft:flame ~-3.442 ~ ~2.743 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 420.. run particle minecraft:flame ~-3.744 ~ ~2.841 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 422.. run particle minecraft:flame ~1.545 ~ ~4.755 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 424.. run particle minecraft:flame ~1.359 ~ ~4.499 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 426.. run particle minecraft:flame ~1.172 ~ ~4.242 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 428.. run particle minecraft:flame ~0.986 ~ ~3.986 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 430.. run particle minecraft:flame ~0.800 ~ ~3.729 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 432.. run particle minecraft:flame ~0.613 ~ ~3.473 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 434.. run particle minecraft:flame ~0.427 ~ ~3.216 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 436.. run particle minecraft:flame ~0.241 ~ ~2.960 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 438.. run particle minecraft:flame ~0.054 ~ ~2.703 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 440.. run particle minecraft:flame ~-0.132 ~ ~2.447 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 442.. run particle minecraft:flame ~-0.318 ~ ~2.191 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 444.. run particle minecraft:flame ~-0.505 ~ ~1.934 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 446.. run particle minecraft:flame ~-0.691 ~ ~1.678 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 448.. run particle minecraft:flame ~-0.877 ~ ~1.421 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 450.. run particle minecraft:flame ~-1.064 ~ ~1.165 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 452.. run particle minecraft:flame ~-1.250 ~ ~0.908 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 454.. run particle minecraft:flame ~-1.436 ~ ~0.652 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 456.. run particle minecraft:flame ~-1.623 ~ ~0.395 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 458.. run particle minecraft:flame ~-1.809 ~ ~0.139 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 460.. run particle minecraft:flame ~-1.995 ~ ~-0.118 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 462.. run particle minecraft:flame ~-2.182 ~ ~-0.374 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 464.. run particle minecraft:flame ~-2.368 ~ ~-0.631 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 466.. run particle minecraft:flame ~-2.554 ~ ~-0.887 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 468.. run particle minecraft:flame ~-2.741 ~ ~-1.144 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 470.. run particle minecraft:flame ~-2.927 ~ ~-1.400 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 472.. run particle minecraft:flame ~-3.113 ~ ~-1.657 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 474.. run particle minecraft:flame ~-3.300 ~ ~-1.913 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 476.. run particle minecraft:flame ~-3.486 ~ ~-2.170 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 478.. run particle minecraft:flame ~-3.672 ~ ~-2.426 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 480.. run particle minecraft:flame ~-3.859 ~ ~-2.682 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 482.. run particle minecraft:flame ~-4.045 ~ ~2.939 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 484.. run particle minecraft:flame ~-3.859 ~ ~2.682 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 486.. run particle minecraft:flame ~-3.672 ~ ~2.426 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 488.. run particle minecraft:flame ~-3.486 ~ ~2.170 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 490.. run particle minecraft:flame ~-3.300 ~ ~1.913 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 492.. run particle minecraft:flame ~-3.113 ~ ~1.657 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 494.. run particle minecraft:flame ~-2.927 ~ ~1.400 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 496.. run particle minecraft:flame ~-2.741 ~ ~1.144 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 498.. run particle minecraft:flame ~-2.554 ~ ~0.887 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 500.. run particle minecraft:flame ~-2.368 ~ ~0.631 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 502.. run particle minecraft:flame ~-2.182 ~ ~0.374 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 504.. run particle minecraft:flame ~-1.995 ~ ~0.118 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 506.. run particle minecraft:flame ~-1.809 ~ ~-0.139 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 508.. run particle minecraft:flame ~-1.623 ~ ~-0.395 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 510.. run particle minecraft:flame ~-1.436 ~ ~-0.652 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 512.. run particle minecraft:flame ~-1.250 ~ ~-0.908 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 514.. run particle minecraft:flame ~-1.064 ~ ~-1.165 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 516.. run particle minecraft:flame ~-0.877 ~ ~-1.421 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 518.. run particle minecraft:flame ~-0.691 ~ ~-1.678 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 520.. run particle minecraft:flame ~-0.505 ~ ~-1.934 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 522.. run particle minecraft:flame ~-0.318 ~ ~-2.191 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 524.. run particle minecraft:flame ~-0.132 ~ ~-2.447 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 526.. run particle minecraft:flame ~0.054 ~ ~-2.703 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 528.. run particle minecraft:flame ~0.241 ~ ~-2.960 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 530.. run particle minecraft:flame ~0.427 ~ ~-3.216 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 532.. run particle minecraft:flame ~0.613 ~ ~-3.473 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 534.. run particle minecraft:flame ~0.800 ~ ~-3.729 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 536.. run particle minecraft:flame ~0.986 ~ ~-3.986 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 538.. run particle minecraft:flame ~1.172 ~ ~-4.242 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 540.. run particle minecraft:flame ~1.359 ~ ~-4.499 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 542.. run particle minecraft:flame ~-4.045 ~ ~-2.939 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 544.. run particle minecraft:flame ~-3.744 ~ ~-2.841 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 546.. run particle minecraft:flame ~-3.442 ~ ~-2.743 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 548.. run particle minecraft:flame ~-3.141 ~ ~-2.645 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 550.. run particle minecraft:flame ~-2.839 ~ ~-2.547 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 552.. run particle minecraft:flame ~-2.538 ~ ~-2.449 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 554.. run particle minecraft:flame ~-2.236 ~ ~-2.351 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 556.. run particle minecraft:flame ~-1.935 ~ ~-2.253 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 558.. run particle minecraft:flame ~-1.633 ~ ~-2.155 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 560.. run particle minecraft:flame ~-1.332 ~ ~-2.057 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 562.. run particle minecraft:flame ~-1.030 ~ ~-1.959 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 564.. run particle minecraft:flame ~-0.729 ~ ~-1.861 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 566.. run particle minecraft:flame ~-0.427 ~ ~-1.763 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 568.. run particle minecraft:flame ~-0.126 ~ ~-1.665 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 570.. run particle minecraft:flame ~0.176 ~ ~-1.567 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 572.. run particle minecraft:flame ~0.477 ~ ~-1.469 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 574.. run particle minecraft:flame ~0.779 ~ ~-1.371 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 576.. run particle minecraft:flame ~1.080 ~ ~-1.274 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 578.. run particle minecraft:flame ~1.382 ~ ~-1.176 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 580.. run particle minecraft:flame ~1.683 ~ ~-1.078 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 582.. run particle minecraft:flame ~1.985 ~ ~-0.980 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 584.. run particle minecraft:flame ~2.286 ~ ~-0.882 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 586.. run particle minecraft:flame ~2.588 ~ ~-0.784 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 588.. run particle minecraft:flame ~2.889 ~ ~-0.686 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 590.. run particle minecraft:flame ~3.191 ~ ~-0.588 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 592.. run particle minecraft:flame ~3.492 ~ ~-0.490 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 594.. run particle minecraft:flame ~3.794 ~ ~-0.392 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 596.. run particle minecraft:flame ~4.095 ~ ~-0.294 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 598.. run particle minecraft:flame ~4.397 ~ ~-0.196 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 600.. run particle minecraft:flame ~4.698 ~ ~-0.098 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 602.. run particle minecraft:flame ~1.545 ~ ~-4.755 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 604.. run particle minecraft:flame ~1.545 ~ ~-4.438 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 606.. run particle minecraft:flame ~1.545 ~ ~-4.121 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 608.. run particle minecraft:flame ~1.545 ~ ~-3.804 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 610.. run particle minecraft:flame ~1.545 ~ ~-3.487 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 612.. run particle minecraft:flame ~1.545 ~ ~-3.170 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 614.. run particle minecraft:flame ~1.545 ~ ~-2.853 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 616.. run particle minecraft:flame ~1.545 ~ ~-2.536 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 618.. run particle minecraft:flame ~1.545 ~ ~-2.219 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 620.. run particle minecraft:flame ~1.545 ~ ~-1.902 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 622.. run particle minecraft:flame ~1.545 ~ ~-1.585 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 624.. run particle minecraft:flame ~1.545 ~ ~-1.268 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 626.. run particle minecraft:flame ~1.545 ~ ~-0.951 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 628.. run particle minecraft:flame ~1.545 ~ ~-0.634 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 630.. run particle minecraft:flame ~1.545 ~ ~-0.317 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 632.. run particle minecraft:flame ~1.545 ~ ~0.000 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 634.. run particle minecraft:flame ~1.545 ~ ~0.317 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 636.. run particle minecraft:flame ~1.545 ~ ~0.634 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 638.. run particle minecraft:flame ~1.545 ~ ~0.951 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 640.. run particle minecraft:flame ~1.545 ~ ~1.268 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 642.. run particle minecraft:flame ~1.545 ~ ~1.585 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 644.. run particle minecraft:flame ~1.545 ~ ~1.902 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 646.. run particle minecraft:flame ~1.545 ~ ~2.219 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 648.. run particle minecraft:flame ~1.545 ~ ~2.536 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 650.. run particle minecraft:flame ~1.545 ~ ~2.853 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 652.. run particle minecraft:flame ~1.545 ~ ~3.170 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 654.. run particle minecraft:flame ~1.545 ~ ~3.487 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 656.. run particle minecraft:flame ~1.545 ~ ~3.804 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 658.. run particle minecraft:flame ~1.545 ~ ~4.121 0.0001 0.0001 0.0001 0.001 1 force @a
+execute if score Boss复活时间 boss_4_system matches 660.. run particle minecraft:flame ~1.545 ~ ~4.438 0.0001 0.0001 0.0001 0.001 1 force @a
