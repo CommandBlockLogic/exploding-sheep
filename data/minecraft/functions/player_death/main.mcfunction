@@ -49,7 +49,7 @@ scoreboard players operation @s core_number /= number_ten system
 
 
 # clear
-function sheep:ultimate/end
+execute as @s[scores={s_ulti_time=1..}] run function sheep:ultimate/end
 scoreboard players set @s death 0
 scoreboard players set @s killed_by_c 0
 scoreboard players set @s killed_by_z 0
