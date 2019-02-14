@@ -20,6 +20,9 @@ team empty blue
 team empty red
 team empty yellow
 
+# reset team (pve only)
+team modify red color red
+
 # clear score
 execute as @a[scores={s_ulti_time=1..}] run function sheep:ultimate/end
 scoreboard players reset * s_class

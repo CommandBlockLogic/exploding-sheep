@@ -1,6 +1,8 @@
 # game_mode/single/boss/main
 
 # add player num
+team join red @a[team=blue]
+
 scoreboard players set player_count_red system 0
 execute as @a[team=red] run scoreboard players add player_count_red system 1
 
