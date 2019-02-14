@@ -16,8 +16,8 @@ for i in range(part_circle):
 
 
 for n in range(point):
-	point_A = (math.cos(math.pi*n*2/point)*r,math.sin(math.pi*n*2/point)*r)
-	point_B = (math.cos(math.pi*(n+2)*2/point)*r,math.sin(math.pi*(n+2)*2/point)*r)
+	point_A = (math.cos(math.pi*(n*2)*2/point)*r,math.sin(math.pi*(n*2)*2/point)*r)
+	point_B = (math.cos(math.pi*(n*2+2)*2/point)*r,math.sin(math.pi*(n*2+2)*2/point)*r)
 	x_distance = point_B[0] - point_A[0]
 	y_distance = point_B[1] - point_A[1]
 	for m in range(0,part_line):
