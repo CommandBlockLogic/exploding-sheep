@@ -7,9 +7,11 @@ scoreboard players set game_status system 1
 # tp
 execute as @a run function game_mode/public/tp_game_spawn
 gamemode spectator @a[team=]
+execute as @a[scores={s_ulti_time=1..}] run function sheep:ultimate/end
 
 scoreboard players reset * sidebar_score
 scoreboard objectives modify sidebar_score displayname ["耗尽对方剩余生命值!"]
+
 
 # title
 title @a times 10 50 10
