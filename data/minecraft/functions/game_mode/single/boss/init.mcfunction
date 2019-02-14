@@ -1,6 +1,22 @@
-scoreboard objectives remove boss_4_system
-
-scoreboard objectives add boss_4_system dummy
+# Boss4: 羊羊之神
+# 删除
+scoreboard objectives remove boss_4_health
+scoreboard objectives remove boss_4_int
+scoreboard objectives remove boss_4_float
+scoreboard objectives remove boss_4_max
+scoreboard objectives remove boss_4_cool1
+scoreboard objectives remove boss_4_cool2
+scoreboard objectives remove boss_4_cool3
+bossbar remove boss4
+# 添加
+scoreboard objectives add boss_4_health dummy
+scoreboard objectives add boss_4_int dummy
+scoreboard objectives add boss_4_float dummy
+scoreboard objectives add boss_4_max dummy
+scoreboard objectives add boss_4_cool1 dummy
+scoreboard objectives add boss_4_cool2 dummy
+scoreboard objectives add boss_4_cool3 dummy
+bossbar add boss4 [{"text":"boss4"}]
 
 # Boss血条颜色计算
 execute as @a[team=red] run scoreboard players add 游戏人数 boss_4_system 1
@@ -26,4 +42,8 @@ execute run scoreboard players operation 0-34 boss_4_health = boss生命 boss_4_
 execute run scoreboard players operation 0-34 boss_4_health *= 红血 boss_4_health
 execute run scoreboard players operation 0-34 boss_4_health /= 百分比 boss_4_health
 
-# 
+# 游戏状态
+scoreboard players set 游戏状态 boss_4_system 0
+
+# 初始化状态1
+function minecraft:game_mode/single/boss/system/status_0/init
