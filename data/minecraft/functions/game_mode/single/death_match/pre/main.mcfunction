@@ -1,4 +1,4 @@
-# game_mode/group/death_match/pre/main
+# game_mode/single/death_match/pre/main
 
 # 修改当前状态为单人杀人前
 scoreboard players set game_status system 103
