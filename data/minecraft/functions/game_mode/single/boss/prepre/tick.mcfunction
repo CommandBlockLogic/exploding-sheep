@@ -18,7 +18,7 @@ scoreboard players operation boss战倒计时(秒) sidebar_score /= twenty syste
 
 # 选羊和队伍
 function minecraft:lobby/change_class
-function minecraft:lobby/change_team/boss
+function minecraft:lobby/change_team/single
 
 # effect
 effect give @a minecraft:resistance 5 5 true

@@ -27,6 +27,7 @@ team modify red color red
 execute as @a[scores={s_ulti_time=1..}] run function sheep:ultimate/end
 scoreboard players reset * s_class
 scoreboard players reset * s_launch_type
+scoreboard players reset * death_boss
 
 # clear entity
 kill @e[type=!player]

@@ -4,7 +4,7 @@
 scoreboard players set game_status system 105
 
 # 切换至组队模式
-execute if score game_mode_status system matches 1 run function lobby/start_game/change_mode
+execute if score game_mode_status system matches 0 run function lobby/start_game/change_mode
 
 # 传送玩家
 tp @a -166 10 -118
