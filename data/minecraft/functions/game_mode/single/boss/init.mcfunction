@@ -17,7 +17,7 @@ scoreboard objectives add boss_4_max dummy
 scoreboard objectives add boss_4_cool1 dummy
 scoreboard objectives add boss_4_cool2 dummy
 scoreboard objectives add boss_4_cool3 dummy
-scoreboard objectives add boss_4_system
+scoreboard objectives add boss_4_system dummy
 bossbar add boss4 [{"text":"boss4"}]
 
 # Boss血条颜色计算
