@@ -7,6 +7,7 @@ scoreboard objectives remove boss_4_max
 scoreboard objectives remove boss_4_cool1
 scoreboard objectives remove boss_4_cool2
 scoreboard objectives remove boss_4_cool3
+scoreboard objectives remove boss_4_system
 bossbar remove boss4
 # 添加
 scoreboard objectives add boss_4_health dummy
@@ -16,6 +17,7 @@ scoreboard objectives add boss_4_max dummy
 scoreboard objectives add boss_4_cool1 dummy
 scoreboard objectives add boss_4_cool2 dummy
 scoreboard objectives add boss_4_cool3 dummy
+scoreboard objectives add boss_4_system
 bossbar add boss4 [{"text":"boss4"}]
 
 # Boss血条颜色计算

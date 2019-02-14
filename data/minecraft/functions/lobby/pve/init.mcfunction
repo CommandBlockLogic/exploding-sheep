@@ -82,25 +82,6 @@ scoreboard objectives add boss_3_cool2 dummy
 scoreboard objectives add boss_3_cool3 dummy
 bossbar add boss3 [{"text":"boss3"}]
 
-# Boss4: 羊羊之神
-# 删除
-scoreboard objectives remove boss_4_health
-scoreboard objectives remove boss_4_int
-scoreboard objectives remove boss_4_float
-scoreboard objectives remove boss_4_max
-scoreboard objectives remove boss_4_cool1
-scoreboard objectives remove boss_4_cool2
-scoreboard objectives remove boss_4_cool3
-bossbar remove boss4
-# 添加
-scoreboard objectives add boss_4_health dummy
-scoreboard objectives add boss_4_int dummy
-scoreboard objectives add boss_4_float dummy
-scoreboard objectives add boss_4_max dummy
-scoreboard objectives add boss_4_cool1 dummy
-scoreboard objectives add boss_4_cool2 dummy
-scoreboard objectives add boss_4_cool3 dummy
-bossbar add boss4 [{"text":"boss4"}]
 
 
 # 提示
