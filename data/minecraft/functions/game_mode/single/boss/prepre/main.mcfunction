@@ -12,9 +12,17 @@ tp @a -166 10 -118
 # 清理背包
 clear @a
 
+# 清理队伍
+team empty blue
+team empty red
+team empty yellow
+
 # 提示
 tellraw @a [{"text":">> ","color":"red"},{"selector":"@s","color":"white"},{"text":" 发起了隐藏Boss挑战","color":"white"}]
 tellraw @a [{"text":">>","color":"red"},{"text":" 想参加的玩家请在30秒内加入队伍并选择您的羊的种类","color":"white"}]
+
+# 加入队伍
+team join yellow @s
 
 # 初始化分数
 scoreboard players set system_start_countdown system 600

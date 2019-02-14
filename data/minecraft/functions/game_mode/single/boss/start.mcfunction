@@ -8,6 +8,8 @@ execute as @a run function game_mode/public/tp_pve_spawn
 gamemode spectator @a[team=]
 
 
+# boss 初始化
+function game_mode/single/boss/init
 
 # title
 title @a times 0 100 10
