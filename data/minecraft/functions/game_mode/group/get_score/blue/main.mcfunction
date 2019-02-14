@@ -8,7 +8,7 @@ execute as @a run function game_mode/public/tp_game_spawn
 gamemode spectator @a[team=]
 
 scoreboard objectives modify sidebar_score displayname [{"text":"青金石部落进攻!","color":"white"}]
-execute as @s[scores={s_ulti_time=1..}] run function sheep:ultimate/end
+execute as @a[scores={s_ulti_time=1..}] run function sheep:ultimate/end
 
 # title
 title @a times 10 50 10

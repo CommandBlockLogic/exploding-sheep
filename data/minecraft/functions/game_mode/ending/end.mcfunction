@@ -21,7 +21,7 @@ team empty red
 team empty yellow
 
 # clear score
-execute as @s[scores={s_ulti_time=1..}] run function sheep:ultimate/end
+execute as @a[scores={s_ulti_time=1..}] run function sheep:ultimate/end
 scoreboard players reset * s_class
 scoreboard players reset * s_launch_type
 
