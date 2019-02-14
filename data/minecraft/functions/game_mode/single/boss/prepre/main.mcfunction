@@ -7,12 +7,14 @@ scoreboard players set game_status system 105
 execute if score game_mode_status system matches 1 run function lobby/start_game/change_mode
 
 # 传送玩家
-tp @a 0 20 0
+tp @a -166 10 -118
 
+# 清理背包
 clear @a
 
 # 提示
-tellraw @a ["给老子加队伍选羊，30秒倒计时"]
+tellraw @a [{"text":">> ","color":"red"},{"selector":"@s","color":"white"},{"text":" 发起了隐藏Boss挑战","color":"white"}]
+tellraw @a [{"text":">>","color":"red"},{"text":" 想参加的玩家请在30秒内加入队伍并选择您的羊的种类","color":"white"}]
 
 # 初始化分数
 scoreboard players set system_start_countdown system 600
