@@ -8,7 +8,7 @@ part_line = 30
 point = 5
 
 r = 5
-format_sentence = "execute if score Boss复活时间 boss_4_system matches {:}.. run particle minecraft:flame ~{:.3f} ~ ~{:.3f} 0.0001 0.0001 0.0001 0.001 1 force @a"
+format_sentence = "execute if score Boss复活冷却 boss_4_system matches {:}.. run particle minecraft:flame ~{:.3f} ~ ~{:.3f} 0.0001 0.0001 0.0001 0.001 1 force @a"
 
 for i in range(part_circle):
 	print(format_sentence.format(score,math.cos(2/part_circle*math.pi*i)*r,math.sin(2/part_circle*math.pi*i)*r))
