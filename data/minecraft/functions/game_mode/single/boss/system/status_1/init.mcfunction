@@ -1,4 +1,5 @@
 scoreboard players set 游戏状态 boss_4_system 1
+scoreboard players set Boss技能 boss_4_system 1
 
 kill @e[tag=particle_marker,type=minecraft:armor_stand]
 

@@ -19,24 +19,10 @@ execute store result bossbar minecraft:boss4 max run data get entity @e[tag=boss
 execute store result bossbar minecraft:boss4 value run data get entity @e[tag=boss4,limit=1] Health 100
 execute if entity @e[tag=boss4] run bossbar set minecraft:boss4 name [{"selector":"@e[tag=boss4,limit=1]","color":"white"},{"text":" (","color":"white"},{"score":{"name":"@e[tag=boss4,limit=1]","objective":"boss_4_int"},"color":"white"},{"text":".","color":"white"},{"score":{"name":"@e[tag=boss4,limit=1]","objective":"boss_4_float"},"color":"white"},{"text":"/","color":"white"},{"score":{"name":"@e[tag=boss4,limit=1]","objective":"boss_4_max"},"color":"white"},{"text":")","color":"white"}]
 
-
-# 技能冷却
-scoreboard players add 冷却时间 boss_4_cool 1
-scoreboard players add 被动冷却时间 boss_4_cool 1
-
 # 技能1
-execute if score Boss技能 boss_4_system matches 1 if score 冷却时间 boss_4_cool matches 200 as @e[tag=boss4] run function minecraft:game_mode/single/boss/system/status_1/skill_1
+
 # 技能2
-execute if score Boss技能 boss_4_system matches 2 if score 冷却时间 boss_4_cool matches 200 as @e[tag=boss4] run function minecraft:game_mode/single/boss/system/status_1/skill_2
+
 # 技能3
-execute if score Boss技能 boss_4_system matches 3 if score 冷却时间 boss_4_cool matches 200 as @e[tag=boss4] run function minecraft:game_mode/single/boss/system/status_1/skill_3
-# 被动
-execute if score 被动冷却时间 boss_4_cool matches 160 as @e[tag=boss4] run function minecraft:game_mode/single/boss/system/status_1/passive
+
 # 大招
-
-# 冷却重置
-execute if score 冷却时间 boss_4_cool matches 200 run scoreboard players set 冷却时间 boss_4_cool 0
-execute if score 被动冷却时间 boss_4_cool matches 160 run scoreboard players set 被动冷却时间 boss_4_cool 0
-
-# 阶段变换
-execute if score @e[tag=boss4,limit=1] boss_4_health >= 50血量 boss_4_health if score @e[tag=boss4,limit=1] boss_4_health run function minecraft:game_mode/single/boss/system/status_2/init
