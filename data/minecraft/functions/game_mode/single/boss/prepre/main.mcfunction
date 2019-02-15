@@ -27,6 +27,7 @@ tag @s add team_leader
 
 # 初始化分数
 scoreboard players set system_start_countdown system 600
+scoreboard players set system_temp system 0
 
 scoreboard players set twenty system 20
 scoreboard players reset * sidebar_score

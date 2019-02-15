@@ -12,8 +12,9 @@ execute if score system_start_countdown system matches 60 run title @a subtitle 
 execute if score system_start_countdown system matches 40 run title @a subtitle [{"text":"2","color":"gold"}]
 execute if score system_start_countdown system matches 20 run title @a subtitle [{"text":"1","color":"red"}]
 # score
-scoreboard players operation boss战倒计时(秒) sidebar_score = system_start_countdown system
-scoreboard players operation boss战倒计时(秒) sidebar_score /= twenty system
+scoreboard players operation system_temp system = system_start_countdown system
+scoreboard players operation system_temp system /= twenty system
+scoreboard players operation boss战倒计时(秒) sidebar_score /= system_temp system
 
 team join yellow @a[tag=team_leader]
 
