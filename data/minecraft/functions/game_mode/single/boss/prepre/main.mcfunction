@@ -34,3 +34,14 @@ scoreboard players reset * sidebar_score
 scoreboard players set boss战倒计时(秒) sidebar_score 0
 scoreboard objectives modify sidebar_score displayname ["boss战倒计时"]
 scoreboard objectives setdisplay sidebar sidebar_score
+
+# bossbar
+bossbar add minecraft:score_time ["temp"]
+# bossbar
+bossbar set minecraft:score_time max 600
+bossbar set minecraft:score_time value 600
+bossbar set minecraft:score_time style progress
+bossbar set minecraft:score_time color white
+bossbar set minecraft:score_time players @a
+bossbar set minecraft:score_time visible true
+bossbar set minecraft:score_time name ["剩余时间: 0秒"]
