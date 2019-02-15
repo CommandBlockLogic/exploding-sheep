@@ -23,6 +23,7 @@ tellraw @a [{"text":">>","color":"red"},{"text":" 想参加的玩家请在30秒�
 
 # 加入队伍
 team join yellow @s
+tag @s add team_leader
 
 # 初始化分数
 scoreboard players set system_start_countdown system 600

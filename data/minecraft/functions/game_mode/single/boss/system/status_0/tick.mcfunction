@@ -15,3 +15,8 @@ execute if score Boss复活冷却 boss_4_system matches 331.. as @e[tag=particle
 
 # Boss复活 & 状态1初始化
 execute if score Boss复活冷却 boss_4_system >= Boss复活时间 boss_4_system run function minecraft:game_mode/single/boss/system/status_1/init
+
+# SB对话
+execute if score Boss复活冷却 boss_4_system matches 20.. run tellraw @a [{"text":"<","color":"white"},{"text":"羊羊之神","color":"yellow","bold":"false"},{"text":"> ","color":"white","bold":"false"},{"selector":"@a[tag=team_leader]"},{"text":", 你竟然敢击杀我洞穴里所有的守卫","color":"white"}]
+execute if score Boss复活冷却 boss_4_system matches 40.. run tellraw @a [{"text":"<","color":"white"},{"text":"羊羊之神","color":"yellow","bold":"false"},{"text":"> ","color":"white","bold":"false"},{"text":"还找来了帮凶","color":"white"},{"selector":"@a[gamemode=adventure,tag=!team_leader]"}]
+execute if score Boss复活冷却 boss_4_system matches 60.. run tellraw @a [{"text":"<","color":"white"},{"text":"羊羊之神","color":"yellow","bold":"false"},{"text":"> ","color":"white","bold":"false"},{"text":" 既然你们那么想死，那就让我来成全你们!","color":"white"}]

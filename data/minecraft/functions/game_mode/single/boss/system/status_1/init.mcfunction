@@ -9,3 +9,5 @@ summon minecraft:sheep 0 13 0 {Invulnerable:1b,Passengers:[{id:"minecraft:zombie
 # 设置属性
 execute store result entity @e[tag=boss4,limit=1] Attributes[0].Base double 0.01 run scoreboard players get boss血量 boss_4_system
 execute store result entity @e[tag=boss4,limit=1] Health float 0.01 run scoreboard players get boss血量 boss_4_system
+
+# 消息

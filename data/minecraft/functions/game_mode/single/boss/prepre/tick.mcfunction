@@ -15,6 +15,7 @@ execute if score system_start_countdown system matches 20 run title @a subtitle 
 scoreboard players operation boss战倒计时(秒) sidebar_score = system_start_countdown system
 scoreboard players operation boss战倒计时(秒) sidebar_score /= twenty system
 
+team join yellow @a[tag=team_leader]
 
 # 选羊和队伍
 function minecraft:lobby/change_class

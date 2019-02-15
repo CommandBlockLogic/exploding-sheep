@@ -22,6 +22,7 @@ team empty yellow
 
 # reset team (pve only)
 team modify red color red
+tag @a remove team_leader
 
 # clear score
 execute as @a[scores={s_ulti_time=1..}] run function sheep:ultimate/end
