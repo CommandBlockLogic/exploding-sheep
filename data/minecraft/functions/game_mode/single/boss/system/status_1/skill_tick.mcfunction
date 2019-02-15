@@ -45,6 +45,8 @@ scoreboard players add @e[tag=boss4_sheep_new3,type=sheep] boss_4_system 1
 execute as @e[tag=boss4_sheep_new3,type=sheep,scores={boss_4_system=100..}] at @s run function minecraft:game_mode/single/boss/system/status_1/passive
 execute as @e[tag=boss4_sheep_new3,type=sheep,scores={boss_4_system=100..}] at @s run scoreboard players set @s boss_4_system 0
 execute as @e[type=sheep,tag=boss4_sheep_new3,scores={boss_4_cool=1200..}] run kill @s
+# tp
+execute as @e[tag=boss4_sheep_new3] at @s run tp @s ~ ~ ~ ~2 ~
 
 # 拆除
 execute as @e[tag=boss4_sheep_new3,type=sheep] at @s if entity @a[gamemode=adventure,distance=..1] run kill @s

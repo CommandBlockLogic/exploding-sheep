@@ -1,6 +1,9 @@
 summon minecraft:sheep ^ ^ ^ {Tags:["boss4_sheep_new3"],Color:6,NoGravity:1,Silent:1,Age:-999999,Invulnerable:1s,NoAI:1}
+scoreboard players add @e[tag=boss4_sheep_new3,type=sheep] boss_4_system 25
 summon minecraft:sheep ^ ^ ^ {Tags:["boss4_sheep_new3"],Color:6,NoGravity:1,Silent:1,Age:-999999,Invulnerable:1s,NoAI:1}
+scoreboard players add @e[tag=boss4_sheep_new3,type=sheep] boss_4_system 25
 summon minecraft:sheep ^ ^ ^ {Tags:["boss4_sheep_new3"],Color:6,NoGravity:1,Silent:1,Age:-999999,Invulnerable:1s,NoAI:1}
+scoreboard players add @e[tag=boss4_sheep_new3,type=sheep] boss_4_system 25
 summon minecraft:sheep ^ ^ ^ {Tags:["boss4_sheep_new3"],Color:6,NoGravity:1,Silent:1,Age:-999999,Invulnerable:1s,NoAI:1}
 
 
