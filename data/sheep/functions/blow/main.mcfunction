@@ -50,7 +50,7 @@ execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_re
 
 # teleport
 execute if entity @s[tag=sheep_type_teleport] at @s as @a if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run tp @s ~ ~ ~ ~ ~
-execute if entity @s[tag=sheep_type_teleport] at @s if score @e[tag=sheep_temp,limit=1] s_thrower_id matches -1 run tp @e[tag=boss_fight,tag=boss4] ~ ~ ~ ~ ~
+execute if entity @s[tag=sheep_type_teleport] at @s if score @e[tag=sheep_temp,limit=1] s_thrower_id matches -1 run tp @e[tag=boss_fight] ~ ~ ~ ~ ~
 execute if entity @s[tag=sheep_type_teleport] run playsound minecraft:entity.enderman.teleport ambient @a ~ ~ ~ 1 0.5
 execute if entity @s[tag=sheep_type_teleport] run particle minecraft:portal ~ ~ ~ 0 0 0 0.8 100
 execute if entity @s[tag=sheep_type_teleport] run particle minecraft:dust 0 0 0 2 ~ ~ ~ 0.5 1 0.5 0 100
