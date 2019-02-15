@@ -23,3 +23,5 @@ kill @e[tag=boss_2_skill_3]
 
 # 清除玩家击中 BOSS mark
 tag @a[tag=spg_hit_boss_player] remove spg_hit_boss_player
+
+scoreboard players reset 游戏开始 pve_system
