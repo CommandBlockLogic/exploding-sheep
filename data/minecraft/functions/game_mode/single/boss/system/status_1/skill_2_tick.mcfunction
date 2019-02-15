@@ -1,5 +1,5 @@
-execute if entity @e[type=sheep,tag=boss_4_sheep_new2] unless entity @e[type=armor_stand,tag=boss4_skill2_marker] at @e[tag=boss4,limit=1] run summon minecraft:armor_stand ~ ~ ~ {Tags:["boss4_skill2_marker"],Invisible:1b,NoGravity:1b,Marker:1b}
-execute unless entity @e[type=sheep,tag=boss_4_sheep_new2] as @e[type=armor_stand,tag=boss4_skill2_marker] run kill @s 
+execute if entity @e[type=sheep,tag=boss4_sheep_new2] unless entity @e[type=armor_stand,tag=boss4_skill2_marker] at @e[tag=boss4,limit=1] run summon minecraft:armor_stand ~ ~ ~ {Tags:["boss4_skill2_marker"],Invisible:1b,NoGravity:1b,Marker:1b}
+execute unless entity @e[type=sheep,tag=boss4_sheep_new2] as @e[type=armor_stand,tag=boss4_skill2_marker] run kill @s 
 
 # tp
 execute at @e[tag=boss4,limit=1] run tp @e[type=armor_stand,tag=boss4_skill2_marker] ~ ~ ~
