@@ -1,5 +1,6 @@
 # game_mode/single/boss/win
 
+kill @e[type=sheep,tag=boss_fight]
 title @a times 0 200 10
 title @a title [{"text":"成功击杀羊羊之神！","color":"red"}]
 tellraw @a [{"text":"<","color":"white"},{"text":"羊羊之神","color":"yellow","bold":"false"},{"text":"> ","color":"white","bold":"false"},{"selector":"@a[team=red]"},{"text":", 你们给我等着！","color":"white"}]
