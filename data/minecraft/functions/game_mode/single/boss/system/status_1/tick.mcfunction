@@ -1,3 +1,4 @@
+
 # Boss血条颜色更改
 execute store result score @e[tag=boss4,limit=1] boss_4_health run bossbar get minecraft:boss4 value
 execute if score @e[tag=boss4,limit=1] boss_4_health >= 34-67 boss_4_health if score @e[tag=boss4,limit=1] boss_4_health <= 67-100 boss_4_health run bossbar set minecraft:boss4 color green
