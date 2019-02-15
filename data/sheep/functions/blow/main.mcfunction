@@ -123,6 +123,9 @@ execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster,distance
 execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster,distance=..2] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 250
 execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster,distance=..4] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 100
 
+execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster_boss,distance=..1] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 400
+execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster_boss,distance=..2] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 250
+execute if entity @s[tag=!sheep_attr_no_damage] at @s as @e[tag=monster_boss,distance=..4] run scoreboard players add @a[tag=player_temp,limit=1] s_ulti_energy 100
 
 
 
