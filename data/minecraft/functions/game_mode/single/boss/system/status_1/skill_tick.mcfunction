@@ -33,4 +33,5 @@ execute as @e[type=sheep,tag=boss4_sheep_new2,scores={boss_4_cool=100..}] at @s 
 # 时间
 execute if score 诅咒时间 boss_4_system matches 1.. run scoreboard players set @a[gamemode=adventure] s_energy 0
 execute if score 诅咒时间 boss_4_system matches 1.. run scoreboard players remove 诅咒时间 boss_4_system 1
+execute if score 诅咒时间 boss_4_system matches 0 run scoreboard players set @a[gamemode=adventure] s_energy 200
 execute if score 诅咒时间 boss_4_system matches 0 run scoreboard players reset 诅咒时间 boss_4_system
