@@ -26,7 +26,7 @@ execute if entity @e[tag=boss4] run bossbar set minecraft:boss4 name [{"selector
 scoreboard players add 冷却时间 boss_4_cool 1
 scoreboard players add 被动冷却时间 boss_4_cool 1
 scoreboard players add 大招冷却时间 boss_4_cool 1
-execute if score 扇子冷却时间 boss_4_system matches 1.. run scoreboard players remove 扇子冷却时间 boss_4_cool 1
+execute if score 扇子冷却时间 boss_4_cool matches 1.. run scoreboard players remove 扇子冷却时间 boss_4_cool 1
 
 # 技能1
 execute if score Boss技能 boss_4_system matches 1 if score 冷却时间 boss_4_cool matches 200 run function minecraft:game_mode/single/boss/system/status_2/skill_1

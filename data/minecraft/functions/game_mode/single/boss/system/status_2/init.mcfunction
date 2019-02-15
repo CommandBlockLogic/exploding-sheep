@@ -7,3 +7,4 @@ kill @e[tag=boss4_sheep_new2]
 kill @e[tag=boss4_sheep_new3]
 kill @e[tag=boss4_skill2_marker]
 scoreboard players reset 诅咒时间 boss_4_system
+scoreboard players set 扇子冷却时间 boss_4_cool 0
