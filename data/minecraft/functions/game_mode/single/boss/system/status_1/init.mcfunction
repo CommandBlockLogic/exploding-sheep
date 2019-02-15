@@ -3,8 +3,8 @@ scoreboard players set Boss技能 boss_4_system 1
 
 kill @e[tag=particle_marker,type=minecraft:armor_stand]
 
-effect give @a[gamemode=adventure] regeneration 999999 1 true
-tellraw @a [{"text":">>","color":"white"},{"text":"玩家获得了峡谷的祝福，得到了生命恢复效果","color":"white"}]
+effect give @a[gamemode=adventure] regeneration 999999 0 true
+tellraw @a [{"text":">>","color":"white"},{"text":" 挑战者获得了峡谷的祝福，得到了生命恢复效果","color":"gold"}]
 
 
 # 召唤boss
