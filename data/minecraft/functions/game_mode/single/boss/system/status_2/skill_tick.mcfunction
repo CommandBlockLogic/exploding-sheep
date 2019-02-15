@@ -9,4 +9,6 @@ execute if entity @e[tag=boss2] run function minecraft:lobby/pve/boss_2/skill_2
 execute if entity @e[tag=boss3] run function minecraft:lobby/pve/boss_3/skill_1
 execute if entity @e[tag=boss3] run function minecraft:lobby/pve/boss_3/skill_2
 
+kill @e[type=minecraft:vex]
+
 kill @e[tag=boss_fight_monster,scores={boss_4_system=600..}]
