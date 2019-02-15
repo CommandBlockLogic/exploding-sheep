@@ -10,6 +10,7 @@ execute as @e[scores={s_web_clock=1}] at @s run function sheep:sheep_effect/ice/
 
 # 冰冻效果选择对象
 execute as @e[scores={s_web_time=1..},tag=!sheep_team_boss] at @s run tag @e[distance=..3.5,type=!player,tag=monster] add sheep_ice_temp
+execute as @e[scores={s_web_time=1..},tag=!sheep_team_boss] at @s run tag @e[distance=..3.5,type=!player,tag=boss_fight] add sheep_ice_temp
 execute as @e[scores={s_web_time=1..},tag=sheep_team_red] at @s run tag @a[distance=..3.5,team=blue] add sheep_ice_temp
 execute as @e[scores={s_web_time=1..},tag=sheep_team_blue] at @s run tag @a[distance=..3.5,team=red] add sheep_ice_temp
 execute as @e[scores={s_web_time=1..},tag=!sheep_team_red,tag=!sheep_team_blue] at @s run tag @a[distance=..3.5] add sheep_ice_temp
