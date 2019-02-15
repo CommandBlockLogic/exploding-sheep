@@ -5,7 +5,6 @@ scoreboard players set game_status system 5
 
 # tp
 execute as @a run function game_mode/public/tp_pve_spawn
-spawnpoint @a 0 14 0
 gamemode spectator @a[team=]
 
 
