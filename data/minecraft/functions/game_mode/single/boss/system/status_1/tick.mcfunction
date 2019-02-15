@@ -22,7 +22,6 @@ scoreboard players operation @e[tag=boss4] boss_4_float %= 小数 boss_4_float
 # Boss血量显示
 execute if entity @e[tag=boss4] run bossbar set minecraft:boss4 name [{"selector":"@e[tag=boss4,limit=1]","color":"white"},{"text":" (","color":"white"},{"score":{"name":"@e[tag=boss4,limit=1]","objective":"boss_4_int"},"color":"white"},{"text":".","color":"white"},{"score":{"name":"@e[tag=boss4,limit=1]","objective":"boss_4_float"},"color":"white"},{"text":"/","color":"white"},{"score":{"name":"@e[tag=boss4,limit=1]","objective":"boss_4_max"},"color":"white"},{"text":")","color":"white"}]
 
-
 # 技能冷却
 scoreboard players add 冷却时间 boss_4_cool 1
 scoreboard players add 被动冷却时间 boss_4_cool 1
@@ -32,6 +31,7 @@ execute if score Boss技能 boss_4_system matches 1 if score 冷却时间 boss_4
 function minecraft:game_mode/single/boss/system/status_1/skill_1_tick
 # 技能2
 execute if score Boss技能 boss_4_system matches 2 if score 冷却时间 boss_4_cool matches 200 as @e[tag=boss4] at @s run function minecraft:game_mode/single/boss/system/status_1/skill_2
+function minecraft:game_mode/single/boss/system/status_1/skill_2_tick
 # 技能3
 execute if score Boss技能 boss_4_system matches 3 if score 冷却时间 boss_4_cool matches 200 as @e[tag=boss4] at @s run function minecraft:game_mode/single/boss/system/status_1/skill_3
 # 被动
