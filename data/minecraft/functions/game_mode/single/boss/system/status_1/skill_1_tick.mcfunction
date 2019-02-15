@@ -1,7 +1,7 @@
 # tp
-execute as @e[tag=boss4] at @s run tp @e[type=sheep,tag=boss4_skill1_sheep1,limit=1] ^1 ^ ^
-execute as @e[tag=boss4] at @s run tp @e[type=sheep,tag=boss4_skill1_sheep2,limit=1] ^-1 ^ ^
-execute as @e[tag=boss4] at @s run tp @e[type=sheep,tag=boss4_skill1_sheep3,limit=1] ^ ^1 ^
+execute as @e[tag=boss4] at @s run tp @e[type=sheep,tag=boss4_skill1_sheep1,limit=1] ^2 ^2 ^
+execute as @e[tag=boss4] at @s run tp @e[type=sheep,tag=boss4_skill1_sheep2,limit=1] ^-2 ^2 ^
+execute as @e[tag=boss4] at @s run tp @e[type=sheep,tag=boss4_skill1_sheep3,limit=1] ^ ^2 ^
 
 # 发射等待
 scoreboard players add @e[type=sheep,tag=boss4_sheep_new] boss_4_cool 1
