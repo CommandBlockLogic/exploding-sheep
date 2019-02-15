@@ -18,7 +18,7 @@ bossbar add boss4 [{"text":"boss4"}]
 
 # Boss血条颜色计算
 execute as @a[team=red] run scoreboard players add 游戏人数 boss_4_system 1
-scoreboard players set boss血量 boss_4_system 100
+scoreboard players set boss血量 boss_4_system 50
 scoreboard players set boss额外血量 boss_4_system 100
 scoreboard players operation boss血量 boss_4_system *= 游戏人数 boss_4_system
 scoreboard players operation boss血量 boss_4_system += boss额外血量 boss_4_system

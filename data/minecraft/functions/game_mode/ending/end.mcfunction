@@ -1,6 +1,8 @@
 # ending/end
 
 tp @a -166 9 -118
+spawnpoint @a -166 9 -118
+
 gamemode adventure @a
 scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay sidebar.team.blue
