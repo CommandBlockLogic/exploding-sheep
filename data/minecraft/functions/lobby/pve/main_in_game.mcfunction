@@ -6,7 +6,7 @@ bossbar set minecraft:boss_player players
 bossbar set minecraft:boss_cool players
 
 # 删除所有boss和生物
-kill @e[tag=monster,type=!player]
+kill @e[tag=monster]
 kill @e[tag=boss_1_summon_1]
 execute as @e[type=minecraft:armor_stand,tag=boss_1_summon_2] at @s run fill ~ ~ ~ ~ ~1 ~ air replace cobweb
 kill @e[tag=boss_1_summon_2]
@@ -23,5 +23,3 @@ kill @e[tag=boss_2_skill_3]
 
 # 清除玩家击中 BOSS mark
 tag @a[tag=spg_hit_boss_player] remove spg_hit_boss_player
-
-scoreboard players reset 游戏开始 pve_system
