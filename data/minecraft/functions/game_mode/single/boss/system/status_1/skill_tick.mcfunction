@@ -48,4 +48,6 @@ execute as @e[type=sheep,tag=boss4_sheep_new3,scores={boss_4_cool=1200..}] run k
 
 # 拆除
 execute as @e[tag=boss4_sheep_new3,type=sheep] at @s if entity @a[gamemode=adventure,distance=..1] run kill @s
+# 高亮
+effect give @e[tag=boss4_sheep_new3,type=sheep] glowing 10 0 true
 
