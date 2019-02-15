@@ -3,17 +3,17 @@
 	"display": {
 		"icon": {
 			"item": "minecraft:player_head",
-			"nbt":"{SkullOwner:\"Herobrine\"}"
+			"nbt":"{SkullOwner:\"K_bai\"}"
 		},
 		"title": [
 			{
-				"text": "Herobrine",
+				"text": "羊羊之神",
 				"color": "gold"
 			}
 		],
 		"description": [
 			{
-				"text": "参与击杀邪恶的\nHerobrine!",
+				"text": "参与击杀邪恶的\n羊羊之神!",
 				"color": "white"
 			}
 		],

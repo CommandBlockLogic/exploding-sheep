@@ -22,10 +22,28 @@ scoreboard players operation @e[tag=boss4] boss_4_float %= 小数 boss_4_float
 # Boss血量显示
 execute if entity @e[tag=boss4] run bossbar set minecraft:boss4 name [{"selector":"@e[tag=boss4,limit=1]","color":"white"},{"text":" (","color":"white"},{"score":{"name":"@e[tag=boss4,limit=1]","objective":"boss_4_int"},"color":"white"},{"text":".","color":"white"},{"score":{"name":"@e[tag=boss4,limit=1]","objective":"boss_4_float"},"color":"white"},{"text":"/","color":"white"},{"score":{"name":"@e[tag=boss4,limit=1]","objective":"boss_4_max"},"color":"white"},{"text":")","color":"white"}]
 
+# 技能冷却
+scoreboard players add 冷却时间 boss_4_cool 1
+scoreboard players add 被动冷却时间 boss_4_cool 1
+scoreboard players add 大招冷却时间 boss_4_cool 1
+
 # 技能1
-
+execute if score Boss技能 boss_4_system matches 1 if score 冷却时间 boss_4_cool matches 200 run function minecraft:game_mode/single/boss/system/status_2/skill_1
 # 技能2
-
+execute if score Boss技能 boss_4_system matches 2 if score 冷却时间 boss_4_cool matches 200 as @e[tag=boss4] at @s run function minecraft:game_mode/single/boss/system/status_2/skill_2
 # 技能3
+execute if score Boss技能 boss_4_system matches 3 if score 冷却时间 boss_4_cool matches 200 as @e[tag=boss4] at @s run function minecraft:game_mode/single/boss/system/status_2/skill_3
+# 技能tick
+function minecraft:game_mode/single/boss/system/status_2/skill_tick
 
+# 被动-羊羊
+execute if score 被动冷却时间 boss_4_cool matches 160 as @e[tag=boss4] at @s run function minecraft:game_mode/single/boss/system/status_1/passive
+# 被动-扇子
+execute as @e[tag=boss4] at @s if entity @a[gamemode=adventure,distance=..5] facing entity @a[gamemode=adventure,distance=..5] feet anchored eyes positioned ^ ^ ^ run function sheep:fan/main
 # 大招
+execute if score 大招冷却时间 boss_4_cool matches 1200 as @e[tag=boss4] at @s run function minecraft:game_mode/single/boss/system/status_2/ultimate
+
+# 冷却重置
+execute if score 冷却时间 boss_4_cool matches 200 run scoreboard players set 冷却时间 boss_4_cool 0
+execute if score 被动冷却时间 boss_4_cool matches 160 run scoreboard players set 被动冷却时间 boss_4_cool 0
+execute if score 大招冷却时间 boss_4_cool matches 1200 run scoreboard players set 大招冷却时间 boss_4_cool 0
