@@ -20,7 +20,7 @@ team join yellow @a[tag=team_leader]
 
 # 选羊和队伍
 function minecraft:lobby/change_class
-function minecraft:lobby/change_team/single
+function minecraft:lobby/change_team/main
 
 # effect
 effect give @a minecraft:resistance 5 5 true
