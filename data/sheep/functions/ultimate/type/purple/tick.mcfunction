@@ -25,7 +25,8 @@ execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=sheep_team_red] at @s r
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=sheep_team_blue] at @s run tag @a[distance=..1,team=!blue] add player_harmed
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s,tag=!sheep_team_blue,tag=!sheep_team_red] at @s run tag @a[distance=..1] add player_harmed
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s] at @s run tag @e[tag=monster,tag=!monster_fucker,distance=..1] add ms_healed
-execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s] at @s run tag @e[tag=boss_fight,distance=..1] add ms_healed
+execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s] at @s run tag @e[tag=boss_undead,distance=..1] add ms_healed
+execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s] at @s run tag @e[tag=boss_normal,distance=..1] add ms_healed
 execute as @e[tag=sheep_temp,tag=sheep_ulti_purple_s] at @s run tag @e[tag=monster_fucker,distance=..1] add ms_harmed
 execute as @a[tag=player_harmed] store result score @s s_thrower_id run scoreboard players get @e[tag=sheep_temp,limit=1] s_thrower_id
 execute as @a[tag=player_harmed] store result score @s s_sheep_type run scoreboard players get @e[tag=sheep_temp,limit=1] s_sheep_type
