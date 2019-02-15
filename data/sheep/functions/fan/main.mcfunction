@@ -13,7 +13,7 @@ tag @s add sheep_fanning
 execute at @s positioned ~ ~1 ~ positioned ^ ^ ^3.5 run tag @e[tag=sheep_sheep,tag=!sheep_fanned,distance=..4.5] add sheep_fanned
 execute at @s positioned ~ ~1 ~ positioned ^ ^ ^3.5 as @a[distance=..4.5,tag=!sheep_fanning] at @s anchored eyes run function sheep:fan/player
 execute at @s positioned ~ ~1 ~ positioned ^ ^ ^3.5 run tag @e[tag=monster,distance=..4.5] add sheep_fanned_monster
-execute at @s positioned ~ ~1 ~ positioned ^ ^ ^3.5 run tag @e[tag=boss4,distance=..4.5] add sheep_fanned_monster
+execute at @s positioned ~ ~1 ~ positioned ^ ^ ^3.5 run tag @e[tag=boss_fight,distance=..4.5] add sheep_fanned_monster
 
 # advancement
 execute if entity @e[tag=sheep_fanned] run advancement grant @s[advancements={sheep:fan/sheep=false}] only sheep:fan/sheep
