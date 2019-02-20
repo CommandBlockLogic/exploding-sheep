@@ -17,6 +17,7 @@ scoreboard objectives add system_temp1 dummy ["系统临时1"]
 scoreboard objectives add system_temp2 dummy ["系统临时2"]
 scoreboard objectives add system_temp3 dummy ["系统临时3"]
 scoreboard objectives add system dummy ["系统状态"]
+scoreboard objectives add system_cal dummy ["系统计算"]
 
 scoreboard objectives add sidebar_score dummy ["分数"]
 scoreboard objectives add sidebar_red dummy ["小水晶状态"]
