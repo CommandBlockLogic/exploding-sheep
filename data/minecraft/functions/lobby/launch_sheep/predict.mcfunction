@@ -23,7 +23,7 @@ execute as @a[tag=system_lobby_target_p,limit=1] at @s run summon minecraft:area
 execute as @a[tag=system_lobby_target_p,limit=1] at @s run tp @e[tag=sheep_mark,limit=1] ~ ~ ~ ~ ~
 execute as @e[tag=sheep_mark,limit=1] at @s run tp @s ~ ~ ~ ~ 0
 # tp marker
-execute as @e[tag=sheep_mark,limit=1] at @s run tp @s ^ ^ ^3
+execute as @e[tag=sheep_mark,limit=1] at @s run tp @s ^ ^ ^7
 
 # summon sheep
 execute positioned ~ ~ ~ run function sheep:launch/type/normal
