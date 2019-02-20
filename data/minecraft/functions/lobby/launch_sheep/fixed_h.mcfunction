@@ -11,27 +11,29 @@ execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ facing entity @a[tag=
 execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ ~ 0
 
 # calculate coordinate difference
-execute as @e[tag=sheep_new,limit=1] store result score var0 system_cal run data get entity @s Pos[0] 1000
-execute as @e[tag=sheep_new,limit=1] store result score var1 system_cal run data get entity @s Pos[1] 1000
-execute as @e[tag=sheep_new,limit=1] store result score var2 system_cal run data get entity @s Pos[2] 1000
-execute as @a[tag=system_lobby_target,limit=1] store result score var3 system_cal run data get entity @s Pos[0] 1000
-execute as @a[tag=system_lobby_target,limit=1] store result score var4 system_cal run data get entity @s Pos[1] 1000
-execute as @a[tag=system_lobby_target,limit=1] store result score var5 system_cal run data get entity @s Pos[2] 1000
+execute as @e[tag=sheep_new,limit=1] store result score var0 system_cal run data get entity @s Pos[0] 100
+execute as @e[tag=sheep_new,limit=1] store result score var1 system_cal run data get entity @s Pos[1] 100
+execute as @e[tag=sheep_new,limit=1] store result score var2 system_cal run data get entity @s Pos[2] 100
+execute as @a[tag=system_lobby_target,limit=1] store result score var3 system_cal run data get entity @s Pos[0] 100
+execute as @a[tag=system_lobby_target,limit=1] store result score var4 system_cal run data get entity @s Pos[1] 100
+execute as @a[tag=system_lobby_target,limit=1] store result score var5 system_cal run data get entity @s Pos[2] 100
 scoreboard players operation var3 system_cal -= var0 system_cal
 scoreboard players operation var4 system_cal -= var1 system_cal
 scoreboard players operation var5 system_cal -= var2 system_cal
 
 # constant
 # gravity unit:0.01block/(tick^2)
-scoreboard players set const0 system_cal -50
+scoreboard players set const0 system_cal -5
 # curve height unit:0.01block
-scoreboard players set const1 system_cal 5000
+scoreboard players set const1 system_cal 500
 # two
 scoreboard players set const_2 system_cal 2
 # minus two
 scoreboard players set const_minus_2 system_cal -2
 # minus one
 scoreboard players set const_minus_1 system_cal -1
+# ten
+scoreboard players set const_10 system_cal 10
 
 
 # vy = sqrt(-2*g*(y_0+5))
@@ -57,16 +59,16 @@ scoreboard players operation var10 system_cal = var100 system_cal
 scoreboard players operation var10 system_cal *= const_minus_1 system_cal
 scoreboard players operation var10 system_cal += var11 system_cal
 scoreboard players operation var12 system_cal = var10 system_cal
-
-
 scoreboard players operation var10 system_cal *= var3 system_cal
 scoreboard players operation var12 system_cal *= var5 system_cal
-
 scoreboard players operation var10 system_cal /= const_2 system_cal
 scoreboard players operation var10 system_cal /= var4 system_cal
 scoreboard players operation var12 system_cal /= const_2 system_cal
 scoreboard players operation var12 system_cal /= var4 system_cal
 
+scoreboard players operation var10 system_cal *= const_10 system_cal
+scoreboard players operation var11 system_cal *= const_10 system_cal
+scoreboard players operation var12 system_cal *= const_10 system_cal
 
 # set speed
 execute as @e[tag=sheep_new,limit=1] store result score @s s_vx run scoreboard players get var10 system_cal
