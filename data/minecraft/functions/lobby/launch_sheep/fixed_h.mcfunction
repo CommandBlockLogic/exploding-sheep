@@ -25,7 +25,7 @@ scoreboard players operation var5 system_cal -= var2 system_cal
 # gravity unit:0.01block/(tick^2)
 scoreboard players set const0 system_cal -5
 # curve height unit:0.01block
-scoreboard players set const1 system_cal 500
+scoreboard players set const1 system_cal 800
 # two
 scoreboard players set const_2 system_cal 2
 # minus two
