@@ -3,6 +3,10 @@
 # 修改当前状态为单人boss前
 scoreboard players set game_status system 205
 
+# bossbar
+bossbar set minecraft:score_time visible false
+bossbar remove minecraft:score_time
+
 # tp
 function game_mode/public/tp_game_wait
 
