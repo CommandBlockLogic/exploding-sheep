@@ -21,9 +21,9 @@ execute positioned ~ ~ ~ run tag @a[sort=nearest,limit=1] add system_lobby_targe
 execute as @a[tag=system_lobby_target_p,limit=1] at @s run summon minecraft:area_effect_cloud ^ ^ ^ {Tags:["sheep_mark","system_lobby_target"]}
 # face marker
 execute as @a[tag=system_lobby_target_p,limit=1] at @s run tp @e[tag=sheep_mark,limit=1] ~ ~ ~ ~ ~
-execute as @a[tag=sheep_mark,limit=1] at @s run tp @s ~ ~ ~ ~ 0
+execute as @e[tag=sheep_mark,limit=1] at @s run tp @s ~ ~ ~ ~ 0
 # tp marker
-execute as @a[tag=sheep_mark,limit=1] at @s run tp @s ^ ^ ^3
+execute as @e[tag=sheep_mark,limit=1] at @s run tp @s ^ ^ ^3
 
 # summon sheep
 execute positioned ~ ~ ~ run function sheep:launch/type/normal
