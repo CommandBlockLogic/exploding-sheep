@@ -56,12 +56,16 @@ function lobby/launch_sheep/sqrt_system
 scoreboard players operation var10 system_cal = var100 system_cal
 scoreboard players operation var10 system_cal *= const_minus_1 system_cal
 scoreboard players operation var10 system_cal += var11 system_cal
-scoreboard players operation var10 system_cal /= const_2 system_cal
-scoreboard players operation var10 system_cal /= var4 system_cal
 scoreboard players operation var12 system_cal = var10 system_cal
+
+
 scoreboard players operation var10 system_cal *= var3 system_cal
 scoreboard players operation var12 system_cal *= var5 system_cal
 
+scoreboard players operation var10 system_cal /= const_2 system_cal
+scoreboard players operation var10 system_cal /= var4 system_cal
+scoreboard players operation var12 system_cal /= const_2 system_cal
+scoreboard players operation var12 system_cal /= var4 system_cal
 
 
 # set speed
