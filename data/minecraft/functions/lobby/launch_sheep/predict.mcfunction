@@ -13,33 +13,17 @@ scoreboard players set const_2 system_cal 2
 scoreboard players set const_minus_2 system_cal -2
 # minus one
 scoreboard players set const_minus_1 system_cal -1
-# fourty
-scoreboard players set const_40 system_cal 40
 
 
 # tag target player
 execute positioned ~ ~ ~ run tag @a[sort=nearest,limit=1] add system_lobby_target_p
-# get player motion
-execute as @a[tag=system_lobby_target_p,limit=1] store result score var0 system_cal run data get entity @s Motion[0] 100
-execute as @a[tag=system_lobby_target_p,limit=1] store result score var1 system_cal run data get entity @s Motion[1] 100
-execute as @a[tag=system_lobby_target_p,limit=1] store result score var2 system_cal run data get entity @s Motion[2] 100
-
 # summon marker
 execute as @a[tag=system_lobby_target_p,limit=1] at @s run summon minecraft:area_effect_cloud ^ ^ ^ {Tags:["sheep_mark","system_lobby_target"]}
-# get marker pos
-execute as @a[tag=sheep_mark,limit=1] store result score var3 system_cal run data get entity @s Pos[0] 100
-execute as @a[tag=sheep_mark,limit=1] store result score var4 system_cal run data get entity @s Pos[1] 100
-execute as @a[tag=sheep_mark,limit=1] store result score var5 system_cal run data get entity @s Pos[2] 100
-# cal pos
-scoreboard players operation var0 system_cal *= const_40 system_cal
-scoreboard players operation var1 system_cal *= const_40 system_cal
-scoreboard players operation var2 system_cal *= const_40 system_cal
-scoreboard players operation var3 system_cal += var0 system_cal
-scoreboard players operation var5 system_cal += var2 system_cal
+# face marker
+execute as @a[tag=system_lobby_target_p,limit=1] at @s run tp @e[tag=sheep_mark,limit=1] ~ ~ ~ ~ ~
+execute as @a[tag=sheep_mark,limit=1] at @s run tp @s ~ ~ ~ ~ 0
 # tp marker
-execute as @a[tag=sheep_mark,limit=1] store result entity @s Pos[0] double 0.01 run scoreboard players get var3 system_cal
-execute as @a[tag=sheep_mark,limit=1] store result entity @s Pos[2] double 0.01 run scoreboard players get var5 system_cal
-
+execute as @a[tag=sheep_mark,limit=1] at @s run tp @s ^ ^ ^3
 
 # summon sheep
 execute positioned ~ ~ ~ run function sheep:launch/type/normal
@@ -96,3 +80,4 @@ scoreboard players set @e[tag=sheep_new] s_blow_time 0
 kill @e[tag=sheep_mark]
 tag @e[tag=sheep_new] remove sheep_new
 tag @a[tag=system_lobby_target] remove system_lobby_target
+tag @a[tag=system_lobby_target_p] remove system_lobby_target_p
