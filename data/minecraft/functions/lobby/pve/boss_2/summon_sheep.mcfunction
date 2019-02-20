@@ -1,5 +1,5 @@
 # tag target player
-execute positioned ~ ~ ~ run tag @a[sort=nearest,limit=1] add system_lobby_target
+execute positioned ~ ~ ~ run tag @a[sort=nearest,limit=1,gamemode=adventure] add system_lobby_target
 
 # summon sheep
 execute if score 羊种类 boss_2_pass matches 1 positioned ~ ~ ~ run function sheep:launch/type/normal
