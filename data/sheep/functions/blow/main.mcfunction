@@ -19,21 +19,21 @@ execute if score @s s_blow_power matches 4 at @s if entity @e[distance=..8,tag=b
 
 
 # boom
-execute if entity @s[tag=sheep_type_normal] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"可爱的\",\"color\":\"gray\"},{\"text\":\"小白羊\",\"color\":\"white\"}]"}
+execute if entity @s[tag=sheep_type_normal] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Invulnerable:1,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"可爱的\",\"color\":\"gray\"},{\"text\":\"小白羊\",\"color\":\"white\"}]"}
 execute if entity @s[tag=sheep_type_normal] run particle minecraft:dust 1 1 1 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 20
 # [{"text":"可爱的","color":"gray"},{"text":"小白羊","color":"white"}]
-execute if entity @s[tag=sheep_type_fast,scores={s_flying_time=..21}] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"快快的\",\"color\":\"gray\"},{\"text\":\"小黄羊\",\"color\":\"yellow\"}]"}
-execute if entity @s[tag=sheep_type_fast,scores={s_flying_time=22..40}] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:3,CustomName:"[{\"text\":\"快快的\",\"color\":\"gray\"},{\"text\":\"小黄羊\",\"color\":\"yellow\"}]"}
-execute if entity @s[tag=sheep_type_fast,scores={s_flying_time=41..}] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:4,CustomName:"[{\"text\":\"快快的\",\"color\":\"gray\"},{\"text\":\"小黄羊\",\"color\":\"yellow\"}]"}
+execute if entity @s[tag=sheep_type_fast,scores={s_flying_time=..21}] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Invulnerable:1,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"快快的\",\"color\":\"gray\"},{\"text\":\"小黄羊\",\"color\":\"yellow\"}]"}
+execute if entity @s[tag=sheep_type_fast,scores={s_flying_time=22..40}] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Invulnerable:1,Tags:["sheep_blower"],ExplosionRadius:3,CustomName:"[{\"text\":\"快快的\",\"color\":\"gray\"},{\"text\":\"小黄羊\",\"color\":\"yellow\"}]"}
+execute if entity @s[tag=sheep_type_fast,scores={s_flying_time=41..}] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Invulnerable:1,Tags:["sheep_blower"],ExplosionRadius:4,CustomName:"[{\"text\":\"快快的\",\"color\":\"gray\"},{\"text\":\"小黄羊\",\"color\":\"yellow\"}]"}
 execute if entity @s[tag=sheep_type_fast] run particle minecraft:dust 1 1 0.333 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 20
 # [{"text":"快快的","color":"gray"},{"text":"小黄羊","color":"yellow"}]
-execute if entity @s[tag=sheep_type_air] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"匆忙的\",\"color\":\"gray\"},{\"text\":\"小红羊\",\"color\":\"red\"}]"}
+execute if entity @s[tag=sheep_type_air] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Invulnerable:1,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"匆忙的\",\"color\":\"gray\"},{\"text\":\"小红羊\",\"color\":\"red\"}]"}
 execute if entity @s[tag=sheep_type_air] run particle minecraft:dust 0.9 0 0 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 20
 # [{"text":"匆忙的","color":"gray"},{"text":"小红羊","color":"red"}]
-execute if entity @s[tag=sheep_type_gray] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"可爱的\",\"color\":\"gray\"},{\"text\":\"超灰羊\",\"color\":\"gray\"}]"}
+execute if entity @s[tag=sheep_type_gray] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Invulnerable:1,Tags:["sheep_blower"],ExplosionRadius:2,CustomName:"[{\"text\":\"可爱的\",\"color\":\"gray\"},{\"text\":\"超灰羊\",\"color\":\"gray\"}]"}
 execute if entity @s[tag=sheep_type_gray] run particle minecraft:dust 0.6 0.6 0.6 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 10
 # [{"text":"可爱的","color":"gray"},{"text":"超灰羊","color":"gray"}]
-execute if entity @s[tag=sheep_type_blue_small] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Tags:["sheep_blower"],ExplosionRadius:3,CustomName:"[{\"text\":\"正义的\",\"color\":\"gray\"},{\"text\":\"超蓝羊\",\"color\":\"blue\"}]"}
+execute if entity @s[tag=sheep_type_blue_small] run summon minecraft:creeper ~ ~ ~ {Fuse:0,Invulnerable:1,Tags:["sheep_blower"],ExplosionRadius:3,CustomName:"[{\"text\":\"正义的\",\"color\":\"gray\"},{\"text\":\"超蓝羊\",\"color\":\"blue\"}]"}
 execute if entity @s[tag=sheep_type_blue_small] run particle minecraft:dust 0.333 0.333 1 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 10
 # [{"text":"正义的","color":"gray"},{"text":"超蓝羊","color":"blue"}]
 

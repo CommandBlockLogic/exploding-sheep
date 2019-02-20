@@ -47,7 +47,9 @@ execute if score 游戏开始 pve_system matches 0 if score game_status system m
 function game_mode/select_mode/timer
 
 # 新玩家
-execute as @a[tag=!old_player] run function new_player
+execute as @a[tag=!old_player] run function new_player/lobby
+execute positioned -172 1 -104 as @a[tag=!old_player_grave,dx=14,dy=30,dz=5] run function new_player/grave
+execute positioned -183 1 -140 as @a[tag=!old_player_hole,dx=23,dy=30,dz=5] run function new_player/hole
 
 # 删除多余方块
 execute as @e[type=falling_block] at @s unless block ~ ~-1 ~ #minecraft:under_sand run kill @s

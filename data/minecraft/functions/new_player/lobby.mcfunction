@@ -1,4 +1,4 @@
-# new_player
+# new_player/lobby
 
 #title @s times 5 100 5
 #title @s title ["地陷圣坛"]
