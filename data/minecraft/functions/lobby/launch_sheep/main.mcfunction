@@ -1,7 +1,7 @@
 # lobby/launch_sheep/main
 
 # tag target player
-execute positioned ~ ~ ~ run tag @a[sort=random,distance=..20,limit=1] add system_lobby_target
+execute positioned ~ ~ ~ run tag @a[sort=nearest,limit=1] add system_lobby_target
 
 # summon sheep
 execute positioned ~ ~ ~ run function sheep:launch/type/normal
