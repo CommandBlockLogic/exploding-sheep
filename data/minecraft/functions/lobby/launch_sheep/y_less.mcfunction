@@ -1,0 +1,13 @@
+# lobby/launch_sheep/y_less
+
+scoreboard players set var10 system_cal 0
+scoreboard players operation var10 system_cal = const0 system_cal
+scoreboard players operation var10 system_cal *= var0 system_cal
+scoreboard players operation var10 system_cal /= const_minus_2 system_cal
+scoreboard players operation var10 system_cal /= var11 system_cal
+
+scoreboard players set var12 system_cal 0
+scoreboard players operation var12 system_cal = const0 system_cal
+scoreboard players operation var12 system_cal *= var2 system_cal
+scoreboard players operation var12 system_cal /= const_minus_2 system_cal
+scoreboard players operation var12 system_cal /= var11 system_cal

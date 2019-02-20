@@ -1,4 +1,4 @@
-# lobby/launch_sheep/fixed_h
+# lobby/launch_sheep/main
 
 # tag target player
 execute positioned ~ ~ ~ run tag @a[sort=random,distance=..20,limit=1] add system_lobby_target
@@ -48,24 +48,10 @@ scoreboard players operation var100 system_cal = var11 system_cal
 function lobby/launch_sheep/sqrt_system
 scoreboard players operation var11 system_cal = var100 system_cal
 
-# vx vz = (vy+sqrt(-2*g*5))/(2*y_0) * x_0
-scoreboard players set var10 system_cal 0
-scoreboard players operation var10 system_cal = const_minus_2 system_cal
-scoreboard players operation var10 system_cal *= const0 system_cal
-scoreboard players operation var10 system_cal *= const1 system_cal
-scoreboard players set var100 system_cal 0
-scoreboard players operation var100 system_cal = var10 system_cal
-function lobby/launch_sheep/sqrt_system
-scoreboard players operation var10 system_cal = var100 system_cal
-scoreboard players operation var10 system_cal *= const_minus_1 system_cal
-scoreboard players operation var10 system_cal += var11 system_cal
-scoreboard players operation var12 system_cal = var10 system_cal
-scoreboard players operation var10 system_cal *= var3 system_cal
-scoreboard players operation var12 system_cal *= var5 system_cal
-scoreboard players operation var10 system_cal /= const_2 system_cal
-scoreboard players operation var10 system_cal /= var4 system_cal
-scoreboard players operation var12 system_cal /= const_2 system_cal
-scoreboard players operation var12 system_cal /= var4 system_cal
+# y > 0.6 block
+execute unless score var4 system_cal matches -60..60 run function lobby/launch_sheep/y_greater
+# y < 0.6 block
+execute if score var4 system_cal matches -60..60 run function lobby/launch_sheep/y_less
 
 scoreboard players operation var10 system_cal *= const2 system_cal
 scoreboard players operation var11 system_cal *= const2 system_cal
