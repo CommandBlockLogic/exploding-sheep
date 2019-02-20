@@ -18,8 +18,8 @@ team empty red
 team empty yellow
 
 # 提示
-tellraw @a [{"text":">> ","color":"red"},{"selector":"@s","color":"white"},{"text":" 发起了隐藏Boss挑战","color":"white"}]
-tellraw @a [{"text":">>","color":"red"},{"text":" 想参加的玩家请在30秒内加入队伍并选择您的羊的种类","color":"white"}]
+tellraw @a [{"text":">> ","color":"red"},{"selector":"@s","color":"white"},{"text":" 发起了隐藏Boss挑战.","color":"white"}]
+tellraw @a [{"text":">>","color":"red"},{"text":" 请在30秒内加入游戏并选择顺手的羊羊.","color":"white"}]
 
 # 加入队伍
 team join yellow @s
