@@ -64,6 +64,9 @@ execute at @s[tag=sheep_type_teleport,tag=!sheep_no_teleport] if block ~ ~ ~ min
 scoreboard players set @s[tag=sheep_touch_x,scores={s_blow_time=0}] s_blow_time 1
 scoreboard players set @s[tag=sheep_touch_y,scores={s_blow_time=0}] s_blow_time 1
 scoreboard players set @s[tag=sheep_touch_z,scores={s_blow_time=0}] s_blow_time 1
+# speical sheep fast
+execute as @s[tag=sheep_type_fast,scores={s_flying_time=20..,s_blow_time=0}] at @s positioned ~ ~-1 ~ if entity @a[distance=..3] run scoreboard players set @s s_blow_time 1
+
 
 # clear
 tag @s[tag=sheep_touch_x] remove sheep_touch_x
