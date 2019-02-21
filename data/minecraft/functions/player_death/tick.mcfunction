@@ -7,6 +7,10 @@ execute positioned -176 8 -124 as @a[scores={death2=1..},dx=20,dy=10,dz=30] run 
 # decrease time
 scoreboard players remove @a[scores={death_time=1..}] death_time 1
 
+# lobby time up hint
+execute if score game_status system matches 1.. unless score game_status system matches 8964 unless score game_status system matches 5 positioned -176 8 -124 as @a[scores={death_time=1..},dx=20,dy=10,dz=30] run function player_death/lobby_display
+
+
 # tp time
 scoreboard players add @a[scores={death_time_tp=1..}] death_time_tp 1
 execute if score game_status system matches 0 run scoreboard players set @a[scores={death_time_tp=1..}] death_time_tp 0

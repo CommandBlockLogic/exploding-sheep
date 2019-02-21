@@ -34,6 +34,6 @@ title @a[gamemode=!spectator,scores={s_ulti_time=0,s_ulti_energy=2401..2800}] ac
 title @a[gamemode=!spectator,scores={s_ulti_time=0,s_ulti_energy=2801..3200}] actionbar ["终极羊羊充能 [+++++++",{"text":"---","color":"dark_gray"},"] ",{"score":{"name":"*","objective":"s_temp2"}},"%"]
 title @a[gamemode=!spectator,scores={s_ulti_time=0,s_ulti_energy=3201..3600}] actionbar ["终极羊羊充能 [++++++++",{"text":"--","color":"dark_gray"},"] ",{"score":{"name":"*","objective":"s_temp2"}},"%"]
 title @a[gamemode=!spectator,scores={s_ulti_time=0,s_ulti_energy=3601..4000}] actionbar ["终极羊羊充能 [+++++++++",{"text":"-","color":"dark_gray"},"] ",{"score":{"name":"*","objective":"s_temp2"}},"%"]
-title @a[gamemode=!spectator,scores={s_ulti_time=0,s_ulti_energy=4001..}] actionbar ["终极羊羊充能完毕! Q键丢出小羊大炮释放!"]
+title @a[gamemode=!spectator,scores={s_ulti_time=0,s_ulti_energy=4001..}] actionbar [{"text":"终极羊羊充能完毕! Q键丢出小羊大炮释放!","color":"gold"}]
 title @a[gamemode=!spectator,scores={s_ulti_time=1..,s_ulti_dura=0}] actionbar ["终极羊羊蓄势待发..."]
 title @a[gamemode=!spectator,scores={s_ulti_dura=1..}] actionbar ["终极羊羊工作中!"]

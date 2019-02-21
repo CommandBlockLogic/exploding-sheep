@@ -36,4 +36,3 @@ replaceitem entity @s inventory.26 minecraft:air
 replaceitem entity @s armor.head minecraft:air
 replaceitem entity @s armor.chest minecraft:air
 replaceitem entity @s armor.legs minecraft:air
-replaceitem entity @s armor.feet minecraft:air
