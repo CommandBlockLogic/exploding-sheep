@@ -53,11 +53,11 @@ scoreboard players operation var11 system_cal = var100 system_cal
 
 
 # y < -0.6 block
-execute if score var4 system_cal matches ..-61 run scoreboard players operation var4 system_cal *= const_minus_1 system_cal
+execute if score var4 system_cal matches ..-61 run function lobby/launch_sheep/y_less
 # y > 0.6 block
 execute if score var4 system_cal matches 61.. run function lobby/launch_sheep/y_greater
 # -0.6 < y < 0.6 block
-execute if score var4 system_cal matches -60..60 run function lobby/launch_sheep/y_less
+execute if score var4 system_cal matches -60..60 run function lobby/launch_sheep/y_zero
 
 scoreboard players operation var10 system_cal *= const2 system_cal
 scoreboard players operation var11 system_cal *= const2 system_cal
