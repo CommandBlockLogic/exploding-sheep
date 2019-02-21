@@ -1,7 +1,7 @@
 # lobby/launch_sheep/main
 
 # tag target player
-execute positioned ~ ~ ~ run tag @a[x=-214,y=20,z=-204,dx=74,dy=60,dz=70,sort=nearest,limit=1] add system_lobby_target
+execute positioned ~ ~ ~ run tag @a[x=-214,y=5,z=-204,dx=74,dy=60,dz=70,sort=nearest,limit=1] add system_lobby_target
 
 # summon sheep
 execute positioned ~ ~ ~ run function sheep:launch/type/normal
@@ -38,8 +38,11 @@ scoreboard players set const_minus_1 system_cal -1
 
 
 # vy = sqrt(-2*g*(y_0+5))
+scoreboard players set var12 system_cal 0
+scoreboard players operation var12 system_cal = var4 system_cal
+execute if score var12 system_cal matches ..0 run scoreboard players set var12 system_cal 0
 scoreboard players set var11 system_cal 0
-scoreboard players operation var11 system_cal = var4 system_cal
+scoreboard players operation var11 system_cal = var12 system_cal
 scoreboard players operation var11 system_cal += const1 system_cal
 scoreboard players operation var11 system_cal *= const0 system_cal
 scoreboard players operation var11 system_cal *= const_minus_2 system_cal
@@ -48,9 +51,12 @@ scoreboard players operation var100 system_cal = var11 system_cal
 function lobby/launch_sheep/sqrt_system
 scoreboard players operation var11 system_cal = var100 system_cal
 
+
+# y < -0.6 block
+execute if score var4 system_cal matches ..-61 run scoreboard players operation var4 system_cal *= const_minus_1 system_cal
 # y > 0.6 block
-execute unless score var4 system_cal matches -60..60 run function lobby/launch_sheep/y_greater
-# y < 0.6 block
+execute if score var4 system_cal matches 61.. run function lobby/launch_sheep/y_greater
+# -0.6 < y < 0.6 block
 execute if score var4 system_cal matches -60..60 run function lobby/launch_sheep/y_less
 
 scoreboard players operation var10 system_cal *= const2 system_cal
