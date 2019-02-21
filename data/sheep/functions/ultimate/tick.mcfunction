@@ -38,5 +38,5 @@ title @a[gamemode=!spectator,scores={s_ulti_time=0,s_ulti_energy=4001..}] action
 title @a[gamemode=!spectator,scores={s_ulti_time=1..,s_ulti_dura=0}] actionbar ["终极羊羊蓄势待发..."]
 title @a[gamemode=!spectator,scores={s_ulti_dura=1..}] actionbar ["终极羊羊工作中!"]
 
-tellraw @a[gamemode=!spectator,scores={s_ulti_time=0,s_ulti_energy=4001..5000}] [{"text":"## ","color":"gray","italic":"true"},"你的终极羊羊已经充能完毕! Q键丢出小羊大炮来释放!"]
-scoreboard players set @a[scores={s_ulti_energy=4001..5000}] s_ulti_energy 5001
+tellraw @a[gamemode=!spectator,scores={s_ulti_time=0,s_ulti_energy=4001..10000}] [{"text":"## ","color":"gray","italic":"true"},"你的终极羊羊已经充能完毕! Q键丢出小羊大炮来释放!"]
+scoreboard players set @a[scores={s_ulti_energy=4001..10000}] s_ulti_energy 10001
