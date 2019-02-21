@@ -23,4 +23,4 @@ bossbar set minecraft:score_time name ["剩余时间   --:--"]
 
 
 # count down to start
-scoreboard players set system_start_countdown system 200
+scoreboard players set system_start_countdown system 300
