@@ -9,7 +9,7 @@ execute unless entity @e[tag=system_core_mark] run function keep_mark/core
 execute unless entity @e[tag=system_lobby_mark] run function keep_mark/lobby
 execute unless entity @e[tag=system_lobby_mark_enter_block] run function keep_mark/lobby
 execute unless entity @e[tag=system_lobby_item] run function keep_mark/lobby_item
-# execute unless entity @e[tag=system_fan_mark] run function keep_mark/fan
+execute unless entity @e[tag=system_fan_mark] run function keep_mark/fan
 
 # 全局防饥饿
 effect give @a[scores={food=..19}] minecraft:saturation 1 0 true
