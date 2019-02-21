@@ -14,8 +14,8 @@ effect give @a[scores={s_class=1,s_energy=240..}] minecraft:regeneration 1 0 tru
 # fan cd
 scoreboard players add @a s_fan_num 0
 scoreboard players add @a[scores={s_fan_num=..1}] s_fan_cd 1
-scoreboard players add @a[scores={s_fan_cd=15..}] s_fan_num 1
-scoreboard players set @a[scores={s_fan_cd=15..}] s_fan_cd 0
+scoreboard players add @a[scores={s_fan_cd=25..}] s_fan_num 1
+scoreboard players set @a[scores={s_fan_cd=25..}] s_fan_cd 0
 
 # display
 function sheep:reload/display

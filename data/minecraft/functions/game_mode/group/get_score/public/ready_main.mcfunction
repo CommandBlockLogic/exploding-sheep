@@ -5,7 +5,7 @@ function game_mode/public/game_start_clear
 
 
 # score
-scoreboard players set system_game_time system 3000
+scoreboard players set system_game_time system 2400
 scoreboard players set system_twenty system 20
 scoreboard players set system_sixty system 60
 scoreboard players set system_second system 0
