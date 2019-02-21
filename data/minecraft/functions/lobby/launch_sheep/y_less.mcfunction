@@ -10,6 +10,8 @@ scoreboard players set var100 system_cal 0
 scoreboard players operation var100 system_cal = var10 system_cal
 function lobby/launch_sheep/sqrt_system
 scoreboard players operation var10 system_cal = var100 system_cal
+
+scoreboard players operation var10 system_cal *= const_minus_1 system_cal
 scoreboard players operation var10 system_cal += var11 system_cal
 
 scoreboard players set var12 system_cal 0
