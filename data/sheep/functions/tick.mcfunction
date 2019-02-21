@@ -2,35 +2,35 @@
 
 # shoot sheep
 # shoot normal
-execute as @a[scores={s_launch=1..,s_energy=..49,s_launch_type=..1},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 1
+execute as @a[scores={s_launch=1..,s_energy=..49,s_launch_type=..1},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 2
 execute as @a[scores={s_launch=1..,s_energy=50..,s_launch_type=..1},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=50..,s_launch_type=..1},nbt={SelectedItemSlot:0}] s_energy 50
 
-execute as @a[scores={s_launch=1..,s_energy=..79,s_launch_type=2},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 1
+execute as @a[scores={s_launch=1..,s_energy=..79,s_launch_type=2},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 2
 execute as @a[scores={s_launch=1..,s_energy=80..,s_launch_type=2},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=80..,s_launch_type=2},nbt={SelectedItemSlot:0}] s_energy 80
 
-execute as @a[scores={s_launch=1..,s_energy=..59,s_launch_type=3},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 1
+execute as @a[scores={s_launch=1..,s_energy=..59,s_launch_type=3},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 2
 execute as @a[scores={s_launch=1..,s_energy=60..,s_launch_type=3},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=60..,s_launch_type=3},nbt={SelectedItemSlot:0}] s_energy 60
 
-execute as @a[scores={s_launch=1..,s_energy=..89,s_launch_type=4},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 1
+execute as @a[scores={s_launch=1..,s_energy=..89,s_launch_type=4},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 2
 execute as @a[scores={s_launch=1..,s_energy=90..,s_launch_type=4},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=90..,s_launch_type=4},nbt={SelectedItemSlot:0}] s_energy 90
 
-execute as @a[scores={s_launch=1..,s_energy=..79,s_launch_type=5},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 1
+execute as @a[scores={s_launch=1..,s_energy=..79,s_launch_type=5},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 2
 execute as @a[scores={s_launch=1..,s_energy=80..,s_launch_type=5},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=80..,s_launch_type=5},nbt={SelectedItemSlot:0}] s_energy 90
 
-execute as @a[scores={s_launch=1..,s_energy=..119,s_launch_type=6},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 1
+execute as @a[scores={s_launch=1..,s_energy=..119,s_launch_type=6},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 2
 execute as @a[scores={s_launch=1..,s_energy=120..,s_launch_type=6},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=120..,s_launch_type=6},nbt={SelectedItemSlot:0}] s_energy 120
 
-execute as @a[scores={s_launch=1..,s_energy=..99,s_launch_type=1001},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 1
+execute as @a[scores={s_launch=1..,s_energy=..99,s_launch_type=1001},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 2
 execute as @a[scores={s_launch=1..,s_energy=100..,s_launch_type=1001},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=100..,s_launch_type=1001},nbt={SelectedItemSlot:0}] s_energy 100
 
-execute as @a[scores={s_launch=1..,s_energy=..99,s_launch_type=1001},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 1
+execute as @a[scores={s_launch=1..,s_energy=..99,s_launch_type=1001},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 2
 execute as @a[scores={s_launch=1..,s_energy=100..,s_launch_type=1002},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=100..,s_launch_type=1002},nbt={SelectedItemSlot:0}] s_energy 100
 
