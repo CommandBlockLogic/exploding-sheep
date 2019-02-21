@@ -8,8 +8,10 @@ execute as @a if score @s s_energy < @s s_max_energy run scoreboard players add 
 execute as @a if score @s s_energy > @s s_max_energy store result score @s s_energy run scoreboard players get @s s_max_energy
 
 # heal
-effect give @a[scores={s_class=2..,s_energy=160..}] minecraft:regeneration 2 0 true
-effect give @a[scores={s_class=1,s_energy=240..}] minecraft:regeneration 2 0 true
+scoreboard players add @a[scores={s_class=2..,s_energy=160..}] s_regeneration 1
+scoreboard players add @a[scores={s_class=1,s_energy=240..}] s_regeneration 1
+effect give @a[scores={s_regeneration=20}] minecraft:regeneration 2 0 true
+scoreboard players set @a[scores={s_regeneration=20..}] s_regeneration 0
 
 # fan cd
 scoreboard players add @a s_fan_num 0
