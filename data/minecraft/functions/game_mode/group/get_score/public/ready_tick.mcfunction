@@ -11,6 +11,11 @@ execute if score system_start_countdown system matches ..150 run function game_m
 
 
 # title
+execute if score system_start_countdown system matches 280 run title @a subtitle ["14"]
+execute if score system_start_countdown system matches 260 run title @a subtitle ["13"]
+execute if score system_start_countdown system matches 240 run title @a subtitle ["12"]
+execute if score system_start_countdown system matches 220 run title @a subtitle ["11"]
+execute if score system_start_countdown system matches 200 run title @a subtitle ["10"]
 execute if score system_start_countdown system matches 180 run title @a subtitle ["9"]
 execute if score system_start_countdown system matches 160 run title @a subtitle ["8"]
 execute if score system_start_countdown system matches 140 run title @a subtitle ["7"]
