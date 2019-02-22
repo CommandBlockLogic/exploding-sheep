@@ -46,5 +46,5 @@ execute if score 大招冷却时间 boss_4_cool matches 1200.. as @e[tag=boss4] 
 
 # 冷却重置
 execute if score 冷却时间 boss_4_cool matches 200 run scoreboard players set 冷却时间 boss_4_cool 0
-execute if score 被动冷却时间 boss_4_cool matches 25 run scoreboard players set 被动冷却时间 boss_4_cool 0
+execute if score 被动冷却时间 boss_4_cool matches 25.. run scoreboard players set 被动冷却时间 boss_4_cool 0
 execute if score 大招冷却时间 boss_4_cool matches 1200 run scoreboard players set 大招冷却时间 boss_4_cool 0
