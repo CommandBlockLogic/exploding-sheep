@@ -45,7 +45,7 @@ execute as @a[scores={s_launch_type=1002,s_energy=..99},nbt=!{Inventory:[{Slot:-
 
 execute if score game_status system matches 0 as @a[nbt=!{Inventory:[{Slot:7b,tag:{item_num:5}}]}] run replaceitem entity @s hotbar.7 minecraft:stone_bricks{item_num:5,display:{Name:"[{\"text\":\"丢掉回城\",\"italic\":false}]",Lore:["§r§7回城砖§r","§r§7把它丢出去回到大厅§r"]}} 1
 
-execute as @a[team=,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:1}}]}] run function sheep:item/boots
-execute as @a[team=red,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:2}}]}] run function sheep:item/boots
-execute as @a[team=blue,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:3}}]}] run function sheep:item/boots
-execute as @a[team=yellow,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:4}}]}] run function sheep:item/boots
+execute unless score game_status system matches 5 as @a[team=,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:1}}]}] run function sheep:item/boots
+execute unless score game_status system matches 5 as @a[team=red,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:2}}]}] run function sheep:item/boots
+execute unless score game_status system matches 5 as @a[team=blue,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:3}}]}] run function sheep:item/boots
+execute unless score game_status system matches 5 as @a[team=yellow,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:4}}]}] run function sheep:item/boots
