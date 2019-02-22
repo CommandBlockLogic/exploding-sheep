@@ -17,7 +17,7 @@ execute at @s positioned ~ ~1 ~ positioned ^ ^ ^3.5 run tag @e[tag=boss_fight,di
 
 # advancement
 execute if entity @e[tag=sheep_fanned] run advancement grant @s[advancements={sheep:fan/sheep=false}] only sheep:fan/sheep
-tellraw @s[advancements={sheep:fan/air=false}] ["§7§o##   你挥了挥芭蕉扇!\n§7§o##   物品栏上方的数字是你能够挥动的次数, 它会慢慢补充至2. "]
+execute unless entity @e[tag=sheep_fanned] run tellraw @s[advancements={sheep:fan/air=false}] ["§7§o##   你挥了挥芭蕉扇!\n§7§o##   物品栏上方的数字是你能够挥动的次数, 它会慢慢补充至2. "]
 execute unless entity @e[tag=sheep_fanned] run advancement grant @s[advancements={sheep:fan/air=false}] only sheep:fan/air
 
 

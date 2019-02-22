@@ -42,8 +42,8 @@ execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={Selecte
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 快跟他拉开距离!"]
 execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级蓝羊羊 ","color":"blue"}," 小心躲避!"]
 execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级蓝羊羊 ","color":"blue"}," 小心躲避!"]
-execute as @a[scores={s_launch=1..,s_launch_type=202,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 随他进攻!"]
-execute as @a[scores={s_launch=1..,s_launch_type=202,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 快跟他拉开距离!"]
+execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 随他进攻!"]
+execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0},team=red] run tellraw @a[team=!red] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 快跟他拉开距离!"]
 
 execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级灰羊羊 ","color":"gray"}," 随他进攻!"]
 execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级灰羊羊 ","color":"gray"}," 小心躲避!"]
@@ -51,9 +51,13 @@ execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={Selecte
 execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 快跟他拉开距离!"]
 execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级蓝羊羊 ","color":"blue"}," 小心躲避!"]
 execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级蓝羊羊 ","color":"blue"}," 小心躲避!"]
-execute as @a[scores={s_launch=1..,s_launch_type=202,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 随他进攻!"]
-execute as @a[scores={s_launch=1..,s_launch_type=202,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 快跟他拉开距离!"]
+execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 随他进攻!"]
+execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0},team=blue] run tellraw @a[team=!blue] [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 快跟他拉开距离!"]
 
+execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=yellow] run tellraw @a [">> ",{"selector":"@s"}," 释放了",{"text":" 超级灰羊羊 ","color":"gray"}," 小心躲避!"]
+execute as @a[scores={s_launch=1..,s_launch_type=102,s_ulti_dura=0},nbt={SelectedItemSlot:0},team=yellow] run tellraw @a [">> ",{"selector":"@s"}," 释放了",{"text":" 超级紫羊羊 ","color":"dark_purple"}," 快跟他拉开距离!"]
+execute as @a[scores={s_launch=1..,s_launch_type=201},nbt={SelectedItemSlot:0},team=yellow] run tellraw @a [">> ",{"selector":"@s"}," 释放了",{"text":" 超级蓝羊羊 ","color":"blue"}," 小心躲避!"]
+execute as @a[scores={s_launch=1..,s_launch_type=202},nbt={SelectedItemSlot:0},team=yellow] run tellraw @a [">> ",{"selector":"@s"}," 释放了",{"text":" 超级柠羊羊 ","color":"green"}," 快跟他拉开距离!"]
 
 # shoot ultimate
 execute as @a[scores={s_launch=1..,s_launch_type=101,s_ulti_dura=0},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:ultimate/type/gray/main

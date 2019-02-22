@@ -25,7 +25,7 @@ scoreboard players set @a[scores={death_time_tp=400..}] death_time_tp 0
 # 玩家落地后 若玩家仍在被炸飞摔死的判定期内 直接把死因监测拖到不检测范围
 # s_kill_time分段 1-2之间被炸死判定 3-233之间被炸起来摔死判定 999-纯摔死判定
 scoreboard players add @a death 0
-scoreboard players set @a[scores={s_kill_time=3..233},nbt={OnGround:1b}] s_kill_time 999
+scoreboard players set @a[scores={s_kill_time=3..233,death=0},nbt={OnGround:1b}] s_kill_time 999
 scoreboard players set @a[scores={fall_dis=1..,death=0}] s_kill_time 999
 scoreboard players set @a[scores={fall_dis=1..,death=0}] fall_dis 0
 scoreboard players add @a s_kill_time 1
