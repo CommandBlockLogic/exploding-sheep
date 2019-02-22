@@ -27,9 +27,14 @@ tag @a remove team_leader
 
 # clear score
 execute as @a[scores={s_ulti_time=1..}] run function sheep:ultimate/end
-scoreboard players reset * s_class
-scoreboard players reset * s_launch_type
-scoreboard players reset * death_boss
+#scoreboard players reset * s_class
+#scoreboard players reset * s_launch_type
+#scoreboard players reset * death_boss
+
+scoreboard players reset *
+execute if entity @e[tag=system_mode_change_mark_group] run scoreboard players set game_mode_status system 0
+execute if entity @e[tag=system_mode_change_mark_single] run scoreboard players set game_mode_status system 1
+scoreboard players set 游戏开始 pve_system 0
 
 # clear entity
 kill @e[type=!player]
