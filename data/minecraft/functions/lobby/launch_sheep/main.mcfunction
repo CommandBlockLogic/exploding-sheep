@@ -1,7 +1,7 @@
 # lobby/launch_sheep/main
 
 # tag target player
-execute positioned ~ ~ ~ run tag @a[x=-214,y=5,z=-204,dx=74,dy=60,dz=70,sort=random,limit=1] add system_lobby_target
+execute positioned ~ ~ ~ run tag @a[x=-214,y=5,z=-204,dx=74,dy=60,dz=70,sort=random,limit=1,gamemode=adventure] add system_lobby_target
 
 # summon sheep
 execute positioned ~ ~ ~ run function sheep:launch/type/normal
