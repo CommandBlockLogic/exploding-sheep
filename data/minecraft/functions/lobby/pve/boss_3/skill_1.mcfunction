@@ -8,7 +8,7 @@ execute if entity @e[tag=boss3] unless entity @e[tag=boss_3_skill_1_2] as @e[tag
 execute store result entity @e[tag=boss_3_skill_1_2,limit=1] Pos[0] double 0.001 run data get entity @e[tag=boss3,limit=1] Pos[0] 1000
 execute store result entity @e[tag=boss_3_skill_1_2,limit=1] Pos[1] double 0.001 run data get entity @e[tag=boss3,limit=1] Pos[1] 1000
 execute store result entity @e[tag=boss_3_skill_1_2,limit=1] Pos[2] double 0.001 run data get entity @e[tag=boss3,limit=1] Pos[2] 1000
-execute as @e[tag=boss_3_skill_1_2] at @s run tp @s ~ ~0.2 ~ ~ ~
+execute as @e[tag=boss_3_skill_1_2] at @s run tp @s ~ ~ ~ ~2 ~
 
 execute as @e[tag=boss3] at @s positioned ~ ~1.25 ~ run effect give @e[tag=monster,distance=..6] strength 3 1 true
 

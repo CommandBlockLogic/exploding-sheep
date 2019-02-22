@@ -1,11 +1,11 @@
 # Boss切换装备
-execute if entity @e[tag=boss1,tag=monster,limit=1] as @e[tag=boss1,tag=monster,nbt={HandItems:[{id:"minecraft:blaze_rod",Count:1b,tag:{Enchantments:[{id:"minecraft:punch",lvl:3}]}}]}] at @s if entity @e[type=player,distance=..7] run replaceitem entity @s weapon.mainhand minecraft:blaze_rod{Enchantments:[{id:"minecraft:knockback",lvl:3}]}
+execute if entity @e[tag=boss1,tag=monster,limit=1] as @e[tag=boss1,tag=monster,nbt={HandItems:[{id:"minecraft:blaze_rod",Count:1b,tag:{Enchantments:[{id:"minecraft:punch",lvl:3}]}}]}] at @s if entity @e[type=player,gamemode=adventure,distance=..7] run replaceitem entity @s weapon.mainhand minecraft:blaze_rod{Enchantments:[{id:"minecraft:knockback",lvl:3}]}
 
-execute if entity @e[tag=boss1,tag=monster,limit=1] as @e[tag=boss1,tag=monster,nbt={HandItems:[{id:"minecraft:blaze_rod",Count:1b,tag:{Enchantments:[{id:"minecraft:punch",lvl:3}]}}]}] at @s if entity @e[type=player,distance=..7] run replaceitem entity @s weapon.offhand minecraft:bow{Enchantments:[{id:"minecraft:knockback",lvl:3}]}
+execute if entity @e[tag=boss1,tag=monster,limit=1] as @e[tag=boss1,tag=monster,nbt={HandItems:[{id:"minecraft:blaze_rod",Count:1b,tag:{Enchantments:[{id:"minecraft:punch",lvl:3}]}}]}] at @s if entity @e[type=player,gamemode=adventure,distance=..7] run replaceitem entity @s weapon.offhand minecraft:bow{Enchantments:[{id:"minecraft:knockback",lvl:3}]}
 
-execute if entity @e[tag=boss1,tag=monster,limit=1] as @e[tag=boss1,tag=monster,nbt={HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:knockback",lvl:3}]}}]}] at @s unless entity @e[type=player,distance=..7] run replaceitem entity @s weapon.mainhand minecraft:bow{Enchantments:[{id:"minecraft:punch",lvl:3}]}
+execute if entity @e[tag=boss1,tag=monster,limit=1] as @e[tag=boss1,tag=monster,nbt={HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:knockback",lvl:3}]}}]}] at @s unless entity @e[type=player,gamemode=adventure,distance=..7] run replaceitem entity @s weapon.mainhand minecraft:bow{Enchantments:[{id:"minecraft:punch",lvl:3}]}
 
-execute if entity @e[tag=boss1,tag=monster,limit=1] as @e[tag=boss1,tag=monster,nbt={HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:knockback",lvl:3}]}}]}] at @s unless entity @e[type=player,distance=..7] run replaceitem entity @s weapon.offhand minecraft:blaze_rod{Enchantments:[{id:"minecraft:punch",lvl:3}]}
+execute if entity @e[tag=boss1,tag=monster,limit=1] as @e[tag=boss1,tag=monster,nbt={HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:knockback",lvl:3}]}}]}] at @s unless entity @e[type=player,gamemode=adventure,distance=..7] run replaceitem entity @s weapon.offhand minecraft:blaze_rod{Enchantments:[{id:"minecraft:punch",lvl:3}]}
 
 
 effect give @e[tag=boss1,tag=monster] slow_falling 10 2 true
