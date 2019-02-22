@@ -29,11 +29,11 @@ scoreboard players add 大招冷却时间 boss_4_cool 1
 execute if score 扇子冷却时间 boss_4_cool matches 1.. run scoreboard players remove 扇子冷却时间 boss_4_cool 1
 
 # 技能1
-execute if score Boss技能 boss_4_system matches 1 if score 冷却时间 boss_4_cool matches 200 run function minecraft:game_mode/single/boss/system/status_2/skill_1
+execute if score Boss技能 boss_4_system matches 1 if score 冷却时间 boss_4_cool matches 200.. run function minecraft:game_mode/single/boss/system/status_2/skill_1
 # 技能2
-execute if score Boss技能 boss_4_system matches 2 if score 冷却时间 boss_4_cool matches 200 as @e[tag=boss4] at @s run function minecraft:game_mode/single/boss/system/status_2/skill_2
+execute if score Boss技能 boss_4_system matches 2 if score 冷却时间 boss_4_cool matches 200.. as @e[tag=boss4] at @s run function minecraft:game_mode/single/boss/system/status_2/skill_2
 # 技能3
-execute if score Boss技能 boss_4_system matches 3 if score 冷却时间 boss_4_cool matches 200 as @e[tag=boss4] at @s run function minecraft:game_mode/single/boss/system/status_2/skill_3
+execute if score Boss技能 boss_4_system matches 3 if score 冷却时间 boss_4_cool matches 200.. as @e[tag=boss4] at @s run function minecraft:game_mode/single/boss/system/status_2/skill_3
 # 技能tick
 function minecraft:game_mode/single/boss/system/status_2/skill_tick
 
@@ -45,6 +45,6 @@ execute as @e[tag=boss4] at @s if entity @a[gamemode=adventure,distance=..5] if 
 execute if score 大招冷却时间 boss_4_cool matches 1200.. as @e[tag=boss4] at @s run function minecraft:game_mode/single/boss/system/status_2/ultimate
 
 # 冷却重置
-execute if score 冷却时间 boss_4_cool matches 200 run scoreboard players set 冷却时间 boss_4_cool 0
+execute if score 冷却时间 boss_4_cool matches 200.. run scoreboard players set 冷却时间 boss_4_cool 0
 execute if score 被动冷却时间 boss_4_cool matches 25.. run scoreboard players set 被动冷却时间 boss_4_cool 0
-execute if score 大招冷却时间 boss_4_cool matches 1200 run scoreboard players set 大招冷却时间 boss_4_cool 0
+execute if score 大招冷却时间 boss_4_cool matches 1200.. run scoreboard players set 大招冷却时间 boss_4_cool 0
