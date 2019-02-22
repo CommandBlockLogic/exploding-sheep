@@ -20,3 +20,7 @@ function minecraft:lobby/pve/other/monster
 
 # 结界
 function minecraft:lobby/pve/other/barrier
+
+# 隐藏点
+execute as @a[x=-175,y=28,z=-225,dx=4,dy=4,dz=25,gamemode=adventure] run effect give @s minecraft:slowness 1 3 true
+execute as @a[x=-175,y=17,z=-221,dx=4,dy=4,dz=4,gamemode=adventure] run tp @s -174 11 -219

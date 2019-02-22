@@ -3,7 +3,7 @@
 	"display": {
 		"icon": {
 			"item": "minecraft:player_head",
-			"nbt":"{SkullOwner:\"K_bai\"}"
+			"nbt":"{display:{Name:\"{\\\"text\\\":\\\"羊羊之神\\\"}\"},SkullOwner:{Id:\"505b07bb-2fdc-4d9f-ab21-064ece5c6ad6\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2U0NDdkYjY2OWQ3ZjA2NzY1ODc5NjJiOTdjNzI4ZGIxOWM4MTQ1ZGI1OWVmOGQ4NWI5M2ZmMjI2MjExNzEifX19\"}]}}}"
 		},
 		"title": [
 			{
