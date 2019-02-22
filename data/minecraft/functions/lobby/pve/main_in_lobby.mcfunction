@@ -24,3 +24,7 @@ function minecraft:lobby/pve/other/barrier
 # 隐藏点
 execute as @a[x=-175,y=28,z=-225,dx=4,dy=4,dz=25,gamemode=adventure] run effect give @s minecraft:slowness 1 3 true
 execute as @a[x=-175,y=17,z=-221,dx=4,dy=4,dz=4,gamemode=adventure] run tp @s -174 11 -219
+
+execute if block -184 2 -214 minecraft:stone_button[face=floor,powered=true] positioned -184 2 -214 as @a[sort=nearest,limit=1] run function minecraft:game_mode/single/boss/prepre/main
+
+setblock -184 2 -214 minecraft:stone_button[face=floor]

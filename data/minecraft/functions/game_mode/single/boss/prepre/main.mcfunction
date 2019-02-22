@@ -12,6 +12,7 @@ tp @a -166 10 -118
 # 清理背包
 clear @a
 
+
 # 清理队伍
 team empty blue
 team empty red

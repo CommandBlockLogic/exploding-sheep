@@ -23,3 +23,6 @@ kill @e[tag=boss_2_skill_3]
 
 # 清除玩家击中 BOSS mark
 tag @a[tag=spg_hit_boss_player] remove spg_hit_boss_player
+
+# 消除按钮
+setblock -184 2 -214 air
