@@ -43,7 +43,10 @@ execute as @a[scores={s_launch_type=1001,s_energy=..99},nbt=!{Inventory:[{Slot:-
 execute as @a[scores={s_launch_type=1002,s_energy=..99},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,glass_type:1002}}]}] run function sheep:item/wools
 
 
-execute if score game_status system matches 0 as @a[nbt=!{Inventory:[{Slot:7b,tag:{item_num:5}}]}] run replaceitem entity @s hotbar.7 minecraft:stone_bricks{item_num:5,display:{Name:"[{\"text\":\"丢掉回城\",\"italic\":false}]",Lore:["§r§7回城砖§r","§r§7把它丢出去回到大厅§r"]}} 1
+execute if score game_status system matches 0 as @a[nbt=!{Inventory:[{Slot:7b,tag:{item_num:5,item_type:1}}]}] run replaceitem entity @s hotbar.7 minecraft:stone_bricks{item_num:5,item_type:1,display:{Name:"[{\"text\":\"丢掉回城\",\"italic\":false}]",Lore:["§r§7回城砖§r","§r§7把它丢出去回到大厅§r"]}} 1
+execute unless score game_status system matches 0 unless score game_status system matches 105 as @a[tag=in_lobby,scores={quick_back=0},nbt=!{Inventory:[{Slot:7b,tag:{item_num:5,item_type:2}}]}] run replaceitem entity @s hotbar.7 minecraft:coal_block{item_num:5,item_type:2,display:{Name:"[{\"text\":\"快速传送 \",\"italic\":false},{\"text\":\"关\",\"color\":\"white\"},{\"text\":\" 丢出以切换状态\",\"color\":\"white\"}]",Lore:["§r§7快速传送§r","§r§7把它丢出去切换快速传送状态§r"]}} 1
+execute unless score game_status system matches 0 unless score game_status system matches 105 as @a[tag=in_lobby,scores={quick_back=1},nbt=!{Inventory:[{Slot:7b,tag:{item_num:5,item_type:3}}]}] run replaceitem entity @s hotbar.7 minecraft:gold_block{item_num:5,item_type:3,display:{Name:"[{\"text\":\"快速传送 \",\"italic\":false},{\"text\":\"开\",\"color\":\"yellow\"},{\"text\":\" 丢出以切换状态\",\"color\":\"white\"}]",Lore:["§r§7快速传送§r","§r§7把它丢出去切换快速传送状态§r"]}} 1
+execute unless score game_status system matches 0 unless score game_status system matches 105 as @a[tag=!in_lobby,nbt={Inventory:[{Slot:7b}]}] run replaceitem entity @s hotbar.7 minecraft:air
 
 execute unless score game_status system matches 5 as @a[team=,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:1}}]}] run function sheep:item/boots
 execute unless score game_status system matches 5 as @a[team=red,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:2}}]}] run function sheep:item/boots

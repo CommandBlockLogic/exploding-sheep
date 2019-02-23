@@ -35,6 +35,7 @@ scoreboard objectives add death_boss deathCount ["玩家死亡次数boss战用"]
 scoreboard objectives add death_time dummy ["玩家死亡复活时间"]
 scoreboard objectives add death_time_max dummy ["玩家最大死亡复活时间"]
 scoreboard objectives add death_time_tp dummy ["玩家死亡复活传送时间"]
+scoreboard objectives add quick_back dummy ["快速传送"]
 scoreboard objectives add killed_by_c minecraft.killed_by:minecraft.creeper ["玩家被炸死"]
 scoreboard objectives add killed_by_z minecraft.killed_by:minecraft.zombie ["被僵尸杀死"]
 scoreboard objectives add killed_by_s minecraft.killed_by:minecraft.skeleton ["被小白杀死"]
@@ -42,6 +43,8 @@ scoreboard objectives add killed_by_f minecraft.killed_by:minecraft.evoker_fangs
 scoreboard objectives add fall_dis minecraft.custom:minecraft.fall_one_cm ["玩家掉落距离默认"]
 
 scoreboard objectives add drop_brick minecraft.dropped:minecraft.stone_bricks ["回城指示"]
+scoreboard objectives add drop_coal minecraft.dropped:minecraft.coal_block ["开启快速传送"]
+scoreboard objectives add drop_gold minecraft.dropped:minecraft.gold_block ["关闭快速传送"]
 
 scoreboard objectives add kill_player dummy ["杀人数量"]
 scoreboard objectives add core_number dummy ["水晶砂数量"]

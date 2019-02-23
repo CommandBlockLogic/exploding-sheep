@@ -3,7 +3,6 @@ replaceitem entity @s hotbar.3 minecraft:air
 replaceitem entity @s hotbar.4 minecraft:air
 replaceitem entity @s hotbar.5 minecraft:air
 replaceitem entity @s hotbar.6 minecraft:air
-execute as @s unless score game_status system matches 0 run replaceitem entity @s hotbar.7 minecraft:air
 
 replaceitem entity @s inventory.0 minecraft:air
 replaceitem entity @s inventory.1 minecraft:air

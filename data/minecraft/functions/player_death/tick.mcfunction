@@ -3,13 +3,24 @@
 # dead
 execute as @a[scores={death=1..}] run function player_death/main
 # respawn
-execute positioned -176 8 -124 as @a[scores={death2=1..},dx=20,dy=10,dz=30] run function player_death/lobby
+execute as @a[scores={death2=1..},tag=in_lobby] run function player_death/lobby
 # decrease time
 scoreboard players remove @a[scores={death_time=1..}] death_time 1
 
 # lobby time up hint
-execute if score game_status system matches 1.. unless score game_status system matches 8964 unless score game_status system matches 5 positioned -176 8 -124 as @a[scores={death_time=1..},dx=20,dy=10,dz=30] run function player_death/lobby_display
+execute if score game_status system matches 1.. unless score game_status system matches 8964 unless score game_status system matches 5 as @a[scores={death_time=1..},tag=in_lobby] run function player_death/lobby_display
 
+# quick tp switch
+scoreboard players set @a[scores={drop_coal=1..}] quick_back 1
+scoreboard players set @a[scores={drop_gold=1..}] quick_back 0
+tellraw @a[scores={drop_coal=1..}] [{"text":"## ","color":"gray","italic":true},"快速传送已切换至开启. 充满羊羊能量后可立即传送."]
+tellraw @a[scores={drop_gold=1..}] [{"text":"## ","color":"gray","italic":true},"快速传送已切换至关闭. 需踩上传送石才可传送."]
+scoreboard players set @a[scores={drop_coal=1..}] drop_coal 0
+scoreboard players set @a[scores={drop_gold=1..}] drop_gold 0
+
+# quick tp
+execute as @a[scores={death_time=0,quick_back=1}] run function game_mode/public/tp_game_spawn
+scoreboard players set @a[scores={death_time=0,quick_back=1}] quick_back 0
 
 # tp time
 scoreboard players add @a[scores={death_time_tp=1..}] death_time_tp 1
