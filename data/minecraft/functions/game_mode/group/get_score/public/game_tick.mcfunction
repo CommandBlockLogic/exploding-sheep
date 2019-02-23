@@ -27,10 +27,10 @@ execute store result score 青金石部落水晶砂 sidebar_score run scoreboard
 
 # harden/soften core
 scoreboard players add @a death2 0
-execute as @e[tag=system_core_mark_center,scores={tower_status=2}] at @s if entity @a[team=blue,distance=..9,scores={death2=0}] run function game_mode/core/harden
-execute as @e[tag=system_core_mark_center,scores={tower_status=3}] at @s if entity @a[team=red,distance=..9,scores={death2=0}] run function game_mode/core/harden
-execute as @e[tag=system_core_mark_center,scores={tower_status=20}] at @s unless entity @a[team=blue,distance=..9,scores={death2=0}] run function game_mode/core/soften
-execute as @e[tag=system_core_mark_center,scores={tower_status=30}] at @s unless entity @a[team=red,distance=..9,scores={death2=0}] run function game_mode/core/soften
+execute as @e[tag=system_core_mark_center,scores={tower_status=2}] at @s if entity @a[team=blue,distance=..4,scores={death2=0}] run function game_mode/core/harden
+execute as @e[tag=system_core_mark_center,scores={tower_status=3}] at @s if entity @a[team=red,distance=..4,scores={death2=0}] run function game_mode/core/harden
+execute as @e[tag=system_core_mark_center,scores={tower_status=20}] at @s unless entity @a[team=blue,distance=..4,scores={death2=0}] run function game_mode/core/soften
+execute as @e[tag=system_core_mark_center,scores={tower_status=30}] at @s unless entity @a[team=red,distance=..4,scores={death2=0}] run function game_mode/core/soften
 
 # summon core
 function game_mode/group/get_score/public/summon_core
