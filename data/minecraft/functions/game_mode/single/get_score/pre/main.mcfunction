@@ -39,9 +39,9 @@ scoreboard players set 准备... sidebar_score 0
 scoreboard players set @a death_time_max 5
 
 # count down to start
-scoreboard players set system_start_countdown system 100
+scoreboard players set system_start_countdown system 200
 
 # title
-title @a times 0 100 10
+title @a times 0 200 20
 title @a title ["游戏即将开始..."]
-title @a subtitle ["5"]
+title @a subtitle ["10"]
