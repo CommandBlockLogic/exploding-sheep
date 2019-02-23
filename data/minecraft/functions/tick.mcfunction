@@ -42,6 +42,10 @@ execute if score game_status system matches 105 run function game_mode/single/bo
 execute if score game_status system matches 205 run function game_mode/single/boss/pre/tick
 execute if score game_status system matches 8964 run function game_mode/ending/tick
 
+# 游戏过程中大厅无法使用炮和扇子
+execute unless score game_status system matches 0 unless score game_status system matches 105 run scoreboard players set @a[tag=in_lobby] s_energy 0
+execute unless score game_status system matches 0 unless score game_status system matches 105 run scoreboard players set @a[tag=in_lobby] s_fan_num 0
+
 # 游戏进程标记
 execute if score game_status system matches 1.. unless score game_status system matches 105 run gamemode spectator @a[team=,gamemode=adventure]
 execute if score 游戏开始 pve_system matches 0 if score game_status system matches 1.. run scoreboard players set 游戏开始 pve_system 1

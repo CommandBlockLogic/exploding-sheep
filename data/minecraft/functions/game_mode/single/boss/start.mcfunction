@@ -6,6 +6,7 @@ scoreboard players set game_status system 5
 # tp
 execute as @a run function game_mode/public/tp_pve_spawn
 gamemode spectator @a[team=]
+effect give @a minecraft:regeneration 5 99
 
 
 # boss 初始化

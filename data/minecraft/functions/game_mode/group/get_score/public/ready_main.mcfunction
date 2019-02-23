@@ -11,6 +11,8 @@ scoreboard players set system_sixty system 60
 scoreboard players set system_second system 0
 scoreboard players set system_minute system 0
 
+scoreboard players set @a death_time_tp 0
+
 
 # bossbar
 bossbar set minecraft:score_time max 3000
