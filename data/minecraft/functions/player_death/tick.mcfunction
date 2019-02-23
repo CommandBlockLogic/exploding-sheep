@@ -13,12 +13,13 @@ execute if score game_status system matches 1.. unless score game_status system 
 # quick tp switch
 scoreboard players set @a[scores={drop_coal=1..}] quick_back 1
 scoreboard players set @a[scores={drop_gold=1..}] quick_back 0
-tellraw @a[scores={drop_coal=1..}] [{"text":"## ","color":"gray","italic":true},"快速传送已切换至开启. 充满羊羊能量后可立即传送."]
-tellraw @a[scores={drop_gold=1..}] [{"text":"## ","color":"gray","italic":true},"快速传送已切换至关闭. 需踩上传送石才可传送."]
+tellraw @a[scores={drop_coal=1..,death_time=1..}] [{"text":"## ","color":"gray","italic":true},"快速传送已切换至开启. 充满羊羊能量后可立即传送."]
+tellraw @a[scores={drop_gold=1..,death_time=1..}] [{"text":"## ","color":"gray","italic":true},"快速传送已切换至关闭. 需踩上传送石才可传送."]
 scoreboard players set @a[scores={drop_coal=1..}] drop_coal 0
 scoreboard players set @a[scores={drop_gold=1..}] drop_gold 0
 
 # quick tp
+scoreboard players set @a[scores={death_time=0,quick_back=1}] death_time_tp 0
 execute as @a[scores={death_time=0,quick_back=1}] run function game_mode/public/tp_game_spawn
 scoreboard players set @a[scores={death_time=0,quick_back=1}] quick_back 0
 

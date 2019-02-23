@@ -2,7 +2,7 @@
 
 # 羊羊
 function sheep:tick
-#function keep_items
+
 
 # 保护标记实体
 execute unless entity @e[tag=system_core_mark] run function keep_mark/core
@@ -19,6 +19,9 @@ function lobby/tick
 
 # 玩家死亡复活
 function player_death/tick
+
+# 玩家物品常驻
+function keep_items
 
 # 游戏模式常驻
 scoreboard players add game_status system 0
