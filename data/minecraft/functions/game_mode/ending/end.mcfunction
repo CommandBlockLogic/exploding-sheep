@@ -32,8 +32,8 @@ execute as @a[scores={s_ulti_time=1..}] run function sheep:ultimate/end
 #scoreboard players reset * death_boss
 
 scoreboard players reset *
-execute if entity @e[tag=system_mode_change_mark_group] run scoreboard players set game_mode_status system 0
-execute if entity @e[tag=system_mode_change_mark_single] run scoreboard players set game_mode_status system 1
+execute if block -178 8 -125 minecraft:stone_bricks run scoreboard players set game_mode_status system 0
+execute if block -178 8 -125 minecraft:cracked_stone_bricks run scoreboard players set game_mode_status system 1
 scoreboard players set 游戏开始 pve_system 0
 
 # clear entity
