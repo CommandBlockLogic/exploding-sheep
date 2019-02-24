@@ -47,8 +47,6 @@ scoreboard players set number_ten system 10
 scoreboard players operation @s core_number *= number_ratio system
 scoreboard players operation @s core_number /= number_ten system
 
-# init quick tp
-scoreboard players set @s quick_back 0
 
 # clear
 execute as @s[scores={s_ulti_time=1..}] run function sheep:ultimate/end

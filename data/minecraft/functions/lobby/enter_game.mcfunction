@@ -13,13 +13,13 @@ execute if score game_status system matches 0 as @e[tag=system_lobby_mark_gaming
 execute if score game_status system matches 0 as @e[tag=system_lobby_mark_gaming] run tag @s remove system_lobby_mark_gaming
 
 # first step tag and hint
-execute at @e[tag=system_lobby_mark_enter] as @a[distance=..0.3,tag=!player_enter_game,scores={death_time=1..}] run function lobby/enter_game_fail
-execute as @a[tag=player_enter_game] at @s unless entity @e[tag=system_lobby_mark_enter,distance=..0.3] run tag @s remove player_enter_game
+execute at @e[tag=system_lobby_mark_enter] as @a[distance=..0.45,tag=!player_enter_game,scores={death_time=1..}] run function lobby/enter_game_fail
+execute as @a[tag=player_enter_game] at @s unless entity @e[tag=system_lobby_mark_enter,distance=..0.45] run tag @s remove player_enter_game
 
 # hint
-execute at @e[tag=system_lobby_mark_enter] if score game_status system matches 0 run tellraw @a[distance=..0.3,scores={death_time=0}] [{"text":"## ","color":"gray","italic":true},"自由模式 随意探索地图吧! Q键丢掉石砖回城!"]
+execute at @e[tag=system_lobby_mark_enter] if score game_status system matches 0 run tellraw @a[distance=..0.45,scores={death_time=0}] [{"text":"## ","color":"gray","italic":true},"自由模式 随意探索地图吧! Q键丢掉石砖回城!"]
 # enter game
-execute at @e[tag=system_lobby_mark_enter] run scoreboard players set @a[distance=..0.3,scores={death_time=0}] death_time_tp 0
-execute at @e[tag=system_lobby_mark_enter] as @a[distance=..0.3,scores={death_time=0}] run function game_mode/public/tp_game_spawn
+execute at @e[tag=system_lobby_mark_enter] run scoreboard players set @a[distance=..0.45,scores={death_time=0}] death_time_tp 0
+execute at @e[tag=system_lobby_mark_enter] as @a[distance=..0.45,scores={death_time=0}] run function game_mode/public/tp_game_spawn
 
 
