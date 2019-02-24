@@ -20,8 +20,9 @@ scoreboard players set @a[scores={drop_coal=1..}] drop_coal 0
 scoreboard players set @a[scores={drop_gold=1..}] drop_gold 0
 
 # quick tp
-scoreboard players set @a[scores={death_time=1,quick_back=1}] death_time_tp 0
-execute as @a[scores={death_time=1,quick_back=1}] run function game_mode/public/tp_game_spawn
+execute unless score game_status system matches 0 unless score game_status system matches 105 run scoreboard players set @a[tag=in_lobby,scores={death_time=0,quick_back=1}] death_time_tp 0
+execute unless score game_status system matches 0 unless score game_status system matches 105 run tellraw @a[tag=in_lobby,scores={death_time=0,quick_back=1}] [{"text":"## ","color":"gray","italic":true},"您已快速传送至场地."]
+execute unless score game_status system matches 0 unless score game_status system matches 105 run execute as @a[tag=in_lobby,scores={death_time=0,quick_back=1}] run function game_mode/public/tp_game_spawn
 
 # tp time
 scoreboard players add @a[scores={death_time_tp=1..}] death_time_tp 1
