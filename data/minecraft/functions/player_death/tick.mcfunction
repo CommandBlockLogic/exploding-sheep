@@ -3,7 +3,7 @@
 # dead
 execute as @a[scores={death=1..}] run function player_death/main
 # respawn
-execute as @a[scores={death2=1..},tag=in_lobby] run function player_death/lobby
+execute as @a[scores={death2=1..},tag=in_lobby,nbt=!{Health:0.0f}] run function player_death/lobby
 # decrease time
 scoreboard players remove @a[scores={death_time=1..}] death_time 1
 
