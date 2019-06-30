@@ -51,7 +51,7 @@
         "minecraft:beetroots",
         "minecraft:structure_void",
 		"minecraft:vine",
-		"#minecraft:water",
+		"minecraft:water",
         "minecraft:barrier",
         "#minecraft:corals"
     ]
