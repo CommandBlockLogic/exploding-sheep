@@ -1,73 +1,44 @@
-# 注意！
+# TODO List
 
-这个仓库只是用来看的！不要对这个仓库进行修改！
-今天开始更新！！！
+* 地图进入动画，用于宣传片
+* 游戏模式修改
+* PVE模式改至1.14
+* 选择不同羊羊玩家特点也会变化
+	* 黄羊 加速1
+	* 黑羊 不被攻击或攻击超3秒隐身 丢白羊或被攻击破隐
+	* 橙羊 血量上限+2
+	* 红羊 扇子上限+1
+	* 蓝羊 不被冰冻 
+* 玩家死亡后自动切换普通羊
+* 山顶跳下后获得奖励
+* BUG:冰羊同时丢到两个部落会来回切换
+* 橙羊增加影响范围
+* 部落抢分模式修改
+	* 修改成只有一个阶段，一开始是紫色，减少中间方块的数量
+	* 最后一个炸掉方块的队伍获得水晶所有权
+	* 水晶数量小于一半后有保护罩，外界地方射入的羊会消失
+	* 时间到后控制水晶的队伍胜利
 
-# Class
+# 游戏开始动画
 
-* 1
-	* normal
-* 2
-	* ender
-	* teleport player to the landing area
-* 3
-	* stright
-	* no gravity
-* 4
-	* quick
-	* explode instantly when touch the ground
-* 5
-	* ice
-	* slow the enemies in the area
-* 6
-	* absorb
-	* give allies the absorption effect in the area
-* 101
-	* shoot a normal sheep per 10 tick
-	* 10 seconds
-* 102
-	* add three rotating sheeps around the player
-	* harm enemies that touched those sheep
-	* add speed effect
-	* 15 seconds
-* 201
-	* sheep rain
-	* summon sheeps from above
-	* altitude limit: 10 to 30
-	* 10 seconds radius: 4
-* 202
-	* shoot a sheep that can accelerate energy generation
-	* 15 seconds
+* 小范围区域 大概32\*32\*32？
+* 场景1
+	* 一侧草原一侧沙漠中间河 各有小垃圾房子
+	* 两个人黄衣服
+	* 沙漠侧的打铁，草原侧的砍树
+	* 随后二者交换材料
+* 场景2
+	* 天降圣坛，地面下陷，与世隔绝
+	* 圣坛里有很多水晶，同时圣坛中升起发光镐子和斧子
+	* 两侧人轮流从中间圣坛拿水晶，砍树和打铁速度变快，水晶数量变少
+	* 房子逐渐变大变漂亮，房子主色逐渐改变，草原侧变蓝，沙漠侧变红
+* 场景3
+	* 两侧人对最后剩下的水晶进行争夺，来回拉扯
+	* 沙漠侧用镐子，草原侧用斧子锤人
+* 场景4
+	* 最后的水晶消失，圣坛中升起小羊大炮和扇子
+	* 两侧人手一个，开始丢羊
 
-
-# Game Mode
-
-* 0
-	* free mode
-	* no score and no end
-* 1
-	* death match
-	* 10 death
-* 2
-	* get score
-	* 5mins, higher score
-* 3
-	* clear all powder
-* 5
-	* boss
-
-
-# todo list
-
-* 被治愈被冰冻提示
-* 增加打怪成就
-* 增加隐藏抢球模式
-* 餀 餁 餂
-	* \u9900 \u9901 \u9902
-* 分辨被魔法杀死
-* 组队抢分有人站在水晶上就硬化
-* 吸收和冰 只对自己生效
-* 冰显示本队特效
 
 # 流程
 
