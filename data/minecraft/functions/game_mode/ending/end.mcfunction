@@ -31,6 +31,7 @@ execute as @a[scores={s_ulti_time=1..}] run function sheep:ultimate/end
 #scoreboard players reset * s_launch_type
 
 scoreboard players reset * death_boss
+scoreboard players reset * system
 
 #scoreboard players reset *
 

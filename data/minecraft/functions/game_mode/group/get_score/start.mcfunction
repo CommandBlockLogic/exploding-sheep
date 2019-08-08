@@ -8,6 +8,9 @@ execute as @a run function game_mode/public/tp_game_spawn
 gamemode spectator @a[team=]
 
 scoreboard players reset * sidebar_score
+scoreboard objectives modify sidebar_score displayname {"text":"开始争夺!","color":"yellow"}
+scoreboard objectives setdisplay sidebar sidebar_score
+scoreboard players set 剩余时间(秒) sidebar_score 300
 
 # title
 title @a times 10 50 10

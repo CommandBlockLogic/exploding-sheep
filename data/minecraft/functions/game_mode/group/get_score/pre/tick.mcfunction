@@ -6,7 +6,7 @@ scoreboard players remove system_start_countdown system 1
 # set tower
 execute if score system_start_countdown system matches 290 run scoreboard players set @e[tag=system_core_mark_center] tower_status 1
 # clear core
-execute if score system_start_countdown system matches 281 run function game_mode/core/center/clear
+execute if score system_start_countdown system matches 281 run function game_mode/core/clear_all
 scoreboard players set @e[tag=system_core_mark_center] core_destory 0
 # summon core
 execute if score system_start_countdown system matches ..280 run function game_mode/group/get_score/summon_core

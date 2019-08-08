@@ -25,13 +25,13 @@ scoreboard players set system_time_minute system 0
 # bossbar
 bossbar add minecraft:score_time ["temp"]
 # bossbar
-bossbar set minecraft:score_time max 6000
-bossbar set minecraft:score_time value 6000
+bossbar set minecraft:score_time max 77
+bossbar set minecraft:score_time value 77
 bossbar set minecraft:score_time style progress
 bossbar set minecraft:score_time color white
 bossbar set minecraft:score_time players @a
 bossbar set minecraft:score_time visible true
-bossbar set minecraft:score_time name ["剩余时间   --:--"]
+bossbar set minecraft:score_time name ["剩余水晶"]
 
 
 # death time

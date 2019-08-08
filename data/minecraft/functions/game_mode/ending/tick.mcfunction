@@ -13,4 +13,4 @@ execute if score system_ending_time system matches 20 run title @a subtitle ["1ç
 execute if score system_ending_time system matches ..0 run function game_mode/ending/end
 
 # clear tower
-execute if score system_ending_time system matches 40 run function game_mode/core/center/clear
+execute if score system_ending_time system matches 40 run function game_mode/core/clear_all

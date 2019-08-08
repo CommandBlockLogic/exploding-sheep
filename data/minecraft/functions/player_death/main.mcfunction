@@ -49,6 +49,7 @@ scoreboard players operation @s core_number /= number_ten system
 
 
 # clear
+execute as @e[tag=sheep_type_teleport] if score @s s_thrower_id = @a[tag=player_self,limit=1] s_id run kill @s
 execute as @s[scores={s_ulti_time=1..}] run function sheep:ultimate/end
 scoreboard players set @s[scores={s_class=1000..}] s_launch_type 1
 scoreboard players set @s[scores={s_class=1000..}] s_class 1
