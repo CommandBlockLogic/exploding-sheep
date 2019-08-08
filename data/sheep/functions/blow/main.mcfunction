@@ -44,12 +44,13 @@ execute if entity @s[tag=sheep_type_blue_small] run particle minecraft:dust 0.33
 execute if entity @s[tag=sheep_type_heal] run playsound minecraft:item.bottle.fill ambient @a ~ ~ ~ 1 0.5
 execute if entity @s[tag=sheep_type_heal] run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:9999999,Tags:["sheep_heal_mark"]}
 execute if entity @s[tag=sheep_type_heal] run particle minecraft:dust 1 0.667 0 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 20
-execute if entity @s[tag=sheep_type_heal,tag=sheep_team_red] run effect give @a[distance=..4,team=red] minecraft:absorption 60 0 true
-execute if entity @s[tag=sheep_type_heal,tag=sheep_team_blue] run effect give @a[distance=..4,team=blue] minecraft:absorption 60 0 true
-execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] as @a[distance=..4] if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run effect give @s minecraft:absorption 60 0 true
+execute if entity @s[tag=sheep_type_heal,tag=sheep_team_red] run effect give @a[distance=..5,team=red] minecraft:absorption 60 0 true
+execute if entity @s[tag=sheep_type_heal,tag=sheep_team_blue] run effect give @a[distance=..5,team=blue] minecraft:absorption 60 0 true
+execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] as @a[distance=..5] if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run effect give @s minecraft:absorption 60 0 true
 
 # teleport
 execute if entity @s[tag=sheep_type_teleport,tag=!sheep_no_teleport] at @s as @a if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run tp @s ~ ~ ~ ~ ~
+execute if entity @s[tag=sheep_type_teleport,tag=!sheep_no_teleport] at @s as @a if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id store result score @s s_energy run scoreboard players get @s s_max_energy
 execute if entity @s[tag=sheep_type_teleport,tag=sheep_no_teleport] at @s as @a if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run tellraw @s [{"text":"## 羊羊飞到了禁区, 无法传送.","color":"gray","italic":true}]
 execute if entity @s[tag=sheep_type_teleport] at @s if score @e[tag=sheep_temp,limit=1] s_thrower_id matches -1 run tp @e[tag=boss_fight] ~ ~ ~ ~ ~
 execute if entity @s[tag=sheep_type_teleport] run playsound minecraft:entity.enderman.teleport ambient @a ~ ~ ~ 1 0.5

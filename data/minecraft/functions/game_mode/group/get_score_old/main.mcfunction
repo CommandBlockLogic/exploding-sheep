@@ -1,4 +1,5 @@
-# game_mode/group/get_score/main
+# get_score/main
+
 # check players
 function game_mode/select_mode/check_players
 

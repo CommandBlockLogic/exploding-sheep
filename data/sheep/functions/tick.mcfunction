@@ -110,6 +110,7 @@ function sheep:sheep_effect/blue/tick
 function sheep:sheep_effect/heal/tick
 function sheep:sheep_effect/ice/tick
 function sheep:sheep_effect/lime/tick
+effect give @a[scores={s_class=3}] minecraft:speed 1 1
 
 
 

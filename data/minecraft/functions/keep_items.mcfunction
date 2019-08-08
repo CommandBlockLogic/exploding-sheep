@@ -52,3 +52,6 @@ execute unless score game_status system matches 5 as @a[team=,nbt=!{Inventory:[{
 execute unless score game_status system matches 5 as @a[team=red,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:2}}]}] run function sheep:item/boots
 execute unless score game_status system matches 5 as @a[team=blue,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:3}}]}] run function sheep:item/boots
 execute unless score game_status system matches 5 as @a[team=yellow,nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,boots_type:4}}]}] run function sheep:item/boots
+execute unless score game_status system matches 5 as @a[scores={s_class=6},nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,sub_boots_type:1}}]}] run function sheep:item/boots
+execute unless score game_status system matches 5 as @a[scores={s_class=7..},nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,sub_boots_type:0}}]}] run function sheep:item/boots
+execute unless score game_status system matches 5 as @a[scores={s_class=..5},nbt=!{Inventory:[{Slot:100b,tag:{item_num:6,sub_boots_type:0}}]}] run function sheep:item/boots

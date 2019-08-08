@@ -15,6 +15,7 @@ execute as @e[scores={s_web_time=1..},tag=sheep_team_red] at @s run tag @a[dista
 execute as @e[scores={s_web_time=1..},tag=sheep_team_blue] at @s run tag @a[distance=..3.5,team=red] add sheep_ice_temp
 execute as @e[scores={s_web_time=1..},tag=!sheep_team_red,tag=!sheep_team_blue] at @s run tag @a[distance=..3.5] add sheep_ice_temp
 execute as @e[scores={s_web_time=1..},tag=!sheep_team_red,tag=!sheep_team_blue] run function sheep:sheep_effect/ice/exclude_owner
+execute as @e[scores={s_web_time=1..}] run tag @a[tag=sheep_ice_temp,scores={s_class=5}] remove sheep_ice_temp
 # 减速禁止跳跃
 scoreboard players add @e[tag=sheep_ice_temp] s_froze_time 2
 scoreboard players remove @e[scores={s_froze_time=1..}] s_froze_time 1

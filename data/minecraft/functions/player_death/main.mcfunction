@@ -50,6 +50,8 @@ scoreboard players operation @s core_number /= number_ten system
 
 # clear
 execute as @s[scores={s_ulti_time=1..}] run function sheep:ultimate/end
+scoreboard players set @s[scores={s_class=1000..}] s_launch_type 1
+scoreboard players set @s[scores={s_class=1000..}] s_class 1
 scoreboard players set @s death 0
 scoreboard players set @s killed_by_c 0
 scoreboard players set @s killed_by_z 0

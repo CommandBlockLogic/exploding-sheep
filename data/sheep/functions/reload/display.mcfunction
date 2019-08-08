@@ -110,3 +110,4 @@ xp set @a[scores={s_class=1,s_energy=300..9999999}] 740 points
 xp set @a[scores={s_fan_num=0}] 0 levels
 xp set @a[scores={s_fan_num=1}] 1 levels
 xp set @a[scores={s_fan_num=2}] 2 levels
+xp set @a[scores={s_fan_num=3}] 3 levels

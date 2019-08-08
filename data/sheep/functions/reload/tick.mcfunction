@@ -18,8 +18,10 @@ scoreboard players set @a[scores={s_regeneration=51..}] s_regeneration 0
 # fan cd
 scoreboard players add @a s_fan_num 0
 scoreboard players add @a[scores={s_fan_num=..1}] s_fan_cd 1
+scoreboard players add @a[scores={s_fan_num=2,s_class=4}] s_fan_cd 1
 scoreboard players add @a[scores={s_fan_cd=17..}] s_fan_num 1
 scoreboard players set @a[scores={s_fan_cd=17..}] s_fan_cd 0
+execute as @a[scores={s_fan_num=3}] unless score @s s_class matches 4 run scoreboard players set @s s_fan_num 2
 
 # display
 function sheep:reload/display
