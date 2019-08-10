@@ -30,9 +30,17 @@ execute as @a[scores={s_launch=1..,s_energy=..99,s_launch_type=1001},nbt={Select
 execute as @a[scores={s_launch=1..,s_energy=100..,s_launch_type=1001},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=100..,s_launch_type=1001},nbt={SelectedItemSlot:0}] s_energy 100
 
-execute as @a[scores={s_launch=1..,s_energy=..99,s_launch_type=1001},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 2
+execute as @a[scores={s_launch=1..,s_energy=..99,s_launch_type=1002},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 2
 execute as @a[scores={s_launch=1..,s_energy=100..,s_launch_type=1002},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
 scoreboard players remove @a[scores={s_launch=1..,s_energy=100..,s_launch_type=1002},nbt={SelectedItemSlot:0}] s_energy 100
+
+execute as @a[scores={s_launch=1..,s_energy=..99,s_launch_type=1003},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 2
+execute as @a[scores={s_launch=1..,s_energy=100..,s_launch_type=1003},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+scoreboard players remove @a[scores={s_launch=1..,s_energy=100..,s_launch_type=1003},nbt={SelectedItemSlot:0}] s_energy 100
+
+execute as @a[scores={s_launch=1..,s_energy=..29,s_launch_type=1004},nbt={SelectedItemSlot:0}] at @s run playsound minecraft:block.dispenser.fail player @s ~ ~ ~ 1 2
+execute as @a[scores={s_launch=1..,s_energy=30..,s_launch_type=1004},nbt={SelectedItemSlot:0}] at @s anchored eyes run function sheep:launch/main
+scoreboard players remove @a[scores={s_launch=1..,s_energy=30..,s_launch_type=1004},nbt={SelectedItemSlot:0}] s_energy 30
 
 
 # ultimate hint
@@ -109,8 +117,11 @@ function sheep:ultimate/tick
 function sheep:sheep_effect/blue/tick
 function sheep:sheep_effect/heal/tick
 function sheep:sheep_effect/ice/tick
+function sheep:sheep_effect/crown/tick
 function sheep:sheep_effect/lime/tick
-effect give @a[scores={s_class=3}] minecraft:speed 1 1
+execute as @e[tag=sheep_type_rainbow] at @s run function sheep:sheep_effect/rainbow/tick
+effect give @a[scores={s_class=3}] minecraft:speed 1 0
+effect give @a[scores={s_class=1003}] minecraft:jump_boost 1 3
 
 
 

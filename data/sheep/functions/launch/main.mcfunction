@@ -1,5 +1,9 @@
 # sheep:launch/main
 
+# add tag
+tag @s add player_temp
+
+
 # sound
 playsound minecraft:entity.player.small_fall ambient @a ^ ^ ^0.5 1 0.5
 
@@ -16,6 +20,11 @@ advancement grant @s[scores={s_launch_type=201},advancements={sheep:ultimate/blu
 advancement grant @s[scores={s_launch_type=202},advancements={sheep:ultimate/lime=false}] only sheep:ultimate/lime
 advancement grant @s[scores={s_launch_type=1001},advancements={sheep:speical_sheep/volleyball=false}] until sheep:speical_sheep/volleyball
 advancement grant @s[scores={s_launch_type=1002},advancements={sheep:speical_sheep/football=false}] until sheep:speical_sheep/football
+advancement grant @s[scores={s_launch_type=1003},advancements={sheep:speical_sheep/crown=false}] until sheep:speical_sheep/crown
+advancement grant @s[scores={s_launch_type=1004},advancements={sheep:speical_sheep/rainbow=false}] until sheep:speical_sheep/rainbow
+
+# kill old football
+execute as @e[tag=sheep_type_football] if score @s s_thrower_id = @a[tag=player_temp,limit=1] s_id run kill @s
 
 # summon marker
 summon minecraft:area_effect_cloud ^ ^ ^1 {Tags:["sheep_mark"]}
@@ -32,6 +41,8 @@ execute if entity @s[scores={s_launch_type=201}] run function sheep:launch/type/
 execute if entity @s[scores={s_launch_type=202}] run function sheep:launch/type/lime
 execute if entity @s[scores={s_launch_type=1001}] run function sheep:launch/type/volleyball
 execute if entity @s[scores={s_launch_type=1002}] run function sheep:launch/type/football
+execute if entity @s[scores={s_launch_type=1003}] run function sheep:launch/type/crown
+execute if entity @s[scores={s_launch_type=1004}] run function sheep:launch/type/rainbow
 
 
 # turn the sheep's face
@@ -64,5 +75,6 @@ execute if entity @s[team=yellow] run tag @e[tag=sheep_new,limit=1] add sheep_te
 scoreboard players set @e[tag=sheep_new] s_blow_time 0
 
 # kill marker and remove temp tag
+tag @s remove player_temp
 kill @e[tag=sheep_mark]
 tag @e[tag=sheep_new] remove sheep_new

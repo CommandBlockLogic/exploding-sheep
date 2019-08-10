@@ -19,6 +19,8 @@ execute as @a[scores={s_class=201},nbt=!{Inventory:[{Slot:8b,tag:{item_num:3,woo
 execute as @a[scores={s_class=202},nbt=!{Inventory:[{Slot:8b,tag:{item_num:3,wool_type:202}}]}] run function sheep:item/wools
 execute as @a[scores={s_class=1001},nbt=!{Inventory:[{Slot:8b,tag:{item_num:3,wool_type:1001}}]}] run function sheep:item/wools
 execute as @a[scores={s_class=1002},nbt=!{Inventory:[{Slot:8b,tag:{item_num:3,wool_type:1002}}]}] run function sheep:item/wools
+execute as @a[scores={s_class=1003},nbt=!{Inventory:[{Slot:8b,tag:{item_num:3,wool_type:1003}}]}] run function sheep:item/wools
+execute as @a[scores={s_class=1004},nbt=!{Inventory:[{Slot:8b,tag:{item_num:3,wool_type:1004}}]}] run function sheep:item/wools
 
 execute as @a[scores={s_launch_type=1,s_energy=50..},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,wool_type:1}}]}] run function sheep:item/wools
 execute as @a[scores={s_launch_type=2,s_energy=80..},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,wool_type:2}}]}] run function sheep:item/wools
@@ -32,6 +34,8 @@ execute as @a[scores={s_launch_type=201},nbt=!{Inventory:[{Slot:-106b,tag:{item_
 execute as @a[scores={s_launch_type=202},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,wool_type:202}}]}] run function sheep:item/wools
 execute as @a[scores={s_launch_type=1001,s_energy=100..},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,wool_type:1001}}]}] run function sheep:item/wools
 execute as @a[scores={s_launch_type=1002,s_energy=100..},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,wool_type:1002}}]}] run function sheep:item/wools
+execute as @a[scores={s_launch_type=1003,s_energy=100..},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,wool_type:1003}}]}] run function sheep:item/wools
+execute as @a[scores={s_launch_type=1004,s_energy=30..},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,wool_type:1004}}]}] run function sheep:item/wools
 
 execute as @a[scores={s_launch_type=1,s_energy=..49},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,glass_type:1}}]}] run function sheep:item/wools
 execute as @a[scores={s_launch_type=2,s_energy=..79},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,glass_type:2}}]}] run function sheep:item/wools
@@ -41,6 +45,8 @@ execute as @a[scores={s_launch_type=5,s_energy=..79},nbt=!{Inventory:[{Slot:-106
 execute as @a[scores={s_launch_type=6,s_energy=..119},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,glass_type:6}}]}] run function sheep:item/wools
 execute as @a[scores={s_launch_type=1001,s_energy=..99},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,glass_type:1001}}]}] run function sheep:item/wools
 execute as @a[scores={s_launch_type=1002,s_energy=..99},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,glass_type:1002}}]}] run function sheep:item/wools
+execute as @a[scores={s_launch_type=1003,s_energy=..99},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,glass_type:1003}}]}] run function sheep:item/wools
+execute as @a[scores={s_launch_type=1004,s_energy=..99},nbt=!{Inventory:[{Slot:-106b,tag:{item_num:4,glass_type:1004}}]}] run function sheep:item/wools
 
 
 execute if score game_status system matches 0 as @a[nbt=!{Inventory:[{Slot:7b,tag:{item_num:5,item_type:1}}]}] run replaceitem entity @s hotbar.7 minecraft:stone_bricks{item_num:5,item_type:1,display:{Name:"[{\"text\":\"丢掉回城\",\"italic\":false}]",Lore:["§r§7回城砖§r","§r§7把它丢出去回到大厅§r"]}} 1

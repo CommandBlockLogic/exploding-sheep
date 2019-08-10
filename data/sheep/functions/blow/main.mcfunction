@@ -59,11 +59,9 @@ execute if entity @s[tag=sheep_type_teleport] run particle minecraft:dust 0 0 0 
 # ice
 data merge entity @s[tag=sheep_type_web] {CustomName:"[\"冰冰冰!\"]",CustomNameVisible:1}
 # volleyball
-execute if entity @s[tag=sheep_type_volleyball] run particle minecraft:firework ~ ~ ~ 0 0 0 0.1 100
-execute if entity @s[tag=sheep_type_blue_small] run particle minecraft:dust 0 0.667 0.667 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 20
+execute if entity @s[tag=sheep_type_volleyball] run particle minecraft:block sand ~ ~ ~ 0.5 0.5 0.5 1 100
+execute if entity @s[tag=sheep_type_volleyball] run particle minecraft:dust 0.890 0.737 0.584 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 10
 execute if entity @s[tag=sheep_type_volleyball] run playsound minecraft:entity.firework_rocket.blast ambient @a ~ ~ ~
-
-
 
 
 # explode blocks

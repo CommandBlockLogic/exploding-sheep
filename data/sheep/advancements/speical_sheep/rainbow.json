@@ -2,17 +2,25 @@
 	"parent": "sheep:speical_sheep/root",
 	"display": {
 		"icon": {
-			"item": "minecraft:fire_charge"
+			"item": "minecraft:tube_coral"
 		},
 		"title": [
 			{
-				"text": "排球羊",
-				"color": "aqua"
+				"text": "彩",
+				"color": "red"
+			},
+			{
+				"text": "虹",
+				"color": "blue"
+			},
+			{
+				"text": "羊",
+				"color": "yellow"
 			}
 		],
 		"description": [
 			{
-				"text": "发出了一只排球!",
+				"text": "碰上彩虹，吃定彩虹!",
 				"color": "white"
 			}
 		],

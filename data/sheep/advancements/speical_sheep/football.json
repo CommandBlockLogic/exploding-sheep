@@ -2,7 +2,7 @@
 	"parent": "sheep:speical_sheep/root",
 	"display": {
 		"icon": {
-			"item": "minecraft:gray_wool"
+			"item": "minecraft:slime_ball"
 		},
 		"title": [
 			{

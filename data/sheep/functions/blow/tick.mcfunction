@@ -16,7 +16,7 @@ scoreboard players set @e[tag=sheep_attr_no_explode,scores={s_blow_time=1..}] s_
 
 # animation
 execute as @e[scores={s_blow_time=2}] at @s run playsound minecraft:entity.creeper.primed hostile @a ~ ~ ~
-execute as @e[scores={s_blow_time=2}] at @s run data merge entity @s {CustomName:"[{\"text\":\"?\",\"color\":\"yellow\"}]",CustomNameVisible:true}
-execute as @e[scores={s_blow_time=6}] at @s run data merge entity @s {CustomName:"[{\"text\":\"???\",\"color\":\"gold\"}]"}
-execute as @e[scores={s_blow_time=10}] at @s run data merge entity @s {CustomName:"[{\"text\":\"?????\",\"color\":\"red\"}]"}
+execute as @e[scores={s_blow_time=2},tag=!sheep_type_rainbow] at @s run data merge entity @s {CustomName:"[{\"text\":\"?\",\"color\":\"yellow\"}]",CustomNameVisible:true}
+execute as @e[scores={s_blow_time=6},tag=!sheep_type_rainbow] at @s run data merge entity @s {CustomName:"[{\"text\":\"???\",\"color\":\"gold\"}]"}
+execute as @e[scores={s_blow_time=10},tag=!sheep_type_rainbow] at @s run data merge entity @s {CustomName:"[{\"text\":\"?????\",\"color\":\"red\"}]"}
 execute as @e[scores={s_blow_time=13..}] at @s run function sheep:blow/main

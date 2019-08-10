@@ -2,17 +2,17 @@
 	"parent": "sheep:speical_sheep/root",
 	"display": {
 		"icon": {
-			"item": "minecraft:fire_charge"
+			"item": "minecraft:sunflower"
 		},
 		"title": [
 			{
-				"text": "排球羊",
-				"color": "aqua"
+				"text": "皇冠羊",
+				"color": "yellow"
 			}
 		],
 		"description": [
 			{
-				"text": "发出了一只排球!",
+				"text": "抵达山顶，寻得皇冠!",
 				"color": "white"
 			}
 		],

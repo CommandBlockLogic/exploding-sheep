@@ -23,6 +23,9 @@ execute as @a[scores={s_class=202},tag=sheep_change_c] run scoreboard players se
 
 execute as @a[scores={s_class=1001}] unless score @s s_launch_type matches 1001 run scoreboard players set @s s_launch_type 1001
 execute as @a[scores={s_class=1002}] unless score @s s_launch_type matches 1002 run scoreboard players set @s s_launch_type 1002
+execute as @a[scores={s_class=1003}] unless score @s s_launch_type matches 1003 run scoreboard players set @s s_launch_type 1003
+execute as @a[scores={s_class=1004}] unless score @s s_launch_type matches 1004 run scoreboard players set @s s_launch_type 1004
+
 
 # clear
 tag @a[tag=sheep_change_n] remove sheep_change_n
