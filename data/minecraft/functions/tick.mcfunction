@@ -10,6 +10,7 @@ execute unless entity @e[tag=system_lobby_mark] run function keep_mark/lobby
 execute unless entity @e[tag=system_lobby_mark_enter_block] run function keep_mark/lobby
 execute unless entity @e[tag=system_lobby_item] run function keep_mark/lobby_item
 execute unless entity @e[tag=system_fan_mark] run function keep_mark/fan
+execute unless entity @e[tag=system_credit_mark] run function keep_mark/credit
 
 # 全局防饥饿
 effect give @a[scores={food=..19}] minecraft:saturation 1 0 true
@@ -21,7 +22,7 @@ function lobby/tick
 function player_death/tick
 
 # 玩家物品常驻
-function keep_items
+#function keep_items
 
 # 游戏模式常驻
 scoreboard players add game_status system 0

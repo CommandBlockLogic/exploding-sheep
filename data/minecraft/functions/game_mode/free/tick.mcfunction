@@ -10,6 +10,9 @@ function lobby/enter_game
 function lobby/start_game/tick
 # effect
 function lobby/effect
+# credit
+execute as @e[tag=system_credit_display,nbt=!{CustomNameVisible:1b}] at @s if entity @a[distance=..5] run data merge entity @s {CustomNameVisible:1}
+execute as @e[tag=system_credit_display,nbt={CustomNameVisible:1b}] at @s unless entity @a[distance=..5] run data merge entity @s {CustomNameVisible:0}
 
 
 
