@@ -4,7 +4,7 @@ execute if score sys tick matches 1 run function anmie:1/init
 execute as @e[tag=a_y1] run function anmie:1/hit
 execute as @e[tag=a_y2] run function anmie:1/cut
 execute if score sys tick matches 221 run function anmie:1/init2
-execute if score sys tick matches 300 run kill @e[tag=ani]
+execute if score sys tick matches 359 run kill @e[tag=ani]
 execute as @e[tag=ay] run data merge entity @s {ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16701501}}},{}]}
 
 execute if score sys tick matches 0 run tp @a ~-4.337 ~12.865000000000002 ~-4.039999999999999 134.700 15.500
