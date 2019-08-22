@@ -12,4 +12,6 @@ title @a times 0 60 10
 title @a title [""]
 title @a subtitle [{"text":"红队","color":"red"},{"text":"夺走了中央水晶!","color":"white"}]
 tellraw @a [">> ",{"text":"红队","color":"red"},"夺走了中央水晶!"]
+playsound minecraft:entity.ender_dragon.growl ambient @a[team=!red] 0 10 0 1 1 0.5
+playsound minecraft:entity.player.levelup ambient @a[team=red] 0 10 0 1 0.5 0.5
 bossbar set minecraft:score_time color red

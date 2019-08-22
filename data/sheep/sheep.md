@@ -91,3 +91,5 @@ ID|type|名称
 :--:|:--:|:--:
 `1001`|speical_sheep/volleyball |排球
 `1002`|speical_sheep/football   |足球
+`1003`|speical_sheep/crown      |皇冠
+`1004`|speical_sheep/rainbow    |彩虹
