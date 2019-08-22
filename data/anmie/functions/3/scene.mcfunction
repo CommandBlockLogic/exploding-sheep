@@ -5,7 +5,7 @@ execute if score sys tick matches 1041 run kill @e[tag=ay]
 execute if score sys tick matches 1040 run setblock ~-6.5 ~4.5 ~-128.5 air
 execute if score sys tick matches 1041 run summon minecraft:armor_stand ~-5.800000000000001 ~3.5 ~-128.34 {Tags:[ani,a_item],Pose:{RightArm:[0f,0f,0f]},HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b},{}],NoGravity:1,Invisible:1}
 execute if score sys tick matches 1041 run summon minecraft:armor_stand ~-6.199999999999999 ~3.5 ~-127.66 {Rotation:[180f],Tags:[ani,a_item],Pose:{RightArm:[0f,0f,0f]},HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Damage:15}},{}],NoGravity:1,Invisible:1}
-execute if score sys tick matches 921..940 run execute as @e[tag=ani] at @s run tp @s ~ ~0.015 ~
+execute if score sys tick matches 1041..1080 run execute as @e[tag=ani] at @s run tp @s ~ ~0.015 ~
 execute if score sys tick matches 1070 run particle minecraft:cloud ~-6.0 ~5.0 ~-128.0 0.5 0 0.5 0 100
 execute if score sys tick matches 1071 run kill @e[tag=a_item]
 
