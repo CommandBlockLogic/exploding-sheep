@@ -14,7 +14,7 @@ tellraw @s ["    你手中第二格的物品: ",{"text":"芭蕉扇","bold":true,
 tellraw @s ["          拥有驾驭风的力量，右键挥动可吹动玩家和羊羊。"]
 tellraw @s [""]
 tellraw @s ["§7§o        在大厅一角可切换羊羊类型，获得更多样化的能力。"]
-tellraw @s ["§7§o           加入部落，选择模式，开始游戏吧！",{"text":"点击这里播放背景动画","color":"white","underlined":true,"clickEvent":{"action":"run_command","value":"/trigger tellraw_anime set 1"}}]
+tellraw @s ["§7§o     加入部落，选择模式，开始游戏吧！",{"text":"点击这里播放背景动画","italic":true,"underlined":true,"clickEvent":{"action":"run_command","value":"/trigger tellraw_anime set 1"}}]
 
 scoreboard players enable @s tellraw_anime
 tag @s add old_player
