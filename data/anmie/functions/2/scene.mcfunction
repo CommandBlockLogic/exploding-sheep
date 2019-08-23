@@ -1,17 +1,20 @@
 execute if score sys tick matches 361 run summon armor_stand ~-10.16 ~8.5 ~-43.0 {Rotation:[-135f],NoBasePlate:1,NoGravity:1,Tags:[ay,ani],ShowArms:1b,Pose:{Body:[343f,0f,0f],Head:[315f,0f,0f],LeftLeg:[11f,0f,0f],RightLeg:[351f,0f,0f],LeftArm:[235f,0f,0f],RightArm:[1f,73f,0f]}}
 execute if score sys tick matches 361 run summon armor_stand ~-3.9399999999999995 ~8.5 ~-49.63 {Rotation:[45f],NoBasePlate:1,NoGravity:1,Tags:[ay,ani],ShowArms:1b,Pose:{Body:[360f,0f,0f],LeftLeg:[11f,0f,0f],RightLeg:[351f,68f,0f],LeftArm:[235f,11f,0f],RightArm:[212f,73f,0f]}}
 execute if score sys tick matches 361 run summon minecraft:lightning_bolt ~-10.0 ~7.5 ~-48.0
+execute if score sys tick matches 361 as @e[tag=ay] run function anmie:add_head
 execute if score sys tick matches 404 at @a[limit=1,sort=random] run particle minecraft:explosion_emitter ~ ~1 ~ 1.5 1 1.5 0 15
 execute if score sys tick matches 411 at @a[limit=1,sort=random] run particle minecraft:cloud ~ ~1 ~ 1.5 1.5 1.5 0 1000
 execute if score sys tick matches 411 at @a[limit=1,sort=random] run particle minecraft:flash ~ ~1 ~
 execute if score sys tick matches 411 run summon armor_stand ~-9.489999999999998 ~4.5 ~-80.89 {Rotation:[105f],NoBasePlate:1b,NoGravity:1b,Tags:[ay,ani],ShowArms:1b,Pose:{Body:[348f,3f,0f],Head:[312f,19f,0f],LeftLeg:[11f,0f,0f],RightLeg:[411f,68f,0f],LeftArm:[343f,11f,0f],RightArm:[210f,73f,0f]}}
 execute if score sys tick matches 411 run summon armor_stand ~-4.640000000000001 ~4.5 ~-92.82 {Rotation:[60f],NoBasePlate:1b,NoGravity:1b,Tags:[ay,ani],ShowArms:1b,Pose:{Body:[348f,3f,0f],Head:[335f,340f,0f],LeftLeg:[411f,0f,0f],RightLeg:[3f,68f,0f],LeftArm:[263f,47f,77f],RightArm:[325f,0f,0f]}}
+execute if score sys tick matches 411 as @e[tag=ay] run function anmie:add_head
 execute if score sys tick matches ..479 run execute as @e[tag=ay] run data merge entity @s {ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16701501}}},{}]}
 execute if score sys tick matches 420 run fill ~-8.5 ~4.5 ~-85.5 ~-4.5 ~4.5 ~-89.5 minecraft:purple_stained_glass keep
 execute if score sys tick matches 420 run particle minecraft:witch ~-6.0 ~5.0 ~-87.0 1 0.3 1 0 200
 
 execute if score sys tick matches 480 run fill ~-5.5 ~8.5 ~-50.5 ~-12.5 ~6.5 ~-46.5 air replace fire
 execute if score sys tick matches 480 run summon armor_stand ~-7.98 ~5.0 ~-84.88 {HandItems:[{id:"minecraft:purple_stained_glass",Count:1b}],ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16701501}}},{}],Tags:[a_blue,ani,ay],Rotation:[-105f],NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Pose:{Body:[348f,3f,0f],Head:[32f,340f,0f],LeftLeg:[351f,0f,0f],RightLeg:[3f,0f,0f],LeftArm:[299f,360f,0f],RightArm:[325f,0f,0f]}}
+execute if score sys tick matches 480 as @e[tag=ay] run function anmie:add_head
 execute if score sys tick matches 490 run data merge entity @e[tag=a_blue,limit=1] {ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:13942683}}},{}],LeftArm:[283f,350f,0f]}
 execute if score sys tick matches 500 run data merge entity @e[tag=a_blue,limit=1] {ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:12103366}}},{}],LeftArm:[287f,340f,0f]}
 execute if score sys tick matches 510 run data merge entity @e[tag=a_blue,limit=1] {ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:8092346}}},{}],LeftArm:[280f,336f,0f]}
@@ -22,6 +25,7 @@ execute if score sys tick matches 520 run data merge entity @e[tag=a_blue,limit=
 #8092346
 #3949738
 execute if score sys tick matches 480 run summon armor_stand ~-3.1899999999999995 ~5.0 ~-87.81 {HandItems:[{id:"minecraft:purple_stained_glass",Count:1b}],ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16701501}}},{}],Tags:[a_red,ani,ay],Rotation:[30f],NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Pose:{Body:[12f,3f,0f],Head:[16f,14f,0f],LeftLeg:[351f,0f,0f],RightLeg:[3f,0f,0f],RightArm:[280f,0f,0f]}}
+execute if score sys tick matches 480 as @e[tag=ay] run function anmie:add_head
 execute if score sys tick matches 490 run data merge entity @e[tag=a_red,limit=1] {ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16493613}}},{}],RightArm:[270f,0f,0f]}
 execute if score sys tick matches 500 run data merge entity @e[tag=a_red,limit=1] {ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16351261}}},{}],RightArm:[260f,0f,0f]}
 execute if score sys tick matches 510 run data merge entity @e[tag=a_red,limit=1] {ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:13915937}}},{}],RightArm:[250f,0f,0f]}

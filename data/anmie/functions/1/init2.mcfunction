@@ -1,2 +1,3 @@
 summon armor_stand ~-10.98 ~11.590000000000003 ~-6.989999999999998 {Tags:[ani,ay],HandItems:[{id:"oak_log",Count:1b},{}],Rotation:[225f],ShowArms:1b,Pose:{RightArm:[309f,0f,0f]},NoGravity:1,NoBasePlate:1}
 summon armor_stand ~-10.100000000000001 ~11.590000000000003 ~-8.09 {Tags:[ani,ay],HandItems:[{id:"iron_ingot",Count:1b},{}],Rotation:[45f],ShowArms:1b,Pose:{RightArm:[309f,0f,0f]},NoGravity:1,NoBasePlate:1}
+execute as @e[tag=ay] run function anmie:add_head

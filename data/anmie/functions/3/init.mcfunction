@@ -1,2 +1,3 @@
 summon armor_stand ~-6.0 ~4.199999999999999 ~-128.8 {ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:11546150}}},{}],Tags:[ani,a_red,ay],NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Pose:{Body:[12f,0f,0f],Head:[22f,0f,0f],LeftLeg:[337f,0f,0f],RightLeg:[330f,0f,0f],LeftArm:[289f,42f,0f],RightArm:[289f,315f,0f]}}
 summon armor_stand ~-5.969999999999999 ~4.199999999999999 ~-127.19999999999999 {Rotation:[180f],ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:3949738}}},{}],Tags:[ani,a_blue,ay],NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Pose:{Body:[12f,0f,0f],Head:[22f,0f,0f],LeftLeg:[337f,0f,0f],RightLeg:[330f,0f,0f],LeftArm:[289f,42f,0f],RightArm:[289f,315f,0f]}}
+execute as @e[tag=ay] run function anmie:add_head
