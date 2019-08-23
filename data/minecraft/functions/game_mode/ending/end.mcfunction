@@ -1,6 +1,6 @@
 # ending/end
 
-tp @a -166 9 -118
+tp @a -166 9 -118 -150 0
 
 gamemode adventure @a
 scoreboard objectives setdisplay sidebar
