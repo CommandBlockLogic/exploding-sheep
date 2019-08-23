@@ -5,6 +5,8 @@ execute if score sys tick matches 841..1360 run function anmie:3/scene
 
 execute as @e[tag=ani] run data merge entity @s {DisabledSlots:2039583}
 execute as @e[tag=ay] unless data entity @s ArmorItems[{id:"minecraft:player_head"}] run function anmie:add_head
+execute as @e[tag=a_blue] unless data entity @s ArmorItems[{id:"minecraft:player_head"}] run function anmie:add_head
+execute as @e[tag=a_red] unless data entity @s ArmorItems[{id:"minecraft:player_head"}] run function anmie:add_head
 
 # txt
 execute if score sys tick matches 0..99 run title @a actionbar ["在还没有圣坛的年代，沙漠中的x和草原上的y曾是互帮互助的邻居。"]
@@ -22,5 +24,5 @@ execute if score sys tick matches 1200..1280 run title @a actionbar ["为了圣�
 
 # effect
 execute if score sys tick matches 0.. run gamemode adventure @a
-execute if score sys tick matches 0.. run effect give @p minecraft:levitation 1 255 true
-execute if score sys tick matches 0.. run effect give @p minecraft:invisibility 1 0 true
+execute if score sys tick matches 0.. run effect give @a minecraft:levitation 1 255 true
+execute if score sys tick matches 0.. run effect give @a minecraft:invisibility 1 0 true
