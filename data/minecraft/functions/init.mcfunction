@@ -57,6 +57,7 @@ team add blue
 team add yellow
 team add ani
 team modify ani collisionRule never
+team modify ani seeFriendlyInvisibles false
 team modify red color red
 team modify blue color blue
 team modify yellow color yellow
