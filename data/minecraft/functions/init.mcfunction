@@ -49,6 +49,9 @@ scoreboard objectives add drop_gold minecraft.dropped:minecraft.gold_block ["关
 scoreboard objectives add kill_player dummy ["杀人数量"]
 scoreboard objectives add core_number dummy ["水晶砂数量"]
 
+scoreboard objectives add tellraw_anime trigger ["开始动画trigger"]
+
+
 team add red
 team add blue
 team add yellow

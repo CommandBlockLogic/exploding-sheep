@@ -61,3 +61,8 @@ execute as @e[type=falling_block] at @s unless block ~ ~-1 ~ #minecraft:under_sa
 execute as @e[type=falling_block] at @s unless block ~ ~-0.7 ~ #minecraft:under_sand run kill @s
 execute as @e[type=falling_block] at @s unless block ~ ~-0.5 ~ #minecraft:under_sand run kill @s
 kill @e[type=item,tag=!system_protect_item]
+
+
+
+execute if entity @a[scores={tellraw_anime=1..}] run function game_mode/anime/main
+scoreboard players set @a[scores={tellraw_anime=1..}] tellraw_anime 0
