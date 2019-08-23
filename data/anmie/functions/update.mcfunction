@@ -1,7 +1,7 @@
 execute if score sys tick matches 0.. run scoreboard players add sys tick 1
 execute if score sys tick matches 0..360 run function anmie:1/scene
 execute if score sys tick matches 361..840 run function anmie:2/scene
-execute if score sys tick matches 841..1320 run function anmie:3/scene
+execute if score sys tick matches 841..1360 run function anmie:3/scene
 
 execute as @e[tag=ani] run data merge entity @s {DisabledSlots:2039583}
 

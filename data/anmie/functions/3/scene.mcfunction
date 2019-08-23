@@ -22,7 +22,7 @@ execute if score sys tick matches 1190 run execute as @a[limit=1,sort=random] at
 execute if score sys tick matches 1195 run execute as @a[limit=1,sort=random] at @s run particle minecraft:explosion_emitter ~ ~1 ~ 1.5 1 1.5 0 15
 execute if score sys tick matches 1206 run execute as @a[limit=1,sort=random] at @s run playsound minecraft:block.end_portal.spawn ambient @a
 execute if score sys tick matches 1206 run execute as @a[limit=1,sort=random] at @s run particle minecraft:flash ~ ~1 ~
-execute if score sys tick matches 1320 run function anmie:end
+execute if score sys tick matches 1360 run function anmie:end
 
 execute if score sys tick matches 840 run tp @a ~-4.6579999999999995 ~6.890999999999998 ~-125.12899999999999 129.200 -17.900
 execute if score sys tick matches 841 run tp @a ~-4.622 ~6.890999999999998 ~-125.17500000000001 128.565 -16.867
@@ -502,4 +502,4 @@ execute if score sys tick matches 1315 run tp @a ~-41.929 ~9.218 ~-123.826 137.4
 execute if score sys tick matches 1316 run tp @a ~-41.929 ~9.218 ~-123.826 137.493 -41.347
 execute if score sys tick matches 1317 run tp @a ~-41.929 ~9.218 ~-123.826 137.493 -42.260
 execute if score sys tick matches 1318 run tp @a ~-41.929 ~9.218 ~-123.826 137.493 -43.173
-execute if score sys tick matches 1320 run tp @a ~-41.929 ~9.218 ~-123.826 137.493 -44.087
+execute if score sys tick matches 1320..1360 run tp @a ~-41.929 ~9.218 ~-123.826 137.493 -44.087
