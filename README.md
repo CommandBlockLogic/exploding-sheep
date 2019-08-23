@@ -59,10 +59,15 @@
 * bugfix:旁观模式给了鞋
 * bugfix:中途进游戏无法看现场
 * bugfix:旁观改灰色
-* bugfix:盔甲架可脱衣服
+* bugfix:盔甲架可脱衣服 包括动画内的
 * bugfix:动画疯狂换头
 * bugfix:个人抢水晶砂没有水晶砂
 * bugfix:随机tp出错
+* bugfix:增加游戏结束提示
+* bugfix:红羊无法加入队伍
+* bugfix:重生固定朝向
+* bugfix:清空其他格子
+* bugfix:动画可以打人
 
 
 
