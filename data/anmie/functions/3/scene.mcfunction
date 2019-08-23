@@ -3,8 +3,8 @@ execute if score sys tick matches 900.. run execute as @e[tag=ay] run function a
 execute if score sys tick matches 1040 run particle minecraft:sweep_attack ~-6.0 ~5.0 ~-128.0 1 1 1 0 100
 execute if score sys tick matches 1041 run kill @e[tag=ay]
 execute if score sys tick matches 1040 run setblock ~-6.5 ~4.5 ~-128.5 air
-execute if score sys tick matches 1041 run summon minecraft:armor_stand ~-5.800000000000001 ~3.5 ~-128.34 {Tags:[ani,a_item],Pose:{RightArm:[0f,0f,0f]},HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b},{}],NoGravity:1,Invisible:1}
-execute if score sys tick matches 1041 run summon minecraft:armor_stand ~-6.199999999999999 ~3.5 ~-127.66 {Tags:[ani,a_item],Pose:{RightArm:[90f,0f,0f]},HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Damage:15}},{}],NoGravity:1,Invisible:1}
+execute if score sys tick matches 1041 run summon minecraft:armor_stand ~-5.8 ~3.5 ~-128.34 {Tags:[ani,a_item],Pose:{RightArm:[0f,0f,0f]},HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b},{}],NoGravity:1,Invisible:1}
+execute if score sys tick matches 1041 run summon minecraft:armor_stand ~-5.7 ~3.5 ~-127.96 {Tags:[ani,a_item],Pose:{RightArm:[90f,0f,0f]},HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Damage:15}},{}],NoGravity:1,Invisible:1}
 execute if score sys tick matches 1041..1080 run execute as @e[tag=ani] at @s run tp @s ~ ~0.015 ~
 execute if score sys tick matches 1070 run particle minecraft:cloud ~-6.0 ~5.0 ~-128.0 0.5 0 0.5 0 100
 execute if score sys tick matches 1071 run kill @e[tag=a_item]
@@ -14,7 +14,7 @@ execute if score sys tick matches 1111 run summon armor_stand ~-7.92000000000000
 execute if score sys tick matches 1140 run summon minecraft:sheep ~-7.829999999999998 ~5.5 ~-122.19 {Tags:[ani,abullet],Age:-999999999,Motion:[0.4d,0.8d,-0.9d],Color:11}
 execute if score sys tick matches 1140 run summon minecraft:sheep ~-3.789999999999999 ~5.5 ~-130.6 {Tags:[ani,abullet],Age:-999999999,Motion:[-0.4d,0.8d,0.9d],Color:14}
 execute as @e[type=minecraft:sheep,tag=abullet,nbt={OnGround:1b}] run data merge entity @s {NoAI:1}
-execute as @e[type=minecraft:sheep,tag=abullet,nbt={OnGround:1b}] at @s run playsound minecraft:entity.tnt.primed ambient @a
+#execute as @e[type=minecraft:sheep,tag=abullet,nbt={OnGround:1b}] at @s run playsound minecraft:entity.tnt.primed ambient @a
 execute if score sys tick matches 1180 run execute as @e[type=minecraft:sheep,tag=abullet] at @s run playsound minecraft:block.end_gateway.spawn ambient @a
 execute if score sys tick matches 1180 run execute as @e[type=minecraft:sheep,tag=abullet] at @s run particle minecraft:explosion ~ ~ ~ 0.3 0.3 0.3 0 5
 execute if score sys tick matches 1180 run kill @e[tag=abullet]
