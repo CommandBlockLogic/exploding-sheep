@@ -22,7 +22,7 @@ function lobby/tick
 function player_death/tick
 
 # 玩家物品常驻
-#function keep_items
+execute unless score game_status system matches 6 run function keep_items
 
 # 游戏模式常驻
 scoreboard players add game_status system 0
