@@ -55,12 +55,14 @@ scoreboard objectives add tellraw_anime trigger ["开始动画trigger"]
 team add red
 team add blue
 team add yellow
-
+team add ani
+team modify ani collisionRule never
 team modify red color red
 team modify blue color blue
 team modify yellow color yellow
 team modify red friendlyFire false
 team modify blue friendlyFire false
 team modify yellow friendlyFire true
+team 
 scoreboard objectives setdisplay list health
 scoreboard objectives setdisplay belowName health

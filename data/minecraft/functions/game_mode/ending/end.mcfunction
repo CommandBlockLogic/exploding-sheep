@@ -20,6 +20,7 @@ bossbar remove minecraft:blue_score
 team empty blue
 team empty red
 team empty yellow
+team empty ani
 
 # reset team (pve only)
 team modify red color red
