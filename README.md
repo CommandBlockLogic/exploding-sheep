@@ -68,6 +68,7 @@
 * bugfix:增加游戏结束提示
 * bugfix:红羊无法加入队伍
 * bugfix:清空其他格子
+* bugfix:pve自动初始化
 
 
 
