@@ -50,6 +50,9 @@
 	* bugfix:动画可以打人
 	* bugfix:重生固定朝向
 	* bugfix:盔甲架可脱衣服
+	* bugfix:红羊无法加入队伍
+	* bugfix:动画疯狂换头
+	* bugfix:增加游戏结束提示
 
 
 # TODO List
@@ -64,10 +67,8 @@
 * bugfix:中途进游戏无法看现场
 * bugfix:旁观改灰色
 * bugfix:动画内的盔甲架可脱衣服
-* bugfix:动画疯狂换头
-* bugfix:增加游戏结束提示
-* bugfix:红羊无法加入队伍
 * bugfix:清空其他格子
+* bugfix:pve自动初始化
 
 
 
