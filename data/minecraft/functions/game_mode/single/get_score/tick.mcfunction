@@ -36,4 +36,4 @@ execute as @a[team=yellow] run scoreboard players operation max_num system > @s 
 execute if score max_num system matches 1.. as @a[team=yellow] if score @s core_number = max_num system run effect give @s minecraft:glowing 1 1 true
 
 # summon core
-function game_mode/group/get_score/public/summon_core
+function game_mode/group/get_score/summon_core_slow

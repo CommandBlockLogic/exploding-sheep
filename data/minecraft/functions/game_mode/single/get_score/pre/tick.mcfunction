@@ -20,7 +20,7 @@ execute if score system_start_countdown system matches 195 run scoreboard player
 # clear core
 execute if score system_start_countdown system matches 190 run function core/center/clear
 # summon core
-execute if score system_start_countdown system matches ..185 run function game_mode/group/get_score/public/summon_core_fast
+execute if score system_start_countdown system matches ..185 run function game_mode/group/get_score/summon_core
 
 
 
