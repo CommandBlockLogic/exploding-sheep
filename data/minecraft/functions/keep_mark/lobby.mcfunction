@@ -33,7 +33,8 @@ summon minecraft:area_effect_cloud -158.5 10 -112.0 {Duration:9999999,Tags:["sys
 execute if score game_mode_status system matches 1 as @e[tag=system_lobby_mark_join_red] run data merge entity @s {CustomName:"[\"将小羊丢到这里加入§e游戏§r\"]"}
 execute if score game_mode_status system matches 1 as @e[tag=system_lobby_mark_join_blue] run data merge entity @s {CustomName:"[\"将小羊丢到这里加入§e游戏§r\"]"}
 
-
+# 开场动画提示
+summon minecraft:area_effect_cloud -170 10 -112 {Duration:9999999,Tags:["system_lobby_mark","system_mode_mark"],CustomName:"[\"播放游戏背景动画\"]"}
 
 # 僵尸
 execute positioned -176.5 5 -60.8 unless entity @e[type=giant,distance=..1] run summon minecraft:giant ~ ~ ~ {Invulnerable:1,NoAI:1,NoGravity:1,Rotation:[-180f,0f],HandItems:[{Count:1b,id:"minecraft:carrot_on_a_stick",tag:{Damage:15s,Unbreakable:1b}},{Count:1b,id:"minecraft:carrot_on_a_stick",tag:{Unbreakable:1b}}]}

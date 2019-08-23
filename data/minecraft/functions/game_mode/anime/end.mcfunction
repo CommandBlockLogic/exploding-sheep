@@ -1,0 +1,1 @@
+function game_mode/ending/end.mcfunction
