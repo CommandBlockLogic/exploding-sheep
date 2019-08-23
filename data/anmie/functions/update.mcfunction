@@ -4,6 +4,7 @@ execute if score sys tick matches 361..840 run function anmie:2/scene
 execute if score sys tick matches 841..1360 run function anmie:3/scene
 
 execute as @e[tag=ani] run data merge entity @s {DisabledSlots:2039583}
+execute as @e[tag=ay] unless data entity @s ArmorItems[{id:"minecraft:player_head"}] run function anmie:add_head
 
 # txt
 execute if score sys tick matches 0..99 run title @a actionbar ["在还没有圣坛的年代，沙漠中的x和草原上的y曾是互帮互助的邻居。"]
