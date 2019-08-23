@@ -11,6 +11,6 @@ execute if score Boss编号 pve_system matches 2 run scoreboard players set 羊�
 execute if score Boss编号 pve_system matches 3 run summon minecraft:zombie -177 6 -61 {HandItems:[{id:"minecraft:stick",Count:1b,tag:{Enchantments:[{id:"minecraft:knockback",lvl:3}]}},{id:"minecraft:shield",Count:1b,tag:{Enchantments:[{id:"minecraft:knockback",lvl:3}]}}],ArmorItems:[{id:"minecraft:diamond_boots",Count:1,tag:{Enchantments:[{id:"minecraft:feather_falling",lvl:3}]}},{id:"minecraft:diamond_leggings",Count:1,tag:{Enchantments:[{id:"minecraft:protection",lvl:1}]}},{id:"minecraft:diamond_chestplate",Count:1,tag:{Enchantments:[{id:"minecraft:protection",lvl:1}]}},{id:"minecraft:diamond_helmet",Count:1b,tag:{Enchantments:[{id:"minecraft:blast_protection",lvl:1}]}}],CustomName:"{\"text\":\"泰坦\",\"color\":\"gold\"}",CustomNameVisible:1b,Tags:["boss3","monster","boss_exist","boss_tp_target3"],Attributes:[{Base:100.0d,Name:"generic.maxHealth"},{Base:16.0d,Name:"generic.followRange"}],Health:100.0f,PersistenceRequired:1b,FallFlying:1b}
 
 # 告知玩家
-execute if score Boss编号 pve_system matches 1 run tellraw @a [{"text":">> ","color":"white"},{"selector":"@e[tag=boss1]"},{"text":"已复活！"}]
-execute if score Boss编号 pve_system matches 2 run tellraw @a [{"text":">> ","color":"white"},{"selector":"@e[tag=boss2]"},{"text":"已复活！"}]
-execute if score Boss编号 pve_system matches 3 run tellraw @a [{"text":">> ","color":"white"},{"selector":"@e[tag=boss3]"},{"text":"已复活！"}]
+execute if score Boss编号 pve_system matches 1 run tellraw @a [{"text":">> ","color":"white"},{"selector":"@e[tag=boss1]"},{"text":"已复活!"}]
+execute if score Boss编号 pve_system matches 2 run tellraw @a [{"text":">> ","color":"white"},{"selector":"@e[tag=boss2]"},{"text":"已复活!"}]
+execute if score Boss编号 pve_system matches 3 run tellraw @a [{"text":">> ","color":"white"},{"selector":"@e[tag=boss3]"},{"text":"已复活!"}]

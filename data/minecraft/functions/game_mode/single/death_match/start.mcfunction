@@ -14,6 +14,6 @@ scoreboard objectives modify sidebar_score displayname ["分数"]
 
 # title
 title @a times 10 50 10
-title @a title ["击败更多的人！"]
+title @a title ["击败更多的人!"]
 title @a subtitle ["游戏开始"]
-tellraw @a [">> 击败最多的人！"]
+tellraw @a [">> 击败最多的人!"]

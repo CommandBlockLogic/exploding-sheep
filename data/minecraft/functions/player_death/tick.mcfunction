@@ -14,21 +14,21 @@ execute if score game_status system matches 1.. unless score game_status system 
 scoreboard players add @a quick_back 0
 scoreboard players set @a[scores={drop_coal=1..}] quick_back 1
 scoreboard players set @a[scores={drop_gold=1..}] quick_back 0
-tellraw @a[scores={drop_coal=1..}] [{"text":"## ","color":"gray","italic":true},"快速传送已切换至开启. 死亡充满羊羊能量后可立即传送."]
-tellraw @a[scores={drop_gold=1..}] [{"text":"## ","color":"gray","italic":true},"快速传送已切换至关闭. 死亡后需踩上传送石才可传送."]
+tellraw @a[scores={drop_coal=1..}] [{"text":"## ","color":"gray","italic":true},"快速传送已切换至开启。死亡充满羊羊能量后可立即传送。"]
+tellraw @a[scores={drop_gold=1..}] [{"text":"## ","color":"gray","italic":true},"快速传送已切换至关闭。死亡后需踩上传送石才可传送。"]
 scoreboard players set @a[scores={drop_coal=1..}] drop_coal 0
 scoreboard players set @a[scores={drop_gold=1..}] drop_gold 0
 
 # quick tp
 execute unless score game_status system matches 0 unless score game_status system matches 105 run scoreboard players set @a[tag=in_lobby,scores={death_time=0,quick_back=1}] death_time_tp 0
-execute unless score game_status system matches 0 unless score game_status system matches 105 run tellraw @a[tag=in_lobby,scores={death_time=0,quick_back=1}] [{"text":"## ","color":"gray","italic":true},"您已快速传送至场地."]
+execute unless score game_status system matches 0 unless score game_status system matches 105 run tellraw @a[tag=in_lobby,scores={death_time=0,quick_back=1}] [{"text":"## ","color":"gray","italic":true},"您已快速传送至场地。"]
 execute unless score game_status system matches 0 unless score game_status system matches 105 run execute as @a[tag=in_lobby,scores={death_time=0,quick_back=1}] run function game_mode/public/tp_game_spawn
 
 # tp time
 scoreboard players add @a[scores={death_time_tp=1..}] death_time_tp 1
 execute if score game_status system matches 0 run scoreboard players set @a[scores={death_time_tp=1..}] death_time_tp 0
 execute if score game_status system matches 5 run scoreboard players set @a[scores={death_time_tp=1..}] death_time_tp 0
-tellraw @a[scores={death_time_tp=300}] [{"text":"## ","color":"gray","italic":true},"5秒后将自动传送至战场."]
+tellraw @a[scores={death_time_tp=300}] [{"text":"## ","color":"gray","italic":true},"5秒后将自动传送至战场。"]
 execute as @a[scores={death_time_tp=400..}] run function game_mode/public/tp_game_spawn
 scoreboard players set @a[scores={death_time_tp=400..}] death_time_tp 0
 
@@ -42,4 +42,3 @@ scoreboard players set @a[scores={s_kill_time=3..233,death=0},nbt={OnGround:1b}]
 scoreboard players set @a[scores={fall_dis=1..,death=0}] s_kill_time 999
 scoreboard players set @a[scores={fall_dis=1..,death=0}] fall_dis 0
 scoreboard players add @a s_kill_time 1
-

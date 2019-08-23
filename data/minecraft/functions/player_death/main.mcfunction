@@ -33,11 +33,11 @@ execute at @s if block ~ ~ ~ minecraft:water unless block ~ ~1 ~ minecraft:water
 execute at @s unless block ~ ~ ~ minecraft:lava unless block ~ ~1 ~ minecraft:water unless block ~ ~ ~ minecraft:water if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=..300,s_kill_time=3..}] run function player_death/message/stupid
 
 # monster
-execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=1..,s_kill_time=3..}] run tellraw @a ["-- ",{"selector":"@s"}," 被施加了爆炸法术."," --"]
-execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,s_kill_time=3..},nbt={ActiveEffects:[{Id:20b}]}] run tellraw @a ["-- ",{"selector":"@s"}," 被邪恶法师诅咒致死."," --"]
-execute if entity @s[scores={killed_by_f=1..}] run tellraw @a ["-- ",{"selector":"@s"}," 被迫口交致死."," --"]
-execute if entity @s[scores={killed_by_s=1..}] run tellraw @a ["-- ",{"selector":"@s"}," 被怪物锤倒."," --"]
-execute if entity @s[scores={killed_by_z=1..}] run tellraw @a ["-- ",{"selector":"@s"}," 被怪物锤倒."," --"]
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=1..,s_kill_time=3..}] run tellraw @a ["-- ",{"selector":"@s"}," 被施加了爆炸法术。"," --"]
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,s_kill_time=3..},nbt={ActiveEffects:[{Id:20b}]}] run tellraw @a ["-- ",{"selector":"@s"}," 被邪恶法师诅咒致死。"," --"]
+execute if entity @s[scores={killed_by_f=1..}] run tellraw @a ["-- ",{"selector":"@s"}," 被迫口交致死。"," --"]
+execute if entity @s[scores={killed_by_s=1..}] run tellraw @a ["-- ",{"selector":"@s"}," 被怪物锤倒。"," --"]
+execute if entity @s[scores={killed_by_z=1..}] run tellraw @a ["-- ",{"selector":"@s"}," 被怪物锤倒。"," --"]
 
 
 

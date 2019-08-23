@@ -16,7 +16,7 @@ execute as @e[tag=boss_2_skill_3,tag=boss_2_skill_3_use] at @s positioned ~ ~ ~ 
 execute as @e[tag=boss_2_skill_3,tag=boss_2_skill_3_use] at @s positioned ~ ~ ~ run summon minecraft:evoker ^ ^ ^-3 {HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Enchantments:[{id:"minecraft:punch",lvl:3}],Damage:20}},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{Enchantments:[{id:"minecraft:punch",lvl:3}],Damage:20}}],ArmorItems:[{id:"minecraft:iron_boots",Count:1,tag:{Enchantments:[{id:"minecraft:blast_protection",lvl:1}]}},{id:"minecraft:iron_leggings",Count:1,tag:{Enchantments:[{id:"minecraft:blast_protection",lvl:1}]}},{id:"minecraft:iron_chestplate",Count:1,tag:{Enchantments:[{id:"minecraft:blast_protection",lvl:1}]}},{id:"minecraft:iron_helmet",Count:1b,tag:{Enchantments:[{id:"minecraft:blast_protection",lvl:1}]}}],CustomName:"{\"text\":\"召唤师\",\"color\":\"gold\"}",CustomNameVisible:1b,Tags:["boss2","monster","boss_exist","boss_tp_target2","fake_boss2"],Attributes:[{Base:16.0d,Name:"generic.maxHealth"},{Base:16.0d,Name:"generic.followRange"}],Health:5.0f,PersistenceRequired:1b,FallFlying:1b}
 execute as @e[tag=boss_2_skill_3,tag=boss_2_skill_3_use] run effect give @e[tag=boss2,tag=real_boss2] regeneration 30 1 true
 execute as @e[tag=boss_2_skill_3,tag=boss_2_skill_3_use] run tag @e[tag=boss2,tag=real_boss2] add boss_2_skill_3_tag
-execute as @e[tag=boss_2_skill_3,tag=boss_2_skill_3_use] at @s run tellraw @a[gamemode=adventure,distance=..16] [{"text":">> ","color":"white"},{"selector":"@e[tag=boss2,tag=real_boss2]"},{"text":"进入了无敌状态，并且正在偷偷回血！\n>> 快击杀他的分身来阻止他！","color":"white"}]
+execute as @e[tag=boss_2_skill_3,tag=boss_2_skill_3_use] at @s run tellraw @a[gamemode=adventure,distance=..16] [{"text":">> ","color":"white"},{"selector":"@e[tag=boss2,tag=real_boss2]"},{"text":"进入了无敌状态, 并且正在偷偷回血! \n>> 快击杀他的分身来阻止他!","color":"white"}]
 tag @e[tag=boss_2_skill_3] remove boss_2_skill_3_use
 
 #
@@ -25,7 +25,7 @@ execute if entity @e[type=evoker,tag=fake_boss2] run data merge entity @e[tag=bo
 
 execute unless entity @e[type=evoker,tag=fake_boss2] run effect clear @e[tag=boss2,tag=real_boss2] regeneration
 execute unless entity @e[type=evoker,tag=fake_boss2] run data merge entity @e[tag=boss2,tag=real_boss2,limit=1] {Invulnerable:0b}
-execute unless entity @e[type=evoker,tag=fake_boss2] as @e[tag=boss2,tag=real_boss2,tag=boss_2_skill_3_tag] at @s run tellraw @a[gamemode=adventure,distance=..16] [{"text":">> ","color":"white"},{"selector":"@e[tag=boss2,tag=real_boss2]"},{"text":"的无敌状态被击破了！","color":"white"}]
+execute unless entity @e[type=evoker,tag=fake_boss2] as @e[tag=boss2,tag=real_boss2,tag=boss_2_skill_3_tag] at @s run tellraw @a[gamemode=adventure,distance=..16] [{"text":">> ","color":"white"},{"selector":"@e[tag=boss2,tag=real_boss2]"},{"text":"的无敌状态被击破了!","color":"white"}]
 execute unless entity @e[type=evoker,tag=fake_boss2] run tag @e[tag=boss2,tag=real_boss2,limit=1] remove boss_2_skill_3_tag
 
 
@@ -33,5 +33,3 @@ execute unless entity @e[type=evoker,tag=fake_boss2] run tag @e[tag=boss2,tag=re
 scoreboard players set 召唤物限时 boss_2_cool3 600
 scoreboard players add @e[tag=fake_boss2,type=minecraft:evoker] boss_2_cool3 1
 execute as @e[type=minecraft:evoker,tag=fake_boss2] if score @s boss_2_cool3 >= 召唤物限时 boss_2_cool3 run kill @s
-
-
