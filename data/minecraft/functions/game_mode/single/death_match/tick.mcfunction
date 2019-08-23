@@ -21,6 +21,27 @@ scoreboard players operation system_second system %= system_sixty system
 execute if score system_second system matches 0..9 run bossbar set minecraft:score_time name ["剩余时间   ",{"score":{"name":"system_minute","objective":"system"}},":0",{"score":{"name":"system_second","objective":"system"}}]
 execute unless score system_second system matches 0..9 run bossbar set minecraft:score_time name ["剩余时间   ",{"score":{"name":"system_minute","objective":"system"}},":",{"score":{"name":"system_second","objective":"system"}}]
 
+# display time
+execute if score system_game_time system matches 2400 run tellraw @a [">> 距争夺结束还有",{"text":"2","color":"yellow"},"分钟!"]
+execute if score system_game_time system matches 1200 run tellraw @a [">> 距争夺结束还有",{"text":"1","color":"yellow"},"分钟!"]
+execute if score system_game_time system matches 600 run tellraw @a [">> 距争夺结束还有",{"text":"30","color":"red"},"秒!"]
+execute if score system_game_time system matches 300 run title @a times 0 300 10
+execute if score system_game_time system matches 300 run title @a title [{"text":"争夺即将结束...","color":"white"}]
+execute if score system_game_time system matches 300 run title @a subtitle ["14"]
+execute if score system_game_time system matches 280 run title @a subtitle ["13"]
+execute if score system_game_time system matches 260 run title @a subtitle ["12"]
+execute if score system_game_time system matches 240 run title @a subtitle ["11"]
+execute if score system_game_time system matches 220 run title @a subtitle ["10"]
+execute if score system_game_time system matches 200 run title @a subtitle ["9"]
+execute if score system_game_time system matches 180 run title @a subtitle ["8"]
+execute if score system_game_time system matches 160 run title @a subtitle ["7"]
+execute if score system_game_time system matches 140 run title @a subtitle ["6"]
+execute if score system_game_time system matches 120 run title @a subtitle ["5"]
+execute if score system_game_time system matches 100 run title @a subtitle ["4"]
+execute if score system_game_time system matches 80 run title @a subtitle [{"text":"3","color":"yellow"}]
+execute if score system_game_time system matches 60 run title @a subtitle [{"text":"2","color":"gold"}]
+execute if score system_game_time system matches 40 run title @a subtitle [{"text":"1","color":"red"}]
+
 # display score
 execute as @a[team=yellow] if score @s kill_player matches 1.. run scoreboard players operation @s kill_player *= system_ten system
 execute as @a[team=yellow] if score @s kill_player matches ..-1 run scoreboard players operation @s kill_player *= system_five system

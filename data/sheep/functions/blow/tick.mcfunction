@@ -10,7 +10,7 @@ kill @e[scores={s_flying_time=6000..}]
 # add blow time
 scoreboard players add @e[scores={s_blow_time=1..}] s_blow_time 1
 # speical sheep air
-scoreboard players set @e[tag=sheep_type_air,scores={s_blow_time=1..9}] s_blow_time 10
+scoreboard players set @e[tag=sheep_type_air,scores={s_blow_time=3..9}] s_blow_time 12
 # no explode
 scoreboard players set @e[tag=sheep_attr_no_explode,scores={s_blow_time=1..}] s_blow_time 1
 
