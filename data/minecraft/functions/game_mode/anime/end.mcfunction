@@ -1,1 +1,1 @@
-function game_mode/ending/end.mcfunction
+function game_mode/ending/end
