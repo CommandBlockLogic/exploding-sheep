@@ -14,7 +14,7 @@ scoreboard objectives modify sidebar_score displayname ["水晶砂"]
 
 # title
 title @a times 10 50 10
-title @a title ["抢夺中央的水晶砂吧！"]
+title @a title ["抢夺中央的水晶砂吧!"]
 title @a subtitle ["游戏开始"]
-tellraw @a [">> 使用羊羊炸碎地图中央的水晶砂吧！"]
-tellraw @a [" - 击败敌人可获得对方部分水晶砂！"]
+tellraw @a [">> 使用羊羊炸碎地图中央的水晶砂吧!"]
+tellraw @a [" - 击败敌人可获得对方部分水晶砂!"]

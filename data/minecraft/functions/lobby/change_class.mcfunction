@@ -19,11 +19,11 @@ execute at @e[tag=system_class_mark_cyan] as @a[distance=..0.3] unless score @s 
 execute at @e[tag=system_class_mark_orange] as @a[distance=..0.3] unless score @s s_class matches 6 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §6吸收§r\n - 落地后羊羊在附近生成吸收阵, 其中的队友会获得伤害吸收","\n - 与此同时主人的生命上限将变高","\n - 手持羊羊大炮按F即可在",{"text":"小白羊","italic":true},"和",{"text":"小橙羊","italic":true,"color":"gold"},"之间切换!"]
 execute at @e[tag=system_class_mark_orange] as @a[distance=..0.3] unless score @s s_class matches 6 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 6
 
-execute at @e[tag=system_class_mark_volleyball] as @a[distance=..0.3] unless score @s s_class matches 1001 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §b排球§r\n - 羊羊飞的慢慢的, 可以用扇子丢来丢去"]
+execute at @e[tag=system_class_mark_volleyball] as @a[distance=..0.3] unless score @s s_class matches 1001 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §b排球§r\n - 羊羊飞得慢慢的, 可以用扇子丢来丢去"]
 execute at @e[tag=system_class_mark_volleyball] as @a[distance=..0.3] unless score @s s_class matches 1001 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 1001
 execute at @e[tag=system_class_mark_football] as @a[distance=..0.3] unless score @s s_class matches 1002 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §8足球§r\n - 羊羊落地无事发生, 可以用扇子丢来丢去"]
 execute at @e[tag=system_class_mark_football] as @a[distance=..0.3] unless score @s s_class matches 1002 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 1002
-execute at @e[tag=system_class_mark_crown] as @a[distance=..0.3] unless score @s s_class matches 1003 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §e皇冠§r\n - 羊羊落地显现王者的皇冠, 你的登山能力是顶尖的!","\n - 你的跳跃能力得到了提升!","\n - 提示：按旁边按钮出门"]
+execute at @e[tag=system_class_mark_crown] as @a[distance=..0.3] unless score @s s_class matches 1003 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §e皇冠§r\n - 羊羊落地显现王者的皇冠, 你的登山能力是顶尖的!","\n - 你的跳跃能力得到了提升!","\n - 提示: 按旁边按钮出门"]
 execute at @e[tag=system_class_mark_crown] as @a[distance=..0.3] unless score @s s_class matches 1003 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 1003
-execute at @e[tag=system_class_mark_rainbow] as @a[distance=..0.3] unless score @s s_class matches 1004 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §e彩§c虹§r\n - 碰上彩虹，吃定彩虹!(彩虹糖打钱)","\n - 恭喜你发现了制作组名单! 就是这些人在咕咕咕"]
+execute at @e[tag=system_class_mark_rainbow] as @a[distance=..0.3] unless score @s s_class matches 1004 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §e彩§c虹§r\n - 碰上彩虹, 吃定彩虹!(彩虹糖打钱)","\n - 恭喜你发现了制作组名单! 就是这些人在咕咕咕"]
 execute at @e[tag=system_class_mark_rainbow] as @a[distance=..0.3] unless score @s s_class matches 1004 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 1004

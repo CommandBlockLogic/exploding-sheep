@@ -3,8 +3,8 @@
 kill @e[type=!player]
 title @a times 0 200 10
 title @a title [{"text":"成功击杀羊羊之神！","color":"red"}]
-tellraw @a [{"text":"<","color":"white"},{"text":"羊羊之神","color":"yellow","bold":"false"},{"text":"> ","color":"white","bold":"false"},{"selector":"@a[team=red]"},{"text":", 你们给我等着！","color":"white"}]
-tellraw @a [{"text":"羊羊之神","color":"yellow","bold":"false"},{"text":"退出了游戏","color":"yellow","bold":"false"}]
+tellraw @a {"translate":"chat.type.text","with":[{"text":"羊羊之神","color":"yellow"},[{"selector":"@a[team=red]"},{"text":", 你们给我等着!","color":"white"}]]}
+tellraw @a [{"text":"","color":"yellow"},{"translate":"multiplayer.player.left","with":["羊羊之神"]}]
 advancement grant @a[team=red] only sheep:pve/4
 bossbar set minecraft:boss4 visible false
 function game_mode/ending/main

@@ -7,7 +7,7 @@ execute as @e[tag=boss4] at @s positioned ^-1 ^2 ^ run function minecraft:game_m
 # 红
 execute as @e[tag=boss4] at @s positioned ^-3 ^2 ^ run function minecraft:game_mode/single/boss/system/status_1/skill_2_launch
 
-tellraw @a [{"text":">>","color":"white"},{"text":" 羊羊之神","color":"gold"},{"text":"召唤了","color":"white"},{"text":"4种羊羊","color":"gold"},{"text":"快逃离他的羊羊","color":"white"}]
+tellraw @a [{"text":">>","color":"white"},{"text":" 羊羊之神","color":"gold"},{"text":"召唤了","color":"white"},{"text":"4种羊羊","color":"gold"},{"text":", 快逃离他的羊羊","color":"white"}]
 
 scoreboard players set Boss技能 boss_4_system 3
 scoreboard players set 冷却时间 boss_4_cool 0

@@ -5,7 +5,7 @@ summon minecraft:sheep ^ ^ ^ {Tags:["boss4_sheep_new3"],Color:6,NoGravity:1,Sile
 
 
 
-tellraw @a [{"text":">>","color":"white"},{"text":" 羊羊之神","color":"gold"},{"text":"召唤了","color":"white"},{"text":"粉色羊羊","color":"light_purple"},{"text":"，快走过去拆除他们！","color":"white"}]
+tellraw @a [{"text":">>","color":"white"},{"text":" 羊羊之神","color":"gold"},{"text":"召唤了","color":"white"},{"text":"粉色羊羊","color":"light_purple"},{"text":", 快走过去拆除他们!","color":"white"}]
 
 execute at @e[tag=boss4] run spreadplayers ~ ~ 5 10 false @e[tag=boss4_sheep_new3,type=sheep]
 

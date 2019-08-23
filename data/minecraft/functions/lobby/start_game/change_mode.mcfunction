@@ -21,10 +21,10 @@ execute if score game_mode_status system matches 11 run scoreboard players set g
 
 
 # tips
-execute if score game_mode_status system matches 0 run tellraw @a [">> 游戏已变为部落模式, 请重新选择队伍并加入."]
+execute if score game_mode_status system matches 0 run tellraw @a [">> 游戏已变为部落模式, 请重新选择队伍并加入。"]
 execute if score game_mode_status system matches 0 run team empty yellow
 execute if score game_mode_status system matches 0 run setblock -178 8 -125 minecraft:stone_bricks replace
-execute if score game_mode_status system matches 1 run tellraw @a [">> 游戏已变为单人模式."]
+execute if score game_mode_status system matches 1 run tellraw @a [">> 游戏已变为单人模式。"]
 execute if score game_mode_status system matches 1 run team join yellow @a[team=blue]
 execute if score game_mode_status system matches 1 run team join yellow @a[team=red]
 execute if score game_mode_status system matches 1 run team empty red
