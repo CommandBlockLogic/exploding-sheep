@@ -1,10 +1,25 @@
 # lobby/launch_sheep/main
 
 # tag target player
-execute positioned ~ ~ ~ run tag @a[x=-214,y=5,z=-204,dx=74,dy=60,dz=70,sort=random,limit=1,gamemode=adventure] add system_lobby_target
+tag @a[x=-214,y=5,z=-204,dx=74,dy=60,dz=70,sort=random,limit=1,gamemode=adventure] add system_lobby_target
 
 # summon sheep
-execute positioned ~ ~ ~ run function sheep:launch/type/normal
+execute if score spg_sheep_launcher_type system matches 1 run function sheep:launch/type/normal
+execute if score spg_sheep_launcher_type system matches 2 run function sheep:launch/type/teleport
+execute if score spg_sheep_launcher_type system matches 3 run function sheep:launch/type/fast
+execute if score spg_sheep_launcher_type system matches 4 run function sheep:launch/type/air
+execute if score spg_sheep_launcher_type system matches 5 run function sheep:launch/type/web
+execute if score spg_sheep_launcher_type system matches 6 run function sheep:launch/type/heal
+execute if score spg_sheep_launcher_type system matches 101 run function sheep:launch/type/gray
+execute if score spg_sheep_launcher_type system matches 201 run function sheep:launch/type/blue
+execute if score spg_sheep_launcher_type system matches 202 run function sheep:launch/type/lime
+execute if score spg_sheep_launcher_type system matches 1001 run function sheep:launch/type/volleyball
+execute if score spg_sheep_launcher_type system matches 1002 run function sheep:launch/type/football
+execute if score spg_sheep_launcher_type system matches 1003 run function sheep:launch/type/crown
+execute if score spg_sheep_launcher_type system matches 1004 run function sheep:launch/type/rainbow
+
+# add special tag
+tag @e[tag=sheep_new,limit=1] add sheep_shot_by_launcher
 
 # turn the sheep's face
 execute as @e[tag=sheep_new,limit=1] at @s run tp @s ~ ~ ~ facing entity @a[tag=system_lobby_target,limit=1]
