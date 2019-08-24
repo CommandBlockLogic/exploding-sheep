@@ -3,6 +3,7 @@
 gamemode adventure @a
 clear @a
 effect clear @a
+effect give @a minecraft:instant_health 1 10 true 
 kill @e[tag=sheep_type_blue]
 scoreboard players set @a s_ulti_energy 0
 scoreboard players set @a s_energy 999
