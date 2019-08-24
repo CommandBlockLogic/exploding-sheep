@@ -46,7 +46,8 @@ execute if entity @s[tag=sheep_type_heal] run summon minecraft:area_effect_cloud
 execute if entity @s[tag=sheep_type_heal] run particle minecraft:dust 1 0.667 0 3 ~ ~0.3 ~ 0.7 0.4 0.7 1 20
 execute if entity @s[tag=sheep_type_heal,tag=sheep_team_red] run effect give @a[distance=..5,team=red] minecraft:absorption 60 0 true
 execute if entity @s[tag=sheep_type_heal,tag=sheep_team_blue] run effect give @a[distance=..5,team=blue] minecraft:absorption 60 0 true
-execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red] as @a[distance=..5] if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run effect give @s minecraft:absorption 60 0 true
+execute if entity @s[tag=sheep_type_heal,tag=sheep_shot_by_launcher] run effect give @a[distance=..5] minecraft:absorption 60 0 true
+execute if entity @s[tag=sheep_type_heal,tag=!sheep_team_blue,tag=!sheep_team_red,tag=!sheep_shot_by_launcher] as @a[distance=..5] if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run effect give @s minecraft:absorption 60 0 true
 
 # teleport
 execute if entity @s[tag=sheep_type_teleport,tag=!sheep_no_teleport] at @s as @a if score @s s_id = @e[tag=sheep_temp,limit=1] s_thrower_id run tp @s ~ ~ ~ ~ ~

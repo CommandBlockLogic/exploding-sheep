@@ -19,10 +19,11 @@ scoreboard players add @s killed_by_c 0
 scoreboard players add @s killed_by_s 0
 scoreboard players add @s fall_dis 0
 # normal
-# killed_by_c(z/s/f)=1被creeper(僵尸/小白/牙)杀死 s_kill_time=..2被特定羊炸死 fall_dis=300..摔死 
+# killed_by_c(z/s/f)=1被creeper(僵尸/小白/牙)杀死 s_kill_time=..2被特定羊炸死 fall_dis=300..摔死 spg_hit_by_launcher被秦王炮炸死 
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,s_kill_time=..2}] if entity @a[tag=player_killer] if entity @s[tag=!player_killer] run function player_death/message/kill_by_player
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,s_kill_time=..2}] if entity @s[tag=player_killer] run function player_death/message/kill_by_himself
-execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,s_kill_time=..2}] unless entity @a[tag=player_killer] run function player_death/message/kill_by_sheep
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,s_kill_time=..2}] if entity @s[tag=spg_hit_by_launcher] run function player_death/message/kill_by_launcher
+execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,s_kill_time=..2}] unless entity @a[tag=player_killer] unless entity @a[tag=spg_hit_by_launcher] run function player_death/message/kill_by_sheep
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=300..,s_kill_time=3..233}] if entity @a[tag=player_killer] if entity @s[tag=!player_killer] run function player_death/message/push_by_player
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=300..,s_kill_time=3..233}] if entity @s[tag=player_killer] run function player_death/message/push_by_himself
 execute if entity @s[scores={killed_by_f=0,killed_by_s=0,killed_by_z=0,killed_by_c=0,fall_dis=300..,s_kill_time=3..233}] unless entity @a[tag=player_killer] run function player_death/message/push_by_sheep
@@ -59,4 +60,5 @@ scoreboard players set @s killed_by_z 0
 scoreboard players set @s killed_by_s 0
 scoreboard players set @s killed_by_f 0
 tag @s remove player_self
+tag @s remove spg_hit_by_launcher
 tag @a[tag=player_killer] remove player_killer
