@@ -41,12 +41,14 @@ execute if score game_status system matches 104 run function game_mode/single/ge
 execute if score game_status system matches 5 run function game_mode/single/boss/tick
 execute if score game_status system matches 105 run function game_mode/single/boss/prepre/tick
 execute if score game_status system matches 205 run function game_mode/single/boss/pre/tick
+execute if score game_status system matches 6 run function game_mode/anime/tick
 execute if score game_status system matches 8964 run function game_mode/ending/tick
 
 
 # 游戏进程标记
 execute if score game_status system matches 1.. unless score game_status system matches 105 unless score game_status system matches 6 run gamemode spectator @a[team=,gamemode=adventure]
 execute if score 游戏开始 pve_system matches 0 if score game_status system matches 1.. run scoreboard players set 游戏开始 pve_system 1
+scoreboard players add 游戏开始 pve_system 0
 
 # 游戏选择模式倒计时
 function game_mode/select_mode/timer

@@ -1,7 +1,7 @@
 # keep_items
 
 function sheep:change_color
-#execute as @a run function minecraft:item_clear
+execute as @a run function minecraft:item_clear
 
 execute as @a[nbt=!{Inventory:[{Slot:0b,tag:{item_num:1}}]}] run function sheep:item/cannon
 execute as @a[nbt=!{Inventory:[{Slot:1b,tag:{item_num:2}}]},scores={s_ulti_time=..59}] run function sheep:item/fan

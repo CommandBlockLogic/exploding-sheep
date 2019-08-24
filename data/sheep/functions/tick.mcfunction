@@ -120,8 +120,8 @@ function sheep:sheep_effect/ice/tick
 function sheep:sheep_effect/crown/tick
 function sheep:sheep_effect/lime/tick
 execute as @e[tag=sheep_type_rainbow] at @s run function sheep:sheep_effect/rainbow/tick
-effect give @a[scores={s_class=3}] minecraft:speed 1 0
-effect give @a[scores={s_class=1003}] minecraft:jump_boost 1 3
+effect give @a[scores={s_class=3}] minecraft:speed 1 0 true
+effect give @a[scores={s_class=1003}] minecraft:jump_boost 1 3 true
 
 
 

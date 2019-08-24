@@ -22,7 +22,3 @@ execute if score sys tick matches 1040..1109 run title @a actionbar ["在为圣�
 execute if score sys tick matches 1110..1199 run title @a actionbar ["仇恨已经刻入人心，他们再不复往日的友好，"]
 execute if score sys tick matches 1200..1280 run title @a actionbar ["为了圣坛中偶尔出现的些许水晶展开了旷日持久的战斗……"]
 
-# effect
-execute if score sys tick matches 0.. run gamemode adventure @a
-execute if score sys tick matches 0.. run effect give @a minecraft:levitation 1 255 true
-execute if score sys tick matches 0.. run effect give @a minecraft:invisibility 1 0 true
