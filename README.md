@@ -54,16 +54,20 @@
 	* bugfix:增加游戏结束提示
 	* bugfix:pve自动初始化
 	* bugfix:清空其他格子
+* 2019/08/23
+	* Make the 秦王炮 great again！
 * 2019/08/25
-* bugfix:红羊无法加入队伍
-* bugfix:游戏结束清计分板
-* bugfix:title挡视野
-* bugfix:把山顶的人传送下来
-* bugfix:连创造都会清物品
-* bugfix:雕像会被炸掉
-* bugfix:设置黑羊禁区
-* bugfix:boss战前回血
-* bugfix:玄素雕像
+	* bugfix:红羊无法加入队伍
+	* bugfix:游戏结束清计分板
+	* bugfix:title挡视野
+	* bugfix:把山顶的人传送下来
+	* bugfix:连创造都会清物品
+	* bugfix:雕像会被炸掉
+	* bugfix:设置黑羊禁区
+	* bugfix:boss战前回血
+	* bugfix:玄素雕像
+	* bugfix:秦王炮的超蓝羊无明确击杀提示
+	* bugfix:被秦王炮用\[芭蕉扇\]扇死
 
 
 
