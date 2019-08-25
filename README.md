@@ -50,11 +50,17 @@
 	* bugfix:动画可以打人
 	* bugfix:重生固定朝向
 	* bugfix:盔甲架可脱衣服
-	* bugfix:红羊无法加入队伍
 	* bugfix:动画疯狂换头
 	* bugfix:增加游戏结束提示
 	* bugfix:pve自动初始化
 	* bugfix:清空其他格子
+* 2019/08/25
+* bugfix:红羊无法加入队伍
+* bugfix:游戏结束清计分板
+* bugfix:title挡视野
+* bugfix:把山顶的人传送下来
+
+
 
 
 # TODO List
@@ -66,8 +72,8 @@
 * 彩蛋：进球
 * 选择游戏模式优化
 * bugfix:旁观模式给了鞋
-
-
+* bugfix:设置黑羊禁区
+* bugfix:玄素雕像
 
 
 
