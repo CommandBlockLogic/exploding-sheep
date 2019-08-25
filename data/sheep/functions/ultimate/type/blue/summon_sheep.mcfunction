@@ -20,8 +20,8 @@ execute if entity @s[tag=sheep_team_blue] run tag @e[tag=sheep_new,limit=1] add 
 # initialize
 scoreboard players set @e[tag=sheep_new] s_blow_time 0
 
-
-
+# shot by launcher tag
+execute if entity @s[tag=sheep_shot_by_launcher] run tag @e[tag=sheeo_new] add sheep_shot_by_launcher
 
 
 
