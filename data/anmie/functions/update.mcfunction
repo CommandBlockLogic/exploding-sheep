@@ -20,6 +20,6 @@ execute if score sys tick matches 540..679 run title @a actionbar ["村民们开
 execute if score sys tick matches 680..739 run title @a actionbar ["可这天赐的水晶并不是无穷无尽的， 所有人都注意到了水晶的减少。"]
 execute if score sys tick matches 740..839 run title @a actionbar ["大家都习惯了优渥的生活， 没有人愿意回到以前那贫苦的时代。"]
 execute if score sys tick matches 840..1039 run title @a actionbar ["于是围绕水晶的争夺当然无法避免。"]
-execute if score sys tick matches 1040..1109 run title @a actionbar ["在为圣坛刀剑相向之时， 他们惊异的发现圣坛中最后的水晶变成了威力巨大的武器。"]
+execute if score sys tick matches 1040..1109 run title @a actionbar ["在为圣坛刀剑相向之时， 他们惊异地发现圣坛中最后的水晶变成了威力巨大的武器。"]
 execute if score sys tick matches 1110..1199 run title @a actionbar ["仇恨已经刻入人心， 他们再不复往日的友好，"]
 execute if score sys tick matches 1200..1280 run title @a actionbar ["为了圣坛中偶尔出现的些许水晶展开了旷日持久的战斗……"]
