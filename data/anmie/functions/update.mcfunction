@@ -8,6 +8,8 @@ execute as @e[tag=ay] unless data entity @s ArmorItems[{id:"minecraft:player_hea
 execute as @e[tag=a_blue] unless data entity @s ArmorItems[{id:"minecraft:player_head"}] run function anmie:add_head
 execute as @e[tag=a_red] unless data entity @s ArmorItems[{id:"minecraft:player_head"}] run function anmie:add_head
 
+execute if score sys tick matches 5 run effect give @a minecraft:instant_health 1 10 true
+
 # txt
 execute if score sys tick matches 0..99 run title @a actionbar ["在还没有圣坛的年代，沙漠中的x和草原上的y曾是互帮互助的邻居。"]
 execute if score sys tick matches 100..219 run title @a actionbar ["居住在河的两岸，他们交换自己采集的资源。"]

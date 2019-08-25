@@ -23,3 +23,5 @@ execute if score Boss复活冷却 boss_4_system matches 40 run title @a clear
 execute if score Boss复活冷却 boss_4_system matches 40 run tellraw @a {"translate":"chat.type.text","with":[{"text":"羊羊之神","color":"yellow"},[{"selector":"@a[tag=team_leader]"},{"text":", 你竟然敢击杀我洞穴里所有的守卫","color":"white"}]]}
 execute if score Boss复活冷却 boss_4_system matches 60 if entity @a[gamemode=adventure,tag=!team_leader] run tellraw @a {"translate":"chat.type.text","with":[{"text":"羊羊之神","color":"yellow"},[{"text":"还找来了帮凶","color":"white"},{"selector":"@a[gamemode=adventure,tag=!team_leader]"}]]}
 execute if score Boss复活冷却 boss_4_system matches 80 run tellraw @a {"translate":"chat.type.text","with":[{"text":"羊羊之神","color":"yellow"},[{"text":"既然你们那么想死, 那就让我来成全你们!","color":"white"}]]}
+
+execute if score Boss复活冷却 boss_4_system matches 5 run effect give @a minecraft:instant_health 1 10 true
