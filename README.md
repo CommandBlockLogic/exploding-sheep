@@ -63,6 +63,7 @@
 * bugfix:雕像会被炸掉
 * bugfix:设置黑羊禁区
 * bugfix:boss战前回血
+* bugfix:玄素雕像
 
 
 
@@ -76,7 +77,6 @@
 * 彩蛋：进球
 * 选择游戏模式优化
 * bugfix:旁观模式给了鞋
-* bugfix:玄素雕像
 
 
 

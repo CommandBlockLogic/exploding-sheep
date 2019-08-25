@@ -11,7 +11,7 @@ execute as @e[tag=a_red] unless data entity @s ArmorItems[{id:"minecraft:player_
 execute if score sys tick matches 5 run effect give @a minecraft:instant_health 1 10 true
 
 # txt
-execute if score sys tick matches 0..99 run title @a actionbar ["在还没有圣坛的年代，沙漠中的x和草原上的y曾是互帮互助的邻居。"]
+execute if score sys tick matches 0..99 run title @a actionbar ["在还没有圣坛的年代，沙漠中和草原上的两个部落曾是互帮互助的邻居。"]
 execute if score sys tick matches 100..219 run title @a actionbar ["居住在河的两岸，他们交换自己采集的资源。"]
 execute if score sys tick matches 220..359 run title @a actionbar ["日子虽然清苦，但在互帮互助之下，没有什么困难不能解决。"]
 execute if score sys tick matches 360..419 run title @a actionbar ["但是随着圣坛天降，日子开始不太一样了。"]
