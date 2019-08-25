@@ -57,8 +57,8 @@ execute at @s[tag=!sheep_touch_z] positioned ~-0.3 ~ ~0.3 if block ~ ~0.45 ~ #mi
 execute at @s[tag=!sheep_touch_z] positioned ~-0.3 ~ ~-0.3 if block ~ ~0.45 ~ #minecraft:slabs[type=bottom] run function sheep:fly/touch_z
 
 # check barrier
-execute at @s[tag=sheep_type_teleport,tag=!sheep_no_teleport] if block ~ ~ ~ minecraft:barrier run tag @s add sheep_touch_x
-execute at @s[tag=sheep_type_teleport,tag=!sheep_no_teleport] if block ~ ~ ~ minecraft:barrier run tag @s add sheep_no_teleport
+execute at @s[tag=sheep_type_teleport,tag=!sheep_no_teleport] if block ~ ~ ~ #sheep:no_black_sheep run tag @s add sheep_touch_x
+execute at @s[tag=sheep_type_teleport,tag=!sheep_no_teleport] if block ~ ~ ~ #sheep:no_black_sheep run tag @s add sheep_no_teleport
 
 # set blow
 scoreboard players set @s[tag=sheep_touch_x,scores={s_blow_time=0}] s_blow_time 1

@@ -59,7 +59,7 @@
 * bugfix:游戏结束清计分板
 * bugfix:title挡视野
 * bugfix:把山顶的人传送下来
-
+* bugfix:连创造都会清物品
 
 
 
@@ -74,6 +74,9 @@
 * bugfix:旁观模式给了鞋
 * bugfix:设置黑羊禁区
 * bugfix:玄素雕像
+* bugfix:boss战前回血
+* bugfix:雕像会被炸掉
+
 
 
 
