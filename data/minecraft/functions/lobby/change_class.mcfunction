@@ -5,7 +5,6 @@ execute as @e[tag=system_class_mark,nbt=!{CustomNameVisible:1b}] at @s if entity
 execute as @e[tag=system_class_mark,nbt={CustomNameVisible:1b}] at @s unless entity @a[distance=..8] run data merge entity @s {CustomNameVisible:0}
 
 # change class
-execute at @e[tag=system_class_mark] as @a[distance=..0.3] unless score @s s_launch_type matches 1 unless score @s s_class matches 100..999 run scoreboard players set @s s_launch_type 1
 execute at @e[tag=system_class_mark_white] as @a[distance=..0.3] unless score @s s_class matches 1 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §f普通§r\n - 虽然能力普通, 但是总能量高!"]
 execute at @e[tag=system_class_mark_white] as @a[distance=..0.3] unless score @s s_class matches 1 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 1
 execute at @e[tag=system_class_mark_black] as @a[distance=..0.3] unless score @s s_class matches 2 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §1末影§r\n - 羊羊会将它的主人传送到它落地的位置并将主人能量充满!","\n - 手持羊羊大炮按F即可在",{"text":"小白羊","italic":true},"和",{"text":"小黑羊","color":"dark_blue","italic":true},"之间切换!"]
@@ -27,3 +26,7 @@ execute at @e[tag=system_class_mark_crown] as @a[distance=..0.3] unless score @s
 execute at @e[tag=system_class_mark_crown] as @a[distance=..0.3] unless score @s s_class matches 1003 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 1003
 execute at @e[tag=system_class_mark_rainbow] as @a[distance=..0.3] unless score @s s_class matches 1004 unless score @s s_class matches 100..999 run tellraw @s [">> 切换至 §e彩§c虹§r\n - 碰上彩虹, 吃定彩虹!(彩虹糖打钱)","\n - 恭喜你发现了制作组名单! 就是这些人在咕咕咕"]
 execute at @e[tag=system_class_mark_rainbow] as @a[distance=..0.3] unless score @s s_class matches 1004 unless score @s s_class matches 100..999 run scoreboard players set @s s_class 1004
+
+
+# change current sheep 踩到切换的上面之后 如果目前不是超级羊 手里也不是白羊 手里的羊和对应的羊还不同 就把手里的羊变成对应的特殊羊
+execute at @e[tag=system_class_mark] as @a[distance=..0.3] unless score @s s_class matches 100..999 unless score @s s_launch_type matches 1 unless score @s s_launch_type = @s s_class run scoreboard players operation @s s_launch_type = @s s_class

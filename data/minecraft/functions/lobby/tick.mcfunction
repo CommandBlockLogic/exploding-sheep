@@ -23,3 +23,6 @@ execute unless score game_status system matches 0 unless score game_status syste
 # 传送场外玩家
 tp @a[y=80,dy=200,gamemode=survival] -166 9 -118 -150 0
 tp @a[y=80,dy=200,gamemode=adventure] -166 9 -118 -150 0
+
+# 游戏模式判断
+execute unless score game_mode_status system matches 1 if block -178 8 -125 minecraft:cracked_stone_bricks run function minecraft:lobby/start_game/pre_change_mode
